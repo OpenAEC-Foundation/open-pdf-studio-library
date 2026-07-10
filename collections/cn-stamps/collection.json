@@ -1,0 +1,16 @@
+{
+  "id": "cn-stamps",
+  "name": {
+    "en": "Chinese approval stamps",
+    "zh": "图纸审批章",
+    "nl": "Chinese stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

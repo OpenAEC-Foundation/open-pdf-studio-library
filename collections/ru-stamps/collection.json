@@ -1,0 +1,19 @@
+{
+  "id": "ru-stamps",
+  "name": {
+    "en": "Russian approval stamps",
+    "ru": "Штампы согласования",
+    "nl": "Russische stempels"
+  },
+  "description": {
+    "en": "Stamps following GOST/SPDS documentation practice."
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

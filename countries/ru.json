@@ -1,0 +1,22 @@
+{
+  "id": "ru",
+  "name": {
+    "en": "Russia",
+    "ru": "Россия",
+    "nl": "Rusland"
+  },
+  "flag": "🇷🇺",
+  "region": "europe",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "ru-fire-symbols",
+        "iso7010-safety",
+        "ru-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

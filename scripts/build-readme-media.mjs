@@ -94,7 +94,9 @@ stampSheet(
     { id: 'tr-stamps', label: 'tr-stamps (Türkiye)' },
     { id: 'il-stamps', label: 'il-stamps (ישראל)' },
     { id: 'in-stamps', label: 'in-stamps (India)' },
-    { id: 'br-stamps', label: 'br-stamps (Brasil)' }
+    { id: 'br-stamps', label: 'br-stamps (Brasil)' },
+    { id: 'cn-stamps', label: 'cn-stamps (中国)' },
+    { id: 'ru-stamps', label: 'ru-stamps (Россия)' }
   ],
   'preview-stamps.svg'
 );

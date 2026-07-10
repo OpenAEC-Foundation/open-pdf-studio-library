@@ -1,0 +1,22 @@
+{
+  "id": "cn",
+  "name": {
+    "en": "China",
+    "zh": "中国",
+    "nl": "China"
+  },
+  "flag": "🇨🇳",
+  "region": "asia",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "cn-fire-symbols",
+        "iso7010-safety",
+        "cn-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

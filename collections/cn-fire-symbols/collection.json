@@ -1,0 +1,19 @@
+{
+  "id": "cn-fire-symbols",
+  "name": {
+    "en": "Chinese fire safety drawing symbols",
+    "zh": "消防图形符号",
+    "nl": "Chinese brandveiligheidssymbolen"
+  },
+  "description": {
+    "en": "Fire protection symbols per Chinese GB standards and common drawing practice."
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

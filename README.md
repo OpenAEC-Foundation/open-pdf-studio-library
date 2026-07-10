@@ -67,6 +67,8 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 | 🇮🇱 Israel | 🧭 needs local review | ✅ `il-stamps` (8) |
 | 🇮🇳 India | 🧭 needs local review | ✅ `in-stamps` (12, incl. GOOD FOR CONSTRUCTION) |
 | 🇧🇷 Brazil | 🧭 needs local review | ✅ `br-stamps` (10) |
+| 🇨🇳 China | 🧭 needs local review | ✅ `cn-stamps` (11, incl. 可用于施工 / 竣工图) |
+| 🇷🇺 Russia | 🧭 needs local review | ✅ `ru-stamps` (11, GOST/SPDS practice) |
 
 Parametric collections (steel profiles, grid/level/rebar components) are
 defined but waiting on the parametric format — see the plan.

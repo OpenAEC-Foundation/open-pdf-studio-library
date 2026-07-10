@@ -160,6 +160,27 @@
           }
         },
         {
+          "id": "ru",
+          "name": {
+            "en": "Russia",
+            "ru": "Россия",
+            "nl": "Rusland"
+          },
+          "flag": "🇷🇺",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "ru-fire-symbols",
+                "iso7010-safety",
+                "ru-stamps",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        },
+        {
           "id": "tr",
           "name": {
             "en": "Türkiye",
@@ -266,6 +287,27 @@
       "id": "asia",
       "countries": [
         {
+          "id": "cn",
+          "name": {
+            "en": "China",
+            "zh": "中国",
+            "nl": "China"
+          },
+          "flag": "🇨🇳",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "cn-fire-symbols",
+                "iso7010-safety",
+                "cn-stamps",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        },
+        {
           "id": "in",
           "name": {
             "en": "India",
@@ -333,6 +375,36 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/br-stamps/"
+    },
+    "cn-fire-symbols": {
+      "name": {
+        "en": "Chinese fire safety drawing symbols",
+        "zh": "消防图形符号",
+        "nl": "Chinese brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/cn-fire-symbols/"
+    },
+    "cn-stamps": {
+      "name": {
+        "en": "Chinese approval stamps",
+        "zh": "图纸审批章",
+        "nl": "Chinese stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/cn-stamps/"
     },
     "common-material-hatches": {
       "name": {
@@ -678,6 +750,36 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/pt-stamps/"
+    },
+    "ru-fire-symbols": {
+      "name": {
+        "en": "Russian fire safety drawing symbols",
+        "ru": "Условные обозначения пожарной безопасности",
+        "nl": "Russische brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/ru-fire-symbols/"
+    },
+    "ru-stamps": {
+      "name": {
+        "en": "Russian approval stamps",
+        "ru": "Штампы согласования",
+        "nl": "Russische stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/ru-stamps/"
     },
     "tr-fire-symbols": {
       "name": {

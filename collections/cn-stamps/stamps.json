@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "yi-pi-zhun",
+      "text": "已批准",
+      "color": "#22c55e"
+    },
+    {
+      "id": "wei-pi-zhun",
+      "text": "未批准",
+      "color": "#ef4444"
+    },
+    {
+      "id": "dai-shen-pi",
+      "text": "待审批",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "ke-yong-yu-shi-gong",
+      "text": "可用于施工",
+      "color": "#22c55e"
+    },
+    {
+      "id": "jun-gong-tu",
+      "text": "竣工图",
+      "color": "#6b7280"
+    },
+    {
+      "id": "cao-gao",
+      "text": "草稿",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "chu-bu-she-ji",
+      "text": "初步设计",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "jin-gong-can-kao",
+      "text": "仅供参考",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "yi-shen-he",
+      "text": "已审核",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "yi-xiu-ding",
+      "text": "已修订",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "zuo-fei",
+      "text": "作废",
+      "color": "#6b7280"
+    }
+  ]
+}

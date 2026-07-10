@@ -1,0 +1,19 @@
+{
+  "id": "ru-fire-symbols",
+  "name": {
+    "en": "Russian fire safety drawing symbols",
+    "ru": "Условные обозначения пожарной безопасности",
+    "nl": "Russische brandveiligheidssymbolen"
+  },
+  "description": {
+    "en": "Fire protection symbols per GOST drawing practice."
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

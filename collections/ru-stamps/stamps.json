@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "utverzhdeno",
+      "text": "УТВЕРЖДЕНО",
+      "color": "#22c55e"
+    },
+    {
+      "id": "soglasovano",
+      "text": "СОГЛАСОВАНО",
+      "color": "#22c55e"
+    },
+    {
+      "id": "na-soglasovanii",
+      "text": "НА СОГЛАСОВАНИИ",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "v-proizvodstvo-rabot",
+      "text": "В ПРОИЗВОДСТВО РАБОТ",
+      "color": "#22c55e"
+    },
+    {
+      "id": "otkloneno",
+      "text": "ОТКЛОНЕНО",
+      "color": "#ef4444"
+    },
+    {
+      "id": "proekt",
+      "text": "ПРОЕКТ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "predvaritelno",
+      "text": "ПРЕДВАРИТЕЛЬНО",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "dlya-informatsii",
+      "text": "ДЛЯ ИНФОРМАЦИИ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "provereno",
+      "text": "ПРОВЕРЕНО",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "izmeneno",
+      "text": "ИЗМЕНЕНО",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "annulirovano",
+      "text": "АННУЛИРОВАНО",
+      "color": "#6b7280"
+    }
+  ]
+}

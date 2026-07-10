@@ -135,6 +135,7 @@ LU (hergebruik BE/FR/DE). Aanpak identiek aan Wave 2; verwacht hergebruik
 | 🇧🇷 BR | ABNT-conventies; Portugese stempels |
 | 🇲🇽 MX + LATAM | Spaanse stempels; mix VS/EU-conventies |
 | 🇹🇷 Türkiye | CEN-lid: volledige hergebruik EN/ISO-laag + Turkse stempels |
+| 🇷🇺 Rusland | GOST/SPDS-documentatiepraktijk; Cyrillische stempels |
 | 🇮🇱 Israël | EU/VS-mix; Hebreeuwse stempels (RTL); Europese staalprofielen gangbaar |
 | Golfregio | VS/VK-mix; Engels + Arabisch |
 
