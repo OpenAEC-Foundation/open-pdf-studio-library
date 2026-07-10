@@ -1,0 +1,221 @@
+{
+  "formatVersion": 1,
+  "regions": [
+    {
+      "id": "europe",
+      "countries": [
+        {
+          "id": "nl",
+          "name": {
+            "en": "Netherlands",
+            "nl": "Nederland"
+          },
+          "flag": "🇳🇱",
+          "wave": 1,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "nen1414-fire",
+                "iso7010-safety",
+                "nl-drafting-parametric",
+                "nl-stamps",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "north-america",
+      "countries": [
+        {
+          "id": "us",
+          "name": {
+            "en": "United States",
+            "nl": "Verenigde Staten"
+          },
+          "flag": "🇺🇸",
+          "wave": 1,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "nfpa170-fire",
+                "us-drafting-parametric",
+                "us-stamps",
+                "aisc-steel-shapes",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "collections": {
+    "aisc-steel-shapes": {
+      "name": {
+        "en": "US steel shapes (AISC)",
+        "nl": "Amerikaanse staalprofielen (AISC)"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/aisc-steel-shapes/",
+      "standard": "AISC"
+    },
+    "common-material-hatches": {
+      "name": {
+        "en": "Material hatch patterns",
+        "nl": "Materiaal-arceringen"
+      },
+      "sector": "aec",
+      "types": [
+        "hatches",
+        "legends"
+      ],
+      "scope": "international",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/common-material-hatches/"
+    },
+    "common-north-arrows": {
+      "name": {
+        "en": "North arrows",
+        "nl": "Noordpijlen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "international",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/common-north-arrows/",
+      "symbolCount": 4
+    },
+    "en-steel-profiles": {
+      "name": {
+        "en": "European steel profiles",
+        "nl": "Europese staalprofielen"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "regional",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/en-steel-profiles/",
+      "standard": "EN 10365"
+    },
+    "iso7010-safety": {
+      "name": {
+        "en": "Safety signs (ISO 7010)",
+        "nl": "Veiligheidssignalering (ISO 7010)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "international",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/iso7010-safety/",
+      "standard": "ISO 7010"
+    },
+    "nen1414-fire": {
+      "name": {
+        "en": "Fire safety drawing symbols (NEN 1414)",
+        "nl": "Brandveiligheidssymbolen (NEN 1414)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/nen1414-fire/",
+      "standard": "NEN 1414"
+    },
+    "nfpa170-fire": {
+      "name": {
+        "en": "Fire safety symbols (NFPA 170)",
+        "nl": "Brandveiligheidssymbolen (NFPA 170)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/nfpa170-fire/",
+      "standard": "NFPA 170"
+    },
+    "nl-drafting-parametric": {
+      "name": {
+        "en": "Dutch drafting components",
+        "nl": "Nederlandse tekenwerk-componenten"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/nl-drafting-parametric/"
+    },
+    "nl-stamps": {
+      "name": {
+        "en": "Dutch approval stamps",
+        "nl": "Nederlandse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/nl-stamps/"
+    },
+    "us-drafting-parametric": {
+      "name": {
+        "en": "US drafting components",
+        "nl": "Amerikaanse tekenwerk-componenten"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/us-drafting-parametric/"
+    },
+    "us-stamps": {
+      "name": {
+        "en": "US approval stamps",
+        "nl": "Amerikaanse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/us-stamps/"
+    }
+  }
+}
