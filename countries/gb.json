@@ -18,11 +18,13 @@
         "uk-steel-sections",
         "common-material-hatches",
         "common-north-arrows",
-        "iec60617-electrical"
+        "iec60617-electrical",
+        "uk-electrical"
       ]
     },
     "electrical": {
       "collections": [
+        "uk-electrical",
         "iec60617-electrical"
       ]
     },

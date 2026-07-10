@@ -1,0 +1,19 @@
+{
+  "id": "uk-electrical",
+  "name": {
+    "en": "UK electrical plan symbols",
+    "nl": "Britse elektrasymbolen"
+  },
+  "description": {
+    "en": "UK electrical floor-plan conventions: 13A sockets, cooker points, consumer units.",
+    "nl": "Britse elektra-plattegrondconventies: 13A-sockets, cooker points, consumer units."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

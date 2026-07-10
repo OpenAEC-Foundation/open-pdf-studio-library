@@ -18,11 +18,13 @@
         "en-steel-profiles",
         "common-material-hatches",
         "common-north-arrows",
-        "iec60617-electrical"
+        "iec60617-electrical",
+        "nl-electrical"
       ]
     },
     "electrical": {
       "collections": [
+        "nl-electrical",
         "iec60617-electrical"
       ]
     },

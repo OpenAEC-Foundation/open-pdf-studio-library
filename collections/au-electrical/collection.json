@@ -1,0 +1,20 @@
+{
+  "id": "au-electrical",
+  "name": {
+    "en": "Australian electrical plan symbols",
+    "nl": "Australische elektrasymbolen"
+  },
+  "description": {
+    "en": "Australian electrical floor-plan conventions: GPOs, smoke alarms (AS 3786), switchboards.",
+    "nl": "Australische elektra-plattegrondconventies: GPO's, smoke alarms (AS 3786), switchboards."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "standard": "AS 1102",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

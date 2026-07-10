@@ -1,0 +1,19 @@
+{
+  "id": "nl-electrical",
+  "name": {
+    "en": "Dutch electrical legend symbols",
+    "nl": "Nederlands elektra-renvooi"
+  },
+  "description": {
+    "en": "Dutch installation-drawing legend symbols, including loze leiding, meterkast and CAI.",
+    "nl": "Nederlandse renvooi-symbolen voor installatietekeningen, incl. loze leiding, meterkast en CAI."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

@@ -17,11 +17,13 @@
         "jis-steel-shapes",
         "common-material-hatches",
         "common-north-arrows",
-        "iec60617-electrical"
+        "iec60617-electrical",
+        "jp-electrical"
       ]
     },
     "electrical": {
       "collections": [
+        "jp-electrical",
         "iec60617-electrical"
       ]
     },

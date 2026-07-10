@@ -149,7 +149,7 @@ LU (hergebruik BE/FR/DE). Aanpak identiek aan Wave 2; verwacht hergebruik
 | Sector | Kern-normen | Status |
 |---|---|---|
 | `mep` (installatietechniek) | Nationale klimaat/sanitair-symboolreeksen | Eerste collectie beschikbaar: `common-hvac-symbols` (v1.0.0, 11) — in elk land-manifest |
-| `electrical` | IEC 60617 (internationaal!) + nationale reeksen | Eerste collectie beschikbaar: `iec60617-electrical` (v1.0.0, 20) — in elk land-manifest én in de AEC-pakketten |
+| `electrical` | IEC 60617 (internationaal!) + nationale reeksen | `iec60617-electrical` (20) in elk land-manifest én in de AEC-pakketten; nationale lagen beschikbaar voor NL (renvooi, 19), VS (IEEE 315, 19), JP (JIS C 0303, 14), VK (BS-conventies, 13), AU (AS 1102, 13) |
 | `process` (industrie/P&ID) | ISO 10628; in de VS de ISA-symboolreeks | Eerste collectie beschikbaar: `iso10628-pid` (v1.0.0, 14) — in elk land-manifest |
 | `infra` (GWW) | Nationale wegontwerp/riolering-symboolreeksen | Sterk nationaal bepaald — nog niet gestart |
 

@@ -58,9 +58,18 @@ Every preview below is generated straight from the repository content by
 ![German wall types in plan view](docs/media/preview-de-wall-types.svg)
 ![UK wall types in plan view](docs/media/preview-uk-wall-types.svg)
 
-### Other sectors — electrical (IEC 60617), process (ISO 10628), HVAC
+### Electrical — shared IEC 60617 layer + national conventions
 
-![Electrical installation symbols](docs/media/preview-iec60617-electrical.svg)
+🌍 IEC 60617 (every country) · 🇳🇱 Dutch legend practice · 🇺🇸 IEEE 315 · 🇯🇵 JIS C 0303 · 🇬🇧 BS conventions · 🇦🇺 AS 1102
+
+![Electrical installation symbols (IEC 60617)](docs/media/preview-iec60617-electrical.svg)
+![Dutch electrical legend symbols](docs/media/preview-nl-electrical.svg)
+![US electrical plan symbols](docs/media/preview-us-electrical.svg)
+![Japanese electrical plan symbols](docs/media/preview-jp-electrical.svg)
+![UK electrical plan symbols](docs/media/preview-uk-electrical.svg)
+![Australian electrical plan symbols](docs/media/preview-au-electrical.svg)
+
+### Other sectors — process (ISO 10628), HVAC
 ![P&ID symbols](docs/media/preview-iso10628-pid.svg)
 ![HVAC plan symbols](docs/media/preview-common-hvac-symbols.svg)
 

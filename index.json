@@ -488,11 +488,13 @@
                 "uk-steel-sections",
                 "common-material-hatches",
                 "common-north-arrows",
-                "iec60617-electrical"
+                "iec60617-electrical",
+                "uk-electrical"
               ]
             },
             "electrical": {
               "collections": [
+                "uk-electrical",
                 "iec60617-electrical"
               ]
             },
@@ -870,11 +872,13 @@
                 "en-steel-profiles",
                 "common-material-hatches",
                 "common-north-arrows",
-                "iec60617-electrical"
+                "iec60617-electrical",
+                "nl-electrical"
               ]
             },
             "electrical": {
               "collections": [
+                "nl-electrical",
                 "iec60617-electrical"
               ]
             },
@@ -1255,11 +1259,13 @@
                 "aisc-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
-                "iec60617-electrical"
+                "iec60617-electrical",
+                "us-electrical"
               ]
             },
             "electrical": {
               "collections": [
+                "us-electrical",
                 "iec60617-electrical"
               ]
             },
@@ -1501,11 +1507,13 @@
                 "jis-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
-                "iec60617-electrical"
+                "iec60617-electrical",
+                "jp-electrical"
               ]
             },
             "electrical": {
               "collections": [
+                "jp-electrical",
                 "iec60617-electrical"
               ]
             },
@@ -1581,11 +1589,13 @@
                 "au-steel-sections",
                 "common-material-hatches",
                 "common-north-arrows",
-                "iec60617-electrical"
+                "iec60617-electrical",
+                "au-electrical"
               ]
             },
             "electrical": {
               "collections": [
+                "au-electrical",
                 "iec60617-electrical"
               ]
             },
@@ -1634,6 +1644,22 @@
       "status": "planned",
       "version": "0.1.0",
       "path": "collections/at-fire-symbols/"
+    },
+    "au-electrical": {
+      "name": {
+        "en": "Australian electrical plan symbols",
+        "nl": "Australische elektrasymbolen"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/au-electrical/",
+      "standard": "AS 1102",
+      "symbolCount": 13
     },
     "au-fire-symbols": {
       "name": {
@@ -2403,6 +2429,23 @@
       "standard": "JIS G 3192",
       "symbolCount": 16
     },
+    "jp-electrical": {
+      "name": {
+        "en": "Japanese electrical plan symbols (JIS C 0303)",
+        "ja": "JIS C 0303 電気設備記号",
+        "nl": "Japanse elektrasymbolen (JIS C 0303)"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/jp-electrical/",
+      "standard": "JIS C 0303",
+      "symbolCount": 14
+    },
     "jp-fire-symbols": {
       "name": {
         "en": "Japanese fire safety drawing symbols",
@@ -2583,6 +2626,21 @@
       "status": "planned",
       "version": "0.1.0",
       "path": "collections/nl-drafting-parametric/"
+    },
+    "nl-electrical": {
+      "name": {
+        "en": "Dutch electrical legend symbols",
+        "nl": "Nederlands elektra-renvooi"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/nl-electrical/",
+      "symbolCount": 19
     },
     "nl-stamps": {
       "name": {
@@ -2891,6 +2949,21 @@
       "version": "0.1.0",
       "path": "collections/uk-drafting-parametric/"
     },
+    "uk-electrical": {
+      "name": {
+        "en": "UK electrical plan symbols",
+        "nl": "Britse elektrasymbolen"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/uk-electrical/",
+      "symbolCount": 13
+    },
     "uk-fire-symbols": {
       "name": {
         "en": "Fire safety drawing symbols (UK)",
@@ -2964,6 +3037,22 @@
       "status": "planned",
       "version": "0.1.0",
       "path": "collections/us-drafting-parametric/"
+    },
+    "us-electrical": {
+      "name": {
+        "en": "US electrical plan symbols",
+        "nl": "Amerikaanse elektrasymbolen"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/us-electrical/",
+      "standard": "IEEE 315",
+      "symbolCount": 19
     },
     "us-stamps": {
       "name": {

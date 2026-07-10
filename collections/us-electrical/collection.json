@@ -1,0 +1,20 @@
+{
+  "id": "us-electrical",
+  "name": {
+    "en": "US electrical plan symbols",
+    "nl": "Amerikaanse elektrasymbolen"
+  },
+  "description": {
+    "en": "US electrical floor-plan conventions: duplex receptacles, S/S3/S4 switches, panelboards.",
+    "nl": "Amerikaanse elektra-plattegrondconventies: duplex receptacles, S/S3/S4-schakelaars, panelboards."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "standard": "IEEE 315",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

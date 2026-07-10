@@ -1,0 +1,21 @@
+{
+  "id": "jp-electrical",
+  "name": {
+    "en": "Japanese electrical plan symbols (JIS C 0303)",
+    "ja": "JIS C 0303 電気設備記号",
+    "nl": "Japanse elektrasymbolen (JIS C 0303)"
+  },
+  "description": {
+    "en": "Japanese electrical floor-plan symbols: filled-dot switches, outlets, distribution boards.",
+    "nl": "Japanse elektra-plattegrondsymbolen: gevulde-punt-schakelaars, outlets, verdeelborden."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "standard": "JIS C 0303",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

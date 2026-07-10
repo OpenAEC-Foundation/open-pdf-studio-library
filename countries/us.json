@@ -17,11 +17,13 @@
         "aisc-steel-shapes",
         "common-material-hatches",
         "common-north-arrows",
-        "iec60617-electrical"
+        "iec60617-electrical",
+        "us-electrical"
       ]
     },
     "electrical": {
       "collections": [
+        "us-electrical",
         "iec60617-electrical"
       ]
     },
