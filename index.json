@@ -5,6 +5,29 @@
       "id": "europe",
       "countries": [
         {
+          "id": "de",
+          "name": {
+            "en": "Germany",
+            "de": "Deutschland",
+            "nl": "Duitsland"
+          },
+          "flag": "🇩🇪",
+          "wave": 1,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "din14034-fire",
+                "iso7010-safety",
+                "de-drafting-parametric",
+                "de-stamps",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        },
+        {
           "id": "nl",
           "name": {
             "en": "Netherlands",
@@ -100,6 +123,53 @@
       "version": "1.0.0",
       "path": "collections/common-north-arrows/",
       "symbolCount": 4
+    },
+    "de-drafting-parametric": {
+      "name": {
+        "en": "German drafting components",
+        "de": "Deutsche Zeichnungskomponenten",
+        "nl": "Duitse tekenwerk-componenten"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/de-drafting-parametric/"
+    },
+    "de-stamps": {
+      "name": {
+        "en": "German approval stamps",
+        "de": "Deutsche Prüf- und Freigabestempel",
+        "nl": "Duitse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/de-stamps/"
+    },
+    "din14034-fire": {
+      "name": {
+        "en": "Fire safety symbols for fire brigade plans (DIN 14034-6)",
+        "de": "Brandschutzsymbole für Feuerwehrpläne (DIN 14034-6)",
+        "nl": "Brandveiligheidssymbolen voor Feuerwehrpläne (DIN 14034-6)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/din14034-fire/",
+      "standard": "DIN 14034-6",
+      "symbolCount": 31
     },
     "en-steel-profiles": {
       "name": {

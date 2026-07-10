@@ -50,9 +50,9 @@ profielen en papierformaten. Hergebruik van de EN/ISO-laag is beperkt (± 20%).
 
 | Collectie | Inhoud | Status |
 |---|---|---|
-| `nfpa170-fire` | Brandveiligheidssymbolen volgens NFPA 170 (detectie, alarmering, blussing, egress) — zelf hertekend | gepland |
+| `nfpa170-fire` | Brandveiligheidssymbolen volgens NFPA 170 (detectie, alarmering, blussing, egress) — zelf hertekend | beschikbaar (v1.0.0, 31 symbolen) |
 | `us-drafting-parametric` | Grid bubbles, elevation datums (ft-in), section/detail markers, rebar callouts (`#4 @ 12" o.c.`) | gepland |
-| `us-stamps` | APPROVED / REJECTED / REVISED / FOR CONSTRUCTION / NOT FOR CONSTRUCTION / PRELIMINARY / DRAFT | gepland |
+| `us-stamps` | APPROVED / REJECTED / REVISED / FOR CONSTRUCTION / NOT FOR CONSTRUCTION / PRELIMINARY / DRAFT | beschikbaar (v1.0.0, 16 stempels) |
 | `aisc-steel-shapes` | Parametrische AISC-profielen: W, S, C, L, HSS | gepland |
 | `common-material-hatches` | + Amerikaanse arceringsvarianten waar afwijkend | gedeeld |
 | `common-north-arrows` | — | beschikbaar |
@@ -76,9 +76,9 @@ Hergebruik ± 60% (ISO/EN-laag). Nationale laag:
 
 | Collectie | Inhoud | Status |
 |---|---|---|
-| `din14034-fire` | Brandveiligheidssymbolen voor Feuerwehrpläne (DIN 14034-6, DIN 14095) | te definiëren in Wave-1-productie |
-| `de-drafting-parametric` | Achsen, Höhenkoten (DIN 406-notatie), Bewehrung-callouts | idem |
-| `de-stamps` | GEPRÜFT / FREIGEGEBEN / ZUR GENEHMIGUNG / ENTWURF / VORABZUG | idem |
+| `din14034-fire` | Brandveiligheidssymbolen voor Feuerwehrpläne (DIN 14034-6, DIN 14095) | beschikbaar (v1.0.0, 31 symbolen) |
+| `de-drafting-parametric` | Achsen, Höhenkoten (DIN 406-notatie), Bewehrung-callouts | gepland (wacht op parametrisch formaat) |
+| `de-stamps` | GEPRÜFT / FREIGEGEBEN / ZUR GENEHMIGUNG / ENTWURF / VORABZUG | beschikbaar (v1.0.0, 13 stempels) |
 
 ### 5.4 🇬🇧 Verenigd Koninkrijk
 
