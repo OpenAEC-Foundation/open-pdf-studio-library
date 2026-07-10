@@ -1,0 +1,20 @@
+{
+  "name": "open-pdf-studio-library",
+  "version": "0.1.0",
+  "description": "Worldwide symbol, stamp and template library for Open PDF Studio",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenAEC-Foundation/open-pdf-studio-library.git"
+  },
+  "scripts": {
+    "test": "node --test tests/",
+    "validate": "node scripts/validate.mjs",
+    "build-index": "node scripts/build-index.mjs",
+    "check-index": "node scripts/build-index.mjs --check"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0"
+  }
+}
