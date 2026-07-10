@@ -1,0 +1,20 @@
+{
+  "id": "nl",
+  "name": { "en": "Netherlands", "nl": "Nederland" },
+  "flag": "🇳🇱",
+  "region": "europe",
+  "wave": 1,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "nen1414-fire",
+        "iso7010-safety",
+        "nl-drafting-parametric",
+        "nl-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}
