@@ -1,0 +1,17 @@
+{
+  "stamps": [
+    { "id": "geprueft", "text": "GEPRÜFT", "color": "#22c55e" },
+    { "id": "freigegeben", "text": "FREIGEGEBEN", "color": "#22c55e" },
+    { "id": "zur-ausfuehrung", "text": "ZUR AUSFÜHRUNG", "color": "#22c55e" },
+    { "id": "nicht-zur-ausfuehrung", "text": "NICHT ZUR AUSFÜHRUNG", "color": "#ef4444" },
+    { "id": "abgelehnt", "text": "ABGELEHNT", "color": "#ef4444" },
+    { "id": "zur-genehmigung", "text": "ZUR GENEHMIGUNG", "color": "#f59e0b" },
+    { "id": "zur-pruefung", "text": "ZUR PRÜFUNG", "color": "#f59e0b" },
+    { "id": "vorabzug", "text": "VORABZUG", "color": "#f59e0b" },
+    { "id": "entwurf", "text": "ENTWURF", "color": "#3b82f6" },
+    { "id": "gesehen", "text": "GESEHEN", "color": "#3b82f6" },
+    { "id": "geaendert", "text": "GEÄNDERT", "color": "#8b5cf6" },
+    { "id": "bestandsplan", "text": "BESTANDSPLAN", "color": "#6b7280" },
+    { "id": "ungueltig", "text": "UNGÜLTIG", "color": "#6b7280" }
+  ]
+}

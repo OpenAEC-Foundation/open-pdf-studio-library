@@ -1,0 +1,19 @@
+{
+  "id": "de-drafting-parametric",
+  "name": {
+    "en": "German drafting components",
+    "de": "Deutsche Zeichnungskomponenten",
+    "nl": "Duitse tekenwerk-componenten"
+  },
+  "description": {
+    "en": "Parametric components for German drawings: grid axes, level marks (DIN 406 notation), rebar callouts.",
+    "de": "Parametrische Komponenten: Achsen, Höhenkoten (DIN 406), Bewehrungsangaben.",
+    "nl": "Parametrische componenten: stramienen, hoogtematen (DIN 406-notatie), wapening-callouts."
+  },
+  "sector": "aec",
+  "types": ["parametric"],
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

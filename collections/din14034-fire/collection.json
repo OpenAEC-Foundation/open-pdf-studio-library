@@ -1,0 +1,20 @@
+{
+  "id": "din14034-fire",
+  "name": {
+    "en": "Fire safety symbols for fire brigade plans (DIN 14034-6)",
+    "de": "Brandschutzsymbole für Feuerwehrpläne (DIN 14034-6)",
+    "nl": "Brandveiligheidssymbolen voor Feuerwehrpläne (DIN 14034-6)"
+  },
+  "description": {
+    "en": "Symbols commonly used on German fire brigade plans (DIN 14095) and fire protection drawings.",
+    "de": "Gängige Symbole für Feuerwehrpläne (DIN 14095) und Brandschutzpläne.",
+    "nl": "Gangbare symbolen op Duitse Feuerwehrpläne (DIN 14095) en brandveiligheidstekeningen."
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "standard": "DIN 14034-6",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "de-stamps",
+  "name": {
+    "en": "German approval stamps",
+    "de": "Deutsche Prüf- und Freigabestempel",
+    "nl": "Duitse stempels"
+  },
+  "sector": "aec",
+  "types": ["stamps"],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}
