@@ -8,7 +8,7 @@
   "types": ["symbols"],
   "standard": "NFPA 170",
   "scope": "national",
-  "status": "planned",
-  "version": "0.1.0",
+  "status": "available",
+  "version": "1.0.0",
   "license": "repository"
 }
