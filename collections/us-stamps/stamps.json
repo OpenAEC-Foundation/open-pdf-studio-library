@@ -1,0 +1,20 @@
+{
+  "stamps": [
+    { "id": "approved", "text": "APPROVED", "color": "#22c55e" },
+    { "id": "approved-as-noted", "text": "APPROVED AS NOTED", "color": "#22c55e" },
+    { "id": "rejected", "text": "REJECTED", "color": "#ef4444" },
+    { "id": "revise-and-resubmit", "text": "REVISE AND RESUBMIT", "color": "#ef4444" },
+    { "id": "reviewed", "text": "REVIEWED", "color": "#3b82f6" },
+    { "id": "revised", "text": "REVISED", "color": "#8b5cf6" },
+    { "id": "for-construction", "text": "FOR CONSTRUCTION", "color": "#22c55e" },
+    { "id": "not-for-construction", "text": "NOT FOR CONSTRUCTION", "color": "#ef4444" },
+    { "id": "issued-for-permit", "text": "ISSUED FOR PERMIT", "color": "#f59e0b" },
+    { "id": "issued-for-bid", "text": "ISSUED FOR BID", "color": "#f59e0b" },
+    { "id": "for-review", "text": "FOR REVIEW", "color": "#f59e0b" },
+    { "id": "preliminary", "text": "PRELIMINARY", "color": "#f59e0b" },
+    { "id": "draft", "text": "DRAFT", "color": "#3b82f6" },
+    { "id": "as-built", "text": "AS-BUILT", "color": "#6b7280" },
+    { "id": "record-drawing", "text": "RECORD DRAWING", "color": "#6b7280" },
+    { "id": "void", "text": "VOID", "color": "#6b7280" }
+  ]
+}
