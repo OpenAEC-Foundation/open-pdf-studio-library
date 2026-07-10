@@ -1,0 +1,71 @@
+name: "🌍 Country request / adoption"
+description: Request your country's library or volunteer to build it — local market knowledge is all you need.
+title: "country: "
+labels: ["country", "content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make Open PDF Studio speak your country's drawing language!
+        Fill in what you know — partial answers are welcome. See
+        [contributing-content.md](../blob/main/docs/contributing-content.md) for how
+        contributions work and [MASTERPLAN.md](../blob/main/MASTERPLAN.md) for the rollout plan.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Country name and ISO code if you know it (e.g. "France (fr)").
+      placeholder: France (fr)
+    validations:
+      required: true
+  - type: dropdown
+    id: involvement
+    attributes:
+      label: How would you like to be involved?
+      multiple: true
+      options:
+        - Adopt the country — define the manifest and national collections
+        - Draw a collection (symbols / hatches / drafting conventions)
+        - Add the approval stamps used in my language (~15 minutes)
+        - Review proposed content — I know what real drawings look like here
+        - Just requesting — I'd use it, but can't contribute right now
+    validations:
+      required: true
+  - type: textarea
+    id: drawings
+    attributes:
+      label: What's used on drawings in your market?
+      description: >
+        Which standards, symbol sets, stamps or conventions appear on real
+        construction drawings where you work? Standard names/numbers (ISO, EN,
+        DIN, NF, BS, ...) are welcome and encouraged.
+      placeholder: |
+        - Fire safety plans follow ...
+        - Approval stamps we use: ...
+        - Steel profiles / drafting notation: ...
+    validations:
+      required: false
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Sector
+      description: Phase 1 is AEC (construction); other sectors come later.
+      options:
+        - AEC (construction)
+        - MEP / building services
+        - Electrical
+        - Process / P&ID
+        - Infrastructure
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Ground rules
+      description: All content in this library is original work.
+      options:
+        - label: I understand all symbols are drawn from scratch — no copies or vector extractions from standards documents, other software's cliparts, or scanned material.
+          required: true
+        - label: I won't reference third-party commercial software products in contributed content.
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📐 Data format & drawing guidelines
+    url: https://github.com/OpenAEC-Foundation/open-pdf-studio-library/blob/main/docs/data-format.md
+    about: How collections, country manifests and SVG symbols are structured.
+  - name: 🗺️ Worldwide rollout plan
+    url: https://github.com/OpenAEC-Foundation/open-pdf-studio-library/blob/main/MASTERPLAN.md
+    about: Which countries and sectors are coming, wave by wave.

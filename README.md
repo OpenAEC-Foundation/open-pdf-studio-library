@@ -80,9 +80,8 @@ Studio speak your country's drawing language** — usually in a weekend:
   Reviewing a proposed collection is just as valuable as drawing one.
 
 Start with [docs/contributing-content.md](docs/contributing-content.md),
-or simply [open an issue](https://github.com/OpenAEC-Foundation/open-pdf-studio-library/issues)
-titled `country: <your country>` and tell us what's used on drawings where
-you work. Every symbol is drawn from scratch — no content is ever copied
+or simply [open a country request](https://github.com/OpenAEC-Foundation/open-pdf-studio-library/issues/new?template=country-request.yml)
+and tell us what's used on drawings where you work. Every symbol is drawn from scratch — no content is ever copied
 from standards documents, so contributions stay clean.
 
 ## Tooling
