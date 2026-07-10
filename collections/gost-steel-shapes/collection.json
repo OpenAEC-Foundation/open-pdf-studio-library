@@ -1,0 +1,21 @@
+{
+  "id": "gost-steel-shapes",
+  "name": {
+    "en": "Russian steel shapes (GOST)",
+    "ru": "Прокат ГОСТ",
+    "nl": "Russische staalprofielen (GOST)"
+  },
+  "description": {
+    "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Parametric sizing follows once the parametric format lands.",
+    "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Parametrische maatvoering volgt zodra het parametrische formaat er is."
+  },
+  "sector": "aec",
+  "types": [
+    "symbols"
+  ],
+  "standard": "GOST 8239",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

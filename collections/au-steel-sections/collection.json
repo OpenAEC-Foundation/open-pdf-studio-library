@@ -5,15 +5,16 @@
     "nl": "Australische staalprofielen (AS/NZS)"
   },
   "description": {
-    "en": "Parametric AS/NZS sections: UB, UC, PFC, angles, RHS/SHS/CHS."
+    "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Parametric sizing follows once the parametric format lands.",
+    "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Parametrische maatvoering volgt zodra het parametrische formaat er is."
   },
+  "sector": "aec",
   "types": [
-    "parametric"
+    "symbols"
   ],
   "standard": "AS/NZS 3679",
   "scope": "national",
-  "sector": "aec",
-  "license": "repository",
-  "status": "planned",
-  "version": "0.1.0"
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
 }

@@ -131,15 +131,15 @@ LU (hergebruik BE/FR/DE). Aanpak identiek aan Wave 2; verwacht hergebruik
 | Land/regio | Aanpak |
 |---|---|
 | 🇨🇦 Canada | VS-collecties + tweetalige stempels (EN/FR) + CSA-check |
-| 🇦🇺 AU / 🇳🇿 NZ | AS/NZS-staalprofielen; verder VK-achtig |
-| 🇯🇵 JP | JIS-symboliek — eigen productieronde |
-| 🇰🇷 KR | KS-symboliek |
-| 🇨🇳 CN | GB-symboliek |
-| 🇮🇳 IN | IS-symboliek; Engelstalige stempels |
-| 🇧🇷 BR | ABNT-conventies; Portugese stempels |
+| 🇦🇺 AU / 🇳🇿 NZ | AS/NZS-staalprofielen (beschikbaar, 15 symbolen); verder VK-achtig |
+| 🇯🇵 JP | JIS-symboliek — eigen productieronde; JIS-staalprofielen beschikbaar |
+| 🇰🇷 KR | KS-symboliek; KS-staalprofielen beschikbaar |
+| 🇨🇳 CN | GB-symboliek; GB-staalprofielen beschikbaar |
+| 🇮🇳 IN | IS-symboliek; Engelstalige stempels; IS 808-staalprofielen beschikbaar |
+| 🇧🇷 BR | ABNT-conventies; Portugese stempels; W-serie-staalprofielen beschikbaar |
 | 🇲🇽 MX + LATAM | Spaanse stempels; mix VS/EU-conventies |
 | 🇹🇷 Türkiye | CEN-lid: volledige hergebruik EN/ISO-laag + Turkse stempels |
-| 🇷🇺 Rusland | GOST/SPDS-documentatiepraktijk; Cyrillische stempels |
+| 🇷🇺 Rusland | GOST/SPDS-documentatiepraktijk; Cyrillische stempels; GOST-staalprofielen beschikbaar |
 | 🇿🇦 Zuid-Afrika | Engelstalige stempels; SANS-symboliek te researchen; eerste Afrikaanse land |
 | 🇮🇱 Israël | EU/VS-mix; Hebreeuwse stempels (RTL); Europese staalprofielen gangbaar |
 | Golfregio | VS/VK-mix; Engels + Arabisch |

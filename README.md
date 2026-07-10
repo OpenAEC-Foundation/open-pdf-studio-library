@@ -36,11 +36,20 @@ Every preview below is generated straight from the repository content by
 
 ![NEN 1414 fire safety symbols](docs/media/preview-nen1414-fire.svg)
 
-### Steel cross-sections — 🇺🇸 AISC, 🇪🇺 EN 10365 (shared), 🇬🇧 UK sections
+### Steel sections worldwide — real table geometry, fillets, centre lines, elevations
+
+🇺🇸 AISC · 🇪🇺 EN 10365 (shared across Europe) · 🇬🇧 UK · 🇯🇵 JIS · 🇰🇷 KS · 🇨🇳 GB · 🇮🇳 IS 808 · 🇦🇺 AS/NZS · 🇷🇺 GOST · 🇧🇷 W series
 
 ![AISC steel shape cross-sections](docs/media/preview-aisc-steel-shapes.svg)
 ![European steel profile cross-sections](docs/media/preview-en-steel-profiles.svg)
 ![UK steel section cross-sections](docs/media/preview-uk-steel-sections.svg)
+![Japanese JIS steel shapes](docs/media/preview-jis-steel-shapes.svg)
+![Korean KS steel shapes](docs/media/preview-ks-steel-shapes.svg)
+![Chinese GB steel shapes](docs/media/preview-gb-steel-shapes.svg)
+![Indian IS 808 steel shapes](docs/media/preview-is-steel-shapes.svg)
+![Australian AS/NZS steel sections](docs/media/preview-au-steel-sections.svg)
+![Russian GOST steel shapes](docs/media/preview-gost-steel-shapes.svg)
+![Brazilian W series steel shapes](docs/media/preview-br-steel-shapes.svg)
 
 ### Wall types in plan view — 🇺🇸 🇩🇪 🇬🇧 🇳🇱
 

@@ -1057,6 +1057,7 @@
                 "ru-fire-symbols",
                 "iso7010-safety",
                 "ru-stamps",
+                "gost-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1294,6 +1295,7 @@
                 "br-fire-symbols",
                 "iso7010-safety",
                 "br-stamps",
+                "br-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1421,6 +1423,7 @@
                 "cn-fire-symbols",
                 "iso7010-safety",
                 "cn-stamps",
+                "gb-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1457,6 +1460,7 @@
                 "in-fire-symbols",
                 "iso7010-safety",
                 "in-stamps",
+                "is-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1494,6 +1498,7 @@
                 "jp-fire-symbols",
                 "iso7010-safety",
                 "jp-stamps",
+                "jis-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1531,6 +1536,7 @@
                 "kr-fire-symbols",
                 "iso7010-safety",
                 "kr-stamps",
+                "ks-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows",
                 "iec60617-electrical"
@@ -1664,13 +1670,14 @@
       },
       "sector": "aec",
       "types": [
-        "parametric"
+        "symbols"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/au-steel-sections/",
-      "standard": "AS/NZS 3679"
+      "standard": "AS/NZS 3679",
+      "symbolCount": 15
     },
     "be-stamps": {
       "name": {
@@ -1745,6 +1752,22 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/br-stamps/"
+    },
+    "br-steel-shapes": {
+      "name": {
+        "en": "Brazilian steel shapes (W series)",
+        "pt": "Perfis de aço (série W)",
+        "nl": "Braziliaanse staalprofielen (W-serie)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/br-steel-shapes/",
+      "symbolCount": 14
     },
     "ch-fire-symbols": {
       "name": {
@@ -2090,6 +2113,40 @@
       "version": "1.0.0",
       "path": "collections/fr-stamps/"
     },
+    "gb-steel-shapes": {
+      "name": {
+        "en": "Chinese steel shapes (GB)",
+        "zh": "GB 型钢",
+        "nl": "Chinese staalprofielen (GB)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/gb-steel-shapes/",
+      "standard": "GB/T 706",
+      "symbolCount": 16
+    },
+    "gost-steel-shapes": {
+      "name": {
+        "en": "Russian steel shapes (GOST)",
+        "ru": "Прокат ГОСТ",
+        "nl": "Russische staalprofielen (GOST)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/gost-steel-shapes/",
+      "standard": "GOST 8239",
+      "symbolCount": 15
+    },
     "gr-fire-symbols": {
       "name": {
         "en": "Greek fire safety plan symbols",
@@ -2252,6 +2309,22 @@
       "version": "1.0.0",
       "path": "collections/in-stamps/"
     },
+    "is-steel-shapes": {
+      "name": {
+        "en": "Indian steel shapes (IS 808)",
+        "nl": "Indiase staalprofielen (IS 808)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/is-steel-shapes/",
+      "standard": "IS 808",
+      "symbolCount": 15
+    },
     "iso10628-pid": {
       "name": {
         "en": "P&ID symbols (ISO 10628)",
@@ -2313,6 +2386,23 @@
       "version": "1.0.0",
       "path": "collections/it-stamps/"
     },
+    "jis-steel-shapes": {
+      "name": {
+        "en": "Japanese steel shapes (JIS)",
+        "ja": "JIS形鋼",
+        "nl": "Japanse staalprofielen (JIS)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/jis-steel-shapes/",
+      "standard": "JIS G 3192",
+      "symbolCount": 16
+    },
     "jp-fire-symbols": {
       "name": {
         "en": "Japanese fire safety drawing symbols",
@@ -2372,6 +2462,23 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/kr-stamps/"
+    },
+    "ks-steel-shapes": {
+      "name": {
+        "en": "Korean steel shapes (KS)",
+        "ko": "KS 형강",
+        "nl": "Koreaanse staalprofielen (KS)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/ks-steel-shapes/",
+      "standard": "KS D 3502",
+      "symbolCount": 15
     },
     "lt-fire-symbols": {
       "name": {
