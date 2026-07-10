@@ -65,6 +65,33 @@ export function validateSvg(svg, label) {
   return errors;
 }
 
+// stamps.json: { stamps: [{ id, text, color }] } — sluit aan op het
+// stamp-model van de app (name/text/color); id is de stabiele sleutel.
+export function validateStampsJson(data, label) {
+  const errors = [];
+  if (!data || !Array.isArray(data.stamps) || data.stamps.length === 0) {
+    errors.push(`${label}: "stamps" moet een niet-lege array zijn`);
+    return errors;
+  }
+  const seen = new Set();
+  data.stamps.forEach((s, i) => {
+    const where = `${label}: stamps[${i}]`;
+    if (!s || typeof s !== 'object') { errors.push(`${where}: geen object`); return; }
+    if (typeof s.id !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(s.id)) {
+      errors.push(`${where}: id moet kebab-case zijn`);
+    } else if (seen.has(s.id)) {
+      errors.push(`${where}: dubbele id "${s.id}"`);
+    } else {
+      seen.add(s.id);
+    }
+    if (typeof s.text !== 'string' || !s.text.trim()) errors.push(`${where}: text ontbreekt`);
+    if (typeof s.color !== 'string' || !/^#[0-9a-fA-F]{6}$/.test(s.color)) {
+      errors.push(`${where}: color moet #rrggbb zijn`);
+    }
+  });
+  return errors;
+}
+
 export function runAll(root = ROOT) {
   const errors = [];
   const collectionIds = new Set();
@@ -101,6 +128,14 @@ export function runAll(root = ROOT) {
         for (const [type, file] of Object.entries(TYPE_FILES)) {
           if (data.types.includes(type) && !existsSync(join(collectionsDir, dir, file))) {
             errors.push(`${dir}: status "available" met type "${type}" maar ${file} ontbreekt`);
+          }
+        }
+        const stampsPath = join(collectionsDir, dir, 'stamps.json');
+        if (data.types.includes('stamps') && existsSync(stampsPath)) {
+          try {
+            errors.push(...validateStampsJson(loadJson(stampsPath), `${dir}/stamps.json`));
+          } catch (e) {
+            errors.push(`${dir}/stamps.json: ongeldige JSON — ${e.message}`);
           }
         }
       }

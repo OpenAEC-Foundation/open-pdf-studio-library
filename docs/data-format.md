@@ -46,6 +46,29 @@ Content files per type (required once `status` is `available`):
 - One symbol per file; the file name (kebab-case) is the symbol id.
 - Text inside symbols: `text-anchor="middle"`, `fill="#000" stroke="none"`.
 
+## Stamps
+
+`stamps.json` in a collection with type `stamps`:
+
+```json
+{
+  "stamps": [
+    { "id": "approved", "text": "APPROVED", "color": "#22c55e" },
+    { "id": "draft", "text": "DRAFT", "color": "#3b82f6" }
+  ]
+}
+```
+
+- `id` — kebab-case, unique within the collection.
+- `text` — the stamp text as it appears on the drawing, in the market's
+  language and conventional casing (usually uppercase).
+- `color` — `#rrggbb`; conventions: green = approved/positive,
+  red = rejected/negative, blue = informational, amber = provisional,
+  gray = void/archival.
+
+This maps 1:1 onto the app's built-in stamp model (`text`/`color`); the app
+renders the bordered stamp shape itself.
+
 ## Country manifest
 
 `countries/<iso2>.json`, validated by `schema/country.schema.json`:

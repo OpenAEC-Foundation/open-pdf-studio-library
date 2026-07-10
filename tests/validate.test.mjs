@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { validateCollectionJson, validateCountryJson, validateSvg } from '../scripts/validate.mjs';
+import { validateCollectionJson, validateCountryJson, validateSvg, validateStampsJson } from '../scripts/validate.mjs';
 
 const goodCollection = {
   id: 'test-set',
@@ -68,4 +68,45 @@ test('svg with external href is rejected', () => {
 test('svg with script tag is rejected', () => {
   const svg = '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><script>alert(1)</script></svg>';
   assert.ok(validateSvg(svg, 'a.svg').length > 0);
+});
+
+const goodStamps = {
+  stamps: [
+    { id: 'approved', text: 'APPROVED', color: '#22c55e' },
+    { id: 'draft', text: 'DRAFT', color: '#3b82f6' }
+  ]
+};
+
+test('valid stamps.json passes', () => {
+  assert.deepEqual(validateStampsJson(goodStamps, 'x/stamps.json'), []);
+});
+
+test('stamps.json without stamps array is rejected', () => {
+  assert.ok(validateStampsJson({}, 'x/stamps.json').length > 0);
+  assert.ok(validateStampsJson({ stamps: [] }, 'x/stamps.json').length > 0);
+});
+
+test('stamp with bad id is rejected', () => {
+  const bad = { stamps: [{ id: 'Bad ID', text: 'X', color: '#000000' }] };
+  assert.ok(validateStampsJson(bad, 'x/stamps.json').length > 0);
+});
+
+test('stamp with bad color is rejected', () => {
+  const bad = { stamps: [{ id: 'ok', text: 'X', color: 'red' }] };
+  assert.ok(validateStampsJson(bad, 'x/stamps.json').length > 0);
+});
+
+test('stamp without text is rejected', () => {
+  const bad = { stamps: [{ id: 'ok', color: '#000000' }] };
+  assert.ok(validateStampsJson(bad, 'x/stamps.json').length > 0);
+});
+
+test('duplicate stamp ids are rejected', () => {
+  const bad = {
+    stamps: [
+      { id: 'dup', text: 'A', color: '#000000' },
+      { id: 'dup', text: 'B', color: '#111111' }
+    ]
+  };
+  assert.ok(validateStampsJson(bad, 'x/stamps.json').length > 0);
 });
