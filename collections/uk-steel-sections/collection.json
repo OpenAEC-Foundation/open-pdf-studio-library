@@ -5,14 +5,13 @@
     "nl": "Britse staalprofielen"
   },
   "description": {
-    "en": "Parametric UK sections: UB, UC, PFC, RSA."
+    "en": "Cross-section symbols for UK sections: UB, UC, PFC, RSA angles, tees, SHS/RHS/CHS, flat. Parametric sizing follows once the parametric format lands.",
+    "nl": "Doorsnede-symbolen voor Britse profielen: UB, UC, PFC, RSA-hoekstaal, T, kokers/buis, strip. Parametrische maatvoering volgt zodra het parametrische formaat er is."
   },
-  "types": [
-    "parametric"
-  ],
-  "scope": "national",
   "sector": "aec",
-  "license": "repository",
-  "status": "planned",
-  "version": "0.1.0"
+  "types": ["symbols"],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
 }

@@ -1,0 +1,17 @@
+{
+  "id": "uk-wall-types",
+  "name": {
+    "en": "UK wall types (plan view)",
+    "nl": "Britse wandtypen (plattegrond)"
+  },
+  "description": {
+    "en": "Plan-view wall segments per UK drawing practice: brickwork, blockwork, cavity wall, timber/metal stud, fire-rated partitions (30/60 min).",
+    "nl": "Wandsegmenten in plattegrond volgens Britse tekenpraktijk: brickwork, blockwork, spouwmuur, houten/metalen stijlwerk, brandwerende scheidingen (30/60 min)."
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "de-wall-types",
+  "name": {
+    "en": "German wall types (plan view)",
+    "de": "Deutsche Wandtypen (Grundriss)",
+    "nl": "Duitse wandtypen (plattegrond)"
+  },
+  "description": {
+    "en": "Plan-view wall segments per German drawing practice (DIN 1356 hatching conventions): Mauerwerk, Stahlbeton, Trockenbau, Brandwand F30/F90.",
+    "de": "Wandsegmente im Grundriss nach deutscher Zeichenpraxis (DIN 1356): Mauerwerk, Stahlbeton, Trockenbau, Brandwand F30/F90.",
+    "nl": "Wandsegmenten in plattegrond volgens Duitse tekenpraktijk (DIN 1356): metselwerk, gewapend beton, droogbouw, brandwanden F30/F90."
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "standard": "DIN 1356",
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

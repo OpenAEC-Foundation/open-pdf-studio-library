@@ -83,6 +83,10 @@ symbolSheet('din14034-fire', 'preview-din14034-fire.svg');
 symbolSheet('uk-fire-symbols', 'preview-uk-fire-symbols.svg');
 symbolSheet('aisc-steel-shapes', 'preview-aisc-steel-shapes.svg');
 symbolSheet('us-wall-types', 'preview-us-wall-types.svg');
+symbolSheet('en-steel-profiles', 'preview-en-steel-profiles.svg');
+symbolSheet('uk-steel-sections', 'preview-uk-steel-sections.svg');
+symbolSheet('de-wall-types', 'preview-de-wall-types.svg');
+symbolSheet('uk-wall-types', 'preview-uk-wall-types.svg');
 symbolSheet('common-north-arrows', 'preview-north-arrows.svg');
 stampSheet(
   [

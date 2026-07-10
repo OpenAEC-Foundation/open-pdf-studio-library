@@ -20,6 +20,7 @@
                 "iso7010-safety",
                 "de-drafting-parametric",
                 "de-stamps",
+                "de-wall-types",
                 "en-steel-profiles",
                 "common-material-hatches",
                 "common-north-arrows"
@@ -86,6 +87,7 @@
                 "iso7010-safety",
                 "uk-drafting-parametric",
                 "uk-stamps",
+                "uk-wall-types",
                 "uk-steel-sections",
                 "common-material-hatches",
                 "common-north-arrows"
@@ -578,6 +580,23 @@
       "version": "1.0.0",
       "path": "collections/de-stamps/"
     },
+    "de-wall-types": {
+      "name": {
+        "en": "German wall types (plan view)",
+        "de": "Deutsche Wandtypen (Grundriss)",
+        "nl": "Duitse wandtypen (plattegrond)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/de-wall-types/",
+      "standard": "DIN 1356",
+      "symbolCount": 9
+    },
     "din14034-fire": {
       "name": {
         "en": "Fire safety symbols for fire brigade plans (DIN 14034-6)",
@@ -602,13 +621,14 @@
       },
       "sector": "aec",
       "types": [
-        "parametric"
+        "symbols"
       ],
       "scope": "regional",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/en-steel-profiles/",
-      "standard": "EN 10365"
+      "standard": "EN 10365",
+      "symbolCount": 12
     },
     "es-fire-symbols": {
       "name": {
@@ -1034,12 +1054,28 @@
       },
       "sector": "aec",
       "types": [
-        "parametric"
+        "symbols"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
-      "path": "collections/uk-steel-sections/"
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/uk-steel-sections/",
+      "symbolCount": 10
+    },
+    "uk-wall-types": {
+      "name": {
+        "en": "UK wall types (plan view)",
+        "nl": "Britse wandtypen (plattegrond)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/uk-wall-types/",
+      "symbolCount": 8
     },
     "us-drafting-parametric": {
       "name": {

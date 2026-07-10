@@ -43,7 +43,7 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 | Collectie | Inhoud | Hergebruikt door |
 |---|---|---|
 | `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — kernset ± 60 symbolen | Alle landen behalve VS (VS gebruikt eigen conventies) |
-| `en-steel-profiles` | Parametrische Europese staalprofielen (HEA/HEB/HEM, IPE, UNP, kokers, buizen) | Alle Europese landen |
+| `en-steel-profiles` | Europese staalprofiel-doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) — beschikbaar (v1.0.0, 12 doorsneden); parametrische maatvoering volgt | Alle Europese landen |
 | `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) — beschikbaar (v1.0.0, 12 patronen in het line-family-formaat van de app); renvooi-templates volgen als apart type | Wereldwijd |
 | `common-north-arrows` | Noordpijlen (beschikbaar — eerste bewijs van de pipeline) | Wereldwijd |
 
@@ -86,6 +86,7 @@ Hergebruik ± 60% (ISO/EN-laag). Nationale laag:
 | `din14034-fire` | Brandveiligheidssymbolen voor Feuerwehrpläne (DIN 14034-6, DIN 14095) | beschikbaar (v1.0.0, 31 symbolen) |
 | `de-drafting-parametric` | Achsen, Höhenkoten (DIN 406-notatie), Bewehrung-callouts | gepland (wacht op parametrisch formaat) |
 | `de-stamps` | GEPRÜFT / FREIGEGEBEN / ZUR GENEHMIGUNG / ENTWURF / VORABZUG | beschikbaar (v1.0.0, 13 stempels) |
+| `de-wall-types` | Wandtypen in Grundriss (DIN 1356-schraffuur): Mauerwerk, Stahlbeton, Trockenbau, Brandwand F30/F90, Schacht | beschikbaar (v1.0.0, 9 wandtypen) |
 
 ### 5.4 🇬🇧 Verenigd Koninkrijk
 
@@ -95,7 +96,8 @@ ISO 19650-statuscodes zijn er de facto verplicht op tekeningen.
 | Collectie | Inhoud | Status |
 |---|---|---|
 | `uk-fire-symbols` | Brandveiligheidssymbolen volgens Britse tekenconventies (BS-reeks) | beschikbaar (v1.0.0, 26 symbolen) |
-| `uk-steel-sections` | Parametrisch: UB, UC, PFC, RSA | gepland (wacht op parametrisch formaat) |
+| `uk-steel-sections` | Doorsnede-symbolen: UB, UC, PFC, RSA, T, kokers/buis; parametrische maatvoering volgt | beschikbaar (v1.0.0, 10 doorsneden) |
+| `uk-wall-types` | Wandtypen in plattegrond: brickwork, blockwork, cavity wall, stud walls, 30/60 min fire-rated | beschikbaar (v1.0.0, 8 wandtypen) |
 | `uk-stamps` | Suitability-codes (S0–S4) + APPROVED/DRAFT-set | beschikbaar (v1.0.0, 14 stempels) |
 | `uk-drafting-parametric` | Grid references, levels, section markers | gepland (wacht op parametrisch formaat) |
 

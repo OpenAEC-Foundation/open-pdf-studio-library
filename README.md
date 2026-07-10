@@ -27,10 +27,17 @@ and pulls collections as needed.
 
 ![UK fire safety symbols](docs/media/preview-uk-fire-symbols.svg)
 
-### 🇺🇸 `aisc-steel-shapes` & `us-wall-types` — steel sections and plan-view wall types
+### Steel cross-sections — 🇺🇸 AISC, 🇪🇺 EN 10365 (shared), 🇬🇧 UK sections
 
 ![AISC steel shape cross-sections](docs/media/preview-aisc-steel-shapes.svg)
+![European steel profile cross-sections](docs/media/preview-en-steel-profiles.svg)
+![UK steel section cross-sections](docs/media/preview-uk-steel-sections.svg)
+
+### Wall types in plan view — 🇺🇸 🇩🇪 🇬🇧
+
 ![US wall types in plan view](docs/media/preview-us-wall-types.svg)
+![German wall types in plan view](docs/media/preview-de-wall-types.svg)
+![UK wall types in plan view](docs/media/preview-uk-wall-types.svg)
 
 ### Approval stamps — 16 markets, in each market's own language
 
@@ -61,8 +68,8 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 | Country | Fire safety symbols | Stamps |
 |---|---|---|
 | 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) — plus ✅ steel shapes (12) & wall types (8) |
-| 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) |
-| 🇬🇧 United Kingdom | ✅ `uk-fire-symbols` (26) | ✅ `uk-stamps` (14, incl. ISO 19650 S-codes) |
+| 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) — plus ✅ wall types (9) & EN steel (12) |
+| 🇬🇧 United Kingdom | ✅ `uk-fire-symbols` (26) | ✅ `uk-stamps` (14, incl. ISO 19650 S-codes) — plus ✅ steel sections (10) & wall types (8) |
 | 🇳🇱 Netherlands | 🔜 `nen1414-fire` (migrating from the app) | 🔜 planned |
 | 🇫🇷 France | 🧭 needs local review | ✅ `fr-stamps` (12) |
 | 🇮🇹 Italy | 🧭 needs local review | ✅ `it-stamps` (12) |
@@ -78,8 +85,11 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 | 🇰🇷 South Korea | 🧭 needs local review | ✅ `kr-stamps` (12, incl. 시공용 / 준공도) |
 | 🇦🇺 Australia | 🧭 needs local review | ✅ `au-stamps` (12, incl. WORK AS EXECUTED) |
 
-Parametric collections (steel profiles, grid/level/rebar components) are
-defined but waiting on the parametric format — see the plan.
+Also available: material hatch patterns (12, shared worldwide), steel
+cross-sections (US AISC, UK sections, shared European EN 10365 — every
+European country gets those automatically) and wall types for US, DE and UK.
+Parametric drafting components (grid/level/rebar callouts, profile sizing)
+are defined but waiting on the parametric format — see the plan.
 **🧭 = this is where you come in:** the country manifest and stamps exist,
 the national symbol set needs someone who knows the local drawings.
 
