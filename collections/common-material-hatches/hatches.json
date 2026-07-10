@@ -1,0 +1,98 @@
+{
+  "hatches": [
+    {
+      "id": "earth",
+      "name": { "en": "Earth", "nl": "Grond" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 14 },
+        { "angle": 45, "originX": 2, "originY": 2, "deltaX": 0, "deltaY": 14 },
+        { "angle": 45, "originX": 4, "originY": 4, "deltaX": 0, "deltaY": 14 }
+      ]
+    },
+    {
+      "id": "concrete",
+      "name": { "en": "Concrete", "nl": "Beton" },
+      "lineFamilies": [
+        { "angle": 37, "originX": 0, "originY": 0, "deltaX": 3, "deltaY": 8, "dashPattern": [0] },
+        { "angle": 127, "originX": 5, "originY": 3, "deltaX": 5, "deltaY": 12, "dashPattern": [0] },
+        { "angle": 70, "originX": 2, "originY": 7, "deltaX": 7, "deltaY": 10, "dashPattern": [0] }
+      ]
+    },
+    {
+      "id": "sand",
+      "name": { "en": "Sand", "nl": "Zand" },
+      "lineFamilies": [
+        { "angle": 0, "originX": 0, "originY": 0, "deltaX": 6, "deltaY": 6, "dashPattern": [0] }
+      ]
+    },
+    {
+      "id": "gravel",
+      "name": { "en": "Gravel", "nl": "Grind" },
+      "lineFamilies": [
+        { "angle": 0, "originX": 0, "originY": 0, "deltaX": 12, "deltaY": 10, "dashPattern": [0] },
+        { "angle": 0, "originX": 6, "originY": 5, "deltaX": 12, "deltaY": 10, "dashPattern": [0] }
+      ]
+    },
+    {
+      "id": "steel",
+      "name": { "en": "Steel", "nl": "Staal" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 12 },
+        { "angle": 45, "originX": 0, "originY": 3, "deltaX": 0, "deltaY": 12 }
+      ]
+    },
+    {
+      "id": "aluminum",
+      "name": { "en": "Aluminum", "nl": "Aluminium" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 12 },
+        { "angle": 45, "originX": 0, "originY": 4, "deltaX": 0, "deltaY": 12, "dashPattern": [6, 4] }
+      ]
+    },
+    {
+      "id": "brick",
+      "name": { "en": "Brick / masonry", "nl": "Metselwerk" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 8 }
+      ]
+    },
+    {
+      "id": "cmu",
+      "name": { "en": "Concrete masonry unit", "nl": "Betonblok (CMU)" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 16 },
+        { "angle": 45, "originX": 0, "originY": 4, "deltaX": 0, "deltaY": 16 }
+      ]
+    },
+    {
+      "id": "rigid-insulation",
+      "name": { "en": "Rigid insulation", "nl": "Drukvaste isolatie" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 6 },
+        { "angle": -45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 6 }
+      ]
+    },
+    {
+      "id": "wood-grain",
+      "name": { "en": "Wood", "nl": "Hout" },
+      "lineFamilies": [
+        { "angle": 90, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 8, "dashPattern": [12, 6] }
+      ]
+    },
+    {
+      "id": "gypsum",
+      "name": { "en": "Gypsum / plaster", "nl": "Gips / pleisterwerk" },
+      "lineFamilies": [
+        { "angle": 0, "originX": 0, "originY": 0, "deltaX": 8, "deltaY": 8, "dashPattern": [0] },
+        { "angle": 0, "originX": 4, "originY": 4, "deltaX": 8, "deltaY": 8, "dashPattern": [0] }
+      ]
+    },
+    {
+      "id": "water",
+      "name": { "en": "Water", "nl": "Water" },
+      "lineFamilies": [
+        { "angle": 0, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 10, "dashPattern": [14, 6] }
+      ]
+    }
+  ]
+}

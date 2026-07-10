@@ -92,6 +92,48 @@ export function validateStampsJson(data, label) {
   return errors;
 }
 
+// hatches.json: { hatches: [{ id, name: {en,...}, lineFamilies: [...] }] }.
+// Het line-family formaat is identiek aan de hatch-catalogus van de app
+// (en open-2d-studio), zodat pattern-ids round-trippen. Lege lineFamilies
+// betekent "solid fill".
+export function validateHatchesJson(data, label) {
+  const errors = [];
+  if (!data || !Array.isArray(data.hatches) || data.hatches.length === 0) {
+    errors.push(`${label}: "hatches" moet een niet-lege array zijn`);
+    return errors;
+  }
+  const seen = new Set();
+  data.hatches.forEach((h, i) => {
+    const where = `${label}: hatches[${i}]`;
+    if (!h || typeof h !== 'object') { errors.push(`${where}: geen object`); return; }
+    if (typeof h.id !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(h.id)) {
+      errors.push(`${where}: id moet kebab-case zijn`);
+    } else if (seen.has(h.id)) {
+      errors.push(`${where}: dubbele id "${h.id}"`);
+    } else {
+      seen.add(h.id);
+    }
+    if (!h.name || typeof h.name.en !== 'string' || !h.name.en.trim()) {
+      errors.push(`${where}: name.en ontbreekt`);
+    }
+    if (!Array.isArray(h.lineFamilies)) {
+      errors.push(`${where}: lineFamilies moet een array zijn`);
+      return;
+    }
+    h.lineFamilies.forEach((f, j) => {
+      for (const key of ['angle', 'originX', 'originY', 'deltaX', 'deltaY']) {
+        if (typeof f[key] !== 'number' || Number.isNaN(f[key])) {
+          errors.push(`${where}.lineFamilies[${j}]: ${key} moet een getal zijn`);
+        }
+      }
+      if (f.dashPattern !== undefined && (!Array.isArray(f.dashPattern) || f.dashPattern.some(n => typeof n !== 'number'))) {
+        errors.push(`${where}.lineFamilies[${j}]: dashPattern moet een array van getallen zijn`);
+      }
+    });
+  });
+  return errors;
+}
+
 export function runAll(root = ROOT) {
   const errors = [];
   const collectionIds = new Set();
@@ -136,6 +178,14 @@ export function runAll(root = ROOT) {
             errors.push(...validateStampsJson(loadJson(stampsPath), `${dir}/stamps.json`));
           } catch (e) {
             errors.push(`${dir}/stamps.json: ongeldige JSON — ${e.message}`);
+          }
+        }
+        const hatchesPath = join(collectionsDir, dir, 'hatches.json');
+        if (data.types.includes('hatches') && existsSync(hatchesPath)) {
+          try {
+            errors.push(...validateHatchesJson(loadJson(hatchesPath), `${dir}/hatches.json`));
+          } catch (e) {
+            errors.push(`${dir}/hatches.json: ongeldige JSON — ${e.message}`);
           }
         }
       }

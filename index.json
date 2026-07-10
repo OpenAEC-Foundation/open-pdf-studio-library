@@ -221,6 +221,7 @@
                 "nfpa170-fire",
                 "us-drafting-parametric",
                 "us-stamps",
+                "us-wall-types",
                 "aisc-steel-shapes",
                 "common-material-hatches",
                 "common-north-arrows"
@@ -406,13 +407,14 @@
       },
       "sector": "aec",
       "types": [
-        "parametric"
+        "symbols"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/aisc-steel-shapes/",
-      "standard": "AISC"
+      "standard": "AISC",
+      "symbolCount": 12
     },
     "au-fire-symbols": {
       "name": {
@@ -524,12 +526,11 @@
       },
       "sector": "aec",
       "types": [
-        "hatches",
-        "legends"
+        "hatches"
       ],
       "scope": "international",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/common-material-hatches/"
     },
     "common-north-arrows": {
@@ -1067,6 +1068,21 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/us-stamps/"
+    },
+    "us-wall-types": {
+      "name": {
+        "en": "US wall types (plan view)",
+        "nl": "Amerikaanse wandtypen (plattegrond)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/us-wall-types/",
+      "symbolCount": 8
     }
   }
 }

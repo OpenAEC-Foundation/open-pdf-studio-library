@@ -4,11 +4,15 @@
     "en": "US steel shapes (AISC)",
     "nl": "Amerikaanse staalprofielen (AISC)"
   },
+  "description": {
+    "en": "Cross-section symbols for AISC shapes: W, S, HP, C, L, WT, HSS, pipe, plate. Parametric sizing (designation callouts) follows once the parametric format lands.",
+    "nl": "Doorsnede-symbolen voor AISC-profielen: W, S, HP, C, L, WT, HSS, buis, plaat. Parametrische maatvoering volgt zodra het parametrische formaat er is."
+  },
   "sector": "aec",
-  "types": ["parametric"],
+  "types": ["symbols"],
   "standard": "AISC",
   "scope": "national",
-  "status": "planned",
-  "version": "0.1.0",
+  "status": "available",
+  "version": "1.0.0",
   "license": "repository"
 }

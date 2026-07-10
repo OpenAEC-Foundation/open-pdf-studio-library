@@ -81,6 +81,8 @@ function stampSheet(cols, outName) {
 symbolSheet('nfpa170-fire', 'preview-nfpa170-fire.svg');
 symbolSheet('din14034-fire', 'preview-din14034-fire.svg');
 symbolSheet('uk-fire-symbols', 'preview-uk-fire-symbols.svg');
+symbolSheet('aisc-steel-shapes', 'preview-aisc-steel-shapes.svg');
+symbolSheet('us-wall-types', 'preview-us-wall-types.svg');
 symbolSheet('common-north-arrows', 'preview-north-arrows.svg');
 stampSheet(
   [

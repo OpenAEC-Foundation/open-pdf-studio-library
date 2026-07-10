@@ -27,9 +27,14 @@ and pulls collections as needed.
 
 ![UK fire safety symbols](docs/media/preview-uk-fire-symbols.svg)
 
-### Approval stamps — 11 countries, in each market's own language
+### 🇺🇸 `aisc-steel-shapes` & `us-wall-types` — steel sections and plan-view wall types
 
-![Approval stamps in 11 languages](docs/media/preview-stamps.svg)
+![AISC steel shape cross-sections](docs/media/preview-aisc-steel-shapes.svg)
+![US wall types in plan view](docs/media/preview-us-wall-types.svg)
+
+### Approval stamps — 16 markets, in each market's own language
+
+![Approval stamps per market](docs/media/preview-stamps.svg)
 
 ### Shared collections — used by every country
 
@@ -55,7 +60,7 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 
 | Country | Fire safety symbols | Stamps |
 |---|---|---|
-| 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) |
+| 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) — plus ✅ steel shapes (12) & wall types (8) |
 | 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) |
 | 🇬🇧 United Kingdom | ✅ `uk-fire-symbols` (26) | ✅ `uk-stamps` (14, incl. ISO 19650 S-codes) |
 | 🇳🇱 Netherlands | 🔜 `nen1414-fire` (migrating from the app) | 🔜 planned |

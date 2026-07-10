@@ -1,0 +1,17 @@
+{
+  "id": "us-wall-types",
+  "name": {
+    "en": "US wall types (plan view)",
+    "nl": "Amerikaanse wandtypen (plattegrond)"
+  },
+  "description": {
+    "en": "Plan-view wall segment symbols per US drawing practice: stud walls, CMU, brick veneer, concrete, fire-rated partitions.",
+    "nl": "Wandsegmenten in plattegrond volgens Amerikaanse tekenpraktijk: stud walls, CMU, brick veneer, beton, brandwerende scheidingen."
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

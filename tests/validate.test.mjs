@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { validateCollectionJson, validateCountryJson, validateSvg, validateStampsJson } from '../scripts/validate.mjs';
+import { validateCollectionJson, validateCountryJson, validateSvg, validateStampsJson, validateHatchesJson } from '../scripts/validate.mjs';
 
 const goodCollection = {
   id: 'test-set',
@@ -99,6 +99,40 @@ test('stamp with bad color is rejected', () => {
 test('stamp without text is rejected', () => {
   const bad = { stamps: [{ id: 'ok', color: '#000000' }] };
   assert.ok(validateStampsJson(bad, 'x/stamps.json').length > 0);
+});
+
+const goodHatches = {
+  hatches: [
+    { id: 'solid-fill', name: { en: 'Solid' }, lineFamilies: [] },
+    { id: 'diag', name: { en: 'Diagonal' }, lineFamilies: [{ angle: 45, originX: 0, originY: 0, deltaX: 0, deltaY: 10 }] }
+  ]
+};
+
+test('valid hatches.json passes', () => {
+  assert.deepEqual(validateHatchesJson(goodHatches, 'x/hatches.json'), []);
+});
+
+test('hatches.json without hatches array is rejected', () => {
+  assert.ok(validateHatchesJson({}, 'x/hatches.json').length > 0);
+  assert.ok(validateHatchesJson({ hatches: [] }, 'x/hatches.json').length > 0);
+});
+
+test('hatch without english name is rejected', () => {
+  const bad = { hatches: [{ id: 'a', name: {}, lineFamilies: [] }] };
+  assert.ok(validateHatchesJson(bad, 'x/hatches.json').length > 0);
+});
+
+test('hatch line family with non-numeric angle is rejected', () => {
+  const bad = { hatches: [{ id: 'a', name: { en: 'A' }, lineFamilies: [{ angle: 'x', originX: 0, originY: 0, deltaX: 0, deltaY: 10 }] }] };
+  assert.ok(validateHatchesJson(bad, 'x/hatches.json').length > 0);
+});
+
+test('duplicate hatch ids are rejected', () => {
+  const bad = { hatches: [
+    { id: 'dup', name: { en: 'A' }, lineFamilies: [] },
+    { id: 'dup', name: { en: 'B' }, lineFamilies: [] }
+  ] };
+  assert.ok(validateHatchesJson(bad, 'x/hatches.json').length > 0);
 });
 
 test('duplicate stamp ids are rejected', () => {

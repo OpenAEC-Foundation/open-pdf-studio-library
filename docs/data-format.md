@@ -69,6 +69,34 @@ Content files per type (required once `status` is `available`):
 This maps 1:1 onto the app's built-in stamp model (`text`/`color`); the app
 renders the bordered stamp shape itself.
 
+## Hatches
+
+`hatches.json` in a collection with type `hatches`:
+
+```json
+{
+  "hatches": [
+    {
+      "id": "steel",
+      "name": { "en": "Steel", "nl": "Staal" },
+      "lineFamilies": [
+        { "angle": 45, "originX": 0, "originY": 0, "deltaX": 0, "deltaY": 12 },
+        { "angle": 45, "originX": 0, "originY": 3, "deltaX": 0, "deltaY": 12 }
+      ]
+    }
+  ]
+}
+```
+
+- `id` — kebab-case, unique within the collection.
+- `name` — localized; `en` required.
+- `lineFamilies` — the app's hatch model (shared with open-2d-studio, so
+  pattern ids round-trip): each family is a repeating set of parallel lines.
+  `angle` in degrees, `deltaY` = spacing between lines, `deltaX` = stagger,
+  `originX`/`originY` = offset. `dashPattern` makes lines dashed; a
+  `dashPattern` containing `0` renders a grid of dots; a negative value is a
+  gap. An **empty** `lineFamilies` array means solid fill.
+
 ## Country manifest
 
 `countries/<iso2>.json`, validated by `schema/country.schema.json`:

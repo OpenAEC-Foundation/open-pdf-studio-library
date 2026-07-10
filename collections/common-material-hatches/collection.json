@@ -5,9 +5,9 @@
     "nl": "Materiaal-arceringen"
   },
   "sector": "aec",
-  "types": ["hatches", "legends"],
+  "types": ["hatches"],
   "scope": "international",
-  "status": "planned",
-  "version": "0.1.0",
+  "status": "available",
+  "version": "1.0.0",
   "license": "repository"
 }

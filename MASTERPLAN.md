@@ -44,7 +44,7 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 |---|---|---|
 | `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — kernset ± 60 symbolen | Alle landen behalve VS (VS gebruikt eigen conventies) |
 | `en-steel-profiles` | Parametrische Europese staalprofielen (HEA/HEB/HEM, IPE, UNP, kokers, buizen) | Alle Europese landen |
-| `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) + renvooi-templates | Wereldwijd |
+| `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) — beschikbaar (v1.0.0, 12 patronen in het line-family-formaat van de app); renvooi-templates volgen als apart type | Wereldwijd |
 | `common-north-arrows` | Noordpijlen (beschikbaar — eerste bewijs van de pipeline) | Wereldwijd |
 
 ## 5. Wave 1 — uitwerking per land
@@ -59,7 +59,8 @@ profielen en papierformaten. Hergebruik van de EN/ISO-laag is beperkt (± 20%).
 | `nfpa170-fire` | Brandveiligheidssymbolen volgens NFPA 170 (detectie, alarmering, blussing, egress) — zelf hertekend | beschikbaar (v1.0.0, 31 symbolen) |
 | `us-drafting-parametric` | Grid bubbles, elevation datums (ft-in), section/detail markers, rebar callouts (`#4 @ 12" o.c.`) | gepland |
 | `us-stamps` | APPROVED / REJECTED / REVISED / FOR CONSTRUCTION / NOT FOR CONSTRUCTION / PRELIMINARY / DRAFT | beschikbaar (v1.0.0, 16 stempels) |
-| `aisc-steel-shapes` | Parametrische AISC-profielen: W, S, C, L, HSS | gepland |
+| `aisc-steel-shapes` | AISC-doorsnede-symbolen: W, S, HP, C, L, WT, HSS, buis, plaat; parametrische maatvoering volgt | beschikbaar (v1.0.0, 12 doorsneden) |
+| `us-wall-types` | Wandtypen in plattegrond: stud walls, CMU, brick veneer, beton, 1-HR/2-HR rated, shaft wall | beschikbaar (v1.0.0, 8 wandtypen) |
 | `common-material-hatches` | + Amerikaanse arceringsvarianten waar afwijkend | gedeeld |
 | `common-north-arrows` | — | beschikbaar |
 
