@@ -23,9 +23,13 @@ and pulls collections as needed.
 
 ![DIN 14034-6 Feuerwehrplan symbols](docs/media/preview-din14034-fire.svg)
 
-### Approval stamps — US & German sets
+### 🇬🇧 `uk-fire-symbols` — fire safety symbols (BS 1635 conventions), 26 symbols
 
-![US and German approval stamps](docs/media/preview-stamps.svg)
+![UK fire safety symbols](docs/media/preview-uk-fire-symbols.svg)
+
+### Approval stamps — 11 countries, in each market's own language
+
+![Approval stamps in 11 languages](docs/media/preview-stamps.svg)
 
 ### Shared collections — used by every country
 
@@ -49,12 +53,25 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 
 ## Current coverage
 
-| Country | Fire safety | Stamps | Drafting (parametric) | Steel profiles |
-|---|---|---|---|---|
-| 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) | 🔜 planned | 🔜 `aisc-steel-shapes` |
-| 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) | 🔜 planned | 🔜 `en-steel-profiles` |
-| 🇳🇱 Netherlands | 🔜 `nen1414-fire` (migrating from the app) | 🔜 planned | 🔜 planned | 🔜 `en-steel-profiles` |
-| 🇬🇧 United Kingdom | 🔜 next up | 🔜 next up | 🔜 planned | 🔜 planned |
+| Country | Fire safety symbols | Stamps |
+|---|---|---|
+| 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) |
+| 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) |
+| 🇬🇧 United Kingdom | ✅ `uk-fire-symbols` (26) | ✅ `uk-stamps` (14, incl. ISO 19650 S-codes) |
+| 🇳🇱 Netherlands | 🔜 `nen1414-fire` (migrating from the app) | 🔜 planned |
+| 🇫🇷 France | 🧭 needs local review | ✅ `fr-stamps` (12) |
+| 🇮🇹 Italy | 🧭 needs local review | ✅ `it-stamps` (12) |
+| 🇪🇸 Spain | 🧭 needs local review | ✅ `es-stamps` (11) |
+| 🇵🇹 Portugal | 🧭 needs local review | ✅ `pt-stamps` (10) |
+| 🇹🇷 Türkiye | 🧭 needs local review | ✅ `tr-stamps` (11) |
+| 🇮🇱 Israel | 🧭 needs local review | ✅ `il-stamps` (8) |
+| 🇮🇳 India | 🧭 needs local review | ✅ `in-stamps` (12, incl. GOOD FOR CONSTRUCTION) |
+| 🇧🇷 Brazil | 🧭 needs local review | ✅ `br-stamps` (10) |
+
+Parametric collections (steel profiles, grid/level/rebar components) are
+defined but waiting on the parametric format — see the plan.
+**🧭 = this is where you come in:** the country manifest and stamps exist,
+the national symbol set needs someone who knows the local drawings.
 
 The full rollout plan — four waves, from the largest construction markets to
 worldwide coverage, plus future sectors (MEP, electrical, process/P&ID,

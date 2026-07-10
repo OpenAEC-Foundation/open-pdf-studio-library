@@ -30,7 +30,13 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 | 1 | 🇺🇸 VS · 🇳🇱 NL · 🇩🇪 DE · 🇬🇧 VK | VS: hoog gebruik in statistieken. NL: bestaande content, referentie-land. DE/VK: grootste Europese bouwmarkten. |
 | 2 | 🇫🇷 FR · 🇮🇹 IT · 🇪🇸 ES · 🇵🇱 PL · 🇧🇪 BE · 🇦🇹 AT · 🇨🇭 CH · 🇸🇪 SE · 🇳🇴 NO · 🇩🇰 DK · 🇫🇮 FI | Grote/middelgrote EU-markten; hoog hergebruik van de EN/ISO-laag. |
 | 3 | 🇵🇹 PT · 🇮🇪 IE · 🇨🇿 CZ · 🇸🇰 SK · 🇭🇺 HU · 🇷🇴 RO · 🇧🇬 BG · 🇬🇷 GR · 🇭🇷 HR · 🇸🇮 SI · 🇪🇪 EE · 🇱🇻 LV · 🇱🇹 LT · 🇱🇺 LU | Rest van Europa; vrijwel volledig hergebruik + dunne nationale laag. |
-| 4 | 🇨🇦 CA · 🇦🇺 AU · 🇳🇿 NZ · 🇯🇵 JP · 🇰🇷 KR · 🇨🇳 CN · 🇮🇳 IN · 🇧🇷 BR · 🇲🇽 MX · Golfregio | Anglosfeer hergebruikt VS/VK-collecties; daarna Azië, Latijns-Amerika, Midden-Oosten. |
+| 4 | 🇨🇦 CA · 🇦🇺 AU · 🇳🇿 NZ · 🇯🇵 JP · 🇰🇷 KR · 🇨🇳 CN · 🇮🇳 IN · 🇧🇷 BR · 🇲🇽 MX · 🇹🇷 TR · 🇮🇱 IL · Golfregio | Anglosfeer hergebruikt VS/VK-collecties; daarna Azië, Latijns-Amerika, Midden-Oosten. |
+
+> Waves beschrijven de geplande volgorde, maar landen kunnen eerder instappen:
+> stempelsets (taalzeker, snel accuraat) gaan per land direct naar
+> `available`; nationale symboolsets blijven `planned` tot review door iemand
+> met marktkennis. Actuele status per collectie: `index.json` en de
+> coverage-tabel in de README.
 
 ## 4. Gedeeld fundament (bouwen vóór/tijdens Wave 1)
 
@@ -87,10 +93,10 @@ ISO 19650-statuscodes zijn er de facto verplicht op tekeningen.
 
 | Collectie | Inhoud | Status |
 |---|---|---|
-| `uk-fire-symbols` | Brandveiligheidssymbolen volgens Britse tekenconventies (BS-reeks) | te definiëren in Wave-1-productie |
-| `uk-steel-sections` | Parametrisch: UB, UC, PFC, RSA | idem |
-| `uk-stamps` | Suitability-codes (S0–S7, A-reeks) + APPROVED/DRAFT-set | idem |
-| `uk-drafting-parametric` | Grid references, levels, section markers | idem |
+| `uk-fire-symbols` | Brandveiligheidssymbolen volgens Britse tekenconventies (BS-reeks) | beschikbaar (v1.0.0, 26 symbolen) |
+| `uk-steel-sections` | Parametrisch: UB, UC, PFC, RSA | gepland (wacht op parametrisch formaat) |
+| `uk-stamps` | Suitability-codes (S0–S4) + APPROVED/DRAFT-set | beschikbaar (v1.0.0, 14 stempels) |
+| `uk-drafting-parametric` | Grid references, levels, section markers | gepland (wacht op parametrisch formaat) |
 
 ## 6. Wave 2 — Europa breed
 
@@ -128,6 +134,8 @@ LU (hergebruik BE/FR/DE). Aanpak identiek aan Wave 2; verwacht hergebruik
 | 🇮🇳 IN | IS-symboliek; Engelstalige stempels |
 | 🇧🇷 BR | ABNT-conventies; Portugese stempels |
 | 🇲🇽 MX + LATAM | Spaanse stempels; mix VS/EU-conventies |
+| 🇹🇷 Türkiye | CEN-lid: volledige hergebruik EN/ISO-laag + Turkse stempels |
+| 🇮🇱 Israël | EU/VS-mix; Hebreeuwse stempels (RTL); Europese staalprofielen gangbaar |
 | Golfregio | VS/VK-mix; Engels + Arabisch |
 
 ## 9. Toekomstige sectoren (geschetst, niet uitgewerkt)

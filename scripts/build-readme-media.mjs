@@ -80,8 +80,21 @@ function stampSheet(cols, outName) {
 
 symbolSheet('nfpa170-fire', 'preview-nfpa170-fire.svg');
 symbolSheet('din14034-fire', 'preview-din14034-fire.svg');
+symbolSheet('uk-fire-symbols', 'preview-uk-fire-symbols.svg');
 symbolSheet('common-north-arrows', 'preview-north-arrows.svg');
 stampSheet(
-  [{ id: 'us-stamps', label: 'us-stamps (United States)' }, { id: 'de-stamps', label: 'de-stamps (Deutschland)' }],
+  [
+    { id: 'us-stamps', label: 'us-stamps (United States)' },
+    { id: 'de-stamps', label: 'de-stamps (Deutschland)' },
+    { id: 'uk-stamps', label: 'uk-stamps (United Kingdom)' },
+    { id: 'fr-stamps', label: 'fr-stamps (France)' },
+    { id: 'it-stamps', label: 'it-stamps (Italia)' },
+    { id: 'es-stamps', label: 'es-stamps (España)' },
+    { id: 'pt-stamps', label: 'pt-stamps (Portugal)' },
+    { id: 'tr-stamps', label: 'tr-stamps (Türkiye)' },
+    { id: 'il-stamps', label: 'il-stamps (ישראל)' },
+    { id: 'in-stamps', label: 'in-stamps (India)' },
+    { id: 'br-stamps', label: 'br-stamps (Brasil)' }
+  ],
   'preview-stamps.svg'
 );
