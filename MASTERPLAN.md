@@ -43,7 +43,7 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 | Collectie | Inhoud | Hergebruikt door |
 |---|---|---|
 | `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — kernset ± 60 symbolen | Alle landen behalve VS (VS gebruikt eigen conventies) |
-| `en-steel-profiles` | Europese staalprofiel-doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) — beschikbaar (v1.0.0, 12 doorsneden); parametrische maatvoering volgt | Alle Europese landen |
+| `en-steel-profiles` | Europese staalprofielen: doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) + aanzichten — beschikbaar (v1.1.0, 17 symbolen); parametrische maatvoering volgt | Alle Europese landen |
 | `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) — beschikbaar (v1.0.0, 12 patronen in het line-family-formaat van de app); renvooi-templates volgen als apart type | Wereldwijd |
 | `common-north-arrows` | Noordpijlen (beschikbaar — eerste bewijs van de pipeline) | Wereldwijd |
 
@@ -59,7 +59,7 @@ profielen en papierformaten. Hergebruik van de EN/ISO-laag is beperkt (± 20%).
 | `nfpa170-fire` | Brandveiligheidssymbolen volgens NFPA 170 (detectie, alarmering, blussing, egress) — zelf hertekend | beschikbaar (v1.0.0, 31 symbolen) |
 | `us-drafting-parametric` | Grid bubbles, elevation datums (ft-in), section/detail markers, rebar callouts (`#4 @ 12" o.c.`) | gepland |
 | `us-stamps` | APPROVED / REJECTED / REVISED / FOR CONSTRUCTION / NOT FOR CONSTRUCTION / PRELIMINARY / DRAFT | beschikbaar (v1.0.0, 16 stempels) |
-| `aisc-steel-shapes` | AISC-doorsnede-symbolen: W, S, HP, C, L, WT, HSS, buis, plaat; parametrische maatvoering volgt | beschikbaar (v1.0.0, 12 doorsneden) |
+| `aisc-steel-shapes` | AISC-symbolen: doorsneden (W, S, HP, C, L, WT, HSS, buis, plaat) + aanzichten; parametrische maatvoering volgt | beschikbaar (v1.1.0, 17 symbolen) |
 | `us-wall-types` | Wandtypen in plattegrond: stud walls, CMU, brick veneer, beton, 1-HR/2-HR rated, shaft wall | beschikbaar (v1.0.0, 8 wandtypen) |
 | `common-material-hatches` | + Amerikaanse arceringsvarianten waar afwijkend | gedeeld |
 | `common-north-arrows` | — | beschikbaar |
@@ -96,7 +96,7 @@ ISO 19650-statuscodes zijn er de facto verplicht op tekeningen.
 | Collectie | Inhoud | Status |
 |---|---|---|
 | `uk-fire-symbols` | Brandveiligheidssymbolen volgens Britse tekenconventies (BS-reeks) | beschikbaar (v1.0.0, 26 symbolen) |
-| `uk-steel-sections` | Doorsnede-symbolen: UB, UC, PFC, RSA, T, kokers/buis; parametrische maatvoering volgt | beschikbaar (v1.0.0, 10 doorsneden) |
+| `uk-steel-sections` | Doorsneden (UB, UC, PFC, RSA, T, kokers/buis) + aanzichten; parametrische maatvoering volgt | beschikbaar (v1.1.0, 15 symbolen) |
 | `uk-wall-types` | Wandtypen in plattegrond: brickwork, blockwork, cavity wall, stud walls, 30/60 min fire-rated | beschikbaar (v1.0.0, 8 wandtypen) |
 | `uk-stamps` | Suitability-codes (S0–S4) + APPROVED/DRAFT-set | beschikbaar (v1.0.0, 14 stempels) |
 | `uk-drafting-parametric` | Grid references, levels, section markers | gepland (wacht op parametrisch formaat) |
@@ -139,17 +139,18 @@ LU (hergebruik BE/FR/DE). Aanpak identiek aan Wave 2; verwacht hergebruik
 | 🇲🇽 MX + LATAM | Spaanse stempels; mix VS/EU-conventies |
 | 🇹🇷 Türkiye | CEN-lid: volledige hergebruik EN/ISO-laag + Turkse stempels |
 | 🇷🇺 Rusland | GOST/SPDS-documentatiepraktijk; Cyrillische stempels |
+| 🇿🇦 Zuid-Afrika | Engelstalige stempels; SANS-symboliek te researchen; eerste Afrikaanse land |
 | 🇮🇱 Israël | EU/VS-mix; Hebreeuwse stempels (RTL); Europese staalprofielen gangbaar |
 | Golfregio | VS/VK-mix; Engels + Arabisch |
 
 ## 9. Toekomstige sectoren (geschetst, niet uitgewerkt)
 
-| Sector | Kern-normen | Opmerking |
+| Sector | Kern-normen | Status |
 |---|---|---|
-| `mep` (installatietechniek) | Nationale klimaat/sanitair-symboolreeksen | Grote overlap met AEC-doelgroep — eerste kandidaat |
-| `electrical` | IEC 60617 (internationaal!) + nationale reeksen | IEC-laag is één keer bouwen, wereldwijd bruikbaar |
-| `process` (industrie/P&ID) | ISO 10628; in de VS de ISA-symboolreeks | Aparte doelgroep, hoge symbooldichtheid |
-| `infra` (GWW) | Nationale wegontwerp/riolering-symboolreeksen | Sterk nationaal bepaald |
+| `mep` (installatietechniek) | Nationale klimaat/sanitair-symboolreeksen | Eerste collectie beschikbaar: `common-hvac-symbols` (v1.0.0, 11) — in elk land-manifest |
+| `electrical` | IEC 60617 (internationaal!) + nationale reeksen | Eerste collectie beschikbaar: `iec60617-electrical` (v1.0.0, 20) — in elk land-manifest én in de AEC-pakketten |
+| `process` (industrie/P&ID) | ISO 10628; in de VS de ISA-symboolreeks | Eerste collectie beschikbaar: `iso10628-pid` (v1.0.0, 14) — in elk land-manifest |
+| `infra` (GWW) | Nationale wegontwerp/riolering-symboolreeksen | Sterk nationaal bepaald — nog niet gestart |
 
 Sector-ids liggen al vast in de schema's; een sector activeren = collecties
 toevoegen + land-manifesten uitbreiden. Geen datamodel-wijziging nodig.

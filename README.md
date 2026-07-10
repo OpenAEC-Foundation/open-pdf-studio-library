@@ -39,7 +39,13 @@ and pulls collections as needed.
 ![German wall types in plan view](docs/media/preview-de-wall-types.svg)
 ![UK wall types in plan view](docs/media/preview-uk-wall-types.svg)
 
-### Approval stamps — 16 markets, in each market's own language
+### Other sectors — electrical (IEC 60617), process (ISO 10628), HVAC
+
+![Electrical installation symbols](docs/media/preview-iec60617-electrical.svg)
+![P&ID symbols](docs/media/preview-iso10628-pid.svg)
+![HVAC plan symbols](docs/media/preview-hvac-symbols.svg)
+
+### Approval stamps — 30+ markets, in each market's own language
 
 ![Approval stamps per market](docs/media/preview-stamps.svg)
 
@@ -65,33 +71,34 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 
 ## Current coverage
 
-| Country | Fire safety symbols | Stamps |
-|---|---|---|
-| 🇺🇸 United States | ✅ `nfpa170-fire` (31) | ✅ `us-stamps` (16) — plus ✅ steel shapes (12) & wall types (8) |
-| 🇩🇪 Germany | ✅ `din14034-fire` (31) | ✅ `de-stamps` (13) — plus ✅ wall types (9) & EN steel (12) |
-| 🇬🇧 United Kingdom | ✅ `uk-fire-symbols` (26) | ✅ `uk-stamps` (14, incl. ISO 19650 S-codes) — plus ✅ steel sections (10) & wall types (8) |
-| 🇳🇱 Netherlands | 🔜 `nen1414-fire` (migrating from the app) | 🔜 planned |
-| 🇫🇷 France | 🧭 needs local review | ✅ `fr-stamps` (12) |
-| 🇮🇹 Italy | 🧭 needs local review | ✅ `it-stamps` (12) |
-| 🇪🇸 Spain | 🧭 needs local review | ✅ `es-stamps` (11) |
-| 🇵🇹 Portugal | 🧭 needs local review | ✅ `pt-stamps` (10) |
-| 🇹🇷 Türkiye | 🧭 needs local review | ✅ `tr-stamps` (11) |
-| 🇮🇱 Israel | 🧭 needs local review | ✅ `il-stamps` (8) |
-| 🇮🇳 India | 🧭 needs local review | ✅ `in-stamps` (12, incl. GOOD FOR CONSTRUCTION) |
-| 🇧🇷 Brazil | 🧭 needs local review | ✅ `br-stamps` (10) |
-| 🇨🇳 China | 🧭 needs local review | ✅ `cn-stamps` (11, incl. 可用于施工 / 竣工图) |
-| 🇷🇺 Russia | 🧭 needs local review | ✅ `ru-stamps` (11, GOST/SPDS practice) |
-| 🇯🇵 Japan | 🧭 needs local review | ✅ `jp-stamps` (12, incl. 検図済 / 竣工図) |
-| 🇰🇷 South Korea | 🧭 needs local review | ✅ `kr-stamps` (12, incl. 시공용 / 준공도) |
-| 🇦🇺 Australia | 🧭 needs local review | ✅ `au-stamps` (12, incl. WORK AS EXECUTED) |
+**41 countries** across every inhabited region, including **all of Europe**.
 
-Also available: material hatch patterns (12, shared worldwide), steel
-cross-sections (US AISC, UK sections, shared European EN 10365 — every
-European country gets those automatically) and wall types for US, DE and UK.
-Parametric drafting components (grid/level/rebar callouts, profile sizing)
-are defined but waiting on the parametric format — see the plan.
-**🧭 = this is where you come in:** the country manifest and stamps exist,
-the national symbol set needs someone who knows the local drawings.
+**Full production countries** — complete national symbol sets:
+
+| Country | What's available |
+|---|---|
+| 🇺🇸 United States | fire safety (31) · stamps (16) · steel shapes incl. elevations (17) · wall types (8) |
+| 🇩🇪 Germany | fire safety (31) · stamps (13) · wall types (9) · shared EN steel (17) |
+| 🇬🇧 United Kingdom | fire safety (26) · stamps incl. ISO 19650 S-codes (14) · steel sections incl. elevations (15) · wall types (8) |
+
+**Stamps ready, national symbols need local review** — the country manifest
+and an authentic stamp set in the local language exist; the national symbol
+set is `planned` until someone who knows the local drawings reviews it:
+
+🇫🇷 🇮🇹 🇪🇸 🇵🇹 🇧🇪 🇦🇹 🇨🇭 🇸🇪 🇳🇴 🇩🇰 🇫🇮 🇵🇱 🇨🇿 🇸🇰 🇭🇺 🇷🇴 🇧🇬 🇬🇷 🇭🇷 🇸🇮 🇪🇪 🇱🇻 🇱🇹 🇱🇺 🇮🇪 🇲🇹 🇨🇾 🇹🇷 🇮🇱 🇷🇺 🇮🇳 🇨🇳 🇯🇵 🇰🇷 🇦🇺 🇧🇷 🇿🇦
+
+Countries like Austria, Switzerland, Ireland, Luxembourg, Malta and Cyprus
+reuse neighbouring sets where the language and standards genuinely overlap
+(e.g. Switzerland composes German, French and Italian stamps).
+🇳🇱 Netherlands is the reference market — its content is migrating from the
+app itself.
+
+**Every country package also includes** the shared layer: ISO 7010 safety
+signs (planned), material hatch patterns (12), north arrows, electrical
+installation symbols (IEC 60617, 20) — plus separate **sector packages**:
+`electrical` (IEC 60617), `process` (ISO 10628 P&ID, 14) and `mep`
+(HVAC, 11). Parametric drafting components (grid/level/rebar callouts,
+profile sizing) are defined but waiting on the parametric format — see the plan.
 
 The full rollout plan — four waves, from the largest construction markets to
 worldwide coverage, plus future sectors (MEP, electrical, process/P&ID,

@@ -1,7 +1,7 @@
 // Genereert de preview-sheets (docs/media/*.svg) voor de README uit de
 // echte repo-content. Draaien na content-wijzigingen in de getoonde
 // collecties: node scripts/build-readme-media.mjs
-import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -87,25 +87,17 @@ symbolSheet('en-steel-profiles', 'preview-en-steel-profiles.svg');
 symbolSheet('uk-steel-sections', 'preview-uk-steel-sections.svg');
 symbolSheet('de-wall-types', 'preview-de-wall-types.svg');
 symbolSheet('uk-wall-types', 'preview-uk-wall-types.svg');
+symbolSheet('iec60617-electrical', 'preview-iec60617-electrical.svg');
+symbolSheet('iso10628-pid', 'preview-iso10628-pid.svg');
+symbolSheet('common-hvac-symbols', 'preview-hvac-symbols.svg');
 symbolSheet('common-north-arrows', 'preview-north-arrows.svg');
-stampSheet(
-  [
-    { id: 'us-stamps', label: 'us-stamps (United States)' },
-    { id: 'de-stamps', label: 'de-stamps (Deutschland)' },
-    { id: 'uk-stamps', label: 'uk-stamps (United Kingdom)' },
-    { id: 'fr-stamps', label: 'fr-stamps (France)' },
-    { id: 'it-stamps', label: 'it-stamps (Italia)' },
-    { id: 'es-stamps', label: 'es-stamps (España)' },
-    { id: 'pt-stamps', label: 'pt-stamps (Portugal)' },
-    { id: 'tr-stamps', label: 'tr-stamps (Türkiye)' },
-    { id: 'il-stamps', label: 'il-stamps (ישראל)' },
-    { id: 'in-stamps', label: 'in-stamps (India)' },
-    { id: 'br-stamps', label: 'br-stamps (Brasil)' },
-    { id: 'cn-stamps', label: 'cn-stamps (中国)' },
-    { id: 'ru-stamps', label: 'ru-stamps (Россия)' },
-    { id: 'jp-stamps', label: 'jp-stamps (日本)' },
-    { id: 'kr-stamps', label: 'kr-stamps (대한민국)' },
-    { id: 'au-stamps', label: 'au-stamps (Australia)' }
-  ],
-  'preview-stamps.svg'
-);
+
+// Stempelsheet: auto-discovery van alle beschikbare stempel-collecties.
+const collectionsDir = join(ROOT, 'collections');
+const stampCols = readdirSync(collectionsDir)
+  .filter(d => existsSync(join(collectionsDir, d, 'stamps.json')))
+  .map(d => JSON.parse(readFileSync(join(collectionsDir, d, 'collection.json'), 'utf8')))
+  .filter(c => c.status === 'available')
+  .sort((a, b) => a.id.localeCompare(b.id))
+  .map(c => ({ id: c.id, label: `${c.id} — ${c.name.en}` }));
+stampSheet(stampCols, 'preview-stamps.svg');
