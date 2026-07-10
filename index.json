@@ -156,10 +156,11 @@
         "symbols"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/nfpa170-fire/",
-      "standard": "NFPA 170"
+      "standard": "NFPA 170",
+      "symbolCount": 31
     },
     "nl-drafting-parametric": {
       "name": {
@@ -213,8 +214,8 @@
         "stamps"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/us-stamps/"
     }
   }
