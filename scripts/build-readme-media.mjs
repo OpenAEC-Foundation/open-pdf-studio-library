@@ -103,14 +103,14 @@ function banner(picks, outName) {
   console.log(`${outName}: ${picks.length} symbolen`);
 }
 banner([
+  ['nen1414-fire', 'brandslanghaspel'],
+  ['nl-wall-types', 'metselwerk'],
   ['nfpa170-fire', 'smoke-detector'],
   ['din14034-fire', 'ueberflurhydrant'],
   ['uk-fire-symbols', 'hose-reel'],
   ['en-steel-profiles', 'heb'],
   ['aisc-steel-shapes', 'w-shape'],
-  ['uk-steel-sections', 'pfc'],
-  ['us-wall-types', 'cmu-wall'],
-  ['de-wall-types', 'stahlbeton'],
+  ['jis-steel-shapes', 'h-shape-wide'],
   ['iec60617-electrical', 'switch-two-way'],
   ['iso10628-pid', 'control-valve'],
   ['common-hvac-symbols', 'supply-diffuser'],

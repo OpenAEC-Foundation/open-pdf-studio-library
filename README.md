@@ -20,6 +20,10 @@ and pulls collections as needed.
 Every preview below is generated straight from the repository content by
 `node scripts/build-readme-media.mjs` — what you see is exactly what ships.
 
+### 🇳🇱 `nen1414-fire` — fire safety symbols (NEN 1414 core set), 32 symbols
+
+![NEN 1414 fire safety symbols](docs/media/preview-nen1414-fire.svg)
+
 ### 🇺🇸 `nfpa170-fire` — fire safety symbols (NFPA 170), 31 symbols
 
 ![NFPA 170 fire safety symbols](docs/media/preview-nfpa170-fire.svg)
@@ -31,10 +35,6 @@ Every preview below is generated straight from the repository content by
 ### 🇬🇧 `uk-fire-symbols` — fire safety symbols (BS 1635 conventions), 26 symbols
 
 ![UK fire safety symbols](docs/media/preview-uk-fire-symbols.svg)
-
-### 🇳🇱 `nen1414-fire` — fire safety symbols (NEN 1414 core set), 32 symbols
-
-![NEN 1414 fire safety symbols](docs/media/preview-nen1414-fire.svg)
 
 ### Steel sections worldwide — real table geometry, fillets, centre lines, elevations
 
@@ -51,12 +51,12 @@ Every preview below is generated straight from the repository content by
 ![Russian GOST steel shapes](docs/media/preview-gost-steel-shapes.svg)
 ![Brazilian W series steel shapes](docs/media/preview-br-steel-shapes.svg)
 
-### Wall types in plan view — 🇺🇸 🇩🇪 🇬🇧 🇳🇱
+### Wall types in plan view — 🇳🇱 🇺🇸 🇩🇪 🇬🇧
 
+![Dutch wall types in plan view](docs/media/preview-nl-wall-types.svg)
 ![US wall types in plan view](docs/media/preview-us-wall-types.svg)
 ![German wall types in plan view](docs/media/preview-de-wall-types.svg)
 ![UK wall types in plan view](docs/media/preview-uk-wall-types.svg)
-![Dutch wall types in plan view](docs/media/preview-nl-wall-types.svg)
 
 ### Other sectors — electrical (IEC 60617), process (ISO 10628), HVAC
 
@@ -96,10 +96,10 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 
 | Country | What's available |
 |---|---|
+| 🇳🇱 Netherlands | fire safety NEN 1414 core set (32) · stamps (12) · wall types (10) · shared EN steel (17) |
 | 🇺🇸 United States | fire safety (31) · stamps (16) · steel shapes incl. elevations (17) · wall types (8) |
 | 🇩🇪 Germany | fire safety (31) · stamps (13) · wall types (9) · shared EN steel (17) |
 | 🇬🇧 United Kingdom | fire safety (26) · stamps incl. ISO 19650 S-codes (14) · steel sections incl. elevations (15) · wall types (8) |
-| 🇳🇱 Netherlands | fire safety NEN 1414 core set (32) · stamps (12) · wall types (10) · shared EN steel (17) |
 
 **Stamps ready, national symbols need local review** — the country manifest
 and an authentic stamp set in the local language exist; the national symbol
