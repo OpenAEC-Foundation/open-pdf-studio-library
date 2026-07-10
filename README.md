@@ -13,7 +13,12 @@ Everything here is drawn from scratch, versioned, validated in CI and
 downloadable on demand — the app fetches a single [`index.json`](index.json)
 and pulls collections as needed.
 
+![Symbol collage across collections](docs/media/banner.svg)
+
 ## What it looks like
+
+Every preview below is generated straight from the repository content by
+`node scripts/build-readme-media.mjs` — what you see is exactly what ships.
 
 ### 🇺🇸 `nfpa170-fire` — fire safety symbols (NFPA 170), 31 symbols
 
@@ -43,7 +48,7 @@ and pulls collections as needed.
 
 ![Electrical installation symbols](docs/media/preview-iec60617-electrical.svg)
 ![P&ID symbols](docs/media/preview-iso10628-pid.svg)
-![HVAC plan symbols](docs/media/preview-hvac-symbols.svg)
+![HVAC plan symbols](docs/media/preview-common-hvac-symbols.svg)
 
 ### Approval stamps — 30+ markets, in each market's own language
 
@@ -51,7 +56,7 @@ and pulls collections as needed.
 
 ### Shared collections — used by every country
 
-![North arrows](docs/media/preview-north-arrows.svg)
+![North arrows](docs/media/preview-common-north-arrows.svg)
 
 ## How it works
 

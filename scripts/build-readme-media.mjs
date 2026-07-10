@@ -78,22 +78,46 @@ function stampSheet(cols, outName) {
   console.log(`${outName}: ${layout.reduce((n, r) => n + r.stamps.length, 0)} stempels`);
 }
 
-symbolSheet('nfpa170-fire', 'preview-nfpa170-fire.svg');
-symbolSheet('din14034-fire', 'preview-din14034-fire.svg');
-symbolSheet('uk-fire-symbols', 'preview-uk-fire-symbols.svg');
-symbolSheet('aisc-steel-shapes', 'preview-aisc-steel-shapes.svg');
-symbolSheet('us-wall-types', 'preview-us-wall-types.svg');
-symbolSheet('en-steel-profiles', 'preview-en-steel-profiles.svg');
-symbolSheet('uk-steel-sections', 'preview-uk-steel-sections.svg');
-symbolSheet('de-wall-types', 'preview-de-wall-types.svg');
-symbolSheet('uk-wall-types', 'preview-uk-wall-types.svg');
-symbolSheet('iec60617-electrical', 'preview-iec60617-electrical.svg');
-symbolSheet('iso10628-pid', 'preview-iso10628-pid.svg');
-symbolSheet('common-hvac-symbols', 'preview-hvac-symbols.svg');
-symbolSheet('common-north-arrows', 'preview-north-arrows.svg');
+// Symboolsheets: auto-discovery — elke beschikbare collectie met symbols/
+// krijgt automatisch een preview-<id>.svg.
+const collectionsDir = join(ROOT, 'collections');
+for (const d of readdirSync(collectionsDir).sort()) {
+  const jsonPath = join(collectionsDir, d, 'collection.json');
+  if (!existsSync(jsonPath) || !existsSync(join(collectionsDir, d, 'symbols'))) continue;
+  const c = JSON.parse(readFileSync(jsonPath, 'utf8'));
+  if (c.status !== 'available') continue;
+  symbolSheet(d, `preview-${d}.svg`);
+}
+
+// Banner-collage: één strip met representatieve symbolen uit meerdere collecties.
+function banner(picks, outName) {
+  const CELL = 62, SYM = 50, PAD = 10;
+  const W = picks.length * CELL + PAD * 2, H = SYM + PAD * 2;
+  let body = `<rect x="0" y="0" width="${W}" height="${H}" rx="10" fill="#ffffff" stroke="#d6d3cd"/>`;
+  picks.forEach(([colId, sym], i) => {
+    const x = PAD + i * CELL + (CELL - SYM) / 2;
+    body += readFileSync(join(collectionsDir, colId, 'symbols', sym + '.svg'), 'utf8').trim()
+      .replace('<svg ', `<svg x="${x}" y="${PAD}" width="${SYM}" height="${SYM}" `);
+  });
+  writeFileSync(join(MEDIA, outName), `<svg viewBox="0 0 ${W} ${H}" width="${W}" xmlns="http://www.w3.org/2000/svg">${body}</svg>\n`);
+  console.log(`${outName}: ${picks.length} symbolen`);
+}
+banner([
+  ['nfpa170-fire', 'smoke-detector'],
+  ['din14034-fire', 'ueberflurhydrant'],
+  ['uk-fire-symbols', 'hose-reel'],
+  ['en-steel-profiles', 'heb'],
+  ['aisc-steel-shapes', 'w-shape'],
+  ['uk-steel-sections', 'pfc'],
+  ['us-wall-types', 'cmu-wall'],
+  ['de-wall-types', 'stahlbeton'],
+  ['iec60617-electrical', 'switch-two-way'],
+  ['iso10628-pid', 'control-valve'],
+  ['common-hvac-symbols', 'supply-diffuser'],
+  ['common-north-arrows', 'north-arrow-classic']
+], 'banner.svg');
 
 // Stempelsheet: auto-discovery van alle beschikbare stempel-collecties.
-const collectionsDir = join(ROOT, 'collections');
 const stampCols = readdirSync(collectionsDir)
   .filter(d => existsSync(join(collectionsDir, d, 'stamps.json')))
   .map(d => JSON.parse(readFileSync(join(collectionsDir, d, 'collection.json'), 'utf8')))
