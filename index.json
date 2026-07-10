@@ -866,6 +866,7 @@
                 "iso7010-safety",
                 "nl-drafting-parametric",
                 "nl-stamps",
+                "nl-wall-types",
                 "en-steel-profiles",
                 "common-material-hatches",
                 "common-north-arrows",
@@ -2440,10 +2441,11 @@
         "symbols"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/nen1414-fire/",
-      "standard": "NEN 1414"
+      "standard": "NEN 1414",
+      "symbolCount": 32
     },
     "nfpa170-fire": {
       "name": {
@@ -2485,9 +2487,24 @@
         "stamps"
       ],
       "scope": "national",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/nl-stamps/"
+    },
+    "nl-wall-types": {
+      "name": {
+        "en": "Dutch wall types (plan view)",
+        "nl": "Nederlandse wandtypen (plattegrond)"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/nl-wall-types/",
+      "symbolCount": 10
     },
     "no-fire-symbols": {
       "name": {

@@ -5,9 +5,11 @@
     "nl": "Nederlandse stempels"
   },
   "sector": "aec",
-  "types": ["stamps"],
+  "types": [
+    "stamps"
+  ],
   "scope": "national",
-  "status": "planned",
-  "version": "0.1.0",
+  "status": "available",
+  "version": "1.0.0",
   "license": "repository"
 }

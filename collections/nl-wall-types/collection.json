@@ -1,0 +1,19 @@
+{
+  "id": "nl-wall-types",
+  "name": {
+    "en": "Dutch wall types (plan view)",
+    "nl": "Nederlandse wandtypen (plattegrond)"
+  },
+  "description": {
+    "en": "Plan-view wall segments per Dutch drawing practice: metselwerk, kalkzandsteen, beton, cellenbeton, HSB, metal stud, fire-rated separations.",
+    "nl": "Wandsegmenten in plattegrond volgens Nederlandse tekenpraktijk: metselwerk, kalkzandsteen, beton, cellenbeton, HSB, metal stud, brandwerende scheidingen (WBDBO)."
+  },
+  "sector": "aec",
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

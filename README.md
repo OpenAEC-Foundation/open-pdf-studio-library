@@ -32,17 +32,22 @@ Every preview below is generated straight from the repository content by
 
 ![UK fire safety symbols](docs/media/preview-uk-fire-symbols.svg)
 
+### 🇳🇱 `nen1414-fire` — fire safety symbols (NEN 1414 core set), 32 symbols
+
+![NEN 1414 fire safety symbols](docs/media/preview-nen1414-fire.svg)
+
 ### Steel cross-sections — 🇺🇸 AISC, 🇪🇺 EN 10365 (shared), 🇬🇧 UK sections
 
 ![AISC steel shape cross-sections](docs/media/preview-aisc-steel-shapes.svg)
 ![European steel profile cross-sections](docs/media/preview-en-steel-profiles.svg)
 ![UK steel section cross-sections](docs/media/preview-uk-steel-sections.svg)
 
-### Wall types in plan view — 🇺🇸 🇩🇪 🇬🇧
+### Wall types in plan view — 🇺🇸 🇩🇪 🇬🇧 🇳🇱
 
 ![US wall types in plan view](docs/media/preview-us-wall-types.svg)
 ![German wall types in plan view](docs/media/preview-de-wall-types.svg)
 ![UK wall types in plan view](docs/media/preview-uk-wall-types.svg)
+![Dutch wall types in plan view](docs/media/preview-nl-wall-types.svg)
 
 ### Other sectors — electrical (IEC 60617), process (ISO 10628), HVAC
 
@@ -85,6 +90,7 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 | 🇺🇸 United States | fire safety (31) · stamps (16) · steel shapes incl. elevations (17) · wall types (8) |
 | 🇩🇪 Germany | fire safety (31) · stamps (13) · wall types (9) · shared EN steel (17) |
 | 🇬🇧 United Kingdom | fire safety (26) · stamps incl. ISO 19650 S-codes (14) · steel sections incl. elevations (15) · wall types (8) |
+| 🇳🇱 Netherlands | fire safety NEN 1414 core set (32) · stamps (12) · wall types (10) · shared EN steel (17) |
 
 **Stamps ready, national symbols need local review** — the country manifest
 and an authentic stamp set in the local language exist; the national symbol
@@ -95,8 +101,6 @@ set is `planned` until someone who knows the local drawings reviews it:
 Countries like Austria, Switzerland, Ireland, Luxembourg, Malta and Cyprus
 reuse neighbouring sets where the language and standards genuinely overlap
 (e.g. Switzerland composes German, French and Italian stamps).
-🇳🇱 Netherlands is the reference market — its content is migrating from the
-app itself.
 
 **Every country package also includes** the shared layer: ISO 7010 safety
 signs (planned), material hatch patterns (12), north arrows, electrical

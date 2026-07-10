@@ -1,0 +1,64 @@
+{
+  "stamps": [
+    {
+      "id": "goedgekeurd",
+      "text": "GOEDGEKEURD",
+      "color": "#22c55e"
+    },
+    {
+      "id": "afgekeurd",
+      "text": "AFGEKEURD",
+      "color": "#ef4444"
+    },
+    {
+      "id": "ter-goedkeuring",
+      "text": "TER GOEDKEURING",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "voor-uitvoering",
+      "text": "VOOR UITVOERING",
+      "color": "#22c55e"
+    },
+    {
+      "id": "concept",
+      "text": "CONCEPT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "voorlopig",
+      "text": "VOORLOPIG",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "ter-informatie",
+      "text": "TER INFORMATIE",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "gezien",
+      "text": "GEZIEN",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "gecontroleerd",
+      "text": "GECONTROLEERD",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "gereviseerd",
+      "text": "GEREVISEERD",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "revisietekening",
+      "text": "REVISIETEKENING",
+      "color": "#6b7280"
+    },
+    {
+      "id": "vervallen",
+      "text": "VERVALLEN",
+      "color": "#6b7280"
+    }
+  ]
+}

@@ -72,9 +72,10 @@ van de Europese — aparte research-stap in de productie-checklist.
 
 | Collectie | Inhoud | Status |
 |---|---|---|
-| `nen1414-fire` | ± 180 symbolen NEN 1414 (migratie uit de app; PNG → her-tekenen naar SVG waar haalbaar) | gepland (migratie) |
-| `nl-drafting-parametric` | Stramienen, peilmaten, wapening, NL-staalnotatie, vloertypen, elektra-renvooi | gepland (migratie) |
-| `nl-stamps` | GOEDGEKEURD / AFGEKEURD / GEZIEN / VOOR UITVOERING / CONCEPT / TER GOEDKEURING | gepland |
+| `nen1414-fire` | NEN 1414-symbolen — kernset zelf getekend in SVG; volledige set (± 180, PNG in de app) migreert stapsgewijs | beschikbaar (v1.0.0, 32 kernsymbolen) |
+| `nl-wall-types` | Wandtypen in plattegrond: metselwerk, kalkzandsteen, (gewapend) beton, cellenbeton, HSB, metal stud, WBDBO 30/60, schacht | beschikbaar (v1.0.0, 10 wandtypen) |
+| `nl-drafting-parametric` | Stramienen, peilmaten, wapening, NL-staalnotatie, vloertypen, elektra-renvooi | gepland (migratie; wacht op parametrisch formaat) |
+| `nl-stamps` | GOEDGEKEURD / AFGEKEURD / GEZIEN / VOOR UITVOERING / CONCEPT / REVISIETEKENING | beschikbaar (v1.0.0, 12 stempels) |
 | `iso7010-safety` · `en-steel-profiles` · `common-*` | — | gedeeld |
 
 ### 5.3 🇩🇪 Duitsland

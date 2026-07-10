@@ -5,10 +5,16 @@
     "nl": "Brandveiligheidssymbolen (NEN 1414)"
   },
   "sector": "aec",
-  "types": ["symbols"],
+  "types": [
+    "symbols"
+  ],
   "standard": "NEN 1414",
   "scope": "national",
-  "status": "planned",
-  "version": "0.1.0",
-  "license": "repository"
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository",
+  "description": {
+    "en": "Core set of Dutch fire safety drawing symbols (NEN 1414 terminology), drawn from scratch. The full legacy set from the app migrates here incrementally.",
+    "nl": "Kernset Nederlandse brandveiligheidssymbolen (NEN 1414-terminologie), zelf getekend. De volledige set uit de app migreert hier stapsgewijs naartoe."
+  }
 }
