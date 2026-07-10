@@ -326,6 +326,74 @@
               ]
             }
           }
+        },
+        {
+          "id": "jp",
+          "name": {
+            "en": "Japan",
+            "ja": "日本",
+            "nl": "Japan"
+          },
+          "flag": "🇯🇵",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "jp-fire-symbols",
+                "iso7010-safety",
+                "jp-stamps",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        },
+        {
+          "id": "kr",
+          "name": {
+            "en": "South Korea",
+            "ko": "대한민국",
+            "nl": "Zuid-Korea"
+          },
+          "flag": "🇰🇷",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "kr-fire-symbols",
+                "iso7010-safety",
+                "kr-stamps",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "oceania",
+      "countries": [
+        {
+          "id": "au",
+          "name": {
+            "en": "Australia",
+            "nl": "Australië"
+          },
+          "flag": "🇦🇺",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "au-fire-symbols",
+                "iso7010-safety",
+                "au-stamps",
+                "au-steel-sections",
+                "common-material-hatches",
+                "common-north-arrows"
+              ]
+            }
+          }
         }
       ]
     }
@@ -345,6 +413,49 @@
       "version": "0.1.0",
       "path": "collections/aisc-steel-shapes/",
       "standard": "AISC"
+    },
+    "au-fire-symbols": {
+      "name": {
+        "en": "Australian fire safety drawing symbols",
+        "nl": "Australische brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/au-fire-symbols/"
+    },
+    "au-stamps": {
+      "name": {
+        "en": "Australian approval stamps",
+        "nl": "Australische stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/au-stamps/"
+    },
+    "au-steel-sections": {
+      "name": {
+        "en": "Australian steel sections (AS/NZS)",
+        "nl": "Australische staalprofielen (AS/NZS)"
+      },
+      "sector": "aec",
+      "types": [
+        "parametric"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/au-steel-sections/",
+      "standard": "AS/NZS 3679"
     },
     "br-fire-symbols": {
       "name": {
@@ -661,6 +772,66 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/it-stamps/"
+    },
+    "jp-fire-symbols": {
+      "name": {
+        "en": "Japanese fire safety drawing symbols",
+        "ja": "消防設備図記号",
+        "nl": "Japanse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/jp-fire-symbols/"
+    },
+    "jp-stamps": {
+      "name": {
+        "en": "Japanese approval stamps",
+        "ja": "図面承認印",
+        "nl": "Japanse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/jp-stamps/"
+    },
+    "kr-fire-symbols": {
+      "name": {
+        "en": "Korean fire safety drawing symbols",
+        "ko": "소방 도면 기호",
+        "nl": "Koreaanse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/kr-fire-symbols/"
+    },
+    "kr-stamps": {
+      "name": {
+        "en": "Korean approval stamps",
+        "ko": "도면 승인 스탬프",
+        "nl": "Koreaanse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/kr-stamps/"
     },
     "nen1414-fire": {
       "name": {

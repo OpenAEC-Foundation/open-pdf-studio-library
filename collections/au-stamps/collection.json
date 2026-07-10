@@ -1,0 +1,18 @@
+{
+  "id": "au-stamps",
+  "name": {
+    "en": "Australian approval stamps",
+    "nl": "Australische stempels"
+  },
+  "description": {
+    "en": "Stamps as used on Australian drawings, including WORK AS EXECUTED."
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

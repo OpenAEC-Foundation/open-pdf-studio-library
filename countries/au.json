@@ -1,0 +1,22 @@
+{
+  "id": "au",
+  "name": {
+    "en": "Australia",
+    "nl": "Australië"
+  },
+  "flag": "🇦🇺",
+  "region": "oceania",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "au-fire-symbols",
+        "iso7010-safety",
+        "au-stamps",
+        "au-steel-sections",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

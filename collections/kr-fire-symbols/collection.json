@@ -1,0 +1,16 @@
+{
+  "id": "kr-fire-symbols",
+  "name": {
+    "en": "Korean fire safety drawing symbols",
+    "ko": "소방 도면 기호",
+    "nl": "Koreaanse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

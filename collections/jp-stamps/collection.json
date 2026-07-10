@@ -1,0 +1,16 @@
+{
+  "id": "jp-stamps",
+  "name": {
+    "en": "Japanese approval stamps",
+    "ja": "図面承認印",
+    "nl": "Japanse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

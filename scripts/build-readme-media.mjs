@@ -96,7 +96,10 @@ stampSheet(
     { id: 'in-stamps', label: 'in-stamps (India)' },
     { id: 'br-stamps', label: 'br-stamps (Brasil)' },
     { id: 'cn-stamps', label: 'cn-stamps (中国)' },
-    { id: 'ru-stamps', label: 'ru-stamps (Россия)' }
+    { id: 'ru-stamps', label: 'ru-stamps (Россия)' },
+    { id: 'jp-stamps', label: 'jp-stamps (日本)' },
+    { id: 'kr-stamps', label: 'kr-stamps (대한민국)' },
+    { id: 'au-stamps', label: 'au-stamps (Australia)' }
   ],
   'preview-stamps.svg'
 );

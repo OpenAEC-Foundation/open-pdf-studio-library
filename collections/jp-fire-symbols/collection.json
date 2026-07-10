@@ -1,0 +1,16 @@
+{
+  "id": "jp-fire-symbols",
+  "name": {
+    "en": "Japanese fire safety drawing symbols",
+    "ja": "消防設備図記号",
+    "nl": "Japanse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

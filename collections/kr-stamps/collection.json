@@ -1,0 +1,16 @@
+{
+  "id": "kr-stamps",
+  "name": {
+    "en": "Korean approval stamps",
+    "ko": "도면 승인 스탬프",
+    "nl": "Koreaanse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

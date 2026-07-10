@@ -1,0 +1,64 @@
+{
+  "stamps": [
+    {
+      "id": "seungin",
+      "text": "승인",
+      "color": "#22c55e"
+    },
+    {
+      "id": "sigong-yong",
+      "text": "시공용",
+      "color": "#22c55e"
+    },
+    {
+      "id": "ballyeo",
+      "text": "반려",
+      "color": "#ef4444"
+    },
+    {
+      "id": "seungin-yocheong",
+      "text": "승인요청",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "boryu",
+      "text": "보류",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "geomto-wanryo",
+      "text": "검토완료",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "hwagin",
+      "text": "확인",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "chamgo-yong",
+      "text": "참고용",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "choan",
+      "text": "초안",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "gaejeong",
+      "text": "개정",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "jungong-do",
+      "text": "준공도",
+      "color": "#6b7280"
+    },
+    {
+      "id": "pyegi",
+      "text": "폐기",
+      "color": "#6b7280"
+    }
+  ]
+}

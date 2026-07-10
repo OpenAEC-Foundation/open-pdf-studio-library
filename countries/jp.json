@@ -1,0 +1,22 @@
+{
+  "id": "jp",
+  "name": {
+    "en": "Japan",
+    "ja": "日本",
+    "nl": "Japan"
+  },
+  "flag": "🇯🇵",
+  "region": "asia",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "jp-fire-symbols",
+        "iso7010-safety",
+        "jp-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "au-steel-sections",
+  "name": {
+    "en": "Australian steel sections (AS/NZS)",
+    "nl": "Australische staalprofielen (AS/NZS)"
+  },
+  "description": {
+    "en": "Parametric AS/NZS sections: UB, UC, PFC, angles, RHS/SHS/CHS."
+  },
+  "types": [
+    "parametric"
+  ],
+  "standard": "AS/NZS 3679",
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

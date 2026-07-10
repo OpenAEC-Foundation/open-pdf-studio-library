@@ -1,0 +1,18 @@
+{
+  "id": "au-fire-symbols",
+  "name": {
+    "en": "Australian fire safety drawing symbols",
+    "nl": "Australische brandveiligheidssymbolen"
+  },
+  "description": {
+    "en": "Fire protection symbols per AS drawing practice."
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

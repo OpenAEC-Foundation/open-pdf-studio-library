@@ -1,0 +1,22 @@
+{
+  "id": "kr",
+  "name": {
+    "en": "South Korea",
+    "ko": "대한민국",
+    "nl": "Zuid-Korea"
+  },
+  "flag": "🇰🇷",
+  "region": "asia",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "kr-fire-symbols",
+        "iso7010-safety",
+        "kr-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

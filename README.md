@@ -69,6 +69,9 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 | 🇧🇷 Brazil | 🧭 needs local review | ✅ `br-stamps` (10) |
 | 🇨🇳 China | 🧭 needs local review | ✅ `cn-stamps` (11, incl. 可用于施工 / 竣工图) |
 | 🇷🇺 Russia | 🧭 needs local review | ✅ `ru-stamps` (11, GOST/SPDS practice) |
+| 🇯🇵 Japan | 🧭 needs local review | ✅ `jp-stamps` (12, incl. 検図済 / 竣工図) |
+| 🇰🇷 South Korea | 🧭 needs local review | ✅ `kr-stamps` (12, incl. 시공용 / 준공도) |
+| 🇦🇺 Australia | 🧭 needs local review | ✅ `au-stamps` (12, incl. WORK AS EXECUTED) |
 
 Parametric collections (steel profiles, grid/level/rebar components) are
 defined but waiting on the parametric format — see the plan.
