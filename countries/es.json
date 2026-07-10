@@ -1,0 +1,23 @@
+{
+  "id": "es",
+  "name": {
+    "en": "Spain",
+    "es": "España",
+    "nl": "Spanje"
+  },
+  "flag": "🇪🇸",
+  "region": "europe",
+  "wave": 2,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "es-fire-symbols",
+        "iso7010-safety",
+        "es-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

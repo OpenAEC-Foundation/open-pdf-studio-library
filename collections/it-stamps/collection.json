@@ -1,0 +1,16 @@
+{
+  "id": "it-stamps",
+  "name": {
+    "en": "Italian approval stamps",
+    "it": "Timbri di approvazione",
+    "nl": "Italiaanse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

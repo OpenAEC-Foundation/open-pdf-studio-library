@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "onaylandi",
+      "text": "ONAYLANDI",
+      "color": "#22c55e"
+    },
+    {
+      "id": "reddedildi",
+      "text": "REDDEDİLDİ",
+      "color": "#ef4444"
+    },
+    {
+      "id": "onay-icin",
+      "text": "ONAY İÇİN",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "uygulama-icin",
+      "text": "UYGULAMA İÇİN",
+      "color": "#22c55e"
+    },
+    {
+      "id": "bilgi-icin",
+      "text": "BİLGİ İÇİN",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "taslak",
+      "text": "TASLAK",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "on-proje",
+      "text": "ÖN PROJE",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "kontrol-edildi",
+      "text": "KONTROL EDİLDİ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "goruldu",
+      "text": "GÖRÜLDÜ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "revize-edildi",
+      "text": "REVİZE EDİLDİ",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "iptal",
+      "text": "İPTAL",
+      "color": "#6b7280"
+    }
+  ]
+}

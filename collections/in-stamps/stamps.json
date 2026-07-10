@@ -1,0 +1,64 @@
+{
+  "stamps": [
+    {
+      "id": "approved",
+      "text": "APPROVED",
+      "color": "#22c55e"
+    },
+    {
+      "id": "approved-as-noted",
+      "text": "APPROVED AS NOTED",
+      "color": "#22c55e"
+    },
+    {
+      "id": "not-approved",
+      "text": "NOT APPROVED",
+      "color": "#ef4444"
+    },
+    {
+      "id": "good-for-construction",
+      "text": "GOOD FOR CONSTRUCTION",
+      "color": "#22c55e"
+    },
+    {
+      "id": "issued-for-approval",
+      "text": "ISSUED FOR APPROVAL",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "issued-for-tender",
+      "text": "ISSUED FOR TENDER",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "for-information",
+      "text": "FOR INFORMATION",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminary",
+      "text": "PRELIMINARY",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "draft",
+      "text": "DRAFT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "as-built",
+      "text": "AS BUILT",
+      "color": "#6b7280"
+    },
+    {
+      "id": "superseded",
+      "text": "SUPERSEDED",
+      "color": "#6b7280"
+    },
+    {
+      "id": "checked",
+      "text": "CHECKED",
+      "color": "#3b82f6"
+    }
+  ]
+}

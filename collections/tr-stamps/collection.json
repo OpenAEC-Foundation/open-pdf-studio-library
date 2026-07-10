@@ -1,0 +1,16 @@
+{
+  "id": "tr-stamps",
+  "name": {
+    "en": "Turkish approval stamps",
+    "tr": "Onay kaşeleri",
+    "nl": "Turkse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

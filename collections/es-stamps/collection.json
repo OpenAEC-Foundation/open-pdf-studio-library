@@ -1,0 +1,16 @@
+{
+  "id": "es-stamps",
+  "name": {
+    "en": "Spanish approval stamps",
+    "es": "Sellos de aprobación",
+    "nl": "Spaanse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

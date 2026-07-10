@@ -1,0 +1,19 @@
+{
+  "id": "in-fire-symbols",
+  "name": {
+    "en": "Indian fire safety drawing symbols",
+    "nl": "Indiase brandveiligheidssymbolen"
+  },
+  "description": {
+    "en": "Symbols per the National Building Code of India and common Indian drawing practice."
+  },
+  "types": [
+    "symbols"
+  ],
+  "standard": "National Building Code of India",
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

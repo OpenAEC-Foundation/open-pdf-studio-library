@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "aprobado",
+      "text": "APROBADO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "aprobado-con-comentarios",
+      "text": "APROBADO CON COMENTARIOS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "rechazado",
+      "text": "RECHAZADO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "para-aprobacion",
+      "text": "PARA APROBACIÓN",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "para-construccion",
+      "text": "PARA CONSTRUCCIÓN",
+      "color": "#22c55e"
+    },
+    {
+      "id": "para-informacion",
+      "text": "PARA INFORMACIÓN",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "borrador",
+      "text": "BORRADOR",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminar",
+      "text": "PRELIMINAR",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "revisado",
+      "text": "REVISADO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "conforme-a-obra",
+      "text": "CONFORME A OBRA",
+      "color": "#6b7280"
+    },
+    {
+      "id": "anulado",
+      "text": "ANULADO",
+      "color": "#6b7280"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in-stamps",
+  "name": {
+    "en": "Indian approval stamps",
+    "nl": "Indiase stempels"
+  },
+  "description": {
+    "en": "English-language stamps as used on Indian drawings, including GOOD FOR CONSTRUCTION (GFC)."
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "uk-stamps",
+  "name": {
+    "en": "UK approval stamps & suitability codes",
+    "nl": "Britse stempels en suitability-codes"
+  },
+  "description": {
+    "en": "Classic approval stamps plus ISO 19650 suitability codes as used on UK drawings."
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

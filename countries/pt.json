@@ -1,0 +1,23 @@
+{
+  "id": "pt",
+  "name": {
+    "en": "Portugal",
+    "pt": "Portugal",
+    "nl": "Portugal"
+  },
+  "flag": "🇵🇹",
+  "region": "europe",
+  "wave": 3,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "pt-fire-symbols",
+        "iso7010-safety",
+        "pt-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

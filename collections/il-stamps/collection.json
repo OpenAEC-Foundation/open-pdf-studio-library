@@ -1,0 +1,16 @@
+{
+  "id": "il-stamps",
+  "name": {
+    "en": "Israeli approval stamps",
+    "he": "חותמות אישור",
+    "nl": "Israëlische stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "uk-fire-symbols",
+  "name": {
+    "en": "Fire safety drawing symbols (UK)",
+    "nl": "Britse brandveiligheidssymbolen"
+  },
+  "description": {
+    "en": "Symbols commonly used on UK fire safety and fire alarm drawings (BS 1635 conventions)."
+  },
+  "types": [
+    "symbols"
+  ],
+  "standard": "BS 1635",
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

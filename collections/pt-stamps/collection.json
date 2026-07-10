@@ -1,0 +1,16 @@
+{
+  "id": "pt-stamps",
+  "name": {
+    "en": "Portuguese approval stamps",
+    "pt": "Carimbos de aprovação",
+    "nl": "Portugese stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

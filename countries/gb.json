@@ -1,0 +1,23 @@
+{
+  "id": "gb",
+  "name": {
+    "en": "United Kingdom",
+    "nl": "Verenigd Koninkrijk"
+  },
+  "flag": "🇬🇧",
+  "region": "europe",
+  "wave": 1,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "uk-fire-symbols",
+        "iso7010-safety",
+        "uk-drafting-parametric",
+        "uk-stamps",
+        "uk-steel-sections",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

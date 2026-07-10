@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "aprovado",
+      "text": "APROVADO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "aprovado-com-ressalvas",
+      "text": "APROVADO COM RESSALVAS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "reprovado",
+      "text": "REPROVADO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "para-aprovacao",
+      "text": "PARA APROVAÇÃO",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "liberado-para-execucao",
+      "text": "LIBERADO PARA EXECUÇÃO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "para-informacao",
+      "text": "PARA INFORMAÇÃO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminar",
+      "text": "PRELIMINAR",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "em-revisao",
+      "text": "EM REVISÃO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "como-construido",
+      "text": "COMO CONSTRUÍDO",
+      "color": "#6b7280"
+    },
+    {
+      "id": "cancelado",
+      "text": "CANCELADO",
+      "color": "#6b7280"
+    }
+  ]
+}

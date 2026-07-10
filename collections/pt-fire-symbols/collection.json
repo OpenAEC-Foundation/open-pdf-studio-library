@@ -1,0 +1,16 @@
+{
+  "id": "pt-fire-symbols",
+  "name": {
+    "en": "Portuguese fire safety plan symbols",
+    "pt": "Símbolos de segurança contra incêndio para plantas",
+    "nl": "Portugese brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

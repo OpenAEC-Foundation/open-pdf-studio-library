@@ -1,0 +1,23 @@
+{
+  "id": "tr",
+  "name": {
+    "en": "Türkiye",
+    "tr": "Türkiye",
+    "nl": "Turkije"
+  },
+  "flag": "🇹🇷",
+  "region": "europe",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "tr-fire-symbols",
+        "iso7010-safety",
+        "tr-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

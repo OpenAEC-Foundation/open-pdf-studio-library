@@ -1,0 +1,22 @@
+{
+  "id": "br",
+  "name": {
+    "en": "Brazil",
+    "pt": "Brasil",
+    "nl": "Brazilië"
+  },
+  "flag": "🇧🇷",
+  "region": "south-america",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "br-fire-symbols",
+        "iso7010-safety",
+        "br-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

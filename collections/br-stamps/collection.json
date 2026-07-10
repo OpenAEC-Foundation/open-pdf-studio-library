@@ -1,0 +1,16 @@
+{
+  "id": "br-stamps",
+  "name": {
+    "en": "Brazilian approval stamps",
+    "pt": "Carimbos de aprovação",
+    "nl": "Braziliaanse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

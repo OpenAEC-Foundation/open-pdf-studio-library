@@ -1,0 +1,16 @@
+{
+  "id": "it-fire-symbols",
+  "name": {
+    "en": "Italian fire safety plan symbols",
+    "it": "Simboli antincendio per planimetrie",
+    "nl": "Italiaanse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

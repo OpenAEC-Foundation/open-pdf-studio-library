@@ -1,0 +1,18 @@
+{
+  "id": "uk-steel-sections",
+  "name": {
+    "en": "UK steel sections",
+    "nl": "Britse staalprofielen"
+  },
+  "description": {
+    "en": "Parametric UK sections: UB, UC, PFC, RSA."
+  },
+  "types": [
+    "parametric"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

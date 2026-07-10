@@ -1,0 +1,44 @@
+{
+  "stamps": [
+    {
+      "id": "meushar",
+      "text": "מאושר",
+      "color": "#22c55e"
+    },
+    {
+      "id": "lo-meushar",
+      "text": "לא מאושר",
+      "color": "#ef4444"
+    },
+    {
+      "id": "le-ishur",
+      "text": "לאישור",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "le-bitzua",
+      "text": "לביצוע",
+      "color": "#22c55e"
+    },
+    {
+      "id": "tiyuta",
+      "text": "טיוטה",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "le-meida-bilvad",
+      "text": "למידע בלבד",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "nivdak",
+      "text": "נבדק",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "mevutal",
+      "text": "מבוטל",
+      "color": "#6b7280"
+    }
+  ]
+}

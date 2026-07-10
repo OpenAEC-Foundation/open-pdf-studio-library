@@ -1,0 +1,74 @@
+{
+  "stamps": [
+    {
+      "id": "approved",
+      "text": "APPROVED",
+      "color": "#22c55e"
+    },
+    {
+      "id": "approved-with-comments",
+      "text": "APPROVED WITH COMMENTS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "rejected",
+      "text": "REJECTED",
+      "color": "#ef4444"
+    },
+    {
+      "id": "s0-wip",
+      "text": "S0 WORK IN PROGRESS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "s1-coordination",
+      "text": "S1 SUITABLE FOR COORDINATION",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "s2-information",
+      "text": "S2 SUITABLE FOR INFORMATION",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "s3-review-comment",
+      "text": "S3 FOR REVIEW & COMMENT",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "s4-stage-approval",
+      "text": "S4 FOR STAGE APPROVAL",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "for-construction",
+      "text": "FOR CONSTRUCTION",
+      "color": "#22c55e"
+    },
+    {
+      "id": "as-built",
+      "text": "AS BUILT",
+      "color": "#6b7280"
+    },
+    {
+      "id": "superseded",
+      "text": "SUPERSEDED",
+      "color": "#6b7280"
+    },
+    {
+      "id": "draft",
+      "text": "DRAFT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminary",
+      "text": "PRELIMINARY",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "checked",
+      "text": "CHECKED",
+      "color": "#3b82f6"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fr-stamps",
+  "name": {
+    "en": "French approval stamps",
+    "fr": "Tampons d'approbation",
+    "nl": "Franse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

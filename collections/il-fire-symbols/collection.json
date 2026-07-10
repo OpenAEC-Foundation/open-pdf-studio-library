@@ -1,0 +1,16 @@
+{
+  "id": "il-fire-symbols",
+  "name": {
+    "en": "Israeli fire safety plan symbols",
+    "he": "סמלי בטיחות אש לתוכניות",
+    "nl": "Israëlische brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

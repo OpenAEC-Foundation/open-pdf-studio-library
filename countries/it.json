@@ -1,0 +1,23 @@
+{
+  "id": "it",
+  "name": {
+    "en": "Italy",
+    "it": "Italia",
+    "nl": "Italië"
+  },
+  "flag": "🇮🇹",
+  "region": "europe",
+  "wave": 2,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "it-fire-symbols",
+        "iso7010-safety",
+        "it-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

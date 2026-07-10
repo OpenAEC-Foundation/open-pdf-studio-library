@@ -1,0 +1,64 @@
+{
+  "stamps": [
+    {
+      "id": "bon-pour-execution",
+      "text": "BON POUR EXÉCUTION",
+      "color": "#22c55e"
+    },
+    {
+      "id": "approuve",
+      "text": "APPROUVÉ",
+      "color": "#22c55e"
+    },
+    {
+      "id": "refuse",
+      "text": "REFUSÉ",
+      "color": "#ef4444"
+    },
+    {
+      "id": "vu",
+      "text": "VU",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "pour-approbation",
+      "text": "POUR APPROBATION",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "pour-information",
+      "text": "POUR INFORMATION",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "pour-commentaires",
+      "text": "POUR COMMENTAIRES",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "projet",
+      "text": "PROJET",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "avant-projet",
+      "text": "AVANT-PROJET",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "conforme-a-execution",
+      "text": "CONFORME À L'EXÉCUTION",
+      "color": "#6b7280"
+    },
+    {
+      "id": "annule",
+      "text": "ANNULÉ",
+      "color": "#6b7280"
+    },
+    {
+      "id": "revise",
+      "text": "RÉVISÉ",
+      "color": "#8b5cf6"
+    }
+  ]
+}

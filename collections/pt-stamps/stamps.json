@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "aprovado",
+      "text": "APROVADO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "aprovado-com-comentarios",
+      "text": "APROVADO COM COMENTÁRIOS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "reprovado",
+      "text": "REPROVADO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "para-aprovacao",
+      "text": "PARA APROVAÇÃO",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "para-construcao",
+      "text": "PARA CONSTRUÇÃO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "para-informacao",
+      "text": "PARA INFORMAÇÃO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminar",
+      "text": "PRELIMINAR",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "revisto",
+      "text": "REVISTO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "telas-finais",
+      "text": "TELAS FINAIS",
+      "color": "#6b7280"
+    },
+    {
+      "id": "anulado",
+      "text": "ANULADO",
+      "color": "#6b7280"
+    }
+  ]
+}

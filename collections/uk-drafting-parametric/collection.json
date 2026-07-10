@@ -1,0 +1,15 @@
+{
+  "id": "uk-drafting-parametric",
+  "name": {
+    "en": "UK drafting components",
+    "nl": "Britse tekenwerk-componenten"
+  },
+  "types": [
+    "parametric"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "br-fire-symbols",
+  "name": {
+    "en": "Brazilian fire safety plan symbols",
+    "pt": "Símbolos de segurança contra incêndio (ABNT)",
+    "nl": "Braziliaanse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

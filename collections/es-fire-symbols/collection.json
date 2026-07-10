@@ -1,0 +1,16 @@
+{
+  "id": "es-fire-symbols",
+  "name": {
+    "en": "Spanish fire safety plan symbols",
+    "es": "Símbolos de protección contra incendios para planos",
+    "nl": "Spaanse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

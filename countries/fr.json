@@ -1,0 +1,23 @@
+{
+  "id": "fr",
+  "name": {
+    "en": "France",
+    "fr": "France",
+    "nl": "Frankrijk"
+  },
+  "flag": "🇫🇷",
+  "region": "europe",
+  "wave": 2,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "fr-fire-symbols",
+        "iso7010-safety",
+        "fr-stamps",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}

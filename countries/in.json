@@ -1,0 +1,21 @@
+{
+  "id": "in",
+  "name": {
+    "en": "India",
+    "nl": "India"
+  },
+  "flag": "🇮🇳",
+  "region": "asia",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "in-fire-symbols",
+        "iso7010-safety",
+        "in-stamps",
+        "common-material-hatches",
+        "common-north-arrows"
+      ]
+    }
+  }
+}
