@@ -1,0 +1,15 @@
+{
+  "id": "lt-fire-symbols",
+  "name": {
+    "en": "Lithuanian fire safety plan symbols",
+    "nl": "Litouwse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

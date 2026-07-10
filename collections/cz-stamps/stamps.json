@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "schvaleno",
+      "text": "SCHVÁLENO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "neschvaleno",
+      "text": "NESCHVÁLENO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "ke-schvaleni",
+      "text": "KE SCHVÁLENÍ",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "k-realizaci",
+      "text": "K REALIZACI",
+      "color": "#22c55e"
+    },
+    {
+      "id": "navrh",
+      "text": "NÁVRH",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "predbezny",
+      "text": "PŘEDBĚŽNÝ",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "pro-informaci",
+      "text": "PRO INFORMACI",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "zkontrolovano",
+      "text": "ZKONTROLOVÁNO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "revidovano",
+      "text": "REVIDOVÁNO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "skutecne-provedeni",
+      "text": "SKUTEČNÉ PROVEDENÍ",
+      "color": "#6b7280"
+    },
+    {
+      "id": "zruseno",
+      "text": "ZRUŠENO",
+      "color": "#6b7280"
+    }
+  ]
+}

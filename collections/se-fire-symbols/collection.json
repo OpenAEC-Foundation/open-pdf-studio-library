@@ -1,0 +1,15 @@
+{
+  "id": "se-fire-symbols",
+  "name": {
+    "en": "Swedish fire safety plan symbols",
+    "nl": "Zweedse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

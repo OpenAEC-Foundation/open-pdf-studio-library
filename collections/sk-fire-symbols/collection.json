@@ -1,0 +1,15 @@
+{
+  "id": "sk-fire-symbols",
+  "name": {
+    "en": "Slovak fire safety plan symbols",
+    "nl": "Slowaakse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

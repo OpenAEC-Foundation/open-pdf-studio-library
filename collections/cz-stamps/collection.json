@@ -1,0 +1,16 @@
+{
+  "id": "cz-stamps",
+  "name": {
+    "en": "Czech approval stamps",
+    "cs": "České razítka",
+    "nl": "Tsjechische stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

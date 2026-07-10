@@ -9,10 +9,12 @@
     "nl": "Doorsnede-symbolen voor AISC-profielen: W, S, HP, C, L, WT, HSS, buis, plaat. Parametrische maatvoering volgt zodra het parametrische formaat er is."
   },
   "sector": "aec",
-  "types": ["symbols"],
+  "types": [
+    "symbols"
+  ],
   "standard": "AISC",
   "scope": "national",
   "status": "available",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "repository"
 }

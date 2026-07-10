@@ -5,6 +5,241 @@
       "id": "europe",
       "countries": [
         {
+          "id": "at",
+          "name": {
+            "en": "Austria",
+            "de": "Österreich",
+            "nl": "Oostenrijk"
+          },
+          "flag": "🇦🇹",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "at-fire-symbols",
+                "de-stamps",
+                "de-wall-types",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "be",
+          "name": {
+            "en": "Belgium",
+            "nl": "België",
+            "fr": "Belgique"
+          },
+          "flag": "🇧🇪",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "nen1414-fire",
+                "be-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "bg",
+          "name": {
+            "en": "Bulgaria",
+            "bg": "България",
+            "nl": "Bulgarije"
+          },
+          "flag": "🇧🇬",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "bg-fire-symbols",
+                "bg-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ch",
+          "name": {
+            "en": "Switzerland",
+            "de": "Schweiz",
+            "fr": "Suisse",
+            "it": "Svizzera",
+            "nl": "Zwitserland"
+          },
+          "flag": "🇨🇭",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "ch-fire-symbols",
+                "de-stamps",
+                "fr-stamps",
+                "it-stamps",
+                "de-wall-types",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "cy",
+          "name": {
+            "en": "Cyprus",
+            "el": "Κύπρος",
+            "nl": "Cyprus"
+          },
+          "flag": "🇨🇾",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "gr-fire-symbols",
+                "gr-stamps",
+                "uk-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "cz",
+          "name": {
+            "en": "Czechia",
+            "cs": "Česko",
+            "nl": "Tsjechië"
+          },
+          "flag": "🇨🇿",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "cz-fire-symbols",
+                "cz-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
           "id": "de",
           "name": {
             "en": "Germany",
@@ -23,7 +258,99 @@
                 "de-wall-types",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "dk",
+          "name": {
+            "en": "Denmark",
+            "da": "Danmark",
+            "nl": "Denemarken"
+          },
+          "flag": "🇩🇰",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "dk-fire-symbols",
+                "dk-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ee",
+          "name": {
+            "en": "Estonia",
+            "et": "Eesti",
+            "nl": "Estland"
+          },
+          "flag": "🇪🇪",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "ee-fire-symbols",
+                "ee-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -45,7 +372,61 @@
                 "es-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "fi",
+          "name": {
+            "en": "Finland",
+            "fi": "Suomi",
+            "nl": "Finland"
+          },
+          "flag": "🇫🇮",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "fi-fire-symbols",
+                "fi-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -67,7 +448,23 @@
                 "fr-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -90,7 +487,175 @@
                 "uk-wall-types",
                 "uk-steel-sections",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "gr",
+          "name": {
+            "en": "Greece",
+            "el": "Ελλάδα",
+            "nl": "Griekenland"
+          },
+          "flag": "🇬🇷",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "gr-fire-symbols",
+                "gr-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "hr",
+          "name": {
+            "en": "Croatia",
+            "hr": "Hrvatska",
+            "nl": "Kroatië"
+          },
+          "flag": "🇭🇷",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "hr-fire-symbols",
+                "hr-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "hu",
+          "name": {
+            "en": "Hungary",
+            "hu": "Magyarország",
+            "nl": "Hongarije"
+          },
+          "flag": "🇭🇺",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "hu-fire-symbols",
+                "hu-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ie",
+          "name": {
+            "en": "Ireland",
+            "nl": "Ierland"
+          },
+          "flag": "🇮🇪",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "uk-fire-symbols",
+                "uk-stamps",
+                "uk-wall-types",
+                "uk-steel-sections",
+                "iso7010-safety",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -112,7 +677,176 @@
                 "it-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "lt",
+          "name": {
+            "en": "Lithuania",
+            "lt": "Lietuva",
+            "nl": "Litouwen"
+          },
+          "flag": "🇱🇹",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "lt-fire-symbols",
+                "lt-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "lu",
+          "name": {
+            "en": "Luxembourg",
+            "fr": "Luxembourg",
+            "de": "Luxemburg",
+            "nl": "Luxemburg"
+          },
+          "flag": "🇱🇺",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "fr-fire-symbols",
+                "fr-stamps",
+                "de-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "lv",
+          "name": {
+            "en": "Latvia",
+            "lv": "Latvija",
+            "nl": "Letland"
+          },
+          "flag": "🇱🇻",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "lv-fire-symbols",
+                "lv-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "mt",
+          "name": {
+            "en": "Malta",
+            "nl": "Malta"
+          },
+          "flag": "🇲🇹",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "uk-fire-symbols",
+                "uk-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -134,7 +868,99 @@
                 "nl-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "no",
+          "name": {
+            "en": "Norway",
+            "no": "Norge",
+            "nl": "Noorwegen"
+          },
+          "flag": "🇳🇴",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "no-fire-symbols",
+                "no-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "pl",
+          "name": {
+            "en": "Poland",
+            "pl": "Polska",
+            "nl": "Polen"
+          },
+          "flag": "🇵🇱",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "pl-fire-symbols",
+                "pl-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -156,7 +982,61 @@
                 "pt-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ro",
+          "name": {
+            "en": "Romania",
+            "ro": "România",
+            "nl": "Roemenië"
+          },
+          "flag": "🇷🇴",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "ro-fire-symbols",
+                "ro-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -177,7 +1057,137 @@
                 "iso7010-safety",
                 "ru-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "se",
+          "name": {
+            "en": "Sweden",
+            "sv": "Sverige",
+            "nl": "Zweden"
+          },
+          "flag": "🇸🇪",
+          "wave": 2,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "se-fire-symbols",
+                "se-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "si",
+          "name": {
+            "en": "Slovenia",
+            "sl": "Slovenija",
+            "nl": "Slovenië"
+          },
+          "flag": "🇸🇮",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "si-fire-symbols",
+                "si-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        },
+        {
+          "id": "sk",
+          "name": {
+            "en": "Slovakia",
+            "sk": "Slovensko",
+            "nl": "Slowakije"
+          },
+          "flag": "🇸🇰",
+          "wave": 3,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "sk-fire-symbols",
+                "sk-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -199,7 +1209,23 @@
                 "tr-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -226,7 +1252,23 @@
                 "us-wall-types",
                 "aisc-steel-shapes",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -252,7 +1294,23 @@
                 "iso7010-safety",
                 "br-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -279,7 +1337,65 @@
                 "il-stamps",
                 "en-steel-profiles",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "africa",
+      "countries": [
+        {
+          "id": "za",
+          "name": {
+            "en": "South Africa",
+            "nl": "Zuid-Afrika"
+          },
+          "flag": "🇿🇦",
+          "wave": 4,
+          "sectors": {
+            "aec": {
+              "collections": [
+                "za-fire-symbols",
+                "za-stamps",
+                "iso7010-safety",
+                "en-steel-profiles",
+                "common-material-hatches",
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -305,7 +1421,23 @@
                 "iso7010-safety",
                 "cn-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -325,7 +1457,23 @@
                 "iso7010-safety",
                 "in-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -346,7 +1494,23 @@
                 "iso7010-safety",
                 "jp-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -367,7 +1531,23 @@
                 "iso7010-safety",
                 "kr-stamps",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -393,7 +1573,23 @@
                 "au-stamps",
                 "au-steel-sections",
                 "common-material-hatches",
-                "common-north-arrows"
+                "common-north-arrows",
+                "iec60617-electrical"
+              ]
+            },
+            "electrical": {
+              "collections": [
+                "iec60617-electrical"
+              ]
+            },
+            "process": {
+              "collections": [
+                "iso10628-pid"
+              ]
+            },
+            "mep": {
+              "collections": [
+                "common-hvac-symbols"
               ]
             }
           }
@@ -413,10 +1609,24 @@
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/aisc-steel-shapes/",
       "standard": "AISC",
-      "symbolCount": 12
+      "symbolCount": 17
+    },
+    "at-fire-symbols": {
+      "name": {
+        "en": "Austrian fire safety plan symbols (TRVB conventions)",
+        "nl": "Oostenrijkse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/at-fire-symbols/"
     },
     "au-fire-symbols": {
       "name": {
@@ -461,6 +1671,50 @@
       "path": "collections/au-steel-sections/",
       "standard": "AS/NZS 3679"
     },
+    "be-stamps": {
+      "name": {
+        "en": "Belgian approval stamps (NL/FR)",
+        "nl": "Belgische stempels (NL/FR)",
+        "fr": "Tampons belges (NL/FR)"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/be-stamps/"
+    },
+    "bg-fire-symbols": {
+      "name": {
+        "en": "Bulgarian fire safety plan symbols",
+        "nl": "Bulgaarse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/bg-fire-symbols/"
+    },
+    "bg-stamps": {
+      "name": {
+        "en": "Bulgarian approval stamps",
+        "bg": "Български печати",
+        "nl": "Bulgaarse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/bg-stamps/"
+    },
     "br-fire-symbols": {
       "name": {
         "en": "Brazilian fire safety plan symbols",
@@ -490,6 +1744,20 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/br-stamps/"
+    },
+    "ch-fire-symbols": {
+      "name": {
+        "en": "Swiss fire safety plan symbols",
+        "nl": "Zwitserse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/ch-fire-symbols/"
     },
     "cn-fire-symbols": {
       "name": {
@@ -521,6 +1789,21 @@
       "version": "1.0.0",
       "path": "collections/cn-stamps/"
     },
+    "common-hvac-symbols": {
+      "name": {
+        "en": "HVAC plan symbols",
+        "nl": "HVAC/klimaat-plansymbolen"
+      },
+      "sector": "mep",
+      "types": [
+        "symbols"
+      ],
+      "scope": "international",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/common-hvac-symbols/",
+      "symbolCount": 11
+    },
     "common-material-hatches": {
       "name": {
         "en": "Material hatch patterns",
@@ -549,6 +1832,35 @@
       "version": "1.0.0",
       "path": "collections/common-north-arrows/",
       "symbolCount": 4
+    },
+    "cz-fire-symbols": {
+      "name": {
+        "en": "Czech fire safety plan symbols",
+        "nl": "Tsjechische brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/cz-fire-symbols/"
+    },
+    "cz-stamps": {
+      "name": {
+        "en": "Czech approval stamps",
+        "cs": "České razítka",
+        "nl": "Tsjechische stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/cz-stamps/"
     },
     "de-drafting-parametric": {
       "name": {
@@ -614,6 +1926,64 @@
       "standard": "DIN 14034-6",
       "symbolCount": 31
     },
+    "dk-fire-symbols": {
+      "name": {
+        "en": "Danish fire safety plan symbols",
+        "nl": "Deense brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/dk-fire-symbols/"
+    },
+    "dk-stamps": {
+      "name": {
+        "en": "Danish approval stamps",
+        "da": "Danske stempler",
+        "nl": "Deense stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/dk-stamps/"
+    },
+    "ee-fire-symbols": {
+      "name": {
+        "en": "Estonian fire safety plan symbols",
+        "nl": "Estse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/ee-fire-symbols/"
+    },
+    "ee-stamps": {
+      "name": {
+        "en": "Estonian approval stamps",
+        "et": "Eesti templid",
+        "nl": "Estse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/ee-stamps/"
+    },
     "en-steel-profiles": {
       "name": {
         "en": "European steel profiles",
@@ -625,10 +1995,10 @@
       ],
       "scope": "regional",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/en-steel-profiles/",
       "standard": "EN 10365",
-      "symbolCount": 12
+      "symbolCount": 17
     },
     "es-fire-symbols": {
       "name": {
@@ -660,6 +2030,35 @@
       "version": "1.0.0",
       "path": "collections/es-stamps/"
     },
+    "fi-fire-symbols": {
+      "name": {
+        "en": "Finnish fire safety plan symbols",
+        "nl": "Finse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/fi-fire-symbols/"
+    },
+    "fi-stamps": {
+      "name": {
+        "en": "Finnish approval stamps",
+        "fi": "Suomalaiset leimat",
+        "nl": "Finse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/fi-stamps/"
+    },
     "fr-fire-symbols": {
       "name": {
         "en": "French fire safety plan symbols",
@@ -689,6 +2088,109 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/fr-stamps/"
+    },
+    "gr-fire-symbols": {
+      "name": {
+        "en": "Greek fire safety plan symbols",
+        "nl": "Griekse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/gr-fire-symbols/"
+    },
+    "gr-stamps": {
+      "name": {
+        "en": "Greek approval stamps",
+        "el": "Ελληνικές σφραγίδες",
+        "nl": "Griekse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/gr-stamps/"
+    },
+    "hr-fire-symbols": {
+      "name": {
+        "en": "Croatian fire safety plan symbols",
+        "nl": "Kroatische brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/hr-fire-symbols/"
+    },
+    "hr-stamps": {
+      "name": {
+        "en": "Croatian approval stamps",
+        "hr": "Hrvatski pečati",
+        "nl": "Kroatische stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/hr-stamps/"
+    },
+    "hu-fire-symbols": {
+      "name": {
+        "en": "Hungarian fire safety plan symbols",
+        "nl": "Hongaarse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/hu-fire-symbols/"
+    },
+    "hu-stamps": {
+      "name": {
+        "en": "Hungarian approval stamps",
+        "hu": "Magyar pecsétek",
+        "nl": "Hongaarse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/hu-stamps/"
+    },
+    "iec60617-electrical": {
+      "name": {
+        "en": "Electrical installation symbols (IEC 60617)",
+        "nl": "Elektra-installatiesymbolen (IEC 60617)"
+      },
+      "sector": "electrical",
+      "types": [
+        "symbols"
+      ],
+      "scope": "international",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/iec60617-electrical/",
+      "standard": "IEC 60617",
+      "symbolCount": 20
     },
     "il-fire-symbols": {
       "name": {
@@ -748,6 +2250,22 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/in-stamps/"
+    },
+    "iso10628-pid": {
+      "name": {
+        "en": "P&ID symbols (ISO 10628)",
+        "nl": "P&ID-symbolen (ISO 10628)"
+      },
+      "sector": "process",
+      "types": [
+        "symbols"
+      ],
+      "scope": "international",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/iso10628-pid/",
+      "standard": "ISO 10628",
+      "symbolCount": 14
     },
     "iso7010-safety": {
       "name": {
@@ -854,6 +2372,64 @@
       "version": "1.0.0",
       "path": "collections/kr-stamps/"
     },
+    "lt-fire-symbols": {
+      "name": {
+        "en": "Lithuanian fire safety plan symbols",
+        "nl": "Litouwse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/lt-fire-symbols/"
+    },
+    "lt-stamps": {
+      "name": {
+        "en": "Lithuanian approval stamps",
+        "lt": "Lietuvos antspaudai",
+        "nl": "Litouwse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/lt-stamps/"
+    },
+    "lv-fire-symbols": {
+      "name": {
+        "en": "Latvian fire safety plan symbols",
+        "nl": "Letse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/lv-fire-symbols/"
+    },
+    "lv-stamps": {
+      "name": {
+        "en": "Latvian approval stamps",
+        "lv": "Latvijas zīmogi",
+        "nl": "Letse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/lv-stamps/"
+    },
     "nen1414-fire": {
       "name": {
         "en": "Fire safety drawing symbols (NEN 1414)",
@@ -913,6 +2489,64 @@
       "version": "0.1.0",
       "path": "collections/nl-stamps/"
     },
+    "no-fire-symbols": {
+      "name": {
+        "en": "Norwegian fire safety plan symbols",
+        "nl": "Noorse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/no-fire-symbols/"
+    },
+    "no-stamps": {
+      "name": {
+        "en": "Norwegian approval stamps",
+        "no": "Norske stempler",
+        "nl": "Noorse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/no-stamps/"
+    },
+    "pl-fire-symbols": {
+      "name": {
+        "en": "Polish fire safety plan symbols",
+        "nl": "Poolse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/pl-fire-symbols/"
+    },
+    "pl-stamps": {
+      "name": {
+        "en": "Polish approval stamps",
+        "pl": "Polskie pieczątki",
+        "nl": "Poolse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/pl-stamps/"
+    },
     "pt-fire-symbols": {
       "name": {
         "en": "Portuguese fire safety plan symbols",
@@ -943,6 +2577,35 @@
       "version": "1.0.0",
       "path": "collections/pt-stamps/"
     },
+    "ro-fire-symbols": {
+      "name": {
+        "en": "Romanian fire safety plan symbols",
+        "nl": "Roemeense brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/ro-fire-symbols/"
+    },
+    "ro-stamps": {
+      "name": {
+        "en": "Romanian approval stamps",
+        "ro": "Ștampile românești",
+        "nl": "Roemeense stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/ro-stamps/"
+    },
     "ru-fire-symbols": {
       "name": {
         "en": "Russian fire safety drawing symbols",
@@ -972,6 +2635,93 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/ru-stamps/"
+    },
+    "se-fire-symbols": {
+      "name": {
+        "en": "Swedish fire safety plan symbols",
+        "nl": "Zweedse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/se-fire-symbols/"
+    },
+    "se-stamps": {
+      "name": {
+        "en": "Swedish approval stamps",
+        "sv": "Svenska stämplar",
+        "nl": "Zweedse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/se-stamps/"
+    },
+    "si-fire-symbols": {
+      "name": {
+        "en": "Slovenian fire safety plan symbols",
+        "nl": "Sloveense brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/si-fire-symbols/"
+    },
+    "si-stamps": {
+      "name": {
+        "en": "Slovenian approval stamps",
+        "sl": "Slovenski žigi",
+        "nl": "Sloveense stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/si-stamps/"
+    },
+    "sk-fire-symbols": {
+      "name": {
+        "en": "Slovak fire safety plan symbols",
+        "nl": "Slowaakse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/sk-fire-symbols/"
+    },
+    "sk-stamps": {
+      "name": {
+        "en": "Slovak approval stamps",
+        "sk": "Slovenské pečiatky",
+        "nl": "Slowaakse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/sk-stamps/"
     },
     "tr-fire-symbols": {
       "name": {
@@ -1058,9 +2808,9 @@
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/uk-steel-sections/",
-      "symbolCount": 10
+      "symbolCount": 15
     },
     "uk-wall-types": {
       "name": {
@@ -1119,6 +2869,34 @@
       "version": "1.0.0",
       "path": "collections/us-wall-types/",
       "symbolCount": 8
+    },
+    "za-fire-symbols": {
+      "name": {
+        "en": "South African fire safety plan symbols",
+        "nl": "Zuid-Afrikaanse brandveiligheidssymbolen"
+      },
+      "sector": "aec",
+      "types": [
+        "symbols"
+      ],
+      "scope": "national",
+      "status": "planned",
+      "version": "0.1.0",
+      "path": "collections/za-fire-symbols/"
+    },
+    "za-stamps": {
+      "name": {
+        "en": "South African approval stamps",
+        "nl": "Zuid-Afrikaanse stempels"
+      },
+      "sector": "aec",
+      "types": [
+        "stamps"
+      ],
+      "scope": "national",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "collections/za-stamps/"
     }
   }
 }

@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "aprobat",
+      "text": "APROBAT",
+      "color": "#22c55e"
+    },
+    {
+      "id": "respins",
+      "text": "RESPINS",
+      "color": "#ef4444"
+    },
+    {
+      "id": "spre-aprobare",
+      "text": "SPRE APROBARE",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "pentru-executie",
+      "text": "PENTRU EXECUȚIE",
+      "color": "#22c55e"
+    },
+    {
+      "id": "proiect",
+      "text": "PROIECT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminar",
+      "text": "PRELIMINAR",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "spre-informare",
+      "text": "SPRE INFORMARE",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "verificat",
+      "text": "VERIFICAT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "revizuit",
+      "text": "REVIZUIT",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "conform-cu-executia",
+      "text": "CONFORM CU EXECUȚIA",
+      "color": "#6b7280"
+    },
+    {
+      "id": "anulat",
+      "text": "ANULAT",
+      "color": "#6b7280"
+    }
+  ]
+}

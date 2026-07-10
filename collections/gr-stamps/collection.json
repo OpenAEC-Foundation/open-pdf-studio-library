@@ -1,0 +1,16 @@
+{
+  "id": "gr-stamps",
+  "name": {
+    "en": "Greek approval stamps",
+    "el": "Ελληνικές σφραγίδες",
+    "nl": "Griekse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

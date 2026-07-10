@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "odobreno",
+      "text": "ODOBRENO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "odbijeno",
+      "text": "ODBIJENO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "na-odobrenje",
+      "text": "NA ODOBRENJE",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "za-izvedbu",
+      "text": "ZA IZVEDBU",
+      "color": "#22c55e"
+    },
+    {
+      "id": "nacrt",
+      "text": "NACRT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminarno",
+      "text": "PRELIMINARNO",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "za-informaciju",
+      "text": "ZA INFORMACIJU",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "provjereno",
+      "text": "PROVJERENO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "izmijenjeno",
+      "text": "IZMIJENJENO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "izvedeno-stanje",
+      "text": "IZVEDENO STANJE",
+      "color": "#6b7280"
+    },
+    {
+      "id": "ponisteno",
+      "text": "PONIŠTENO",
+      "color": "#6b7280"
+    }
+  ]
+}

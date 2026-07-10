@@ -1,0 +1,15 @@
+{
+  "id": "si-fire-symbols",
+  "name": {
+    "en": "Slovenian fire safety plan symbols",
+    "nl": "Sloveense brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

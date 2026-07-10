@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "jovahagyva",
+      "text": "JÓVÁHAGYVA",
+      "color": "#22c55e"
+    },
+    {
+      "id": "elutasitva",
+      "text": "ELUTASÍTVA",
+      "color": "#ef4444"
+    },
+    {
+      "id": "jovahagyasra",
+      "text": "JÓVÁHAGYÁSRA",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "kiviteli-terv",
+      "text": "KIVITELI TERV",
+      "color": "#22c55e"
+    },
+    {
+      "id": "vazlat",
+      "text": "VÁZLAT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "elozetes",
+      "text": "ELŐZETES",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tajekoztatasul",
+      "text": "TÁJÉKOZTATÁSUL",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "ellenorizve",
+      "text": "ELLENŐRIZVE",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "modositva",
+      "text": "MÓDOSÍTVA",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "megvalosulasi-terv",
+      "text": "MEGVALÓSULÁSI TERV",
+      "color": "#6b7280"
+    },
+    {
+      "id": "ervenytelen",
+      "text": "ÉRVÉNYTELEN",
+      "color": "#6b7280"
+    }
+  ]
+}

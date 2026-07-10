@@ -1,0 +1,20 @@
+{
+  "id": "iec60617-electrical",
+  "name": {
+    "en": "Electrical installation symbols (IEC 60617)",
+    "nl": "Elektra-installatiesymbolen (IEC 60617)"
+  },
+  "description": {
+    "en": "Plan-view electrical installation symbols following IEC 60617 conventions: outlets, switches, lighting, distribution.",
+    "nl": "Elektrasymbolen voor plattegronden volgens IEC 60617-conventies: wandcontactdozen, schakelaars, verlichting, verdeling."
+  },
+  "sector": "electrical",
+  "types": [
+    "symbols"
+  ],
+  "standard": "IEC 60617",
+  "scope": "international",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

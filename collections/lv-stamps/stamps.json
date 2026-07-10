@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "apstiprinats",
+      "text": "APSTIPRINĀTS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "noraidits",
+      "text": "NORAIDĪTS",
+      "color": "#ef4444"
+    },
+    {
+      "id": "apstiprinasanai",
+      "text": "APSTIPRINĀŠANAI",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "darba-rasejums",
+      "text": "DARBA RASĒJUMS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "melnraksts",
+      "text": "MELNRAKSTS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "sakotnejs",
+      "text": "SĀKOTNĒJS",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "informacijai",
+      "text": "INFORMĀCIJAI",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "parbaudits",
+      "text": "PĀRBAUDĪTS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "grozits",
+      "text": "GROZĪTS",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "anulets",
+      "text": "ANULĒTS",
+      "color": "#6b7280"
+    }
+  ]
+}

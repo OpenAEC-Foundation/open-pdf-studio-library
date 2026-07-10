@@ -1,0 +1,16 @@
+{
+  "id": "ee-stamps",
+  "name": {
+    "en": "Estonian approval stamps",
+    "et": "Eesti templid",
+    "nl": "Estse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

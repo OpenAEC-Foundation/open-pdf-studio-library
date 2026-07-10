@@ -1,0 +1,16 @@
+{
+  "id": "ro-stamps",
+  "name": {
+    "en": "Romanian approval stamps",
+    "ro": "Ștampile românești",
+    "nl": "Roemeense stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

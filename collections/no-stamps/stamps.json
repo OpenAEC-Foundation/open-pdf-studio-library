@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "godkjent",
+      "text": "GODKJENT",
+      "color": "#22c55e"
+    },
+    {
+      "id": "ikke-godkjent",
+      "text": "IKKE GODKJENT",
+      "color": "#ef4444"
+    },
+    {
+      "id": "til-godkjenning",
+      "text": "TIL GODKJENNING",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "arbeidstegning",
+      "text": "ARBEIDSTEGNING",
+      "color": "#22c55e"
+    },
+    {
+      "id": "utkast",
+      "text": "UTKAST",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "forelopig",
+      "text": "FORELØPIG",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "til-informasjon",
+      "text": "TIL INFORMASJON",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "kontrollert",
+      "text": "KONTROLLERT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "revidert",
+      "text": "REVIDERT",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "som-bygget",
+      "text": "SOM BYGGET",
+      "color": "#6b7280"
+    },
+    {
+      "id": "annullert",
+      "text": "ANNULLERT",
+      "color": "#6b7280"
+    }
+  ]
+}

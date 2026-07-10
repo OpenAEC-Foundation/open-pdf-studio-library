@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "zatwierdzono",
+      "text": "ZATWIERDZONO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "odrzucono",
+      "text": "ODRZUCONO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "do-zatwierdzenia",
+      "text": "DO ZATWIERDZENIA",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "do-realizacji",
+      "text": "DO REALIZACJI",
+      "color": "#22c55e"
+    },
+    {
+      "id": "projekt",
+      "text": "PROJEKT",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "wstepny",
+      "text": "WSTĘPNY",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "do-informacji",
+      "text": "DO INFORMACJI",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "sprawdzono",
+      "text": "SPRAWDZONO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "rewizja",
+      "text": "REWIZJA",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "powykonawczy",
+      "text": "POWYKONAWCZY",
+      "color": "#6b7280"
+    },
+    {
+      "id": "anulowano",
+      "text": "ANULOWANO",
+      "color": "#6b7280"
+    }
+  ]
+}

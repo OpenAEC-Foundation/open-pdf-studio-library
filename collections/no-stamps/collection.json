@@ -1,0 +1,16 @@
+{
+  "id": "no-stamps",
+  "name": {
+    "en": "Norwegian approval stamps",
+    "no": "Norske stempler",
+    "nl": "Noorse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

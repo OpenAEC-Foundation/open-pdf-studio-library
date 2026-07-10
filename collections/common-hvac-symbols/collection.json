@@ -1,0 +1,19 @@
+{
+  "id": "common-hvac-symbols",
+  "name": {
+    "en": "HVAC plan symbols",
+    "nl": "HVAC/klimaat-plansymbolen"
+  },
+  "description": {
+    "en": "Common HVAC symbols for floor plans: diffusers, grilles, fans, units, radiators, duct risers.",
+    "nl": "Gangbare klimaatsymbolen voor plattegronden: roosters, ventilatoren, units, radiatoren, kanaal-stijgpunten."
+  },
+  "sector": "mep",
+  "types": [
+    "symbols"
+  ],
+  "scope": "international",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

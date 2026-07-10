@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "godkendt",
+      "text": "GODKENDT",
+      "color": "#22c55e"
+    },
+    {
+      "id": "afvist",
+      "text": "AFVIST",
+      "color": "#ef4444"
+    },
+    {
+      "id": "til-godkendelse",
+      "text": "TIL GODKENDELSE",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "til-udforelse",
+      "text": "TIL UDFØRELSE",
+      "color": "#22c55e"
+    },
+    {
+      "id": "udkast",
+      "text": "UDKAST",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "forelobig",
+      "text": "FORELØBIG",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "til-information",
+      "text": "TIL INFORMATION",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "kontrolleret",
+      "text": "KONTROLLERET",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "revideret",
+      "text": "REVIDERET",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "som-udfort",
+      "text": "SOM UDFØRT",
+      "color": "#6b7280"
+    },
+    {
+      "id": "annulleret",
+      "text": "ANNULLERET",
+      "color": "#6b7280"
+    }
+  ]
+}

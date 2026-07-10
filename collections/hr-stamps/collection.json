@@ -1,0 +1,16 @@
+{
+  "id": "hr-stamps",
+  "name": {
+    "en": "Croatian approval stamps",
+    "hr": "Hrvatski pečati",
+    "nl": "Kroatische stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

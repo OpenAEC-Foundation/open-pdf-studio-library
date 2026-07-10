@@ -1,0 +1,16 @@
+{
+  "id": "be-stamps",
+  "name": {
+    "en": "Belgian approval stamps (NL/FR)",
+    "nl": "Belgische stempels (NL/FR)",
+    "fr": "Tampons belges (NL/FR)"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

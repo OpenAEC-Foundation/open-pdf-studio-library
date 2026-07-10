@@ -1,0 +1,16 @@
+{
+  "id": "hu-stamps",
+  "name": {
+    "en": "Hungarian approval stamps",
+    "hu": "Magyar pecsétek",
+    "nl": "Hongaarse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "egkrithike",
+      "text": "ΕΓΚΡΙΘΗΚΕ",
+      "color": "#22c55e"
+    },
+    {
+      "id": "aporrifthike",
+      "text": "ΑΠΟΡΡΙΦΘΗΚΕ",
+      "color": "#ef4444"
+    },
+    {
+      "id": "pros-egkrisi",
+      "text": "ΠΡΟΣ ΕΓΚΡΙΣΗ",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "gia-kataskevi",
+      "text": "ΓΙΑ ΚΑΤΑΣΚΕΥΗ",
+      "color": "#22c55e"
+    },
+    {
+      "id": "schedio",
+      "text": "ΣΧΕΔΙΟ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "prokatarktiko",
+      "text": "ΠΡΟΚΑΤΑΡΚΤΙΚΟ",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "gia-enimerosi",
+      "text": "ΓΙΑ ΕΝΗΜΕΡΩΣΗ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "elegchthike",
+      "text": "ΕΛΕΓΧΘΗΚΕ",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "anatheorithike",
+      "text": "ΑΝΑΘΕΩΡΗΘΗΚΕ",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "os-kataskevasthi",
+      "text": "ΩΣ ΚΑΤΑΣΚΕΥΑΣΘΗ",
+      "color": "#6b7280"
+    },
+    {
+      "id": "akirothike",
+      "text": "ΑΚΥΡΩΘΗΚΕ",
+      "color": "#6b7280"
+    }
+  ]
+}

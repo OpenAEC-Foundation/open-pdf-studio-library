@@ -1,0 +1,16 @@
+{
+  "id": "dk-stamps",
+  "name": {
+    "en": "Danish approval stamps",
+    "da": "Danske stempler",
+    "nl": "Deense stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

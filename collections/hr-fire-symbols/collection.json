@@ -1,0 +1,15 @@
+{
+  "id": "hr-fire-symbols",
+  "name": {
+    "en": "Croatian fire safety plan symbols",
+    "nl": "Kroatische brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

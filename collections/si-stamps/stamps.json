@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "odobreno",
+      "text": "ODOBRENO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "zavrnjeno",
+      "text": "ZAVRNJENO",
+      "color": "#ef4444"
+    },
+    {
+      "id": "v-odobritev",
+      "text": "V ODOBRITEV",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "za-izvedbo",
+      "text": "ZA IZVEDBO",
+      "color": "#22c55e"
+    },
+    {
+      "id": "osnutek",
+      "text": "OSNUTEK",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "predhodno",
+      "text": "PREDHODNO",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "v-vednost",
+      "text": "V VEDNOST",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "pregledano",
+      "text": "PREGLEDANO",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "spremenjeno",
+      "text": "SPREMENJENO",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "pid",
+      "text": "PID",
+      "color": "#6b7280"
+    },
+    {
+      "id": "razveljavljeno",
+      "text": "RAZVELJAVLJENO",
+      "color": "#6b7280"
+    }
+  ]
+}

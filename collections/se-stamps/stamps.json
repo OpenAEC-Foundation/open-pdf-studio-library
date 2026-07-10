@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "godkand",
+      "text": "GODKÄND",
+      "color": "#22c55e"
+    },
+    {
+      "id": "ej-godkand",
+      "text": "EJ GODKÄND",
+      "color": "#ef4444"
+    },
+    {
+      "id": "granskad",
+      "text": "GRANSKAD",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "bygghandling",
+      "text": "BYGGHANDLING",
+      "color": "#22c55e"
+    },
+    {
+      "id": "forfragningsunderlag",
+      "text": "FÖRFRÅGNINGSUNDERLAG",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "relationshandling",
+      "text": "RELATIONSHANDLING",
+      "color": "#6b7280"
+    },
+    {
+      "id": "preliminar",
+      "text": "PRELIMINÄR",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "for-information",
+      "text": "FÖR INFORMATION",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "utkast",
+      "text": "UTKAST",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "makulerad",
+      "text": "MAKULERAD",
+      "color": "#6b7280"
+    }
+  ]
+}

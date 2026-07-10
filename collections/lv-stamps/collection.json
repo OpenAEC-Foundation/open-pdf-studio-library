@@ -1,0 +1,16 @@
+{
+  "id": "lv-stamps",
+  "name": {
+    "en": "Latvian approval stamps",
+    "lv": "Latvijas zīmogi",
+    "nl": "Letse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

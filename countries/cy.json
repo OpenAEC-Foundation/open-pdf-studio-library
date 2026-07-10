@@ -1,0 +1,40 @@
+{
+  "id": "cy",
+  "name": {
+    "en": "Cyprus",
+    "el": "Κύπρος",
+    "nl": "Cyprus"
+  },
+  "flag": "🇨🇾",
+  "region": "europe",
+  "wave": 3,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "gr-fire-symbols",
+        "gr-stamps",
+        "uk-stamps",
+        "iso7010-safety",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows",
+        "iec60617-electrical"
+      ]
+    },
+    "electrical": {
+      "collections": [
+        "iec60617-electrical"
+      ]
+    },
+    "process": {
+      "collections": [
+        "iso10628-pid"
+      ]
+    },
+    "mep": {
+      "collections": [
+        "common-hvac-symbols"
+      ]
+    }
+  }
+}

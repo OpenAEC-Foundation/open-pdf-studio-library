@@ -1,6 +1,9 @@
 {
   "id": "us",
-  "name": { "en": "United States", "nl": "Verenigde Staten" },
+  "name": {
+    "en": "United States",
+    "nl": "Verenigde Staten"
+  },
   "flag": "🇺🇸",
   "region": "north-america",
   "wave": 1,
@@ -13,7 +16,23 @@
         "us-wall-types",
         "aisc-steel-shapes",
         "common-material-hatches",
-        "common-north-arrows"
+        "common-north-arrows",
+        "iec60617-electrical"
+      ]
+    },
+    "electrical": {
+      "collections": [
+        "iec60617-electrical"
+      ]
+    },
+    "process": {
+      "collections": [
+        "iso10628-pid"
+      ]
+    },
+    "mep": {
+      "collections": [
+        "common-hvac-symbols"
       ]
     }
   }

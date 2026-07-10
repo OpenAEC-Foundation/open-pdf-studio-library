@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "hyvaksytty",
+      "text": "HYVÄKSYTTY",
+      "color": "#22c55e"
+    },
+    {
+      "id": "hylatty",
+      "text": "HYLÄTTY",
+      "color": "#ef4444"
+    },
+    {
+      "id": "hyvaksyttavaksi",
+      "text": "HYVÄKSYTTÄVÄKSI",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tyopiirustus",
+      "text": "TYÖPIIRUSTUS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "luonnos",
+      "text": "LUONNOS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "alustava",
+      "text": "ALUSTAVA",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tiedoksi",
+      "text": "TIEDOKSI",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "tarkastettu",
+      "text": "TARKASTETTU",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "muutettu",
+      "text": "MUUTETTU",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "peruutettu",
+      "text": "PERUUTETTU",
+      "color": "#6b7280"
+    }
+  ]
+}

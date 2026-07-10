@@ -1,0 +1,15 @@
+{
+  "id": "at-fire-symbols",
+  "name": {
+    "en": "Austrian fire safety plan symbols (TRVB conventions)",
+    "nl": "Oostenrijkse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

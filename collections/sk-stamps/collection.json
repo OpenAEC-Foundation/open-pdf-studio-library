@@ -1,0 +1,16 @@
+{
+  "id": "sk-stamps",
+  "name": {
+    "en": "Slovak approval stamps",
+    "sk": "Slovenské pečiatky",
+    "nl": "Slowaakse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

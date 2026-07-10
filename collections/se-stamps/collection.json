@@ -1,0 +1,16 @@
+{
+  "id": "se-stamps",
+  "name": {
+    "en": "Swedish approval stamps",
+    "sv": "Svenska stämplar",
+    "nl": "Zweedse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

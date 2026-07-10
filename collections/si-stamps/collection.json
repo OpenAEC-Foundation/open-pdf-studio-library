@@ -1,0 +1,16 @@
+{
+  "id": "si-stamps",
+  "name": {
+    "en": "Slovenian approval stamps",
+    "sl": "Slovenski žigi",
+    "nl": "Sloveense stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

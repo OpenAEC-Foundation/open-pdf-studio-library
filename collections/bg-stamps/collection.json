@@ -1,0 +1,16 @@
+{
+  "id": "bg-stamps",
+  "name": {
+    "en": "Bulgarian approval stamps",
+    "bg": "Български печати",
+    "nl": "Bulgaarse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

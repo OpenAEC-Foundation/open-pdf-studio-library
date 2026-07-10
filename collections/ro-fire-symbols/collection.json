@@ -1,0 +1,15 @@
+{
+  "id": "ro-fire-symbols",
+  "name": {
+    "en": "Romanian fire safety plan symbols",
+    "nl": "Roemeense brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

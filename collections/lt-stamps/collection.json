@@ -1,0 +1,16 @@
+{
+  "id": "lt-stamps",
+  "name": {
+    "en": "Lithuanian approval stamps",
+    "lt": "Lietuvos antspaudai",
+    "nl": "Litouwse stempels"
+  },
+  "types": [
+    "stamps"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "available",
+  "version": "1.0.0"
+}

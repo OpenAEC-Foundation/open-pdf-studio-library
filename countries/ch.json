@@ -1,0 +1,44 @@
+{
+  "id": "ch",
+  "name": {
+    "en": "Switzerland",
+    "de": "Schweiz",
+    "fr": "Suisse",
+    "it": "Svizzera",
+    "nl": "Zwitserland"
+  },
+  "flag": "🇨🇭",
+  "region": "europe",
+  "wave": 2,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "ch-fire-symbols",
+        "de-stamps",
+        "fr-stamps",
+        "it-stamps",
+        "de-wall-types",
+        "iso7010-safety",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows",
+        "iec60617-electrical"
+      ]
+    },
+    "electrical": {
+      "collections": [
+        "iec60617-electrical"
+      ]
+    },
+    "process": {
+      "collections": [
+        "iso10628-pid"
+      ]
+    },
+    "mep": {
+      "collections": [
+        "common-hvac-symbols"
+      ]
+    }
+  }
+}

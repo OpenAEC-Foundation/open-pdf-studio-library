@@ -1,0 +1,15 @@
+{
+  "id": "pl-fire-symbols",
+  "name": {
+    "en": "Polish fire safety plan symbols",
+    "nl": "Poolse brandveiligheidssymbolen"
+  },
+  "types": [
+    "symbols"
+  ],
+  "scope": "national",
+  "sector": "aec",
+  "license": "repository",
+  "status": "planned",
+  "version": "0.1.0"
+}

@@ -15,7 +15,23 @@
         "iso7010-safety",
         "kr-stamps",
         "common-material-hatches",
-        "common-north-arrows"
+        "common-north-arrows",
+        "iec60617-electrical"
+      ]
+    },
+    "electrical": {
+      "collections": [
+        "iec60617-electrical"
+      ]
+    },
+    "process": {
+      "collections": [
+        "iso10628-pid"
+      ]
+    },
+    "mep": {
+      "collections": [
+        "common-hvac-symbols"
       ]
     }
   }

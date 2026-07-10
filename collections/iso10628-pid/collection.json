@@ -1,0 +1,20 @@
+{
+  "id": "iso10628-pid",
+  "name": {
+    "en": "P&ID symbols (ISO 10628)",
+    "nl": "P&ID-symbolen (ISO 10628)"
+  },
+  "description": {
+    "en": "Process flow and P&ID symbols following ISO 10628 conventions: pumps, valves, vessels, exchangers, instruments.",
+    "nl": "Processchema/P&ID-symbolen volgens ISO 10628-conventies: pompen, afsluiters, vaten, warmtewisselaars, instrumenten."
+  },
+  "sector": "process",
+  "types": [
+    "symbols"
+  ],
+  "standard": "ISO 10628",
+  "scope": "international",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

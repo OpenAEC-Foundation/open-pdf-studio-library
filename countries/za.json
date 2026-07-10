@@ -1,0 +1,38 @@
+{
+  "id": "za",
+  "name": {
+    "en": "South Africa",
+    "nl": "Zuid-Afrika"
+  },
+  "flag": "🇿🇦",
+  "region": "africa",
+  "wave": 4,
+  "sectors": {
+    "aec": {
+      "collections": [
+        "za-fire-symbols",
+        "za-stamps",
+        "iso7010-safety",
+        "en-steel-profiles",
+        "common-material-hatches",
+        "common-north-arrows",
+        "iec60617-electrical"
+      ]
+    },
+    "electrical": {
+      "collections": [
+        "iec60617-electrical"
+      ]
+    },
+    "process": {
+      "collections": [
+        "iso10628-pid"
+      ]
+    },
+    "mep": {
+      "collections": [
+        "common-hvac-symbols"
+      ]
+    }
+  }
+}

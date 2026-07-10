@@ -1,0 +1,54 @@
+{
+  "stamps": [
+    {
+      "id": "patvirtinta",
+      "text": "PATVIRTINTA",
+      "color": "#22c55e"
+    },
+    {
+      "id": "atmesta",
+      "text": "ATMESTA",
+      "color": "#ef4444"
+    },
+    {
+      "id": "tvirtinti",
+      "text": "TVIRTINTI",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "darbo-brezinys",
+      "text": "DARBO BRĖŽINYS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "juodrastis",
+      "text": "JUODRAŠTIS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "preliminarus",
+      "text": "PRELIMINARUS",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "informacijai",
+      "text": "INFORMACIJAI",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "patikrinta",
+      "text": "PATIKRINTA",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "pakeista",
+      "text": "PAKEISTA",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "anuliuota",
+      "text": "ANULIUOTA",
+      "color": "#6b7280"
+    }
+  ]
+}

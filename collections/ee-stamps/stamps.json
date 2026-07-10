@@ -1,0 +1,59 @@
+{
+  "stamps": [
+    {
+      "id": "kinnitatud",
+      "text": "KINNITATUD",
+      "color": "#22c55e"
+    },
+    {
+      "id": "tagasi-lukatud",
+      "text": "TAGASI LÜKATUD",
+      "color": "#ef4444"
+    },
+    {
+      "id": "kinnitamiseks",
+      "text": "KINNITAMISEKS",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "toojoonis",
+      "text": "TÖÖJOONIS",
+      "color": "#22c55e"
+    },
+    {
+      "id": "mustand",
+      "text": "MUSTAND",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "esialgne",
+      "text": "ESIALGNE",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "teadmiseks",
+      "text": "TEADMISEKS",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "kontrollitud",
+      "text": "KONTROLLITUD",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "muudetud",
+      "text": "MUUDETUD",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "teostusjoonis",
+      "text": "TEOSTUSJOONIS",
+      "color": "#6b7280"
+    },
+    {
+      "id": "tuhistatud",
+      "text": "TÜHISTATUD",
+      "color": "#6b7280"
+    }
+  ]
+}
