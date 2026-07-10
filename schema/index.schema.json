@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Open PDF Studio Library world index (generated file — do not edit by hand)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "regions", "collections"],
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "countries"],
+        "properties": {
+          "id": { "type": "string" },
+          "countries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "name", "flag", "wave", "sectors"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "object" },
+                "flag": { "type": "string" },
+                "wave": { "type": "integer" },
+                "sectors": { "type": "object" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "collections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "sector", "types", "scope", "status", "version", "path"],
+        "properties": {
+          "name": { "type": "object" },
+          "sector": { "type": "string" },
+          "types": { "type": "array" },
+          "scope": { "type": "string" },
+          "status": { "type": "string" },
+          "version": { "type": "string" },
+          "path": { "type": "string" },
+          "standard": { "type": "string" },
+          "symbolCount": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Open PDF Studio Library country manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "flag", "region", "wave", "sectors"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z]{2}$" },
+    "name": {
+      "type": "object",
+      "required": ["en"],
+      "additionalProperties": { "type": "string" }
+    },
+    "flag": { "type": "string", "minLength": 1 },
+    "region": { "enum": ["europe", "north-america", "south-america", "middle-east", "africa", "asia", "oceania"] },
+    "wave": { "type": "integer", "minimum": 1, "maximum": 9 },
+    "sectors": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "enum": ["aec", "mep", "electrical", "process", "infra"] },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["collections"],
+        "properties": {
+          "collections": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
