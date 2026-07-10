@@ -1,0 +1,13 @@
+{
+  "id": "us-drafting-parametric",
+  "name": {
+    "en": "US drafting components",
+    "nl": "Amerikaanse tekenwerk-componenten"
+  },
+  "sector": "aec",
+  "types": ["parametric"],
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

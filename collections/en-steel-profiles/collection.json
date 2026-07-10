@@ -1,0 +1,14 @@
+{
+  "id": "en-steel-profiles",
+  "name": {
+    "en": "European steel profiles",
+    "nl": "Europese staalprofielen"
+  },
+  "sector": "aec",
+  "types": ["parametric"],
+  "standard": "EN 10365",
+  "scope": "regional",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

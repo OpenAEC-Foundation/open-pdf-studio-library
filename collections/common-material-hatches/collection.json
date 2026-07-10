@@ -1,0 +1,13 @@
+{
+  "id": "common-material-hatches",
+  "name": {
+    "en": "Material hatch patterns",
+    "nl": "Materiaal-arceringen"
+  },
+  "sector": "aec",
+  "types": ["hatches", "legends"],
+  "scope": "international",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

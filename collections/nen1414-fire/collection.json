@@ -1,0 +1,14 @@
+{
+  "id": "nen1414-fire",
+  "name": {
+    "en": "Fire safety drawing symbols (NEN 1414)",
+    "nl": "Brandveiligheidssymbolen (NEN 1414)"
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "standard": "NEN 1414",
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "common-north-arrows",
+  "name": { "en": "North arrows", "nl": "Noordpijlen" },
+  "description": {
+    "en": "Universal north arrow symbols for site plans and floor plans.",
+    "nl": "Universele noordpijlen voor situatietekeningen en plattegronden."
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "scope": "international",
+  "status": "available",
+  "version": "1.0.0",
+  "license": "repository"
+}

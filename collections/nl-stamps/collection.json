@@ -1,0 +1,13 @@
+{
+  "id": "nl-stamps",
+  "name": {
+    "en": "Dutch approval stamps",
+    "nl": "Nederlandse stempels"
+  },
+  "sector": "aec",
+  "types": ["stamps"],
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

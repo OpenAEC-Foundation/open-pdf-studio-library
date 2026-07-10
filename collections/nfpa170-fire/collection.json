@@ -1,0 +1,14 @@
+{
+  "id": "nfpa170-fire",
+  "name": {
+    "en": "Fire safety symbols (NFPA 170)",
+    "nl": "Brandveiligheidssymbolen (NFPA 170)"
+  },
+  "sector": "aec",
+  "types": ["symbols"],
+  "standard": "NFPA 170",
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

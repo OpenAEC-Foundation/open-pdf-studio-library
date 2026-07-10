@@ -1,0 +1,13 @@
+{
+  "id": "us-stamps",
+  "name": {
+    "en": "US approval stamps",
+    "nl": "Amerikaanse stempels"
+  },
+  "sector": "aec",
+  "types": ["stamps"],
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

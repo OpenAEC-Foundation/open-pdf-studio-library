@@ -1,0 +1,14 @@
+{
+  "id": "aisc-steel-shapes",
+  "name": {
+    "en": "US steel shapes (AISC)",
+    "nl": "Amerikaanse staalprofielen (AISC)"
+  },
+  "sector": "aec",
+  "types": ["parametric"],
+  "standard": "AISC",
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "nl-drafting-parametric",
+  "name": {
+    "en": "Dutch drafting components",
+    "nl": "Nederlandse tekenwerk-componenten"
+  },
+  "sector": "aec",
+  "types": ["parametric"],
+  "scope": "national",
+  "status": "planned",
+  "version": "0.1.0",
+  "license": "repository"
+}
