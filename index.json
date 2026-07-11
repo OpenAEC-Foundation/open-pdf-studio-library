@@ -2377,10 +2377,11 @@
         "symbols"
       ],
       "scope": "international",
-      "status": "planned",
-      "version": "0.1.0",
+      "status": "available",
+      "version": "1.0.0",
       "path": "collections/iso7010-safety/",
-      "standard": "ISO 7010"
+      "standard": "ISO 7010",
+      "symbolCount": 59
     },
     "it-fire-symbols": {
       "name": {
