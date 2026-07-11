@@ -1,6 +1,6 @@
 # MASTERPLAN — Wereldwijde bibliotheken voor Open PDF Studio
 
-> Status: levend document. Laatste herziening: 2026-07-10.
+> Status: levend document. Laatste herziening: 2026-07-12.
 
 ## 1. Visie
 
@@ -42,7 +42,7 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 
 | Collectie | Inhoud | Hergebruikt door |
 |---|---|---|
-| `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — kernset ± 60 symbolen | Alle landen behalve VS (VS gebruikt eigen conventies) |
+| `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — beschikbaar (v1.0.0, kernset 59 symbolen in de vijf vormcategorieën) | Alle landen behalve VS (VS gebruikt eigen conventies) |
 | `en-steel-profiles` | Europese staalprofielen: doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) + aanzichten — beschikbaar (v1.3.0, 17 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding); parametrische maatvoering volgt | Alle Europese landen |
 | `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) — beschikbaar (v1.0.0, 12 patronen in het line-family-formaat van de app); renvooi-templates volgen als apart type | Wereldwijd |
 | `common-north-arrows` | Noordpijlen (beschikbaar — eerste bewijs van de pipeline) | Wereldwijd |

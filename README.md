@@ -79,6 +79,12 @@ Every preview below is generated straight from the repository content by
 
 ### Shared collections — used by every country
 
+🌍 `iso7010-safety` — safety signs (ISO 7010 core set), 59 symbols: escape
+routes & assembly point, fire equipment, prohibition, mandatory action and
+warning signs — shared by 40 country packages:
+
+![ISO 7010 safety signs](docs/media/preview-iso7010-safety.svg)
+
 ![North arrows](docs/media/preview-common-north-arrows.svg)
 
 ## How it works
@@ -121,7 +127,7 @@ reuse neighbouring sets where the language and standards genuinely overlap
 (e.g. Switzerland composes German, French and Italian stamps).
 
 **Every country package also includes** the shared layer: ISO 7010 safety
-signs (planned), material hatch patterns (12), north arrows, electrical
+signs (59), material hatch patterns (12), north arrows, electrical
 installation symbols (IEC 60617, 20) — plus separate **sector packages**:
 `electrical` (IEC 60617), `process` (ISO 10628 P&ID, 14) and `mep`
 (HVAC, 11). Parametric drafting components (grid/level/rebar callouts,

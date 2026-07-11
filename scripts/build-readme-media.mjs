@@ -103,6 +103,7 @@ function banner(picks, outName) {
   console.log(`${outName}: ${picks.length} symbolen`);
 }
 banner([
+  ['iso7010-safety', 'escape-exit-right'],
   ['nen1414-fire', 'brandslanghaspel'],
   ['nl-wall-types', 'metselwerk'],
   ['nfpa170-fire', 'smoke-detector'],
