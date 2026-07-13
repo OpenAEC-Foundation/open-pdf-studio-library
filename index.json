@@ -1630,7 +1630,27 @@
       "version": "1.4.0",
       "path": "collections/aisc-steel-shapes/",
       "standard": "AISC",
-      "symbolCount": 17
+      "symbolCount": 17,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/c-channel.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/hp-shape.svg",
+        "symbols/hss-rect.svg",
+        "symbols/hss-round.svg",
+        "symbols/hss-square.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/l-angle-equal.svg",
+        "symbols/l-angle-unequal.svg",
+        "symbols/pipe.svg",
+        "symbols/plate.svg",
+        "symbols/s-shape.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/w-shape.svg",
+        "symbols/wt-tee.svg",
+        "parametric.json"
+      ]
     },
     "at-fire-symbols": {
       "name": {
@@ -1660,7 +1680,22 @@
       "version": "1.0.0",
       "path": "collections/au-electrical/",
       "standard": "AS 1102",
-      "symbolCount": 13
+      "symbolCount": 13,
+      "files": [
+        "symbols/ceiling-fan.svg",
+        "symbols/data-outlet.svg",
+        "symbols/downlight.svg",
+        "symbols/exhaust-fan.svg",
+        "symbols/fan-isolator.svg",
+        "symbols/gpo-double.svg",
+        "symbols/gpo-single.svg",
+        "symbols/gpo-weatherproof.svg",
+        "symbols/light-point.svg",
+        "symbols/smoke-alarm.svg",
+        "symbols/switch-2way.svg",
+        "symbols/switch.svg",
+        "symbols/switchboard.svg"
+      ]
     },
     "au-fire-symbols": {
       "name": {
@@ -1688,7 +1723,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/au-stamps/"
+      "path": "collections/au-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "au-steel-sections": {
       "name": {
@@ -1705,7 +1743,25 @@
       "version": "1.1.0",
       "path": "collections/au-steel-sections/",
       "standard": "AS/NZS 3679",
-      "symbolCount": 15
+      "symbolCount": 15,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/bt-tee.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/ea-angle.svg",
+        "symbols/flat.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/pfc.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/ua-angle.svg",
+        "symbols/ub.svg",
+        "symbols/uc.svg",
+        "parametric.json"
+      ]
     },
     "be-stamps": {
       "name": {
@@ -1720,7 +1776,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/be-stamps/"
+      "path": "collections/be-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "bg-fire-symbols": {
       "name": {
@@ -1749,7 +1808,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/bg-stamps/"
+      "path": "collections/bg-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "br-fire-symbols": {
       "name": {
@@ -1779,7 +1841,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/br-stamps/"
+      "path": "collections/br-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "br-steel-shapes": {
       "name": {
@@ -1796,7 +1861,24 @@
       "status": "available",
       "version": "1.1.0",
       "path": "collections/br-steel-shapes/",
-      "symbolCount": 14
+      "symbolCount": 14,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/l-equal.svg",
+        "symbols/l-unequal.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/u-channel.svg",
+        "symbols/w-beam.svg",
+        "symbols/w-column.svg",
+        "parametric.json"
+      ]
     },
     "ch-fire-symbols": {
       "name": {
@@ -1840,7 +1922,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/cn-stamps/"
+      "path": "collections/cn-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "common-hvac-symbols": {
       "name": {
@@ -1855,7 +1940,20 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/common-hvac-symbols/",
-      "symbolCount": 11
+      "symbolCount": 11,
+      "files": [
+        "symbols/air-handling-unit.svg",
+        "symbols/duct-drop.svg",
+        "symbols/duct-rise.svg",
+        "symbols/exhaust-fan.svg",
+        "symbols/fan-coil-unit.svg",
+        "symbols/pump.svg",
+        "symbols/radiator.svg",
+        "symbols/return-grille.svg",
+        "symbols/supply-diffuser.svg",
+        "symbols/thermostat.svg",
+        "symbols/valve-2way.svg"
+      ]
     },
     "common-material-hatches": {
       "name": {
@@ -1869,7 +1967,10 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/common-material-hatches/"
+      "path": "collections/common-material-hatches/",
+      "files": [
+        "hatches.json"
+      ]
     },
     "common-north-arrows": {
       "name": {
@@ -1884,7 +1985,13 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/common-north-arrows/",
-      "symbolCount": 4
+      "symbolCount": 4,
+      "files": [
+        "symbols/north-arrow-circled.svg",
+        "symbols/north-arrow-classic.svg",
+        "symbols/north-arrow-quartered.svg",
+        "symbols/north-arrow-simple.svg"
+      ]
     },
     "cz-fire-symbols": {
       "name": {
@@ -1913,7 +2020,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/cz-stamps/"
+      "path": "collections/cz-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "de-drafting-parametric": {
       "name": {
@@ -1943,7 +2053,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/de-stamps/"
+      "path": "collections/de-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "de-wall-types": {
       "name": {
@@ -1960,7 +2073,18 @@
       "version": "1.0.0",
       "path": "collections/de-wall-types/",
       "standard": "DIN 1356",
-      "symbolCount": 9
+      "symbolCount": 9,
+      "files": [
+        "symbols/beton.svg",
+        "symbols/brandwand-f30.svg",
+        "symbols/brandwand-f90.svg",
+        "symbols/holzstaenderwand.svg",
+        "symbols/mauerwerk.svg",
+        "symbols/porenbeton.svg",
+        "symbols/schacht.svg",
+        "symbols/stahlbeton.svg",
+        "symbols/trockenbauwand.svg"
+      ]
     },
     "din14034-fire": {
       "name": {
@@ -1977,7 +2101,40 @@
       "version": "1.0.0",
       "path": "collections/din14034-fire/",
       "standard": "DIN 14034-6",
-      "symbolCount": 31
+      "symbolCount": 31,
+      "files": [
+        "symbols/automatischer-brandmelder.svg",
+        "symbols/blitzleuchte.svg",
+        "symbols/brandmelderzentrale.svg",
+        "symbols/brandschutzklappe.svg",
+        "symbols/brandschutztuer.svg",
+        "symbols/brandwand.svg",
+        "symbols/co2-loeschanlage.svg",
+        "symbols/einspeisestelle.svg",
+        "symbols/feuerloescher.svg",
+        "symbols/feuerwehr-anzeigetableau.svg",
+        "symbols/feuerwehr-bedienfeld.svg",
+        "symbols/feuerwehr-schluesseldepot.svg",
+        "symbols/feuerwehrzufahrt.svg",
+        "symbols/freischaltelement.svg",
+        "symbols/handfeuermelder.svg",
+        "symbols/loeschwasserbehaelter.svg",
+        "symbols/loeschwasserentnahme.svg",
+        "symbols/rauchabzug.svg",
+        "symbols/rauchmelder.svg",
+        "symbols/rwa-bedienstelle.svg",
+        "symbols/sammelplatz.svg",
+        "symbols/sirene.svg",
+        "symbols/sprinkler-geschuetzt.svg",
+        "symbols/sprinklerzentrale.svg",
+        "symbols/steigleitung-nass.svg",
+        "symbols/steigleitung-trocken.svg",
+        "symbols/ueberflurhydrant.svg",
+        "symbols/unterflurhydrant.svg",
+        "symbols/waermemelder.svg",
+        "symbols/wandhydrant.svg",
+        "symbols/zuluftoeffnung.svg"
+      ]
     },
     "dk-fire-symbols": {
       "name": {
@@ -2006,7 +2163,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/dk-stamps/"
+      "path": "collections/dk-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "ee-fire-symbols": {
       "name": {
@@ -2035,7 +2195,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/ee-stamps/"
+      "path": "collections/ee-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "en-steel-profiles": {
       "name": {
@@ -2052,7 +2215,27 @@
       "version": "1.4.0",
       "path": "collections/en-steel-profiles/",
       "standard": "EN 10365",
-      "symbolCount": 17
+      "symbolCount": 17,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/hea.svg",
+        "symbols/heb.svg",
+        "symbols/hem.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/ipe.svg",
+        "symbols/l-equal.svg",
+        "symbols/l-unequal.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/t-profile.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/upn.svg",
+        "parametric.json"
+      ]
     },
     "es-fire-symbols": {
       "name": {
@@ -2082,7 +2265,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/es-stamps/"
+      "path": "collections/es-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "fi-fire-symbols": {
       "name": {
@@ -2111,7 +2297,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/fi-stamps/"
+      "path": "collections/fi-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "fr-fire-symbols": {
       "name": {
@@ -2141,7 +2330,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/fr-stamps/"
+      "path": "collections/fr-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "gb-steel-shapes": {
       "name": {
@@ -2159,7 +2351,26 @@
       "version": "1.1.0",
       "path": "collections/gb-steel-shapes/",
       "standard": "GB/T 706",
-      "symbolCount": 16
+      "symbolCount": 16,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/angle-equal.svg",
+        "symbols/angle-unequal.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/channel.svg",
+        "symbols/chs.svg",
+        "symbols/hm-shape.svg",
+        "symbols/hn-shape.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/hw-shape.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/i-beam.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "parametric.json"
+      ]
     },
     "gost-steel-shapes": {
       "name": {
@@ -2177,7 +2388,25 @@
       "version": "1.1.0",
       "path": "collections/gost-steel-shapes/",
       "standard": "GOST 8239",
-      "symbolCount": 15
+      "symbolCount": 15,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/dvutavr-b.svg",
+        "symbols/dvutavr-k.svg",
+        "symbols/dvutavr-sh.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/shveller.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/ugolok-equal.svg",
+        "symbols/ugolok-unequal.svg",
+        "parametric.json"
+      ]
     },
     "gr-fire-symbols": {
       "name": {
@@ -2206,7 +2435,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/gr-stamps/"
+      "path": "collections/gr-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "hr-fire-symbols": {
       "name": {
@@ -2235,7 +2467,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/hr-stamps/"
+      "path": "collections/hr-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "hu-fire-symbols": {
       "name": {
@@ -2264,7 +2499,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/hu-stamps/"
+      "path": "collections/hu-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "iec60617-electrical": {
       "name": {
@@ -2280,7 +2518,29 @@
       "version": "1.0.0",
       "path": "collections/iec60617-electrical/",
       "standard": "IEC 60617",
-      "symbolCount": 20
+      "symbolCount": 20,
+      "files": [
+        "symbols/data-outlet.svg",
+        "symbols/dimmer.svg",
+        "symbols/distribution-board.svg",
+        "symbols/doorbell.svg",
+        "symbols/fluorescent-luminaire.svg",
+        "symbols/junction-box.svg",
+        "symbols/light-point.svg",
+        "symbols/motion-detector.svg",
+        "symbols/phone-outlet.svg",
+        "symbols/push-button.svg",
+        "symbols/socket-double.svg",
+        "symbols/socket-earthed.svg",
+        "symbols/socket-single.svg",
+        "symbols/spotlight.svg",
+        "symbols/switch-double.svg",
+        "symbols/switch-single.svg",
+        "symbols/switch-two-way.svg",
+        "symbols/thermostat.svg",
+        "symbols/tv-outlet.svg",
+        "symbols/wall-light.svg"
+      ]
     },
     "il-fire-symbols": {
       "name": {
@@ -2310,7 +2570,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/il-stamps/"
+      "path": "collections/il-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "in-fire-symbols": {
       "name": {
@@ -2339,7 +2602,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/in-stamps/"
+      "path": "collections/in-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "is-steel-shapes": {
       "name": {
@@ -2356,7 +2622,25 @@
       "version": "1.1.0",
       "path": "collections/is-steel-shapes/",
       "standard": "IS 808",
-      "symbolCount": 15
+      "symbolCount": 15,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/isa-equal.svg",
+        "symbols/isa-unequal.svg",
+        "symbols/ishb.svg",
+        "symbols/ismb.svg",
+        "symbols/ismc.svg",
+        "symbols/isnt-tee.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "parametric.json"
+      ]
     },
     "iso10628-pid": {
       "name": {
@@ -2372,7 +2656,23 @@
       "version": "1.0.0",
       "path": "collections/iso10628-pid/",
       "standard": "ISO 10628",
-      "symbolCount": 14
+      "symbolCount": 14,
+      "files": [
+        "symbols/centrifugal-pump.svg",
+        "symbols/column.svg",
+        "symbols/compressor.svg",
+        "symbols/control-valve.svg",
+        "symbols/filter.svg",
+        "symbols/heat-exchanger.svg",
+        "symbols/instrument-indicator.svg",
+        "symbols/tank-vertical.svg",
+        "symbols/valve-ball.svg",
+        "symbols/valve-butterfly.svg",
+        "symbols/valve-check.svg",
+        "symbols/valve-gate.svg",
+        "symbols/valve-globe.svg",
+        "symbols/vessel-horizontal.svg"
+      ]
     },
     "iso7010-safety": {
       "name": {
@@ -2388,7 +2688,68 @@
       "version": "1.0.0",
       "path": "collections/iso7010-safety/",
       "standard": "ISO 7010",
-      "symbolCount": 59
+      "symbolCount": 59,
+      "files": [
+        "symbols/escape-aed.svg",
+        "symbols/escape-assembly-point.svg",
+        "symbols/escape-direction-arrow-45.svg",
+        "symbols/escape-direction-arrow.svg",
+        "symbols/escape-emergency-phone.svg",
+        "symbols/escape-exit-left.svg",
+        "symbols/escape-exit-right.svg",
+        "symbols/escape-eyewash.svg",
+        "symbols/escape-first-aid.svg",
+        "symbols/escape-safety-shower.svg",
+        "symbols/escape-stretcher.svg",
+        "symbols/fire-alarm-call-point.svg",
+        "symbols/fire-direction-arrow.svg",
+        "symbols/fire-emergency-phone.svg",
+        "symbols/fire-equipment.svg",
+        "symbols/fire-extinguisher.svg",
+        "symbols/fire-hose-reel.svg",
+        "symbols/fire-ladder.svg",
+        "symbols/mandatory-disconnect-power.svg",
+        "symbols/mandatory-ear-protection.svg",
+        "symbols/mandatory-eye-protection.svg",
+        "symbols/mandatory-face-mask.svg",
+        "symbols/mandatory-general.svg",
+        "symbols/mandatory-head-protection.svg",
+        "symbols/mandatory-high-visibility.svg",
+        "symbols/mandatory-protective-clothing.svg",
+        "symbols/mandatory-protective-gloves.svg",
+        "symbols/mandatory-refer-to-manual.svg",
+        "symbols/mandatory-safety-footwear.svg",
+        "symbols/mandatory-safety-harness.svg",
+        "symbols/mandatory-wash-hands.svg",
+        "symbols/prohibition-do-not-touch.svg",
+        "symbols/prohibition-no-dogs.svg",
+        "symbols/prohibition-no-eating-drinking.svg",
+        "symbols/prohibition-no-forklifts.svg",
+        "symbols/prohibition-no-mobile-phones.svg",
+        "symbols/prohibition-no-open-flame.svg",
+        "symbols/prohibition-no-pedestrians.svg",
+        "symbols/prohibition-no-photography.svg",
+        "symbols/prohibition-no-smoking.svg",
+        "symbols/prohibition-no-water-extinguishing.svg",
+        "symbols/warning-biohazard.svg",
+        "symbols/warning-corrosive.svg",
+        "symbols/warning-electricity.svg",
+        "symbols/warning-explosive.svg",
+        "symbols/warning-fall-hazard.svg",
+        "symbols/warning-flammable.svg",
+        "symbols/warning-forklifts.svg",
+        "symbols/warning-general.svg",
+        "symbols/warning-hot-surface.svg",
+        "symbols/warning-laser.svg",
+        "symbols/warning-low-temperature.svg",
+        "symbols/warning-magnetic-field.svg",
+        "symbols/warning-non-ionising-radiation.svg",
+        "symbols/warning-radioactive.svg",
+        "symbols/warning-slippery.svg",
+        "symbols/warning-suspended-load.svg",
+        "symbols/warning-toxic.svg",
+        "symbols/warning-trip-hazard.svg"
+      ]
     },
     "it-fire-symbols": {
       "name": {
@@ -2418,7 +2779,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/it-stamps/"
+      "path": "collections/it-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "jis-steel-shapes": {
       "name": {
@@ -2436,7 +2800,26 @@
       "version": "1.1.0",
       "path": "collections/jis-steel-shapes/",
       "standard": "JIS G 3192",
-      "symbolCount": 16
+      "symbolCount": 16,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/angle-equal.svg",
+        "symbols/angle-unequal.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/channel.svg",
+        "symbols/chs.svg",
+        "symbols/ct-tee.svg",
+        "symbols/h-shape-narrow.svg",
+        "symbols/h-shape-wide.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/i-beam.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "parametric.json"
+      ]
     },
     "jp-electrical": {
       "name": {
@@ -2453,7 +2836,23 @@
       "version": "1.0.0",
       "path": "collections/jp-electrical/",
       "standard": "JIS C 0303",
-      "symbolCount": 14
+      "symbolCount": 14,
+      "files": [
+        "symbols/aircon-outlet.svg",
+        "symbols/ceiling-light.svg",
+        "symbols/distribution-board.svg",
+        "symbols/doorbell.svg",
+        "symbols/downlight.svg",
+        "symbols/fluorescent.svg",
+        "symbols/junction-box.svg",
+        "symbols/outlet-double.svg",
+        "symbols/outlet-earthed.svg",
+        "symbols/outlet.svg",
+        "symbols/phone-outlet.svg",
+        "symbols/switch-3way.svg",
+        "symbols/switch.svg",
+        "symbols/tv-outlet.svg"
+      ]
     },
     "jp-fire-symbols": {
       "name": {
@@ -2483,7 +2882,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/jp-stamps/"
+      "path": "collections/jp-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "kr-fire-symbols": {
       "name": {
@@ -2513,7 +2915,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/kr-stamps/"
+      "path": "collections/kr-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "ks-steel-shapes": {
       "name": {
@@ -2531,7 +2936,25 @@
       "version": "1.1.0",
       "path": "collections/ks-steel-shapes/",
       "standard": "KS D 3502",
-      "symbolCount": 15
+      "symbolCount": 15,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/angle-equal.svg",
+        "symbols/angle-unequal.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/channel.svg",
+        "symbols/chs.svg",
+        "symbols/h-shape-narrow.svg",
+        "symbols/h-shape-wide.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/i-beam.svg",
+        "symbols/plate.svg",
+        "symbols/rhs.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "parametric.json"
+      ]
     },
     "lt-fire-symbols": {
       "name": {
@@ -2560,7 +2983,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/lt-stamps/"
+      "path": "collections/lt-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "lv-fire-symbols": {
       "name": {
@@ -2589,7 +3015,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/lv-stamps/"
+      "path": "collections/lv-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "nen1414-fire": {
       "name": {
@@ -2605,7 +3034,41 @@
       "version": "1.0.0",
       "path": "collections/nen1414-fire/",
       "standard": "NEN 1414",
-      "symbolCount": 32
+      "symbolCount": 32,
+      "files": [
+        "symbols/aed.svg",
+        "symbols/anti-paniekverlichting.svg",
+        "symbols/blustoestel.svg",
+        "symbols/brandklep.svg",
+        "symbols/brandmeldcentrale.svg",
+        "symbols/brandslanghaspel.svg",
+        "symbols/brandweeringang.svg",
+        "symbols/brandweerpaneel.svg",
+        "symbols/co2-blusinstallatie.svg",
+        "symbols/deurdranger.svg",
+        "symbols/droge-blusleiding.svg",
+        "symbols/ehbo-post.svg",
+        "symbols/flitslicht.svg",
+        "symbols/handbrandmelder.svg",
+        "symbols/multisensormelder.svg",
+        "symbols/nooddeur.svg",
+        "symbols/noodverlichting.svg",
+        "symbols/ontruimingsalarm.svg",
+        "symbols/overdrukinstallatie.svg",
+        "symbols/rookklep.svg",
+        "symbols/rookluik.svg",
+        "symbols/rookmelder.svg",
+        "symbols/rwa-bediening.svg",
+        "symbols/schuimblusinstallatie.svg",
+        "symbols/sirene.svg",
+        "symbols/sprinklerinstallatie.svg",
+        "symbols/sprinklerkop-hangend.svg",
+        "symbols/thermische-melder.svg",
+        "symbols/verzamelplaats.svg",
+        "symbols/vlammelder.svg",
+        "symbols/vluchtwegaanduiding.svg",
+        "symbols/wandhydrant.svg"
+      ]
     },
     "nfpa170-fire": {
       "name": {
@@ -2621,7 +3084,40 @@
       "version": "1.0.0",
       "path": "collections/nfpa170-fire/",
       "standard": "NFPA 170",
-      "symbolCount": 31
+      "symbolCount": 31,
+      "files": [
+        "symbols/area-of-refuge.svg",
+        "symbols/backflow-preventer.svg",
+        "symbols/beam-detector.svg",
+        "symbols/duct-smoke-detector.svg",
+        "symbols/emergency-light.svg",
+        "symbols/exit-sign.svg",
+        "symbols/fire-alarm-bell.svg",
+        "symbols/fire-alarm-control-panel.svg",
+        "symbols/fire-alarm-horn.svg",
+        "symbols/fire-alarm-speaker.svg",
+        "symbols/fire-department-connection.svg",
+        "symbols/fire-extinguisher-cabinet.svg",
+        "symbols/fire-extinguisher.svg",
+        "symbols/fire-hose-valve.svg",
+        "symbols/fire-hydrant.svg",
+        "symbols/fire-rated-door.svg",
+        "symbols/fire-smoke-damper.svg",
+        "symbols/gas-shutoff-valve.svg",
+        "symbols/heat-detector.svg",
+        "symbols/horn-strobe.svg",
+        "symbols/key-box.svg",
+        "symbols/manual-pull-station.svg",
+        "symbols/post-indicator-valve.svg",
+        "symbols/remote-annunciator.svg",
+        "symbols/smoke-detector.svg",
+        "symbols/sprinkler-pendent.svg",
+        "symbols/sprinkler-riser.svg",
+        "symbols/sprinkler-sidewall.svg",
+        "symbols/sprinkler-upright.svg",
+        "symbols/standpipe-connection.svg",
+        "symbols/strobe.svg"
+      ]
     },
     "nl-drafting-parametric": {
       "name": {
@@ -2650,7 +3146,28 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/nl-electrical/",
-      "symbolCount": 19
+      "symbolCount": 19,
+      "files": [
+        "symbols/beldrukker.svg",
+        "symbols/cai-aansluiting.svg",
+        "symbols/data-aansluiting.svg",
+        "symbols/dimmer.svg",
+        "symbols/krachtaansluiting.svg",
+        "symbols/kruisschakelaar.svg",
+        "symbols/lichtpunt-plafond.svg",
+        "symbols/lichtpunt-wand.svg",
+        "symbols/loze-leiding.svg",
+        "symbols/meterkast.svg",
+        "symbols/schakelaar-enkelpolig.svg",
+        "symbols/schel.svg",
+        "symbols/serieschakelaar.svg",
+        "symbols/tl-armatuur.svg",
+        "symbols/wcd-dubbel.svg",
+        "symbols/wcd-enkel.svg",
+        "symbols/wcd-randaarde.svg",
+        "symbols/wcd-spatwaterdicht.svg",
+        "symbols/wisselschakelaar.svg"
+      ]
     },
     "nl-stamps": {
       "name": {
@@ -2664,7 +3181,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/nl-stamps/"
+      "path": "collections/nl-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "nl-wall-types": {
       "name": {
@@ -2679,7 +3199,19 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/nl-wall-types/",
-      "symbolCount": 10
+      "symbolCount": 10,
+      "files": [
+        "symbols/beton.svg",
+        "symbols/brandwand-30.svg",
+        "symbols/brandwand-60.svg",
+        "symbols/cellenbeton.svg",
+        "symbols/gewapend-beton.svg",
+        "symbols/hsb-wand.svg",
+        "symbols/kalkzandsteen.svg",
+        "symbols/leidingschacht.svg",
+        "symbols/metal-stud.svg",
+        "symbols/metselwerk.svg"
+      ]
     },
     "no-fire-symbols": {
       "name": {
@@ -2708,7 +3240,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/no-stamps/"
+      "path": "collections/no-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "pl-fire-symbols": {
       "name": {
@@ -2737,7 +3272,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/pl-stamps/"
+      "path": "collections/pl-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "pt-fire-symbols": {
       "name": {
@@ -2767,7 +3305,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/pt-stamps/"
+      "path": "collections/pt-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "ro-fire-symbols": {
       "name": {
@@ -2796,7 +3337,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/ro-stamps/"
+      "path": "collections/ro-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "ru-fire-symbols": {
       "name": {
@@ -2826,7 +3370,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/ru-stamps/"
+      "path": "collections/ru-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "se-fire-symbols": {
       "name": {
@@ -2855,7 +3402,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/se-stamps/"
+      "path": "collections/se-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "si-fire-symbols": {
       "name": {
@@ -2884,7 +3434,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/si-stamps/"
+      "path": "collections/si-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "sk-fire-symbols": {
       "name": {
@@ -2913,7 +3466,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/sk-stamps/"
+      "path": "collections/sk-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "tr-fire-symbols": {
       "name": {
@@ -2943,7 +3499,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/tr-stamps/"
+      "path": "collections/tr-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "uk-drafting-parametric": {
       "name": {
@@ -2972,7 +3531,22 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/uk-electrical/",
-      "symbolCount": 13
+      "symbolCount": 13,
+      "files": [
+        "symbols/consumer-unit.svg",
+        "symbols/cooker-point.svg",
+        "symbols/data-outlet.svg",
+        "symbols/fused-connection-unit.svg",
+        "symbols/pendant-light.svg",
+        "symbols/shaver-socket.svg",
+        "symbols/socket-13a-double.svg",
+        "symbols/socket-13a-single.svg",
+        "symbols/switch-1way.svg",
+        "symbols/switch-2way.svg",
+        "symbols/switch-intermediate.svg",
+        "symbols/switched-socket.svg",
+        "symbols/tv-outlet.svg"
+      ]
     },
     "uk-fire-symbols": {
       "name": {
@@ -2988,7 +3562,35 @@
       "version": "1.0.0",
       "path": "collections/uk-fire-symbols/",
       "standard": "BS 1635",
-      "symbolCount": 26
+      "symbolCount": 26,
+      "files": [
+        "symbols/aov.svg",
+        "symbols/beacon.svg",
+        "symbols/beam-detector.svg",
+        "symbols/dry-riser-inlet.svg",
+        "symbols/dry-riser-outlet.svg",
+        "symbols/emergency-luminaire.svg",
+        "symbols/exit-sign.svg",
+        "symbols/fire-alarm-panel.svg",
+        "symbols/fire-blanket.svg",
+        "symbols/fire-door-fd30.svg",
+        "symbols/fire-door-fd60.svg",
+        "symbols/fire-extinguisher.svg",
+        "symbols/fire-hydrant.svg",
+        "symbols/foam-inlet.svg",
+        "symbols/heat-detector.svg",
+        "symbols/hose-reel.svg",
+        "symbols/manual-call-point.svg",
+        "symbols/multi-sensor-detector.svg",
+        "symbols/refuge-point.svg",
+        "symbols/repeater-panel.svg",
+        "symbols/smoke-detector.svg",
+        "symbols/sounder-beacon.svg",
+        "symbols/sounder.svg",
+        "symbols/sprinkler-head.svg",
+        "symbols/sprinkler-stop-valve.svg",
+        "symbols/wet-riser-outlet.svg"
+      ]
     },
     "uk-stamps": {
       "name": {
@@ -3002,7 +3604,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/uk-stamps/"
+      "path": "collections/uk-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "uk-steel-sections": {
       "name": {
@@ -3018,7 +3623,25 @@
       "status": "available",
       "version": "1.4.0",
       "path": "collections/uk-steel-sections/",
-      "symbolCount": 15
+      "symbolCount": 15,
+      "files": [
+        "symbols/angle-elevation.svg",
+        "symbols/channel-elevation.svg",
+        "symbols/chs.svg",
+        "symbols/flat.svg",
+        "symbols/hollow-section-elevation.svg",
+        "symbols/i-beam-elevation.svg",
+        "symbols/pfc.svg",
+        "symbols/rhs.svg",
+        "symbols/rsa-equal.svg",
+        "symbols/rsa-unequal.svg",
+        "symbols/shs.svg",
+        "symbols/tee-elevation.svg",
+        "symbols/tee.svg",
+        "symbols/ub.svg",
+        "symbols/uc.svg",
+        "parametric.json"
+      ]
     },
     "uk-wall-types": {
       "name": {
@@ -3033,7 +3656,17 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/uk-wall-types/",
-      "symbolCount": 8
+      "symbolCount": 8,
+      "files": [
+        "symbols/blockwork.svg",
+        "symbols/brickwork.svg",
+        "symbols/cavity-wall.svg",
+        "symbols/concrete-wall.svg",
+        "symbols/fire-wall-30min.svg",
+        "symbols/fire-wall-60min.svg",
+        "symbols/metal-stud-wall.svg",
+        "symbols/timber-stud-wall.svg"
+      ]
     },
     "us-drafting-parametric": {
       "name": {
@@ -3063,7 +3696,28 @@
       "version": "1.0.0",
       "path": "collections/us-electrical/",
       "standard": "IEEE 315",
-      "symbolCount": 19
+      "symbolCount": 19,
+      "files": [
+        "symbols/ceiling-light.svg",
+        "symbols/data-outlet.svg",
+        "symbols/duplex-receptacle.svg",
+        "symbols/floor-receptacle.svg",
+        "symbols/fluorescent-fixture.svg",
+        "symbols/gfci-receptacle.svg",
+        "symbols/junction-box.svg",
+        "symbols/panelboard.svg",
+        "symbols/phone-outlet.svg",
+        "symbols/quadplex-receptacle.svg",
+        "symbols/receptacle-240v.svg",
+        "symbols/recessed-downlight.svg",
+        "symbols/switch-dimmer.svg",
+        "symbols/switch-four-way.svg",
+        "symbols/switch-three-way.svg",
+        "symbols/switch.svg",
+        "symbols/thermostat.svg",
+        "symbols/tv-outlet.svg",
+        "symbols/wall-sconce.svg"
+      ]
     },
     "us-stamps": {
       "name": {
@@ -3077,7 +3731,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/us-stamps/"
+      "path": "collections/us-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     },
     "us-wall-types": {
       "name": {
@@ -3092,7 +3749,17 @@
       "status": "available",
       "version": "1.0.0",
       "path": "collections/us-wall-types/",
-      "symbolCount": 8
+      "symbolCount": 8,
+      "files": [
+        "symbols/brick-veneer-wall.svg",
+        "symbols/cmu-wall.svg",
+        "symbols/concrete-wall.svg",
+        "symbols/fire-wall-1hr.svg",
+        "symbols/fire-wall-2hr.svg",
+        "symbols/metal-stud-wall.svg",
+        "symbols/shaft-wall.svg",
+        "symbols/wood-stud-wall.svg"
+      ]
     },
     "za-fire-symbols": {
       "name": {
@@ -3120,7 +3787,10 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
-      "path": "collections/za-stamps/"
+      "path": "collections/za-stamps/",
+      "files": [
+        "stamps.json"
+      ]
     }
   }
 }

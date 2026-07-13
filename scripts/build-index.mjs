@@ -20,7 +20,14 @@ export function buildIndex(countries, collections) {
       version: c.version,
       path: `collections/${c.id}/`,
       ...(c.standard ? { standard: c.standard } : {}),
-      ...(c.symbolCount ? { symbolCount: c.symbolCount } : {})
+      ...(c.symbolCount ? { symbolCount: c.symbolCount } : {}),
+      // Volledige bestandslijst (relatief aan `path`) zodat apps alles via
+      // raw-URLs kunnen ophalen. Zonder deze lijst moeten consumenten een
+      // per-collectie directory-listing doen via de GitHub contents-API, en
+      // die is voor anonieme gebruikers hard rate-limited (HTTP 403 na een
+      // handvol downloads). index.json is al het enige bestand dat de app
+      // ophaalt — met `files` erbij is de hele download API-vrij.
+      ...(c.files && c.files.length ? { files: c.files } : {})
     };
   }
 
@@ -53,11 +60,18 @@ export function loadData(root = ROOT) {
       const p = join(collectionsDir, dir, 'collection.json');
       if (!existsSync(p)) continue;
       const data = JSON.parse(readFileSync(p, 'utf8'));
+      const files = [];
       const symDir = join(collectionsDir, dir, 'symbols');
       if (existsSync(symDir)) {
-        const n = readdirSync(symDir).filter(f => f.endsWith('.svg')).length;
-        if (n) data.symbolCount = n;
+        const svgs = readdirSync(symDir).filter(f => f.endsWith('.svg')).sort();
+        if (svgs.length) data.symbolCount = svgs.length;
+        files.push(...svgs.map(f => `symbols/${f}`));
       }
+      // Overige door apps consumeerbare databestanden naast collection.json.
+      for (const extra of ['stamps.json', 'parametric.json', 'hatches.json', 'legends.json']) {
+        if (existsSync(join(collectionsDir, dir, extra))) files.push(extra);
+      }
+      if (files.length) data.files = files;
       collections.push(data);
     }
   }
