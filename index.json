@@ -1622,11 +1622,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "path": "collections/aisc-steel-shapes/",
       "standard": "AISC",
       "symbolCount": 17
@@ -1696,11 +1697,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/au-steel-sections/",
       "standard": "AS/NZS 3679",
       "symbolCount": 15
@@ -1787,11 +1789,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/br-steel-shapes/",
       "symbolCount": 14
     },
@@ -2041,11 +2044,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "regional",
       "status": "available",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "path": "collections/en-steel-profiles/",
       "standard": "EN 10365",
       "symbolCount": 17
@@ -2147,11 +2151,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/gb-steel-shapes/",
       "standard": "GB/T 706",
       "symbolCount": 16
@@ -2164,11 +2169,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/gost-steel-shapes/",
       "standard": "GOST 8239",
       "symbolCount": 15
@@ -2342,11 +2348,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/is-steel-shapes/",
       "standard": "IS 808",
       "symbolCount": 15
@@ -2421,11 +2428,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/jis-steel-shapes/",
       "standard": "JIS G 3192",
       "symbolCount": 16
@@ -2515,11 +2523,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "collections/ks-steel-shapes/",
       "standard": "KS D 3502",
       "symbolCount": 15
@@ -3002,11 +3011,12 @@
       },
       "sector": "aec",
       "types": [
-        "symbols"
+        "symbols",
+        "parametric"
       ],
       "scope": "national",
       "status": "available",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "path": "collections/uk-steel-sections/",
       "symbolCount": 15
     },

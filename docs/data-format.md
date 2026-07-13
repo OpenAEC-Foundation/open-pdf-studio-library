@@ -97,6 +97,66 @@ renders the bordered stamp shape itself.
   `dashPattern` containing `0` renders a grid of dots; a negative value is a
   gap. An **empty** `lineFamilies` array means solid fill.
 
+## Parametric catalogs
+
+`parametric.json` in a collection with type `parametric`. The first (and so far
+only) catalog format is `steel-sections`, validated by
+`schema/parametric-steel.schema.json` plus row-level checks in
+`scripts/validate.mjs`:
+
+```json
+{
+  "format": "steel-sections",
+  "formatVersion": 1,
+  "units": "mm",
+  "label": { "en": "Steel — US (AISC)", "nl": "Staal — VS (AISC)" },
+  "families": [
+    {
+      "id": "w-shapes",
+      "name": { "en": "W shapes (wide flange)", "nl": "W-profielen" },
+      "shape": "i",
+      "columns": ["designation", "h", "b", "tw", "tf", "r"],
+      "defaultSize": "W12x26",
+      "sizes": [
+        ["W12x26", 310, 165, 5.8, 9.7, 9]
+      ]
+    }
+  ]
+}
+```
+
+- `label` — localized group label shown by the app (include the standard name).
+- `families` — one entry per section family. `id` is kebab-case and unique
+  within the catalog.
+- `shape` — drives both the rendered cross-section and the column layout:
+
+  | shape | meaning | columns |
+  |---|---|---|
+  | `i` | I/H-section (two flanges + web) | `designation, h, b, tw, tf, r` |
+  | `u` | channel (web + two flanges, opening sideways) | `designation, h, b, tw, tf, r` |
+  | `tee` | T-section (top flange + web) | `designation, h, b, tw, tf, r` |
+  | `box` | square/rectangular hollow section | `designation, h, b, t` |
+  | `angle` | L-angle (vertical leg h, horizontal leg b) | `designation, h, b, t` |
+  | `pipe` | circular hollow section | `designation, d, t` |
+
+- All dimensions are real-world **mm**. `r` is the root-fillet radius used for
+  drawing only. Tapered-flange series (older channel/I standards) are stored
+  with their mean flange thickness — a documented parallel-flange
+  simplification, the same one the app's built-in NL tables use.
+- `columns` must match the shape's column list exactly (self-documenting data).
+- `defaultSize` must be one of the designations in `sizes`.
+- No SVG per size: the app renders cross-section, top view and side view from
+  the table, sized to real-world dimensions via its measure scale, with the
+  size switchable after placement (dynamic-block behaviour).
+- Sizes are **written out by hand** from publicly known section series
+  (dimensions of standardized sections are facts); never copy table files or
+  scans from standards documents or vendor catalogs.
+
+A steel collection may carry **both** `symbols` (flat SVG previews/cross
+sections — the fallback for consumers without a parametric renderer) and
+`parametric` (the size catalog). Apps that understand `steel-sections` should
+prefer the catalog and skip the flat SVGs to avoid duplicate palette entries.
+
 ## Country manifest
 
 `countries/<iso2>.json`, validated by `schema/country.schema.json`:

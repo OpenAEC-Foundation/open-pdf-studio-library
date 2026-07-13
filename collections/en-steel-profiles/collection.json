@@ -5,16 +5,17 @@
     "nl": "Europese staalprofielen"
   },
   "description": {
-    "en": "Cross-section symbols for European profiles (EN 10365): HEA/HEB/HEM, IPE, UPN, angles, T, SHS/RHS/CHS, plate. Parametric sizing follows once the parametric format lands.",
-    "nl": "Doorsnede-symbolen voor Europese profielen (EN 10365): HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers/buis, plaat. Parametrische maatvoering volgt zodra het parametrische formaat er is."
+    "en": "Cross-section symbols for European profiles (EN 10365): HEA/HEB/HEM, IPE, UPN, angles, T, SHS/RHS/CHS, plate. Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+    "nl": "Doorsnede-symbolen voor Europese profielen (EN 10365): HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers/buis, plaat. Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
   },
   "sector": "aec",
   "types": [
-    "symbols"
+    "symbols",
+    "parametric"
   ],
   "standard": "EN 10365",
   "scope": "regional",
   "status": "available",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "repository"
 }

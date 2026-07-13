@@ -6,16 +6,17 @@
     "nl": "Chinese staalprofielen (GB)"
   },
   "description": {
-    "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Parametric sizing follows once the parametric format lands.",
-    "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Parametrische maatvoering volgt zodra het parametrische formaat er is."
+    "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+    "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
   },
   "sector": "aec",
   "types": [
-    "symbols"
+    "symbols",
+    "parametric"
   ],
   "standard": "GB/T 706",
   "scope": "national",
   "status": "available",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "repository"
 }

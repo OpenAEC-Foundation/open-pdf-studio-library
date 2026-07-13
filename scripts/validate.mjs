@@ -22,6 +22,7 @@ function loadJson(path) {
 const ajv = new Ajv({ allErrors: true });
 const collectionSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'collection.schema.json')));
 const countrySchema = ajv.compile(loadJson(join(ROOT, 'schema', 'country.schema.json')));
+const parametricSteelSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'parametric-steel.schema.json')));
 
 function schemaErrors(validate, data, label) {
   if (validate(data)) return [];
@@ -134,6 +135,77 @@ export function validateHatchesJson(data, label) {
   return errors;
 }
 
+// parametric.json (format "steel-sections"): maatgedreven catalogus — families
+// met vaste kolomdefinitie per vorm en maattabellen in mm. De app rendert de
+// doorsneden/aanzichten zelf uit de tabel (geen SVG per maat).
+const STEEL_SHAPE_COLUMNS = {
+  i: ['designation', 'h', 'b', 'tw', 'tf', 'r'],
+  u: ['designation', 'h', 'b', 'tw', 'tf', 'r'],
+  tee: ['designation', 'h', 'b', 'tw', 'tf', 'r'],
+  box: ['designation', 'h', 'b', 't'],
+  angle: ['designation', 'h', 'b', 't'],
+  pipe: ['designation', 'd', 't']
+};
+
+export function validateParametricJson(data, label) {
+  const errors = [];
+  if (!data || data.format !== 'steel-sections') {
+    errors.push(`${label}: format moet "steel-sections" zijn`);
+    return errors;
+  }
+  errors.push(...schemaErrors(parametricSteelSchema, data, label));
+  if (errors.length) return errors;
+
+  const famIds = new Set();
+  data.families.forEach((f, i) => {
+    const where = `${label}: families[${i}] (${f.id})`;
+    if (famIds.has(f.id)) errors.push(`${where}: dubbele familie-id`);
+    famIds.add(f.id);
+
+    const expected = STEEL_SHAPE_COLUMNS[f.shape];
+    if (JSON.stringify(f.columns) !== JSON.stringify(expected)) {
+      errors.push(`${where}: columns moet voor vorm "${f.shape}" exact ${JSON.stringify(expected)} zijn`);
+      return;
+    }
+
+    const names = new Set();
+    let hasDefault = false;
+    f.sizes.forEach((row, j) => {
+      const rw = `${where}.sizes[${j}]`;
+      if (!Array.isArray(row) || row.length !== expected.length) {
+        errors.push(`${rw}: verwacht ${expected.length} kolommen (${expected.join(', ')})`);
+        return;
+      }
+      const [name, ...nums] = row;
+      if (typeof name !== 'string' || !name.trim()) errors.push(`${rw}: designation ontbreekt`);
+      if (names.has(name)) errors.push(`${rw}: dubbele designation "${name}"`);
+      names.add(name);
+      if (name === f.defaultSize) hasDefault = true;
+      if (nums.some(n => typeof n !== 'number' || !Number.isFinite(n) || n <= 0)) {
+        errors.push(`${rw}: alle maten moeten positieve getallen (mm) zijn`);
+        return;
+      }
+      // Fysische sanity per vorm: wanddiktes moeten binnen de buitenmaten passen.
+      if (f.shape === 'i' || f.shape === 'u' || f.shape === 'tee') {
+        const [h, b, tw, tf] = nums;
+        if (tw >= b) errors.push(`${rw}: tw (${tw}) >= b (${b})`);
+        if (2 * tf >= h) errors.push(`${rw}: 2×tf (${2 * tf}) >= h (${h})`);
+      } else if (f.shape === 'box') {
+        const [h, b, t] = nums;
+        if (2 * t >= Math.min(h, b)) errors.push(`${rw}: 2×t (${2 * t}) >= min(h, b)`);
+      } else if (f.shape === 'angle') {
+        const [h, b, t] = nums;
+        if (t >= Math.min(h, b)) errors.push(`${rw}: t (${t}) >= min(h, b)`);
+      } else if (f.shape === 'pipe') {
+        const [d, t] = nums;
+        if (2 * t >= d) errors.push(`${rw}: 2×t (${2 * t}) >= d (${d})`);
+      }
+    });
+    if (!hasDefault) errors.push(`${where}: defaultSize "${f.defaultSize}" komt niet voor in sizes`);
+  });
+  return errors;
+}
+
 export function runAll(root = ROOT) {
   const errors = [];
   const collectionIds = new Set();
@@ -178,6 +250,14 @@ export function runAll(root = ROOT) {
             errors.push(...validateStampsJson(loadJson(stampsPath), `${dir}/stamps.json`));
           } catch (e) {
             errors.push(`${dir}/stamps.json: ongeldige JSON — ${e.message}`);
+          }
+        }
+        const parametricPath = join(collectionsDir, dir, 'parametric.json');
+        if (data.types.includes('parametric') && existsSync(parametricPath)) {
+          try {
+            errors.push(...validateParametricJson(loadJson(parametricPath), `${dir}/parametric.json`));
+          } catch (e) {
+            errors.push(`${dir}/parametric.json: ongeldige JSON — ${e.message}`);
           }
         }
         const hatchesPath = join(collectionsDir, dir, 'hatches.json');

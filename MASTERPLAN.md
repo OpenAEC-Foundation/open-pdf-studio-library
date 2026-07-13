@@ -21,7 +21,14 @@ sectoren volgen daarna (hoofdstuk 9).
 - **Wereldindex** = `index.json` (gegenereerd), het enige bestand dat de app
   ophaalt; collecties worden on-demand gedownload.
 
-Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
+Formaat en tekenrichtlijnen: zie `docs/data-format.md`. Het parametrische
+catalogus-formaat (`parametric.json`, eerste vorm: `steel-sections` met
+maatgedreven profielfamilies) is gedefinieerd en uitgerold over alle tien
+staal-collecties (EN/AISC/VK/JIS/GB/IS 808/AS-NZS/GOST/KS/W-serie, 39
+families, 427 maten); de app rendert doorsnede/boven-/zijaanzicht op ware
+grootte uit de tabel. De platte SVG's blijven als fallback bestaan.
+De `*-drafting-parametric`-sets wachten nog op hun eigen (tweede)
+parametrische vorm.
 
 ## 3. Wave-overzicht
 
@@ -43,7 +50,7 @@ Formaat en tekenrichtlijnen: zie `docs/data-format.md`.
 | Collectie | Inhoud | Hergebruikt door |
 |---|---|---|
 | `iso7010-safety` | Veiligheidssignalering ISO 7010 (vluchtwegen, brandbestrijding, verbod/gebod/waarschuwing) — beschikbaar (v1.0.0, kernset 59 symbolen in de vijf vormcategorieën) | Alle landen behalve VS (VS gebruikt eigen conventies) |
-| `en-steel-profiles` | Europese staalprofielen: doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) + aanzichten — beschikbaar (v1.3.0, 17 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding); parametrische maatvoering volgt | Alle Europese landen |
+| `en-steel-profiles` | Europese staalprofielen: doorsneden (HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers, buis, plaat) + aanzichten — beschikbaar (v1.3.0, 17 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding) + parametrische maatcatalogus v1.4.0 (steel-sections: HEA/HEB/HEM/IPE/UPN/L/T/SHS-RHS/CHS, 136 maten) | Alle Europese landen |
 | `common-material-hatches` | Materiaal-arceringen (beton, metselwerk, isolatie, hout, staal, grond) — beschikbaar (v1.0.0, 12 patronen in het line-family-formaat van de app); renvooi-templates volgen als apart type | Wereldwijd |
 | `common-north-arrows` | Noordpijlen (beschikbaar — eerste bewijs van de pipeline) | Wereldwijd |
 
@@ -59,7 +66,7 @@ profielen en papierformaten. Hergebruik van de EN/ISO-laag is beperkt (± 20%).
 | `nfpa170-fire` | Brandveiligheidssymbolen volgens NFPA 170 (detectie, alarmering, blussing, egress) — zelf hertekend | beschikbaar (v1.0.0, 31 symbolen) |
 | `us-drafting-parametric` | Grid bubbles, elevation datums (ft-in), section/detail markers, rebar callouts (`#4 @ 12" o.c.`) | gepland |
 | `us-stamps` | APPROVED / REJECTED / REVISED / FOR CONSTRUCTION / NOT FOR CONSTRUCTION / PRELIMINARY / DRAFT | beschikbaar (v1.0.0, 16 stempels) |
-| `aisc-steel-shapes` | AISC-symbolen: doorsneden (W, S, HP, C, L, WT, HSS, buis, plaat) + aanzichten; parametrische maatvoering volgt | beschikbaar (v1.3.0, 17 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding) |
+| `aisc-steel-shapes` | AISC-symbolen: doorsneden (W, S, HP, C, L, WT, HSS, buis, plaat) + aanzichten + parametrische maatcatalogus v1.4.0 (W/S/C/L/HSS, 46 maten) | beschikbaar (v1.3.0, 17 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding) |
 | `us-wall-types` | Wandtypen in plattegrond: stud walls, CMU, brick veneer, beton, 1-HR/2-HR rated, shaft wall | beschikbaar (v1.0.0, 8 wandtypen) |
 | `common-material-hatches` | + Amerikaanse arceringsvarianten waar afwijkend | gedeeld |
 | `common-north-arrows` | — | beschikbaar |
@@ -97,7 +104,7 @@ ISO 19650-statuscodes zijn er de facto verplicht op tekeningen.
 | Collectie | Inhoud | Status |
 |---|---|---|
 | `uk-fire-symbols` | Brandveiligheidssymbolen volgens Britse tekenconventies (BS-reeks) | beschikbaar (v1.0.0, 26 symbolen) |
-| `uk-steel-sections` | Doorsneden (UB, UC, PFC, RSA, T, kokers/buis) + aanzichten; parametrische maatvoering volgt | beschikbaar (v1.3.0, 15 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding) |
+| `uk-steel-sections` | Doorsneden (UB, UC, PFC, RSA, T, kokers/buis) + aanzichten + parametrische maatcatalogus v1.4.0 (UB/UC/PFC/UKA, 45 maten) | beschikbaar (v1.3.0, 15 symbolen — echte tabelgeometrie, fillets, hartlijnen; aanzichten op echte verhouding) |
 | `uk-wall-types` | Wandtypen in plattegrond: brickwork, blockwork, cavity wall, stud walls, 30/60 min fire-rated | beschikbaar (v1.0.0, 8 wandtypen) |
 | `uk-stamps` | Suitability-codes (S0–S4) + APPROVED/DRAFT-set | beschikbaar (v1.0.0, 14 stempels) |
 | `uk-drafting-parametric` | Grid references, levels, section markers | gepland (wacht op parametrisch formaat) |
