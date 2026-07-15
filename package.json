@@ -15,7 +15,9 @@
     "check-index": "node scripts/build-index.mjs --check",
     "build-media": "node scripts/build-readme-media.mjs",
     "check-media": "node scripts/build-readme-media.mjs --check",
-    "check-versions": "node scripts/check-collection-versions.mjs"
+    "check-versions": "node scripts/check-collection-versions.mjs",
+    "build-steel": "node scripts/steel-symbols.mjs",
+    "check-steel": "node scripts/steel-symbols.mjs --check"
   },
   "devDependencies": {
     "ajv": "^8.20.0",
