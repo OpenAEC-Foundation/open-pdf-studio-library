@@ -105,9 +105,11 @@ Full format documentation: [docs/data-format.md](docs/data-format.md).
 
 ## Current coverage
 
-**41 countries** across every inhabited region, including **all of Europe**.
+**41 countries** across every inhabited region, including **all EU countries
+plus selected non-EU markets**.
 
-**Full production countries** — complete national symbol sets:
+**Production-ready core collections** — available baseline content for the
+first four priority markets:
 
 | Country | What's available |
 |---|---|
@@ -168,9 +170,12 @@ npm install
 npm test              # unit + repo-integrity tests
 npm run validate      # schema + cross-reference + SVG checks
 npm run build-index   # regenerate index.json
+npm run check-index   # verify generated index
+npm run build-media   # regenerate README previews
+npm run check-media   # verify generated previews
 ```
 
-CI runs all three on every push and PR.
+CI runs the tests and all non-writing validation checks on every push and PR.
 
 ## Legal
 

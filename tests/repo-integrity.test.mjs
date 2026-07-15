@@ -25,3 +25,14 @@ test('generated index satisfies its public schema', () => {
   const data = JSON.parse(readFileSync(join(ROOT, 'index.json'), 'utf8'));
   assert.deepEqual(validation.validateIndexJson(data, 'index.json'), []);
 });
+
+test('quality gate scripts and accurate coverage copy are present', () => {
+  const pkg = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8'));
+  const readme = readFileSync(join(ROOT, 'README.md'), 'utf8');
+  assert.equal(pkg.scripts['check-media'], 'node scripts/build-readme-media.mjs --check');
+  assert.equal(pkg.scripts['check-versions'], 'node scripts/check-collection-versions.mjs');
+  assert.doesNotMatch(readme, /all of Europe/i);
+  assert.doesNotMatch(readme, /complete national symbol sets/i);
+  assert.match(readme, /all EU countries/i);
+  assert.match(readme, /production-ready core collections/i);
+});

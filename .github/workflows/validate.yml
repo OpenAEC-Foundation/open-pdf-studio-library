@@ -2,15 +2,32 @@ name: validate
 on:
   push:
   pull_request:
+permissions:
+  contents: read
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - run: npm ci
-      - run: node --test
-      - run: node scripts/validate.mjs
-      - run: node scripts/build-index.mjs --check
+      - run: npm test
+      - run: npm run validate
+      - run: npm run check-index
+      - run: npm run check-media
+      - name: Check collection versions
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: npm run check-versions -- --base "$BASE_SHA"
+      - name: Check collection versions on push
+        if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
+        env:
+          BASE_SHA: ${{ github.event.before }}
+        run: npm run check-versions -- --base "$BASE_SHA"

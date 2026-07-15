@@ -18,8 +18,11 @@
 3. Set `status` to `available` only when the content is complete enough to
    be useful (rule of thumb: covers the symbols commonly seen on real
    drawings in that market).
-4. Bump `version` (semver) on every content change.
-5. Run `npm run validate && npm run build-index && npm test`.
+4. Bump `version` (semver) on every change inside an existing collection.
+   The new version must be strictly higher than the version in the base branch.
+5. Run `npm run validate && npm run build-index && npm run build-media && npm test`.
+   Before opening a PR, also run `npm run check-index`, `npm run check-media`
+   and `npm run check-versions -- --base origin/main`.
 6. Open a PR titled `collection: <id>`. Review requires one person with
    knowledge of the target market.
 
