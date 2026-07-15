@@ -20,6 +20,25 @@ function loadJson(path) {
 }
 
 const ajv = new Ajv({ allErrors: true });
+ajv.addFormat('uri', {
+  type: 'string',
+  validate(value) {
+    try {
+      const url = new URL(value);
+      return url.protocol === 'https:' || url.protocol === 'http:';
+    } catch {
+      return false;
+    }
+  }
+});
+ajv.addFormat('date', {
+  type: 'string',
+  validate(value) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+    const date = new Date(`${value}T00:00:00.000Z`);
+    return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+  }
+});
 const collectionSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'collection.schema.json')));
 const countrySchema = ajv.compile(loadJson(join(ROOT, 'schema', 'country.schema.json')));
 const parametricSteelSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'parametric-steel.schema.json')));
@@ -34,6 +53,10 @@ export function validateCollectionJson(data, dirName) {
   const errors = schemaErrors(collectionSchema, data, dirName);
   if (!errors.length && data.id !== dirName) {
     errors.push(`${dirName}: id "${data.id}" komt niet overeen met de mapnaam`);
+  }
+  if (data.review?.status === 'market-verified') {
+    if (!data.review.verifiedAt) errors.push(`${dirName}: review.verifiedAt ontbreekt`);
+    if (!data.review.verifiedBy?.length) errors.push(`${dirName}: review.verifiedBy ontbreekt`);
   }
   return errors;
 }

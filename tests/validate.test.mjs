@@ -38,6 +38,28 @@ test('collection without english name is rejected', () => {
   assert.ok(validateCollectionJson({ ...goodCollection, name: { nl: 'Testset' } }, 'test-set').length > 0);
 });
 
+test('market-verified collection requires date and reviewer', () => {
+  const data = { ...goodCollection, review: { status: 'market-verified' } };
+  const errors = validateCollectionJson(data, 'test-set');
+  assert.ok(errors.some(error => error.includes('verifiedAt')));
+  assert.ok(errors.some(error => error.includes('verifiedBy')));
+});
+
+test('valid provenance and review metadata passes', () => {
+  const data = {
+    ...goodCollection,
+    standardEdition: '2025',
+    jurisdiction: ['NL'],
+    references: [{ title: 'Public overview', identifier: 'Example 123' }],
+    review: {
+      status: 'market-verified',
+      verifiedAt: '2026-07-15',
+      verifiedBy: ['reviewer']
+    }
+  };
+  assert.deepEqual(validateCollectionJson(data, 'test-set'), []);
+});
+
 test('valid country passes', () => {
   assert.deepEqual(validateCountryJson(goodCountry, 'nl', new Set(['test-set'])), []);
 });

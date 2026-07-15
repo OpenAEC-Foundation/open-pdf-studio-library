@@ -94,6 +94,25 @@ test('integrity keys match files exactly', () => {
   );
 });
 
+test('collection provenance metadata is preserved in the index', () => {
+  const metadata = {
+    standardEdition: '2025',
+    jurisdiction: ['NL'],
+    references: [{ title: 'Public overview', identifier: 'Example 123' }],
+    review: {
+      status: 'market-verified',
+      verifiedAt: '2026-07-15',
+      verifiedBy: ['reviewer']
+    }
+  };
+  const idx = buildIndex([], [{ ...collections[0], ...metadata }]);
+  const entry = idx.collections['zz-set'];
+
+  for (const [key, value] of Object.entries(metadata)) {
+    assert.deepEqual(entry[key], value, key);
+  }
+});
+
 test('output is deterministic for same input', () => {
   const a = JSON.stringify(buildIndex(countries, collections));
   const b = JSON.stringify(buildIndex([...countries].reverse(), [...collections].reverse()));

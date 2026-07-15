@@ -27,6 +27,10 @@ export function buildIndex(countries, collections) {
       path: `collections/${c.id}/`,
       ...(c.description ? { description: c.description } : {}),
       ...(c.standard ? { standard: c.standard } : {}),
+      ...(c.standardEdition ? { standardEdition: c.standardEdition } : {}),
+      ...(c.jurisdiction ? { jurisdiction: c.jurisdiction } : {}),
+      ...(c.references ? { references: c.references } : {}),
+      ...(c.review ? { review: c.review } : {}),
       ...(c.symbolCount ? { symbolCount: c.symbolCount } : {}),
       // Volledige bestandslijst (relatief aan `path`) zodat apps alles via
       // raw-URLs kunnen ophalen. Zonder deze lijst moeten consumenten een
