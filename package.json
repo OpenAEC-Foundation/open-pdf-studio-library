@@ -12,7 +12,9 @@
     "test": "node --test",
     "validate": "node scripts/validate.mjs",
     "build-index": "node scripts/build-index.mjs",
-    "check-index": "node scripts/build-index.mjs --check"
+    "check-index": "node scripts/build-index.mjs --check",
+    "build-media": "node scripts/build-readme-media.mjs",
+    "check-media": "node scripts/build-readme-media.mjs --check"
   },
   "devDependencies": {
     "ajv": "^8.20.0",
