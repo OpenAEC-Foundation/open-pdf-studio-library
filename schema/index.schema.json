@@ -37,18 +37,49 @@
       "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "sector", "types", "scope", "status", "version", "path"],
+        "required": ["name", "sector", "types", "scope", "status", "version", "license", "path"],
         "properties": {
           "name": { "type": "object" },
+          "description": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
           "sector": { "type": "string" },
           "types": { "type": "array" },
           "scope": { "type": "string" },
           "status": { "type": "string" },
           "version": { "type": "string" },
+          "license": { "type": "string", "minLength": 1 },
           "path": { "type": "string" },
           "standard": { "type": "string" },
-          "symbolCount": { "type": "integer" }
-        }
+          "symbolCount": { "type": "integer" },
+          "files": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^(symbols/[^/]+\\.svg|stamps\\.json|parametric\\.json|hatches\\.json|legends\\.json)$"
+            }
+          },
+          "integrity": {
+            "type": "object",
+            "propertyNames": { "type": "string" },
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^sha256-[0-9a-f]{64}$"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": { "required": ["files"] },
+            "then": { "required": ["integrity"] }
+          },
+          {
+            "if": { "required": ["integrity"] },
+            "then": { "required": ["files"] }
+          }
+        ]
       }
     }
   }

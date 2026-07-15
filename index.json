@@ -1628,10 +1628,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.4.0",
+      "license": "repository",
       "path": "collections/aisc-steel-shapes/",
+      "description": {
+        "en": "Cross-section symbols for AISC shapes: W, S, HP, C, L, WT, HSS, pipe, plate. Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede-symbolen voor AISC-profielen: W, S, HP, C, L, WT, HSS, buis, plaat. Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "AISC",
       "symbolCount": 17,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/c-channel.svg",
         "symbols/channel-elevation.svg",
@@ -1648,9 +1654,28 @@
         "symbols/s-shape.svg",
         "symbols/tee-elevation.svg",
         "symbols/w-shape.svg",
-        "symbols/wt-tee.svg",
-        "parametric.json"
-      ]
+        "symbols/wt-tee.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-421746a7e148bc4dddaf4f26c3e0108326138353045fb1238e32b4c1a18be417",
+        "symbols/angle-elevation.svg": "sha256-68be7394c800331654a5547d1ce64edaf0edd55af7d20f448c575dce2ca1425d",
+        "symbols/c-channel.svg": "sha256-3b7ae8bd163bfe24917f411fd1ace5feea6d7f0e5c2e4f145d638ddaee324779",
+        "symbols/channel-elevation.svg": "sha256-c9a85264786f1266502aa2f23478b33e4ee70ccdbba4ad46b7169f1d66876d07",
+        "symbols/hollow-section-elevation.svg": "sha256-3be79d1eaaffb91f643a323cf147ef1cc1703c545fe5616ea97a4c3d424d97e7",
+        "symbols/hp-shape.svg": "sha256-e4bc5e28b59f906caf60b618196f77a9462a788e2a49a602e4c606a74d298b77",
+        "symbols/hss-rect.svg": "sha256-84c12d5119eda541447b8022528c88130f18089503b4e1a07888df5425bcb514",
+        "symbols/hss-round.svg": "sha256-31ada7b68ecddf8209582b8bf2e4ca62c35b09a7adcaa316af802c0b28503af5",
+        "symbols/hss-square.svg": "sha256-972323e822fc1b4aa62963de6ab718a7e85ee1b1fb0e3317510f2baee054a61c",
+        "symbols/i-beam-elevation.svg": "sha256-4da4b29be6e4a81820ee3b413cbaf2e604db0a080180ac7e6ce90f9b85e87d96",
+        "symbols/l-angle-equal.svg": "sha256-a425c3bf57061680deaaf36e9a77f6a240cff9264a557a1011dcaeb1233b8cf2",
+        "symbols/l-angle-unequal.svg": "sha256-6cedd572dd95ebb7d3144d3e65ff71f540c5f02f6f0c0bf125c8044e327b50d1",
+        "symbols/pipe.svg": "sha256-9e5379c3393d026bda10650a8c42ef989c18a42eb60e100f06b641d9c54bddda",
+        "symbols/plate.svg": "sha256-67f6075ad74df432f40ce170f7e2149f113934b8c225c8c212db6de9f201df85",
+        "symbols/s-shape.svg": "sha256-9084ee8e8708639c3ef72e13e753d28e74d29b8d3371df4946aa43741355933c",
+        "symbols/tee-elevation.svg": "sha256-954e79ecfbfaf524dcfc6d8c0ce319773242c97a3cbc74f42b61ea52de4dbd2b",
+        "symbols/w-shape.svg": "sha256-bc0edf454e92434f5847288e3e0469fe5a48dc0f87d07e29261b01e4cb1548c1",
+        "symbols/wt-tee.svg": "sha256-845946888682a65558390cfdfd4ef85de43325e074fe77419a744d5626fd8c7c"
+      }
     },
     "at-fire-symbols": {
       "name": {
@@ -1664,6 +1689,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/at-fire-symbols/"
     },
     "au-electrical": {
@@ -1678,7 +1704,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/au-electrical/",
+      "description": {
+        "en": "Australian electrical floor-plan conventions: GPOs, smoke alarms (AS 3786), switchboards.",
+        "nl": "Australische elektra-plattegrondconventies: GPO's, smoke alarms (AS 3786), switchboards."
+      },
       "standard": "AS 1102",
       "symbolCount": 13,
       "files": [
@@ -1695,7 +1726,22 @@
         "symbols/switch-2way.svg",
         "symbols/switch.svg",
         "symbols/switchboard.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/ceiling-fan.svg": "sha256-72f953fd8605e5f9b2a9e00febb3922716cde21ffb121207b43820e009767d89",
+        "symbols/data-outlet.svg": "sha256-060d9c46543851717f59480d88be504ea6704d1b6415ddbcd5fb29fe5250d52c",
+        "symbols/downlight.svg": "sha256-866732334595bee9e44e7a6f7a41f72b1e583473969a065154cc374635582cc4",
+        "symbols/exhaust-fan.svg": "sha256-37489bc91fa6738c7a18f734cf9cfeaf936fe08f8094c5c427e31fc068ffd47e",
+        "symbols/fan-isolator.svg": "sha256-31da93a88fa4f3cbea080176be17893dfdbcdbfe84ddec5848ab72613ea192e3",
+        "symbols/gpo-double.svg": "sha256-d33a7931068f7518b853d5feda8c81134c6b2cdba9aaf2b34b76610c9849cc22",
+        "symbols/gpo-single.svg": "sha256-168e6d95c20da1b1080c978336250175276fa483bc06a93698a17d364d238902",
+        "symbols/gpo-weatherproof.svg": "sha256-358315590613977f1ce5c7e5f8f892d4460830913c012136be8069973843b733",
+        "symbols/light-point.svg": "sha256-39736e2106fa24f58e7644ede1fd7139f8b823587fa826d66943b44bc909b41a",
+        "symbols/smoke-alarm.svg": "sha256-ec5386ccc282f55ab3454f41d88862befda9fc289be034afa03bcde53f5d0e98",
+        "symbols/switch-2way.svg": "sha256-5884744f85faa81687782c76868d51de85beec4d66eceb34df5dffcf6890e773",
+        "symbols/switch.svg": "sha256-4e7843da63146e6aecfc7a1bb83f743beccc930116fa7519a7a4cc3851e025e3",
+        "symbols/switchboard.svg": "sha256-2c48c04f3ddefcd42b1e85cb425203b70773038e698e3fe5bc7fa32f2d1146a5"
+      }
     },
     "au-fire-symbols": {
       "name": {
@@ -1709,7 +1755,11 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
-      "path": "collections/au-fire-symbols/"
+      "license": "repository",
+      "path": "collections/au-fire-symbols/",
+      "description": {
+        "en": "Fire protection symbols per AS drawing practice."
+      }
     },
     "au-stamps": {
       "name": {
@@ -1723,10 +1773,17 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/au-stamps/",
+      "description": {
+        "en": "Stamps as used on Australian drawings, including WORK AS EXECUTED."
+      },
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-c5c43dd2b25886cb84219df271208970146d491a6182d432d14b87b93d77541b"
+      }
     },
     "au-steel-sections": {
       "name": {
@@ -1741,10 +1798,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/au-steel-sections/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "AS/NZS 3679",
       "symbolCount": 15,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/bt-tee.svg",
         "symbols/channel-elevation.svg",
@@ -1759,9 +1822,26 @@
         "symbols/tee-elevation.svg",
         "symbols/ua-angle.svg",
         "symbols/ub.svg",
-        "symbols/uc.svg",
-        "parametric.json"
-      ]
+        "symbols/uc.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-fb3473ea12a5b9b4a771f25a0e59409dc76374633f1486c8c1a06572fb12b8bd",
+        "symbols/angle-elevation.svg": "sha256-d9d77659c6f4d25cd63fe11250a610e83f0cddaae3c5851efaa48f4aa087e1f2",
+        "symbols/bt-tee.svg": "sha256-eb555d09ea628d35e51d3d95ca5a195c64561d5602dddf0146259490b3d8e635",
+        "symbols/channel-elevation.svg": "sha256-79c54aa929e6855114704c6715e035072147566bfbedecb0479ab17125dcdc42",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/ea-angle.svg": "sha256-6e280e38c85cdd7dda5a7f2fcd66db488c365d620565f1c30f4b37da397beb7f",
+        "symbols/flat.svg": "sha256-cf7303d2fa00ddcfdfeff4fe294b2a86a707061f0e5a1ce530fc89ab4980e7c3",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-9413dfee4700081e3cce68c0659238aa045991df1402241e2a9b7934329a785d",
+        "symbols/pfc.svg": "sha256-f97e404b955be69097df86ca76681133da3acf5aa2804b0c160101dcb964e970",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-62cf7c464e2449bb6a0a5ad9fb9432a6cd64e4b1c7c08a9e87f7b463189db675",
+        "symbols/ua-angle.svg": "sha256-ab78498c38949bb6909517e86c2058c899224eb81b5c7d99030dc32adbac1045",
+        "symbols/ub.svg": "sha256-3b4cb0738e973cef432e9fb13dff3a908a1516253560da12dbb0f36209e9b05e",
+        "symbols/uc.svg": "sha256-a631787ceb4f7b548dc9081dc417688c42cc772cf115abbd18099cf460a3753a"
+      }
     },
     "be-stamps": {
       "name": {
@@ -1776,10 +1856,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/be-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-67a9184d7835984320524e0e61079d79df24793bb679d50c1e6288f1d318fbc9"
+      }
     },
     "bg-fire-symbols": {
       "name": {
@@ -1793,6 +1877,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/bg-fire-symbols/"
     },
     "bg-stamps": {
@@ -1808,10 +1893,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/bg-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-cf7493b5b499ee7c8a3f187c2ca74847d9279cfc4b5f5f1408db5f568851592b"
+      }
     },
     "br-fire-symbols": {
       "name": {
@@ -1826,6 +1915,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/br-fire-symbols/"
     },
     "br-stamps": {
@@ -1841,10 +1931,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/br-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-2970d847c775ac316c8e3469d3cb46f98cfd7e4371f1c78b51044040cb58f06a"
+      }
     },
     "br-steel-shapes": {
       "name": {
@@ -1860,9 +1954,15 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/br-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "symbolCount": 14,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/channel-elevation.svg",
         "symbols/chs.svg",
@@ -1876,9 +1976,25 @@
         "symbols/tee-elevation.svg",
         "symbols/u-channel.svg",
         "symbols/w-beam.svg",
-        "symbols/w-column.svg",
-        "parametric.json"
-      ]
+        "symbols/w-column.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-cc3f5558611edbed25e022c201217619511245e7187bb35e1c11b696b55218fa",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/channel-elevation.svg": "sha256-576d34f6025456d82aabd857139b5f76e2a91e9001e23f41db0c00cd95888eb4",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-4da4b29be6e4a81820ee3b413cbaf2e604db0a080180ac7e6ce90f9b85e87d96",
+        "symbols/l-equal.svg": "sha256-339768e2c4582965cd0e9d01257739498cf7cd17db9dc3b1bd363ab844b74c60",
+        "symbols/l-unequal.svg": "sha256-d6f72ebd773122f127e74b2ac5ca3d9f108fddeee9c83527100423cb0008bbc9",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-16071c71124e5067904553009530fd06df8c0a8f0a486080edbec7d26898fa60",
+        "symbols/u-channel.svg": "sha256-3da7a1b2a39242a8144f4e64e1dd45d6512f1e7369203be559c8a51b5ed694da",
+        "symbols/w-beam.svg": "sha256-80d87543865c0098a3070f90bdd5b551f94919d42da832f2afdb5a4a903d04d5",
+        "symbols/w-column.svg": "sha256-0c1200c54ffe0bc8bf135e707c5e581c1286cb96cc1fe659be2d224bc8ce547a"
+      }
     },
     "ch-fire-symbols": {
       "name": {
@@ -1892,6 +2008,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/ch-fire-symbols/"
     },
     "cn-fire-symbols": {
@@ -1907,7 +2024,11 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
-      "path": "collections/cn-fire-symbols/"
+      "license": "repository",
+      "path": "collections/cn-fire-symbols/",
+      "description": {
+        "en": "Fire protection symbols per Chinese GB standards and common drawing practice."
+      }
     },
     "cn-stamps": {
       "name": {
@@ -1922,10 +2043,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/cn-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-38210a502610716fe8bfb27526bbda2db1728008c75da046ef8138950c173bed"
+      }
     },
     "common-hvac-symbols": {
       "name": {
@@ -1939,7 +2064,12 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/common-hvac-symbols/",
+      "description": {
+        "en": "Common HVAC symbols for floor plans: diffusers, grilles, fans, units, radiators, duct risers.",
+        "nl": "Gangbare klimaatsymbolen voor plattegronden: roosters, ventilatoren, units, radiatoren, kanaal-stijgpunten."
+      },
       "symbolCount": 11,
       "files": [
         "symbols/air-handling-unit.svg",
@@ -1953,7 +2083,20 @@
         "symbols/supply-diffuser.svg",
         "symbols/thermostat.svg",
         "symbols/valve-2way.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/air-handling-unit.svg": "sha256-32354cf47a7d35a1333f29468bf0b5de8b7f74f6113f74dda95865d6c761f66f",
+        "symbols/duct-drop.svg": "sha256-0a391e38a4fcf704486c57d1b78a3b44173217dfff3da0c863c9467abaad396e",
+        "symbols/duct-rise.svg": "sha256-38a195b4817c5ffb5deb4183a490995e74588d355398652ff94a28bd100ad8c6",
+        "symbols/exhaust-fan.svg": "sha256-71b174846afa8ac948ffed21eab484be1fe685f38a7e83570b278b1760b824e8",
+        "symbols/fan-coil-unit.svg": "sha256-e319af40af0cd767dc091912a2c34a28e70f229df2594cdf00edf116aef202ab",
+        "symbols/pump.svg": "sha256-09c86254b3cf583d984b437bc563217ac2192d8e835a4727e76d1ac146083013",
+        "symbols/radiator.svg": "sha256-c32c2950215dd7dba45476cbc7efdad1ee717a6fe8197d126339e73f5ad2a0e0",
+        "symbols/return-grille.svg": "sha256-562962f9f8b03082f973af1f2babb5b43938e5ae75d9663b9753d7eda3bc57cd",
+        "symbols/supply-diffuser.svg": "sha256-c255b22fbc560d067c81d4cfa8bde3280c6fcccd319a345b8ba3571248f1d779",
+        "symbols/thermostat.svg": "sha256-0c80ea86c75a60c9553438b9ae7d1619bd1d6b8292d59a40760774be11a76e5d",
+        "symbols/valve-2way.svg": "sha256-609e5669ddc29727c393b7ca46c4c83f42afffb64d60f1343379d80ee62e3247"
+      }
     },
     "common-material-hatches": {
       "name": {
@@ -1967,10 +2110,14 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/common-material-hatches/",
       "files": [
         "hatches.json"
-      ]
+      ],
+      "integrity": {
+        "hatches.json": "sha256-58663d11158d6317000210b242dfa69097606892acd4bbd95371a56414d946c6"
+      }
     },
     "common-north-arrows": {
       "name": {
@@ -1984,14 +2131,25 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/common-north-arrows/",
+      "description": {
+        "en": "Universal north arrow symbols for site plans and floor plans.",
+        "nl": "Universele noordpijlen voor situatietekeningen en plattegronden."
+      },
       "symbolCount": 4,
       "files": [
         "symbols/north-arrow-circled.svg",
         "symbols/north-arrow-classic.svg",
         "symbols/north-arrow-quartered.svg",
         "symbols/north-arrow-simple.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/north-arrow-circled.svg": "sha256-006feea5e0018b4aa30514d28c5a5ed5382cfbe0e0d3c911376fd7e6e8082213",
+        "symbols/north-arrow-classic.svg": "sha256-bb747cc704ddfe942cee62a79d8b527e37f735ae880b2bc79e8c5c51204d902d",
+        "symbols/north-arrow-quartered.svg": "sha256-8bb652da619cc0312ee07d64805d10dfa8697a0ec8bac4fea3509b7176dd6f7a",
+        "symbols/north-arrow-simple.svg": "sha256-0faf6f625fd15c8ff33d87d4d5b017dccd29a88a21ab95e7fe587a34cf9d8d40"
+      }
     },
     "cz-fire-symbols": {
       "name": {
@@ -2005,6 +2163,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/cz-fire-symbols/"
     },
     "cz-stamps": {
@@ -2020,10 +2179,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/cz-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-d685b9c72df0a590421c2a8ea2e2999187f416dd2abf5b2cd341f87790b7951b"
+      }
     },
     "de-drafting-parametric": {
       "name": {
@@ -2038,7 +2201,13 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
-      "path": "collections/de-drafting-parametric/"
+      "license": "repository",
+      "path": "collections/de-drafting-parametric/",
+      "description": {
+        "en": "Parametric components for German drawings: grid axes, level marks (DIN 406 notation), rebar callouts.",
+        "de": "Parametrische Komponenten: Achsen, Höhenkoten (DIN 406), Bewehrungsangaben.",
+        "nl": "Parametrische componenten: stramienen, hoogtematen (DIN 406-notatie), wapening-callouts."
+      }
     },
     "de-stamps": {
       "name": {
@@ -2053,10 +2222,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/de-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-61db0b734a6f39be1ad1d2eb1c043f351aebb131d5fb1f884791223f9b537040"
+      }
     },
     "de-wall-types": {
       "name": {
@@ -2071,7 +2244,13 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/de-wall-types/",
+      "description": {
+        "en": "Plan-view wall segments per German drawing practice (DIN 1356 hatching conventions): Mauerwerk, Stahlbeton, Trockenbau, Brandwand F30/F90.",
+        "de": "Wandsegmente im Grundriss nach deutscher Zeichenpraxis (DIN 1356): Mauerwerk, Stahlbeton, Trockenbau, Brandwand F30/F90.",
+        "nl": "Wandsegmenten in plattegrond volgens Duitse tekenpraktijk (DIN 1356): metselwerk, gewapend beton, droogbouw, brandwanden F30/F90."
+      },
       "standard": "DIN 1356",
       "symbolCount": 9,
       "files": [
@@ -2084,7 +2263,18 @@
         "symbols/schacht.svg",
         "symbols/stahlbeton.svg",
         "symbols/trockenbauwand.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/beton.svg": "sha256-975f6e237d71e6d2fe46350d2cc97d120c45f8e6e9c763b954c393e3e27da8d8",
+        "symbols/brandwand-f30.svg": "sha256-cf55ec8bcc6db16634e75aaf0bcef54c5fcef19bf3b7ab1778dd6e261768fe13",
+        "symbols/brandwand-f90.svg": "sha256-a1c109ed7e906953ffbb8536428227cdbcc9a4c6e915c4695d495c00f8e3eb2c",
+        "symbols/holzstaenderwand.svg": "sha256-9b133174468714a95fdc8305ba2ab4e4d90ae53dfd0740a1213701dc7b626492",
+        "symbols/mauerwerk.svg": "sha256-37e2a2b5b94c95520013e303faa213461da44192337f958916944c3cd328db08",
+        "symbols/porenbeton.svg": "sha256-285c640635c9ad20d1ef7b6a0a30cab748cc17d88f94562a282ad4974293ff80",
+        "symbols/schacht.svg": "sha256-e16a150a5c163df0104a737e6b64e9c04da349becad5ea910e06cd76c4e3d3cd",
+        "symbols/stahlbeton.svg": "sha256-70534037babbc5bb88b7e3cb4fcc4dba6c5b9ec86896288d8eb43b51e31b77ce",
+        "symbols/trockenbauwand.svg": "sha256-4849ed11cff295f78b74aea0ffaa6be5c5fc16a86b04a4f811cdf8d48181fed9"
+      }
     },
     "din14034-fire": {
       "name": {
@@ -2099,7 +2289,13 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/din14034-fire/",
+      "description": {
+        "en": "Symbols commonly used on German fire brigade plans (DIN 14095) and fire protection drawings.",
+        "de": "Gängige Symbole für Feuerwehrpläne (DIN 14095) und Brandschutzpläne.",
+        "nl": "Gangbare symbolen op Duitse Feuerwehrpläne (DIN 14095) en brandveiligheidstekeningen."
+      },
       "standard": "DIN 14034-6",
       "symbolCount": 31,
       "files": [
@@ -2134,7 +2330,40 @@
         "symbols/waermemelder.svg",
         "symbols/wandhydrant.svg",
         "symbols/zuluftoeffnung.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/automatischer-brandmelder.svg": "sha256-b65fd7eaa1d42986ef86f1a0ffdcb30be1363ea00477f233af214862eb7fe008",
+        "symbols/blitzleuchte.svg": "sha256-747273a7c6e54e75766e6fe7c2be5d31631fdea1bf74d8cfb56d19860a4117f9",
+        "symbols/brandmelderzentrale.svg": "sha256-d29eadb6cdcba99c5f0cad2c60ca715d63a3111943e8b1fa9a220e3bcbf0ebf4",
+        "symbols/brandschutzklappe.svg": "sha256-3d8a44a6b50eff8ea5e61a9da72866db382c9eb5ef740c75144292cfa6fa1eb7",
+        "symbols/brandschutztuer.svg": "sha256-6652f200f9d9ddcfda9ec85d02bf39bf15646875918d5299f4c78f68bb751c0a",
+        "symbols/brandwand.svg": "sha256-0394e730dc95fa143277243ea1f1e72905fd3b006a54dc30cf7e509df5848954",
+        "symbols/co2-loeschanlage.svg": "sha256-f90744930d4a9ea0605b063cb470a147377350d888a101d6b41f9c3e18db2cda",
+        "symbols/einspeisestelle.svg": "sha256-5230b42ce076031efc620fd84d70806729385e17ab2a684753c630a64f41463e",
+        "symbols/feuerloescher.svg": "sha256-5da0325a5241337ab8f456da6f4c47ee24ee32630368f317c3992a0214f5db67",
+        "symbols/feuerwehr-anzeigetableau.svg": "sha256-ebc4c803a277cbb3e261d635f3e4c2bd8ad0555dabf8329a2df27d81e4c62a7e",
+        "symbols/feuerwehr-bedienfeld.svg": "sha256-a89bf7d7dc880746e020f38c4ac9a3bd6e5fbbfff32e505665beff82e14e37da",
+        "symbols/feuerwehr-schluesseldepot.svg": "sha256-89923fc60fae1da518ac72071297973ab1098e67d83208ea4e723a2a234f66d6",
+        "symbols/feuerwehrzufahrt.svg": "sha256-bdd10f3e8ead3c36f8b01d6a807f739062bde7667224021fb82a30abb7d438a6",
+        "symbols/freischaltelement.svg": "sha256-434a244f20d602f728038c7afc82ad51dde44d327f7d3abe0f12834392f79c97",
+        "symbols/handfeuermelder.svg": "sha256-b6df738665e832c1b6d566938aa9bd07c6f757730298d90bdcbe0e24cfb096f1",
+        "symbols/loeschwasserbehaelter.svg": "sha256-2256900048d0ce365fe5c79696706605f4ad5b593dc6f86f23d3752c38f26304",
+        "symbols/loeschwasserentnahme.svg": "sha256-84aadffa5c1735f69350f818aa49197f6b25776fb5ae5f3c04d5c5c986027af5",
+        "symbols/rauchabzug.svg": "sha256-818584f9937cadfc8609686c6ed686aeb254f57f260502922908f903fa8d28e9",
+        "symbols/rauchmelder.svg": "sha256-0c49195f6ad65f595211d0def4f5d9433a883cba82035852759fed1b736edfeb",
+        "symbols/rwa-bedienstelle.svg": "sha256-382dca28ce4e1e4a49edeb229bd86c75ce3205327283cbd22f03d5b7e1b607ef",
+        "symbols/sammelplatz.svg": "sha256-4f2e273d7ae60f3dce1e3efd89a41ea7ca8673db886ca86f70140ab25d588c2f",
+        "symbols/sirene.svg": "sha256-777f4ff375adcfbe6eac3366ed55cb64331754bce6b27f52bfb3bc86e4d3d9e7",
+        "symbols/sprinkler-geschuetzt.svg": "sha256-ff7c010699636abcdc080967e420cd165ed28258b43089a2a84179c877e1b739",
+        "symbols/sprinklerzentrale.svg": "sha256-b1ce180712af7860c31d9e102ece7ffd3490547de57b17a7c081b65cc6340926",
+        "symbols/steigleitung-nass.svg": "sha256-8820759d27541c6650a852719c3c75cef0f4618e11fcd1f0817fd48fb59bf144",
+        "symbols/steigleitung-trocken.svg": "sha256-504fdb682ebccee1a5538a695f5b1951275918fa4a04a28e2a699400db66e793",
+        "symbols/ueberflurhydrant.svg": "sha256-c0d5e84b806fc6cec7c00f249eea8c359896d95751e775ede4e81d0fdd40100a",
+        "symbols/unterflurhydrant.svg": "sha256-c5662fe4add16331d2117c3bb99d2884fd574f1cd3ae614cba25b60bb6d2c153",
+        "symbols/waermemelder.svg": "sha256-8a4bbeebd921ad80623795e96faca02ccad3a64f35e6df4db63ac48ca826f741",
+        "symbols/wandhydrant.svg": "sha256-b6977a0b5d5964327728dc908ac1e1e2396a4e6938a06f9420772f0b61eb0684",
+        "symbols/zuluftoeffnung.svg": "sha256-85351ad1a316abd9d51160526c831554f03ea1a0fb5b6bb468bdfddd8c9b44f5"
+      }
     },
     "dk-fire-symbols": {
       "name": {
@@ -2148,6 +2377,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/dk-fire-symbols/"
     },
     "dk-stamps": {
@@ -2163,10 +2393,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/dk-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-90227a82eb72a142c5b7b315fea895eefa39899cb63747982f591d5c0874bccb"
+      }
     },
     "ee-fire-symbols": {
       "name": {
@@ -2180,6 +2414,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/ee-fire-symbols/"
     },
     "ee-stamps": {
@@ -2195,10 +2430,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/ee-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-32c6412a7ca77d29557b103bfc2860284bfbe4dde85e3ecec8cf5f6c9c35d141"
+      }
     },
     "en-steel-profiles": {
       "name": {
@@ -2213,10 +2452,16 @@
       "scope": "regional",
       "status": "available",
       "version": "1.4.0",
+      "license": "repository",
       "path": "collections/en-steel-profiles/",
+      "description": {
+        "en": "Cross-section symbols for European profiles (EN 10365): HEA/HEB/HEM, IPE, UPN, angles, T, SHS/RHS/CHS, plate. Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede-symbolen voor Europese profielen (EN 10365): HEA/HEB/HEM, IPE, UPN, hoekstaal, T, kokers/buis, plaat. Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "EN 10365",
       "symbolCount": 17,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/channel-elevation.svg",
         "symbols/chs.svg",
@@ -2233,9 +2478,28 @@
         "symbols/shs.svg",
         "symbols/t-profile.svg",
         "symbols/tee-elevation.svg",
-        "symbols/upn.svg",
-        "parametric.json"
-      ]
+        "symbols/upn.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-7dfe8c8ba311f17e9dc8c2d8a09ffc955f281ef2d0f2351926aad3689cdae22e",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/channel-elevation.svg": "sha256-b5bba09c594141c80a3926525ad9cb54277767ec1ca4164cc3b56754a2edcce2",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/hea.svg": "sha256-d0ddebba18f1479b3ef3e0d191331e4e790dd6d6e1c2d7849c49847b63ecff32",
+        "symbols/heb.svg": "sha256-ba925ddd7b823687dc78b25926b9718ad4761774739d8567dfcc44800e9d6769",
+        "symbols/hem.svg": "sha256-ee01fc8562453de900bb9f9c1a2537b9300465cbe777e2724b2a6778406c0acd",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-307caa6f87906eb15c2714fad1d47a4a358bfbcdbc03d62be15831dece391a5c",
+        "symbols/ipe.svg": "sha256-6aa302e9089c3cf94e87fb8449840672227c77c77924acd96b8d628a11d40f45",
+        "symbols/l-equal.svg": "sha256-d4455e6d5a0d086da1a46b797cc7154b87a8057ab93c0adfac1cb6efb6711551",
+        "symbols/l-unequal.svg": "sha256-89091165242ec2ed5a7aa82ed6b42bd18d214a71ae8ba2d45c936fd80eb03754",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-43374a33360730486e0299352a5ce41e97c17e55974389732b4d9029144fa115",
+        "symbols/shs.svg": "sha256-c64bac90e4e4a83e6abf4582d7a21c0faf02ac9f18d4e8212629770a21caea54",
+        "symbols/t-profile.svg": "sha256-78aafa174d2e4bfcf8ea8dcf495478136919c935473c325f9dcb970d046b9495",
+        "symbols/tee-elevation.svg": "sha256-23893ad21c80c348188313fe147155b3e3744b392ec9e499b858571673837dde",
+        "symbols/upn.svg": "sha256-6df53eb29b18ff1b4cc407fcf04888fa0b082e2a6279cde7b94f774ba77ae298"
+      }
     },
     "es-fire-symbols": {
       "name": {
@@ -2250,6 +2514,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/es-fire-symbols/"
     },
     "es-stamps": {
@@ -2265,10 +2530,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/es-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-28bf97471cdfaa48bd27c50c17a2ef69015bb56f8ae6647f6df1eac6727e8463"
+      }
     },
     "fi-fire-symbols": {
       "name": {
@@ -2282,6 +2551,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/fi-fire-symbols/"
     },
     "fi-stamps": {
@@ -2297,10 +2567,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/fi-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-5804ac2da3504db91b67e2a37b58683f94233f4faf2c513256f66dec909d35a2"
+      }
     },
     "fr-fire-symbols": {
       "name": {
@@ -2315,6 +2589,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/fr-fire-symbols/"
     },
     "fr-stamps": {
@@ -2330,10 +2605,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/fr-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-c2769b54e4d15882b3e794ddb370c5d8441a9b9777259205d9db0eecf756a3ab"
+      }
     },
     "gb-steel-shapes": {
       "name": {
@@ -2349,10 +2628,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/gb-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "GB/T 706",
       "symbolCount": 16,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/angle-equal.svg",
         "symbols/angle-unequal.svg",
@@ -2368,9 +2653,27 @@
         "symbols/plate.svg",
         "symbols/rhs.svg",
         "symbols/shs.svg",
-        "symbols/tee-elevation.svg",
-        "parametric.json"
-      ]
+        "symbols/tee-elevation.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-3bd4081b7498af4d4fdedcbe815dfcda31922262679fbc9ec601e135dcdd0042",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/angle-equal.svg": "sha256-339768e2c4582965cd0e9d01257739498cf7cd17db9dc3b1bd363ab844b74c60",
+        "symbols/angle-unequal.svg": "sha256-79fb21742696c2d61ad6732fdc15d15dd1ca95c173e279e7a1b9f4332524e174",
+        "symbols/channel-elevation.svg": "sha256-dee4789474d1d5692552dca0110bf56f0ed8cafbd87be49397c9015fcc359648",
+        "symbols/channel.svg": "sha256-332a6bf776b8de6e39efa9d69f4c80596f36961f3cfb1af9e4c8e902f5ae2dee",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/hm-shape.svg": "sha256-3a37e9a32f141c376b60c3bb9858d4e1a5a8ceccf23c1911ed8941ac637e91be",
+        "symbols/hn-shape.svg": "sha256-1e0289135fd92f3c52267e30c24a033c256917e98339b1d2b90214ab81d1d38c",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/hw-shape.svg": "sha256-12177c9e3dea397804106f296abd7e36d7cde68b98b8c8011860def6c8329e3b",
+        "symbols/i-beam-elevation.svg": "sha256-3f2818faa489b000bf761014fbdd011a19e8fef611e4db810c30368e3c3ca0d5",
+        "symbols/i-beam.svg": "sha256-ce71dc3b485b6b36415c90aae611f3e1b20644912042f9e744b03da9482ce310",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-3bfe6e1ba472e38e9488726caf2ad8e2b0e9881ca5f4c0b86d8b5400c446ff58"
+      }
     },
     "gost-steel-shapes": {
       "name": {
@@ -2386,10 +2689,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/gost-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "GOST 8239",
       "symbolCount": 15,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/channel-elevation.svg",
         "symbols/chs.svg",
@@ -2404,9 +2713,26 @@
         "symbols/shveller.svg",
         "symbols/tee-elevation.svg",
         "symbols/ugolok-equal.svg",
-        "symbols/ugolok-unequal.svg",
-        "parametric.json"
-      ]
+        "symbols/ugolok-unequal.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-cd8e4fe243a8553d3da94c853072a131f0e4b0ee0e88db00cbfd068384c55b8a",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/channel-elevation.svg": "sha256-dee4789474d1d5692552dca0110bf56f0ed8cafbd87be49397c9015fcc359648",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/dvutavr-b.svg": "sha256-ba8fc9ca5559aecba9b62c2cfcba66b9b37d1659b9f4a7a23085d6ada4771416",
+        "symbols/dvutavr-k.svg": "sha256-52e89b7d51c43045cacd1a2aed038839e5c3809e8b0a8eb3980bb356dcd0719f",
+        "symbols/dvutavr-sh.svg": "sha256-0a708661e7bfe1b7f1d43de167675cd50198fbcf646f56162d34a14207276707",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-9004fa99f6889da62a9a7122c985a9c8d3732338945b0b89675ee120a75407d3",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/shveller.svg": "sha256-ac40997aae7c3f5b125e04a71a618769e97df5da2ebca04f59ec21dd41717baf",
+        "symbols/tee-elevation.svg": "sha256-16071c71124e5067904553009530fd06df8c0a8f0a486080edbec7d26898fa60",
+        "symbols/ugolok-equal.svg": "sha256-339768e2c4582965cd0e9d01257739498cf7cd17db9dc3b1bd363ab844b74c60",
+        "symbols/ugolok-unequal.svg": "sha256-79fb21742696c2d61ad6732fdc15d15dd1ca95c173e279e7a1b9f4332524e174"
+      }
     },
     "gr-fire-symbols": {
       "name": {
@@ -2420,6 +2746,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/gr-fire-symbols/"
     },
     "gr-stamps": {
@@ -2435,10 +2762,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/gr-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-5550279e5ed5c95f516115d256c3b8471900a102663e427a77b120585c34e4db"
+      }
     },
     "hr-fire-symbols": {
       "name": {
@@ -2452,6 +2783,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/hr-fire-symbols/"
     },
     "hr-stamps": {
@@ -2467,10 +2799,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/hr-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-bd76a7605041e17dc44380f41b02db37367317fcb2ce81a273a5d4f5ac33efb7"
+      }
     },
     "hu-fire-symbols": {
       "name": {
@@ -2484,6 +2820,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/hu-fire-symbols/"
     },
     "hu-stamps": {
@@ -2499,10 +2836,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/hu-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-52ef0dabfe5fbaadbb52bbca2741a749d8267f61712f883e73fb160c30e1a14b"
+      }
     },
     "iec60617-electrical": {
       "name": {
@@ -2516,7 +2857,12 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/iec60617-electrical/",
+      "description": {
+        "en": "Plan-view electrical installation symbols following IEC 60617 conventions: outlets, switches, lighting, distribution.",
+        "nl": "Elektrasymbolen voor plattegronden volgens IEC 60617-conventies: wandcontactdozen, schakelaars, verlichting, verdeling."
+      },
       "standard": "IEC 60617",
       "symbolCount": 20,
       "files": [
@@ -2540,7 +2886,29 @@
         "symbols/thermostat.svg",
         "symbols/tv-outlet.svg",
         "symbols/wall-light.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/data-outlet.svg": "sha256-5fd5e59c257bcfa6e2292ec0c38b78fe606280629b3b4716684ae71a95bb5159",
+        "symbols/dimmer.svg": "sha256-5cdb5ddf9cc6f022d50066221e6bd76dbf25a6d7fc6a89afa369bc765ec22f24",
+        "symbols/distribution-board.svg": "sha256-46afbc58d134788c68e0d5c744e9f09237a0eb3490babc65cf61feb390e6953b",
+        "symbols/doorbell.svg": "sha256-6cf44afa63360198d91627c379c483c02c6759be5d0d75368c047d00fac7eb6b",
+        "symbols/fluorescent-luminaire.svg": "sha256-195c1c9d21622743eb2fd4c81c88ef2be17908f1dbb54c9dcf315540031208dd",
+        "symbols/junction-box.svg": "sha256-d4f0fcf8a9b96b15c6bbb3afb816a617fc2cecc9a5cdb78fe8ee4dfc41f08682",
+        "symbols/light-point.svg": "sha256-ffc5e182723003096e647b62c609e771fe306dae5cfffb7de39cd0fda0466406",
+        "symbols/motion-detector.svg": "sha256-e3cf1601f972a3d708df690ce6cfb97cc595421b1a75ded04f0ede08dda9201c",
+        "symbols/phone-outlet.svg": "sha256-af157e27ba693f77b919434a070093ca6f9b543e19139f70f4fdc7f1996c1d49",
+        "symbols/push-button.svg": "sha256-dbb1238c37c1a383b48f674741e9c144df556b29ac7901f34676c11cd4f0c775",
+        "symbols/socket-double.svg": "sha256-58a2c107a3b48f2c1a53e5c9003c24529cd905f4d5ae9d68f1ba0054e40d6655",
+        "symbols/socket-earthed.svg": "sha256-18bab82e25f94af9b71a658ae848433849f3c95cd38158484af01c2002021480",
+        "symbols/socket-single.svg": "sha256-66aa7da319a852e5b5dcf143b641288779963185a206bff9c800b98a5a88d285",
+        "symbols/spotlight.svg": "sha256-a170601a2694d695ab3818a51ff692746c24d08fe089e5706199a25196c3fe41",
+        "symbols/switch-double.svg": "sha256-2fc4e5805878e2bd4b8b243a6292a9fc7d5e0cbcd4cbce7be0689c152b7a079e",
+        "symbols/switch-single.svg": "sha256-4e7843da63146e6aecfc7a1bb83f743beccc930116fa7519a7a4cc3851e025e3",
+        "symbols/switch-two-way.svg": "sha256-5884744f85faa81687782c76868d51de85beec4d66eceb34df5dffcf6890e773",
+        "symbols/thermostat.svg": "sha256-ecaaea91c3fd62a8862237069eb6d520bd60404569b5f448df4fcd8748919033",
+        "symbols/tv-outlet.svg": "sha256-1c61e72b87244ad3dada198d7350b9810ef2e32d0a3e051afe654cc9dcccbc32",
+        "symbols/wall-light.svg": "sha256-83c19e2a561fced097a81f2fa1b636bfdbb0fb24019ba989f23fce9510a06e72"
+      }
     },
     "il-fire-symbols": {
       "name": {
@@ -2555,6 +2923,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/il-fire-symbols/"
     },
     "il-stamps": {
@@ -2570,10 +2939,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/il-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-916269bbd545ad9bfab4cab4063e5f4eb9bcb962ffbccd1ee7d8ab5e4cfd34fa"
+      }
     },
     "in-fire-symbols": {
       "name": {
@@ -2587,7 +2960,11 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/in-fire-symbols/",
+      "description": {
+        "en": "Symbols per the National Building Code of India and common Indian drawing practice."
+      },
       "standard": "National Building Code of India"
     },
     "in-stamps": {
@@ -2602,10 +2979,17 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/in-stamps/",
+      "description": {
+        "en": "English-language stamps as used on Indian drawings, including GOOD FOR CONSTRUCTION (GFC)."
+      },
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-577c471822c2c54591ad8551149cf6ba687040e54979f523ed3ea5c77b23cf05"
+      }
     },
     "is-steel-shapes": {
       "name": {
@@ -2620,10 +3004,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/is-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "IS 808",
       "symbolCount": 15,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/channel-elevation.svg",
         "symbols/chs.svg",
@@ -2638,9 +3028,26 @@
         "symbols/plate.svg",
         "symbols/rhs.svg",
         "symbols/shs.svg",
-        "symbols/tee-elevation.svg",
-        "parametric.json"
-      ]
+        "symbols/tee-elevation.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-e7a6526d32bee257e5dcf4e5d80bc2a7a7d95705fe33f24cac62b949e1290d99",
+        "symbols/angle-elevation.svg": "sha256-b05067eed82ecd59c525c1a3a324f9bc34408d2e9f16b118566f29aac39413b7",
+        "symbols/channel-elevation.svg": "sha256-0740e4d94eb495d409c393fc780396ac3024b87c2cb12797f7ddf26f7b027dcc",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-19cc321639cabda64e368ae20fd8577345af4b08fb4b9d4ebb13f5799bbe04fc",
+        "symbols/isa-equal.svg": "sha256-677c9b63caa4f92381fd0e03306ac611d5463d9d14846992927895df76960892",
+        "symbols/isa-unequal.svg": "sha256-c73e45d31ca00564f74625fc228c418c2a573c7a3ce9021f6274a5979a5be25b",
+        "symbols/ishb.svg": "sha256-028d1a9a8c5404f0fae3c476834998e3b972f197ac56084991e9a8e5e965ca2b",
+        "symbols/ismb.svg": "sha256-c4402021531092c3980de2de70c1619f53c0c9062935593eb1a2ca7568e809f4",
+        "symbols/ismc.svg": "sha256-d877d343eecb8766b86a2197fce205b58953571b257e6c7a3fe3f3130a0e0147",
+        "symbols/isnt-tee.svg": "sha256-668e58bcaf528a7f90e1cfae1de984cb7e87a3bbfdb177cd293cbc8658698ceb",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-b85317cbc3cb04ddd30e6254d9ed121aaf5b58f4cd299b2cf83a427acbecff17"
+      }
     },
     "iso10628-pid": {
       "name": {
@@ -2654,7 +3061,12 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/iso10628-pid/",
+      "description": {
+        "en": "Process flow and P&ID symbols following ISO 10628 conventions: pumps, valves, vessels, exchangers, instruments.",
+        "nl": "Processchema/P&ID-symbolen volgens ISO 10628-conventies: pompen, afsluiters, vaten, warmtewisselaars, instrumenten."
+      },
       "standard": "ISO 10628",
       "symbolCount": 14,
       "files": [
@@ -2672,7 +3084,23 @@
         "symbols/valve-gate.svg",
         "symbols/valve-globe.svg",
         "symbols/vessel-horizontal.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/centrifugal-pump.svg": "sha256-5cd213fb2ef9f5cdb4ca9550f7eab60dbead406c0fb85de50a2881cbcb0e0987",
+        "symbols/column.svg": "sha256-aec4c91aef8ed0e1e8fb23415eb5e4a0e836c5eba59842c8acb57afd0c1fb4aa",
+        "symbols/compressor.svg": "sha256-3b98c7621775422bf300d08d2b591d0f4914096c1d15946df2acf1190de022fe",
+        "symbols/control-valve.svg": "sha256-b57ae709ef6dae2efd474e3454f6389f79d9a658c70111ed0cf2fc61cdf7b034",
+        "symbols/filter.svg": "sha256-171706ac4e623d841729b6e9d92f5b4f7e3f5609f8118cc2fc54a92ff1f46a08",
+        "symbols/heat-exchanger.svg": "sha256-1dcc67b8ac52e9f22ab047cf1f81c5ca3939696731387f1bfafa31359dba5617",
+        "symbols/instrument-indicator.svg": "sha256-2bbe9f6d8896fef94186b53667af0fa8a462ba11fd0e23fad981f16dcfc2ed90",
+        "symbols/tank-vertical.svg": "sha256-489630599ec870cc60ea566f9d13158fb4261318217a207b0edfb2bbac33b1a9",
+        "symbols/valve-ball.svg": "sha256-4986fc30dab40b6bc9267bb3ba914cd156b521d72bff18583dc8d514665082cb",
+        "symbols/valve-butterfly.svg": "sha256-4f19f3e7927d6dd0bf65a01fa5e29cc0c4644380489e056fc7c8e1332a68f920",
+        "symbols/valve-check.svg": "sha256-167901c23e6b91e572f09dfb4ba76201132dce8d58bda08aeca31d177d3534f0",
+        "symbols/valve-gate.svg": "sha256-2da2b90c10f741b8038a2760fe89d56c5e072fd1ece5a5fb82250d964c6a3bc6",
+        "symbols/valve-globe.svg": "sha256-bd0d524c5c62fa23ae504dcb899c4b0a25d1aa258b29227623532184284a2ce2",
+        "symbols/vessel-horizontal.svg": "sha256-d13027b68f3dcc7d438cd5cb8f78b3036d1c840397adccf05fbcb33312e446c6"
+      }
     },
     "iso7010-safety": {
       "name": {
@@ -2686,6 +3114,7 @@
       "scope": "international",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/iso7010-safety/",
       "standard": "ISO 7010",
       "symbolCount": 59,
@@ -2749,7 +3178,68 @@
         "symbols/warning-suspended-load.svg",
         "symbols/warning-toxic.svg",
         "symbols/warning-trip-hazard.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/escape-aed.svg": "sha256-b556a09f9c90ad1c2e91643661e829a1fca4a51bfcf515ff95c00236898045f8",
+        "symbols/escape-assembly-point.svg": "sha256-004b7c84c13b0cb80f6069747f506ea04cbd3a2297a538121056be1970ae7860",
+        "symbols/escape-direction-arrow-45.svg": "sha256-56825c06761712a997cce35d1178e6d3f13c4827f48583bace04dd493b561920",
+        "symbols/escape-direction-arrow.svg": "sha256-7c1913ca619e203a48c7f5b2fd158a8e842868226bb6b2fed188bbb2903d6b8b",
+        "symbols/escape-emergency-phone.svg": "sha256-d94a100eb9ba017a5d6fb09d08ee2d82d9e1b2bf50234d515e50aed17e2d0c51",
+        "symbols/escape-exit-left.svg": "sha256-492b3ab083de7985713337bec718009b13eded5c18504bae6941870bf0a80bdb",
+        "symbols/escape-exit-right.svg": "sha256-760b78e96bd3198e64ca25d414a59b6356ca3f0b09763ed767d0af2744bc11fd",
+        "symbols/escape-eyewash.svg": "sha256-1cfc7a401a7e5ae153c95e066080216f38bcaee8c9000a32b060c33d75f7fce0",
+        "symbols/escape-first-aid.svg": "sha256-af09b80a65fc1a1adf7d9b30a0cbf63e0aaefc9ab060630ed5d6d2a848ceacf2",
+        "symbols/escape-safety-shower.svg": "sha256-1e012667fd814326def5f19d6a7df8298fc433d7b448a964dedd42d1c4072a81",
+        "symbols/escape-stretcher.svg": "sha256-23bbb4ae9c1189e638d58a0d67b6c4b0eaafbf8cab1d25be14018bc7097f78fb",
+        "symbols/fire-alarm-call-point.svg": "sha256-71c8c172d4dc2c5b20bfcbb738e31e262f601c9a7d6faa6ef9a699c781272285",
+        "symbols/fire-direction-arrow.svg": "sha256-aadf4ca7b5e39350811ec702c4a4379b07180df1fa134160c1ce0f6417bdb23a",
+        "symbols/fire-emergency-phone.svg": "sha256-a305cd78b81535f36dc60e70299a3aeaab31b233d685e6fc627eed83ae06c841",
+        "symbols/fire-equipment.svg": "sha256-1790c553bf594bd0f2e7af76bd3434fa8ff97737383829f0e9426973453c2972",
+        "symbols/fire-extinguisher.svg": "sha256-81873e91203bc16e7ed0017d0d57be54bb75e05aac9e29f5d364fb1582e13704",
+        "symbols/fire-hose-reel.svg": "sha256-c8f547ccf14cb103541fe6384e694cf3de25e64a265586bf5d717a9c49f5c776",
+        "symbols/fire-ladder.svg": "sha256-fc9a128a6a7171b3ddb9f54aadb0e4f30eb11b92ca1a68de20df66e0eae3d3cf",
+        "symbols/mandatory-disconnect-power.svg": "sha256-11046c5c299ad063d8027b981c82c78fac1d0adfb282d2c8f1da43b4e4dab73f",
+        "symbols/mandatory-ear-protection.svg": "sha256-114c16530a5b6a09c23980f013766559cdbd7283eabde5ce77fd349eec0e30b6",
+        "symbols/mandatory-eye-protection.svg": "sha256-406f0432d4686e444ee7b37ddc76d9f0e86ba4b0a44cb89d73412358cdc0338e",
+        "symbols/mandatory-face-mask.svg": "sha256-536a4382315374f0a5faf4ff7bba35ac74d1edd0f5f9b25c881b9ad55ca788e5",
+        "symbols/mandatory-general.svg": "sha256-c88a2f648a96d2ffa2cffc7cfc40eb5a1b2db6f93051908ad0a0b58256cb8003",
+        "symbols/mandatory-head-protection.svg": "sha256-721a3371504874f2b2332e63f7388c27b6cf8f633e993b167c2863224a933c09",
+        "symbols/mandatory-high-visibility.svg": "sha256-8cc1e93ff5aaf433e72c4169df9ecad15c3e6d43a86c9ed3cd1177258bdce12e",
+        "symbols/mandatory-protective-clothing.svg": "sha256-65b185a47b6f9cba41828543e64925e71c3a00c580749ec5b11b2461414dd2ac",
+        "symbols/mandatory-protective-gloves.svg": "sha256-280c1d0cf20fe45052dbc72c7df2ed5eb033dcd3b82bb957acbb7a38da35a8c5",
+        "symbols/mandatory-refer-to-manual.svg": "sha256-11558471bac597248493dcdcb2b95e4cd7489a77470362db73ac8086c20f9316",
+        "symbols/mandatory-safety-footwear.svg": "sha256-e686eb12cbaf9935cf3d4935e36e97a0e6aca2401a3affca72839bf20f199667",
+        "symbols/mandatory-safety-harness.svg": "sha256-64a65f770af41b06c7d02992bbf952c53f4aa2a489afd85952f5c667f1dfb220",
+        "symbols/mandatory-wash-hands.svg": "sha256-e1de06bdb0762fa78b57e77be842580306e6cb6ba933ed377331779032bc463e",
+        "symbols/prohibition-do-not-touch.svg": "sha256-5550def99892a3deaabc55dc5a77b3f86066d02fec2836ff2fb6b8770bea7936",
+        "symbols/prohibition-no-dogs.svg": "sha256-5a7f7beb6e84df85c1222f9d20cc26320f92560c3f25e7c88790e11b88e9cc4b",
+        "symbols/prohibition-no-eating-drinking.svg": "sha256-ac0e6468f4a24936efeebcff33226a1f614ece4ed9ca180e7ba65c84b5982f3c",
+        "symbols/prohibition-no-forklifts.svg": "sha256-35d69a8f832699fdfad27f7287769f0fd87cb2a9525e77cbcd9dbef9d3765737",
+        "symbols/prohibition-no-mobile-phones.svg": "sha256-905e2faed24f18f824116058cca9f988273945cea374007a9ba42f8eba90e3ca",
+        "symbols/prohibition-no-open-flame.svg": "sha256-2680abf7ccf5f945ae3c08d0fc3076b768442681f3079433a96d443c67857f6f",
+        "symbols/prohibition-no-pedestrians.svg": "sha256-2b7c75f01ebe6ddbad6fa51569df131cfe8d7d62de3a9f740421289f20e8730d",
+        "symbols/prohibition-no-photography.svg": "sha256-925596d18d7ea2b0dec5b7e7c38dd4af79d12654489027e25fed6c5539331853",
+        "symbols/prohibition-no-smoking.svg": "sha256-1769ad0cadfcef22da71346aa9c3268c46ae19f39d5009cc355e7254b9229991",
+        "symbols/prohibition-no-water-extinguishing.svg": "sha256-70b8e8cff2a6108d481a37885f848a3cb12d71584651774fa262fc096a2de0e2",
+        "symbols/warning-biohazard.svg": "sha256-f028d0ec870ef55f78bbf115acf5b48245214f7bf35d21bf26d0629200771263",
+        "symbols/warning-corrosive.svg": "sha256-bac4eced2776e940fe636ae507cb03aa9cac68cf0300cd4845b9e81d05ef5a5c",
+        "symbols/warning-electricity.svg": "sha256-ff970907a9de763ce5a728909dfd82949f0419352de8c8ad7898559828826ed2",
+        "symbols/warning-explosive.svg": "sha256-b9bd834a908d907c657f36d31106e37e5a261bb9cd692c2f0828bfdddade16ff",
+        "symbols/warning-fall-hazard.svg": "sha256-77104a169a34ef4d3827ae852341e0e53d778fd00a6d8fade5a1884ce2c7b513",
+        "symbols/warning-flammable.svg": "sha256-3155eba7a7b5fa723f0a3ec7f734da3f6677aece38d8015d831107666bca369b",
+        "symbols/warning-forklifts.svg": "sha256-ab71d3e5111490dd5ccbf0a4c5a81741786dbcaae515bf5e9bfd070c03a4cfbe",
+        "symbols/warning-general.svg": "sha256-4713464abee3b2c552048b8a181e8b741ca3c5c963a1a7010255354fd2413bf7",
+        "symbols/warning-hot-surface.svg": "sha256-fb0c2d5d22947acfc02bb94bdc5431866f237587552fdc73f4215cf9cc2bece7",
+        "symbols/warning-laser.svg": "sha256-dc8110e79af5c5479d68831be85a927adaf210b6060d0061095ee3e09b924639",
+        "symbols/warning-low-temperature.svg": "sha256-fea258ec1892f58ddbfbe23ff80f583d65c8cd94278d3f07f8f15a1353777120",
+        "symbols/warning-magnetic-field.svg": "sha256-3d6511498d52ccce2269c77f20753bbec3fcc254d776bf14014ccac74e40ab5f",
+        "symbols/warning-non-ionising-radiation.svg": "sha256-48dc88522ec054231583b841ff1a719ea814b72a692ac63e4858f7671e23a298",
+        "symbols/warning-radioactive.svg": "sha256-6b3e878a73a623307f549ce84bd065548931ed547917efc0dd63c81a516f0478",
+        "symbols/warning-slippery.svg": "sha256-93b6e1b92f37261a2c17ed14176aca45694c7489e871518e7feb6c465fa5d151",
+        "symbols/warning-suspended-load.svg": "sha256-9bf2f7082253b44fe726f04a1c605a3c797842c646853906d03c0f283f008799",
+        "symbols/warning-toxic.svg": "sha256-49e4827b4218c4041aa6ac8a7e0618001f2635efddbd779fbd4157e5a0350635",
+        "symbols/warning-trip-hazard.svg": "sha256-ba36c5c9867a98ef303fd0b4e9666be1399b13d024058a28f77f3b4b631027fc"
+      }
     },
     "it-fire-symbols": {
       "name": {
@@ -2764,6 +3254,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/it-fire-symbols/"
     },
     "it-stamps": {
@@ -2779,10 +3270,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/it-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-d6d4788af8c1db7290652fed52de9731151f082777dab5324f24d6a0d371eeed"
+      }
     },
     "jis-steel-shapes": {
       "name": {
@@ -2798,10 +3293,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/jis-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "JIS G 3192",
       "symbolCount": 16,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/angle-equal.svg",
         "symbols/angle-unequal.svg",
@@ -2817,9 +3318,27 @@
         "symbols/plate.svg",
         "symbols/rhs.svg",
         "symbols/shs.svg",
-        "symbols/tee-elevation.svg",
-        "parametric.json"
-      ]
+        "symbols/tee-elevation.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-70636deb49376c74e6d0f47ba621e6a547b526ef2bcd8c85c63077da41079d4f",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/angle-equal.svg": "sha256-339768e2c4582965cd0e9d01257739498cf7cd17db9dc3b1bd363ab844b74c60",
+        "symbols/angle-unequal.svg": "sha256-89091165242ec2ed5a7aa82ed6b42bd18d214a71ae8ba2d45c936fd80eb03754",
+        "symbols/channel-elevation.svg": "sha256-dee4789474d1d5692552dca0110bf56f0ed8cafbd87be49397c9015fcc359648",
+        "symbols/channel.svg": "sha256-6af06069998e1a8ba09603a5e692c3cf5f8fde9c1ee57509137f9ee9d9daba75",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/ct-tee.svg": "sha256-842973bd54b3581589e7803f8f6a78e85dbe4380a072806a779d84342ccc80d6",
+        "symbols/h-shape-narrow.svg": "sha256-8c726ec0e544cb402257da3bba17906f821b252d89edea5368e757836c0240d1",
+        "symbols/h-shape-wide.svg": "sha256-f2be4ddc92bb5dc2b0473b0db23605ba95e20d9290c6a10f83d89a871bb6ee32",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-7db4c4ed1884d656e57b7bec2b48e6604b9a09ee2d275e37aeb4c6c8fd65e904",
+        "symbols/i-beam.svg": "sha256-99fbd1b69ecb5a6ba69b6aca373c5f84e0e15c3666a38eaf3593f7eb58c5cbaf",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-9cd630214c697af6b7163efb49ee4841c9a902a627b6ffcaf7ee6ca193525335"
+      }
     },
     "jp-electrical": {
       "name": {
@@ -2834,7 +3353,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/jp-electrical/",
+      "description": {
+        "en": "Japanese electrical floor-plan symbols: filled-dot switches, outlets, distribution boards.",
+        "nl": "Japanse elektra-plattegrondsymbolen: gevulde-punt-schakelaars, outlets, verdeelborden."
+      },
       "standard": "JIS C 0303",
       "symbolCount": 14,
       "files": [
@@ -2852,7 +3376,23 @@
         "symbols/switch-3way.svg",
         "symbols/switch.svg",
         "symbols/tv-outlet.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/aircon-outlet.svg": "sha256-6528a6d3e7c1e15d0759686f7b9310eacadf3031c6fc3317e1c00f6891f395e5",
+        "symbols/ceiling-light.svg": "sha256-1d38742d0b6d64bd06359da6e314514c05c7629b5ce06d0f04b83d697c05a31d",
+        "symbols/distribution-board.svg": "sha256-d42a99c6d86704157388d7cf3f0f4c3ae8e10f487bc117b6922cee403231a458",
+        "symbols/doorbell.svg": "sha256-b4ec946b2e6a7b2326876f02f8777914d76c5a0d14ecdc7da842b8ce65f3e55f",
+        "symbols/downlight.svg": "sha256-3bd131d389b8c986faa6ee274c86ad59ba1e67e7187636810155673538d85146",
+        "symbols/fluorescent.svg": "sha256-3571962fbe41edf80e15c8b4d535c0f1fc34b4550c14e7aacf1d55c2b42f22f5",
+        "symbols/junction-box.svg": "sha256-b585e44019b34ab869b6fc1852cfc1961f2b053fc6f944cff0b7d0f666401b09",
+        "symbols/outlet-double.svg": "sha256-8c52bdea17eb9a7cb265b112a81fc98f4f99091d932e3d150ade2b12468cd771",
+        "symbols/outlet-earthed.svg": "sha256-98a326bb9ed4ffc14a2329d7460d0979664868ed71f7f6afcc6d8310568f657d",
+        "symbols/outlet.svg": "sha256-0f46102bc22e8357f4b1c5f44f0c8da292ffad6ebe65a647e8824062e55f35b8",
+        "symbols/phone-outlet.svg": "sha256-3718588c5cc0917df838b9d2062618f0dc08d98b7ebff61c3ec18999efdd6c67",
+        "symbols/switch-3way.svg": "sha256-d49526217b99ee857dd831da1043692c8200f340cc551689a365c2d208d1429d",
+        "symbols/switch.svg": "sha256-369134bcdb72e0c7d9161b026883ae3c00d97b4b843d43cdc9c4dd9a66dda42d",
+        "symbols/tv-outlet.svg": "sha256-8590aedb762da8fa9167a87da5fec44f043c72bc8294f825144f021b3730744c"
+      }
     },
     "jp-fire-symbols": {
       "name": {
@@ -2867,6 +3407,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/jp-fire-symbols/"
     },
     "jp-stamps": {
@@ -2882,10 +3423,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/jp-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-7d3b1cb528b29430e2a3c3c0b1ececf4d890a419c63a6adea72ddf95287928a1"
+      }
     },
     "kr-fire-symbols": {
       "name": {
@@ -2900,6 +3445,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/kr-fire-symbols/"
     },
     "kr-stamps": {
@@ -2915,10 +3461,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/kr-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-460994344181e3d0f54ff4eb0c341e270db7229344c36bd0aaffa752e4fda283"
+      }
     },
     "ks-steel-shapes": {
       "name": {
@@ -2934,10 +3484,16 @@
       "scope": "national",
       "status": "available",
       "version": "1.1.0",
+      "license": "repository",
       "path": "collections/ks-steel-shapes/",
+      "description": {
+        "en": "Cross-section and elevation symbols drawn from real section tables (fillets, centre lines). Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede- en aanzichtsymbolen op echte tabelmaten (fillets, hartlijnen). Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "standard": "KS D 3502",
       "symbolCount": 15,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/angle-equal.svg",
         "symbols/angle-unequal.svg",
@@ -2952,9 +3508,26 @@
         "symbols/plate.svg",
         "symbols/rhs.svg",
         "symbols/shs.svg",
-        "symbols/tee-elevation.svg",
-        "parametric.json"
-      ]
+        "symbols/tee-elevation.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-589cde94e53983eb940fcba20a59c5122bad536ee028577bbfe40c0cdff07232",
+        "symbols/angle-elevation.svg": "sha256-2a707708304f01cd1413dbc3e1352b616c3f20f5b3625e52d9a04afcd6d0aa4c",
+        "symbols/angle-equal.svg": "sha256-339768e2c4582965cd0e9d01257739498cf7cd17db9dc3b1bd363ab844b74c60",
+        "symbols/angle-unequal.svg": "sha256-89091165242ec2ed5a7aa82ed6b42bd18d214a71ae8ba2d45c936fd80eb03754",
+        "symbols/channel-elevation.svg": "sha256-c9a85264786f1266502aa2f23478b33e4ee70ccdbba4ad46b7169f1d66876d07",
+        "symbols/channel.svg": "sha256-3f598b5d2919c13de3a93249b2114d414f6ef489d628b6513abc247a43cb2b12",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/h-shape-narrow.svg": "sha256-8c726ec0e544cb402257da3bba17906f821b252d89edea5368e757836c0240d1",
+        "symbols/h-shape-wide.svg": "sha256-f2be4ddc92bb5dc2b0473b0db23605ba95e20d9290c6a10f83d89a871bb6ee32",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-7db4c4ed1884d656e57b7bec2b48e6604b9a09ee2d275e37aeb4c6c8fd65e904",
+        "symbols/i-beam.svg": "sha256-99fbd1b69ecb5a6ba69b6aca373c5f84e0e15c3666a38eaf3593f7eb58c5cbaf",
+        "symbols/plate.svg": "sha256-882313c91d22172557e40dbf850b54252d1b7e5060c94b65549ac0399d3ea161",
+        "symbols/rhs.svg": "sha256-90fe9b7f6b508239071f0d532f8f9565d3c17322924ba02465f79f7b3f962879",
+        "symbols/shs.svg": "sha256-177799050b1b9902e293395ddc27bddad0c9013c02bafc6d2464af2ee87fb983",
+        "symbols/tee-elevation.svg": "sha256-3bfe6e1ba472e38e9488726caf2ad8e2b0e9881ca5f4c0b86d8b5400c446ff58"
+      }
     },
     "lt-fire-symbols": {
       "name": {
@@ -2968,6 +3541,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/lt-fire-symbols/"
     },
     "lt-stamps": {
@@ -2983,10 +3557,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/lt-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-8fddb04ffb3cfdfefd21f3de6e75e901718782f53489b1ab141c60e50fe33c13"
+      }
     },
     "lv-fire-symbols": {
       "name": {
@@ -3000,6 +3578,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/lv-fire-symbols/"
     },
     "lv-stamps": {
@@ -3015,10 +3594,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/lv-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-fcdfd7497a9822ee2582b33be5a8473eaf88c3f17f63690720873340a48e6770"
+      }
     },
     "nen1414-fire": {
       "name": {
@@ -3032,7 +3615,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/nen1414-fire/",
+      "description": {
+        "en": "Core set of Dutch fire safety drawing symbols (NEN 1414 terminology), drawn from scratch. The full legacy set from the app migrates here incrementally.",
+        "nl": "Kernset Nederlandse brandveiligheidssymbolen (NEN 1414-terminologie), zelf getekend. De volledige set uit de app migreert hier stapsgewijs naartoe."
+      },
       "standard": "NEN 1414",
       "symbolCount": 32,
       "files": [
@@ -3068,7 +3656,41 @@
         "symbols/vlammelder.svg",
         "symbols/vluchtwegaanduiding.svg",
         "symbols/wandhydrant.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/aed.svg": "sha256-023b96eea54e414050e4149e6fdc6cbd9f4ff0d573a2662d048ff82fe43ee4b9",
+        "symbols/anti-paniekverlichting.svg": "sha256-bb50b3418fd79935372e2c6b373545b3144175c0a2eed8bd2676dd218a3b6b48",
+        "symbols/blustoestel.svg": "sha256-83f42b435c1aaa52d4d128f0c854a37c055a794467cd5dc9dd5bfee2ccfd99ce",
+        "symbols/brandklep.svg": "sha256-89af12ad5b494795475943ece34f96bfe1a5c7da496ca356a72f778d4277b1ab",
+        "symbols/brandmeldcentrale.svg": "sha256-a45f956b5ac6dcf6b01271a461a638b68bcd3c2aefc102d3676ca839bbc207eb",
+        "symbols/brandslanghaspel.svg": "sha256-7ed962d383ec6fa4ed9f072b1e1635260e83241e375a8e80bc886a86c59e3d95",
+        "symbols/brandweeringang.svg": "sha256-a9fcfe8f6b8a08d5208b7cea6884e299518277ac83ccaab3a796f20586665e20",
+        "symbols/brandweerpaneel.svg": "sha256-05907a65bf21724f0db3666236945f308e2adf75ca060d3924103e10725db17e",
+        "symbols/co2-blusinstallatie.svg": "sha256-f90744930d4a9ea0605b063cb470a147377350d888a101d6b41f9c3e18db2cda",
+        "symbols/deurdranger.svg": "sha256-dced38673f517fdedd81e5903f21ba0409d2f842ee304bab6271bd3bccc29445",
+        "symbols/droge-blusleiding.svg": "sha256-16c743c6eb1c5fde679768e8a584fb22be1bb4d31f2885ba0706f9f82ad9536f",
+        "symbols/ehbo-post.svg": "sha256-e8b0749c10d38b075358dfd6690c64347d78211903c890239238f81b45f8092d",
+        "symbols/flitslicht.svg": "sha256-7fbbec2472f638c366670f0bf3c616049dc1034510feae44ca79a35d836537a0",
+        "symbols/handbrandmelder.svg": "sha256-b6df738665e832c1b6d566938aa9bd07c6f757730298d90bdcbe0e24cfb096f1",
+        "symbols/multisensormelder.svg": "sha256-cfadda5ee7c527db96b3fa7f0d7fb56ec8cb861aadc05c81a9318fc214e6ed6c",
+        "symbols/nooddeur.svg": "sha256-dc11f641e8e20c90cd908e01048854fb50ef22b60d0a75e2fe028e3c0105ccf9",
+        "symbols/noodverlichting.svg": "sha256-2b5fdffb0834958b277a3eceb5a948d943cc47efa824836adb9b28d75c29d28f",
+        "symbols/ontruimingsalarm.svg": "sha256-8e63007f81c59872ddebfedbd24a75a8039bd2913a0c5ecb5b5613f518f191b5",
+        "symbols/overdrukinstallatie.svg": "sha256-4eaa4efd3b5266e28249d1ca2c463d97ffe6b536193283887a66f6749ab932fc",
+        "symbols/rookklep.svg": "sha256-6728015b7e5ee08e099fa1c40ddd3ab0534364dcc8e18c9d485b426f9efe921d",
+        "symbols/rookluik.svg": "sha256-bd2d09415b86cd852611c3ec91bd12bc7ccf9ea1d034fcf6688cd14dddd2d827",
+        "symbols/rookmelder.svg": "sha256-0c49195f6ad65f595211d0def4f5d9433a883cba82035852759fed1b736edfeb",
+        "symbols/rwa-bediening.svg": "sha256-382dca28ce4e1e4a49edeb229bd86c75ce3205327283cbd22f03d5b7e1b607ef",
+        "symbols/schuimblusinstallatie.svg": "sha256-4da09ac853dd957402eccbb7e6aead83149e4f25ace29f3caddbec7d4139096c",
+        "symbols/sirene.svg": "sha256-777f4ff375adcfbe6eac3366ed55cb64331754bce6b27f52bfb3bc86e4d3d9e7",
+        "symbols/sprinklerinstallatie.svg": "sha256-9288ed8f825986635fe29b279487d61cb9799c1262153dddde377017ae1c6ceb",
+        "symbols/sprinklerkop-hangend.svg": "sha256-ff7c010699636abcdc080967e420cd165ed28258b43089a2a84179c877e1b739",
+        "symbols/thermische-melder.svg": "sha256-7782c6ec1746d115017517246a6d8cd91ebf199b580370c1ca43d8b0ffab8b16",
+        "symbols/verzamelplaats.svg": "sha256-c83f58d56ba1cd6cc141cc3a9bdf90d7c2cacc419c7c83019ea6f125fffa1083",
+        "symbols/vlammelder.svg": "sha256-7bf1b77a5a501adb2ab76b2d49eed631c1799466b941a4f250093aec77c01837",
+        "symbols/vluchtwegaanduiding.svg": "sha256-c28d6115e5723187fb5b838aef28f108b195ebbf550d4b93a15acc11af185f39",
+        "symbols/wandhydrant.svg": "sha256-b6977a0b5d5964327728dc908ac1e1e2396a4e6938a06f9420772f0b61eb0684"
+      }
     },
     "nfpa170-fire": {
       "name": {
@@ -3082,6 +3704,7 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/nfpa170-fire/",
       "standard": "NFPA 170",
       "symbolCount": 31,
@@ -3117,7 +3740,40 @@
         "symbols/sprinkler-upright.svg",
         "symbols/standpipe-connection.svg",
         "symbols/strobe.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/area-of-refuge.svg": "sha256-ebe3af4ba50f68784aaad981c989629288bff152af29b3ba3bba56c7b1ca6089",
+        "symbols/backflow-preventer.svg": "sha256-c9da782ff5883c9df1c090e0cee5db29414adbe7158db7e8b820c904faf0a8f4",
+        "symbols/beam-detector.svg": "sha256-99341e1147af90a4947d7e4b58ab5acffd3e2adedba940b54bffa9ad8538bc80",
+        "symbols/duct-smoke-detector.svg": "sha256-61d9cb76617b6235485d07a3ea89cd4c96742ff749d9a49fe7241be5dac93bd7",
+        "symbols/emergency-light.svg": "sha256-25e2d6cf5de3b4492005e7d5f03b187cafa302712608c9d4f4bd8813f952af5c",
+        "symbols/exit-sign.svg": "sha256-d499c816fa4391a0f0f7e87b14f2b656af11bfa2368a4a056652ff7926ac4889",
+        "symbols/fire-alarm-bell.svg": "sha256-16a9eded882e9516c28551ed64c7f8d21be91b82f5316c27c6084a5443c644dc",
+        "symbols/fire-alarm-control-panel.svg": "sha256-20a31b1b977f9005975c508c8d895fae3cb4e24c02bad12a2db09987e7a221ce",
+        "symbols/fire-alarm-horn.svg": "sha256-d9df3046e2c44fbf1bf95e609378c646d979d161d078afdab876a246c5c363a2",
+        "symbols/fire-alarm-speaker.svg": "sha256-dbaf8e8c81cd7f49357ffec8db3fadedee6221abaf2565656ec65a349c1da709",
+        "symbols/fire-department-connection.svg": "sha256-91eb04e2de44aec8405cb70d9339a780e595ad4ebfb435c6d8adb8d87146a6c2",
+        "symbols/fire-extinguisher-cabinet.svg": "sha256-902332a20ed1e6298432b121bdd0338584500125daae7e6e1af2c9dcac9040e0",
+        "symbols/fire-extinguisher.svg": "sha256-0a172d4a2933fcc53c1dbd4732f1347c2e2903ecc1b49d8c9a29d0194a2bea1d",
+        "symbols/fire-hose-valve.svg": "sha256-35ac555c5b233abd597c0116c8833b95c9f0a06d1e9d03a122ba9a72d873b238",
+        "symbols/fire-hydrant.svg": "sha256-0aa9a70b038d869fe36982667b3776513686bfb6956655b9865df39c44e2c11d",
+        "symbols/fire-rated-door.svg": "sha256-1f8fb89091e11085ae721571d78e6e6feb9818f4c6030a74d8b1cd6e3d5c9672",
+        "symbols/fire-smoke-damper.svg": "sha256-236ad1d384e97b1d7cd6a4fedfb03729795741a87a22237ece942db06e8c9779",
+        "symbols/gas-shutoff-valve.svg": "sha256-3359253dcc82f2272fe941eccb22f73a7369692969041a943e6712146c24ee84",
+        "symbols/heat-detector.svg": "sha256-2a71807bb54ea6fe6d9749e70f7b823fd4b298878a81960a115a49e3e7b7feea",
+        "symbols/horn-strobe.svg": "sha256-e69b62a28f2fcbdc5087273a70f3d0b364c148305be6110cb78ee6e5f0671d8f",
+        "symbols/key-box.svg": "sha256-afe3131eb89359c246c529bd68b829f638f528a2c2bc37ec6c102da5de32a195",
+        "symbols/manual-pull-station.svg": "sha256-d65f0a6ba8bdf21cac16bfee29955de2a33cd4b68dda09ff37d5503df6e30669",
+        "symbols/post-indicator-valve.svg": "sha256-bb3662f8c9c33b7fcc2e2ef0b84a3f71d568ae4548b60e0c8406d89c185ad568",
+        "symbols/remote-annunciator.svg": "sha256-305a907de22dcc2995cbdcef73238237c3e84f376dab9cbfcdf8e05add7f193d",
+        "symbols/smoke-detector.svg": "sha256-1df47463b63f32dd96e9104ea80a83713bfa36eb9413b2eeeff70b959e9482a0",
+        "symbols/sprinkler-pendent.svg": "sha256-ff7c010699636abcdc080967e420cd165ed28258b43089a2a84179c877e1b739",
+        "symbols/sprinkler-riser.svg": "sha256-518d29cce7649d07c649e5e02e895c3465c0a4ae02f677b33132969e8ecf3854",
+        "symbols/sprinkler-sidewall.svg": "sha256-cce6f5efdde68b27958e014f36d284996f4d9508e7356c315280c55093c5f3a4",
+        "symbols/sprinkler-upright.svg": "sha256-4f33419c6d96b6f2bc90f5c94ead8ebe9b59b56da64f8604de200dc43d048405",
+        "symbols/standpipe-connection.svg": "sha256-073a409b892df22f72fb5ef60a0c16e73b95f777af1d6be889ebf3c27656f04f",
+        "symbols/strobe.svg": "sha256-57adf85e43e8c9747777f82f39d0045e6f7b529ff5737a89e0c2b2f9f1097f58"
+      }
     },
     "nl-drafting-parametric": {
       "name": {
@@ -3131,6 +3787,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/nl-drafting-parametric/"
     },
     "nl-electrical": {
@@ -3145,7 +3802,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/nl-electrical/",
+      "description": {
+        "en": "Dutch installation-drawing legend symbols, including loze leiding, meterkast and CAI.",
+        "nl": "Nederlandse renvooi-symbolen voor installatietekeningen, incl. loze leiding, meterkast en CAI."
+      },
       "symbolCount": 19,
       "files": [
         "symbols/beldrukker.svg",
@@ -3167,7 +3829,28 @@
         "symbols/wcd-randaarde.svg",
         "symbols/wcd-spatwaterdicht.svg",
         "symbols/wisselschakelaar.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/beldrukker.svg": "sha256-8c9b979ea4095357b36d8b7dc0308c9bbadd5c2f7beb273c2898c71b74af1367",
+        "symbols/cai-aansluiting.svg": "sha256-ab6733ec72c9c7e84cbf5b91fdbcb66778a6a86443973d626a12cfca49bc063c",
+        "symbols/data-aansluiting.svg": "sha256-a20c17653a8adb541cd119324026f8da5d616e8a095cad148566110f40ba04a1",
+        "symbols/dimmer.svg": "sha256-6d1e727cc0e27ae00c0e344f254493ad4ae895900bbba79357b8ddc4666da721",
+        "symbols/krachtaansluiting.svg": "sha256-82d519cb7e7b4d04bb1eee7a33b07851634bfd23021e5a3a283ef523102568d3",
+        "symbols/kruisschakelaar.svg": "sha256-d16c0b400384e1eff807c118569d70ee53ae46108d8a5a3f593953216dd7dca0",
+        "symbols/lichtpunt-plafond.svg": "sha256-39736e2106fa24f58e7644ede1fd7139f8b823587fa826d66943b44bc909b41a",
+        "symbols/lichtpunt-wand.svg": "sha256-b6e016708fdacf1dcc407302861460193256a139261c68bcd23318d5db3538fe",
+        "symbols/loze-leiding.svg": "sha256-c6cf00477155d615d7fbcf7c2bc94bc1a27fc494dcb3fd439c9f92406f8ed828",
+        "symbols/meterkast.svg": "sha256-e4f9a59a82851c7f55462f8cf4e298c3972c692adef426336190d26af8d3072e",
+        "symbols/schakelaar-enkelpolig.svg": "sha256-4e7843da63146e6aecfc7a1bb83f743beccc930116fa7519a7a4cc3851e025e3",
+        "symbols/schel.svg": "sha256-b4ec946b2e6a7b2326876f02f8777914d76c5a0d14ecdc7da842b8ce65f3e55f",
+        "symbols/serieschakelaar.svg": "sha256-2fc4e5805878e2bd4b8b243a6292a9fc7d5e0cbcd4cbce7be0689c152b7a079e",
+        "symbols/tl-armatuur.svg": "sha256-195c1c9d21622743eb2fd4c81c88ef2be17908f1dbb54c9dcf315540031208dd",
+        "symbols/wcd-dubbel.svg": "sha256-58a2c107a3b48f2c1a53e5c9003c24529cd905f4d5ae9d68f1ba0054e40d6655",
+        "symbols/wcd-enkel.svg": "sha256-66aa7da319a852e5b5dcf143b641288779963185a206bff9c800b98a5a88d285",
+        "symbols/wcd-randaarde.svg": "sha256-18bab82e25f94af9b71a658ae848433849f3c95cd38158484af01c2002021480",
+        "symbols/wcd-spatwaterdicht.svg": "sha256-a19d4936bd73de81b90d0c1153f2e6f0050fe22fe6749d1bc990bcca899dff3b",
+        "symbols/wisselschakelaar.svg": "sha256-5884744f85faa81687782c76868d51de85beec4d66eceb34df5dffcf6890e773"
+      }
     },
     "nl-stamps": {
       "name": {
@@ -3181,10 +3864,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/nl-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-f2399961687bc4e1e6c8d22ad453c84c7d58f034a36bbeeb6a39cd615a2e4450"
+      }
     },
     "nl-wall-types": {
       "name": {
@@ -3198,7 +3885,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/nl-wall-types/",
+      "description": {
+        "en": "Plan-view wall segments per Dutch drawing practice: metselwerk, kalkzandsteen, beton, cellenbeton, HSB, metal stud, fire-rated separations.",
+        "nl": "Wandsegmenten in plattegrond volgens Nederlandse tekenpraktijk: metselwerk, kalkzandsteen, beton, cellenbeton, HSB, metal stud, brandwerende scheidingen (WBDBO)."
+      },
       "symbolCount": 10,
       "files": [
         "symbols/beton.svg",
@@ -3211,7 +3903,19 @@
         "symbols/leidingschacht.svg",
         "symbols/metal-stud.svg",
         "symbols/metselwerk.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/beton.svg": "sha256-975f6e237d71e6d2fe46350d2cc97d120c45f8e6e9c763b954c393e3e27da8d8",
+        "symbols/brandwand-30.svg": "sha256-6a2aa31e102e8bdebe00569aa81cf58190532bdacfc33d5b708ea3858c48ca77",
+        "symbols/brandwand-60.svg": "sha256-f752a64f3b4b824898b4603f746ef8ae86fd97c8733d8c3c7f495c2f9d4c252d",
+        "symbols/cellenbeton.svg": "sha256-8e7e8966924bc16c654acd8311c5de3f64be2c3329dd2be6f416b8278a1b3250",
+        "symbols/gewapend-beton.svg": "sha256-908f9e54bfb39d11cb4dfb700de6f3cd7044037c833b096124138d0f425bf31a",
+        "symbols/hsb-wand.svg": "sha256-0600dab3d4d1fda96ea2f4318ec4df7330b15c847bb0c26c32da43cce3e578f0",
+        "symbols/kalkzandsteen.svg": "sha256-7fe445842e1b464ec3c5d8be479f54fa4bd452772ce688252b55a124f4e03b92",
+        "symbols/leidingschacht.svg": "sha256-e16a150a5c163df0104a737e6b64e9c04da349becad5ea910e06cd76c4e3d3cd",
+        "symbols/metal-stud.svg": "sha256-1c625fa8a97bfe53f5ef8abea43e9cbd0644ec85dd84bd0cf534e2b00737628e",
+        "symbols/metselwerk.svg": "sha256-511339840b21df5c2d0e31550de8cbf4bb8ff7bade8ef54658b3e4bbccf6d45e"
+      }
     },
     "no-fire-symbols": {
       "name": {
@@ -3225,6 +3929,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/no-fire-symbols/"
     },
     "no-stamps": {
@@ -3240,10 +3945,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/no-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-41d620b288bf8ed84885336673d41901c4b60c4dd038e131cd80fed6b11c5d53"
+      }
     },
     "pl-fire-symbols": {
       "name": {
@@ -3257,6 +3966,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/pl-fire-symbols/"
     },
     "pl-stamps": {
@@ -3272,10 +3982,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/pl-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-93f43a831907f1280428c3ba1b948d0bab710e11a0b723c3a4752a0388667a5d"
+      }
     },
     "pt-fire-symbols": {
       "name": {
@@ -3290,6 +4004,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/pt-fire-symbols/"
     },
     "pt-stamps": {
@@ -3305,10 +4020,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/pt-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-8a8231688d2fd33c0cb1696afa11da5edc33f20611a381b27370e862c602b12d"
+      }
     },
     "ro-fire-symbols": {
       "name": {
@@ -3322,6 +4041,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/ro-fire-symbols/"
     },
     "ro-stamps": {
@@ -3337,10 +4057,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/ro-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-3d4e6668ae1425ed43f157cc2281229ddf57ce36973e70f75e6163435c9b6eb5"
+      }
     },
     "ru-fire-symbols": {
       "name": {
@@ -3355,7 +4079,11 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
-      "path": "collections/ru-fire-symbols/"
+      "license": "repository",
+      "path": "collections/ru-fire-symbols/",
+      "description": {
+        "en": "Fire protection symbols per GOST drawing practice."
+      }
     },
     "ru-stamps": {
       "name": {
@@ -3370,10 +4098,17 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/ru-stamps/",
+      "description": {
+        "en": "Stamps following GOST/SPDS documentation practice."
+      },
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-8348675a6bb21c2c18614f58f5ca4bb2b0e38d3f34149bca80a766b758239987"
+      }
     },
     "se-fire-symbols": {
       "name": {
@@ -3387,6 +4122,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/se-fire-symbols/"
     },
     "se-stamps": {
@@ -3402,10 +4138,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/se-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-6b5ba4f1aec4e91bae6b0b9b26788e984451d3a2ca8598fa27721e494b43c911"
+      }
     },
     "si-fire-symbols": {
       "name": {
@@ -3419,6 +4159,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/si-fire-symbols/"
     },
     "si-stamps": {
@@ -3434,10 +4175,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/si-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-c1b44ec193ac1100e4a695c1cbc5abb47e5c2061237287a6a7cb4928f797acaa"
+      }
     },
     "sk-fire-symbols": {
       "name": {
@@ -3451,6 +4196,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/sk-fire-symbols/"
     },
     "sk-stamps": {
@@ -3466,10 +4212,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/sk-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-ef4da020558f0cf719ee57afb815e4a4364526fe0692ca835e40e422daf0d726"
+      }
     },
     "tr-fire-symbols": {
       "name": {
@@ -3484,6 +4234,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/tr-fire-symbols/"
     },
     "tr-stamps": {
@@ -3499,10 +4250,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/tr-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-6db2724f833ba318480c8e60c1e4db68c07099ae2de8dc79cfbf8d838f02072e"
+      }
     },
     "uk-drafting-parametric": {
       "name": {
@@ -3516,6 +4271,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/uk-drafting-parametric/"
     },
     "uk-electrical": {
@@ -3530,7 +4286,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/uk-electrical/",
+      "description": {
+        "en": "UK electrical floor-plan conventions: 13A sockets, cooker points, consumer units.",
+        "nl": "Britse elektra-plattegrondconventies: 13A-sockets, cooker points, consumer units."
+      },
       "symbolCount": 13,
       "files": [
         "symbols/consumer-unit.svg",
@@ -3546,7 +4307,22 @@
         "symbols/switch-intermediate.svg",
         "symbols/switched-socket.svg",
         "symbols/tv-outlet.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/consumer-unit.svg": "sha256-39055b323b8222ae6790242513a79a3b101961f0cbf9a32805e93d2c66e8f0b2",
+        "symbols/cooker-point.svg": "sha256-9f1c826863b98b9e3de2b23d879b289df03ca8725b5b10d4c1e2dc600771517a",
+        "symbols/data-outlet.svg": "sha256-060d9c46543851717f59480d88be504ea6704d1b6415ddbcd5fb29fe5250d52c",
+        "symbols/fused-connection-unit.svg": "sha256-1ac9be6f6a532ffcd1160c47fa1a6035de3c796fa1b806e0ce822fb2161ecba6",
+        "symbols/pendant-light.svg": "sha256-e273d3fcc02317328430fbdd42eeb81f02421e44e23f9f390591823540382ea5",
+        "symbols/shaver-socket.svg": "sha256-96b067651d0dc011762cdb4ec6c62891acfd0aef2506f551b78ec99312d57021",
+        "symbols/socket-13a-double.svg": "sha256-4c9c1032631e34b6944e75bc340e06781f4ccf47ca509a25d960c7b665fa9009",
+        "symbols/socket-13a-single.svg": "sha256-66aa7da319a852e5b5dcf143b641288779963185a206bff9c800b98a5a88d285",
+        "symbols/switch-1way.svg": "sha256-4e7843da63146e6aecfc7a1bb83f743beccc930116fa7519a7a4cc3851e025e3",
+        "symbols/switch-2way.svg": "sha256-2732f2798ac8a5c9ce9568882280d01e2a1231b31994545cad90c2f393231f45",
+        "symbols/switch-intermediate.svg": "sha256-9e7508863ace4b63b74bb36cc038fe460b2b4b554db922be15802805152fb3df",
+        "symbols/switched-socket.svg": "sha256-8f77b8caeee8029e3f619e3c5c64b1dffdc8f7afedce46d64b38b124433b574c",
+        "symbols/tv-outlet.svg": "sha256-1c61e72b87244ad3dada198d7350b9810ef2e32d0a3e051afe654cc9dcccbc32"
+      }
     },
     "uk-fire-symbols": {
       "name": {
@@ -3560,7 +4336,11 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/uk-fire-symbols/",
+      "description": {
+        "en": "Symbols commonly used on UK fire safety and fire alarm drawings (BS 1635 conventions)."
+      },
       "standard": "BS 1635",
       "symbolCount": 26,
       "files": [
@@ -3590,7 +4370,35 @@
         "symbols/sprinkler-head.svg",
         "symbols/sprinkler-stop-valve.svg",
         "symbols/wet-riser-outlet.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/aov.svg": "sha256-dee8facb77df0145515b1d6e9cecd1d2a206c4ccc21dd5f2d22a4a6287ecdcd7",
+        "symbols/beacon.svg": "sha256-06e75c84381e132a61f4b6e0f5fcff0290aef0c45b149241a58a8e30b384dade",
+        "symbols/beam-detector.svg": "sha256-99341e1147af90a4947d7e4b58ab5acffd3e2adedba940b54bffa9ad8538bc80",
+        "symbols/dry-riser-inlet.svg": "sha256-f1f00f8e3fe122bc7b0f2f1b6fe3b1d3903da7494e85f83656f9e5c7d3f85704",
+        "symbols/dry-riser-outlet.svg": "sha256-f98df5fd5d34f4dc11f5ab492599147b881a1ef2b48c6a3bf3ecd862e9aa07ab",
+        "symbols/emergency-luminaire.svg": "sha256-25e2d6cf5de3b4492005e7d5f03b187cafa302712608c9d4f4bd8813f952af5c",
+        "symbols/exit-sign.svg": "sha256-d499c816fa4391a0f0f7e87b14f2b656af11bfa2368a4a056652ff7926ac4889",
+        "symbols/fire-alarm-panel.svg": "sha256-6264bb6c84b9acfbca5bf9d42d4633e50cb9daebaeb4f345fdc7ed4b857afd69",
+        "symbols/fire-blanket.svg": "sha256-863e51fcad00c7809ba5f933dfcc00b3adb375191352ce3085f0d83df304fd62",
+        "symbols/fire-door-fd30.svg": "sha256-2ee3c66a316232967c99625c8b3a55935fdc9e072adf9ea2d1abd3649320a81b",
+        "symbols/fire-door-fd60.svg": "sha256-8f6a0c4e89544812956120618d622c7702c7c83f4af41e7ca292be112b201877",
+        "symbols/fire-extinguisher.svg": "sha256-0a172d4a2933fcc53c1dbd4732f1347c2e2903ecc1b49d8c9a29d0194a2bea1d",
+        "symbols/fire-hydrant.svg": "sha256-7656c6bfa6f636677803eeac7b6953a5b9901a735b819bb0a9364128c4105b37",
+        "symbols/foam-inlet.svg": "sha256-67a5810f59776d4de7365220aee03a27f21ce78ad48ac2f36546b87d640283e6",
+        "symbols/heat-detector.svg": "sha256-2a71807bb54ea6fe6d9749e70f7b823fd4b298878a81960a115a49e3e7b7feea",
+        "symbols/hose-reel.svg": "sha256-10bf33a41e5d49b3814d24002bcefc5b285b17c83d863debc6f46232a4e8593d",
+        "symbols/manual-call-point.svg": "sha256-04941131975065a3565858e40473b1ef65b139a547639543890fa352f1c1542e",
+        "symbols/multi-sensor-detector.svg": "sha256-cfadda5ee7c527db96b3fa7f0d7fb56ec8cb861aadc05c81a9318fc214e6ed6c",
+        "symbols/refuge-point.svg": "sha256-dcebd7ba0943d8bd7f460470113602a8464490ea92b95135500bd0ab8039825f",
+        "symbols/repeater-panel.svg": "sha256-2e6bab74b8f86312d44623e423b66727561125c84a71e23782c74919f3aaaef1",
+        "symbols/smoke-detector.svg": "sha256-1df47463b63f32dd96e9104ea80a83713bfa36eb9413b2eeeff70b959e9482a0",
+        "symbols/sounder-beacon.svg": "sha256-6683cfd8af1133f9c835f4545a78c3805cf52de49f9884f3404e9999f0b94417",
+        "symbols/sounder.svg": "sha256-ef54bdcbadb65f209d63d1d4b19af9f9e3679190b114649fe15b98ca1c7972da",
+        "symbols/sprinkler-head.svg": "sha256-ff7c010699636abcdc080967e420cd165ed28258b43089a2a84179c877e1b739",
+        "symbols/sprinkler-stop-valve.svg": "sha256-10d0b336fbf083f1307f6c95df3060812f43421d2b34f418e99070f5ee4b5852",
+        "symbols/wet-riser-outlet.svg": "sha256-fd3d53e77a59f0bdd3ce51d1158d11013d2d144fa27466190a9acd077d9721be"
+      }
     },
     "uk-stamps": {
       "name": {
@@ -3604,10 +4412,17 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/uk-stamps/",
+      "description": {
+        "en": "Classic approval stamps plus ISO 19650 suitability codes as used on UK drawings."
+      },
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-bd0c9eb69df4cabe1996f965faf8e9b6ee05af6b76853379ad80a4148f0d62aa"
+      }
     },
     "uk-steel-sections": {
       "name": {
@@ -3622,9 +4437,15 @@
       "scope": "national",
       "status": "available",
       "version": "1.4.0",
+      "license": "repository",
       "path": "collections/uk-steel-sections/",
+      "description": {
+        "en": "Cross-section symbols for UK sections: UB, UC, PFC, RSA angles, tees, SHS/RHS/CHS, flat. Includes a parametric size catalog (parametric.json) with real section tables; apps render sections from the table at true size.",
+        "nl": "Doorsnede-symbolen voor Britse profielen: UB, UC, PFC, RSA-hoekstaal, T, kokers/buis, strip. Inclusief parametrische maatcatalogus (parametric.json) met echte tabelmaten; apps renderen doorsneden op ware grootte uit de tabel."
+      },
       "symbolCount": 15,
       "files": [
+        "parametric.json",
         "symbols/angle-elevation.svg",
         "symbols/channel-elevation.svg",
         "symbols/chs.svg",
@@ -3639,9 +4460,26 @@
         "symbols/tee-elevation.svg",
         "symbols/tee.svg",
         "symbols/ub.svg",
-        "symbols/uc.svg",
-        "parametric.json"
-      ]
+        "symbols/uc.svg"
+      ],
+      "integrity": {
+        "parametric.json": "sha256-59dea398f61c1d93bc9042752a5a12afa3ce27dfdb02c8e2c1078e230fb8f7f0",
+        "symbols/angle-elevation.svg": "sha256-59a7ed14ba79b6600870c5c2be0589a573569cf2d208aa42037556f24e08dda6",
+        "symbols/channel-elevation.svg": "sha256-79c54aa929e6855114704c6715e035072147566bfbedecb0479ab17125dcdc42",
+        "symbols/chs.svg": "sha256-892cc3a6f3c32f9e9ee17714f626d65f5d2846426207ccf5a2d1a43450fe6528",
+        "symbols/flat.svg": "sha256-cf7303d2fa00ddcfdfeff4fe294b2a86a707061f0e5a1ce530fc89ab4980e7c3",
+        "symbols/hollow-section-elevation.svg": "sha256-08dd1479ff2905d830d88415c8cd3ce81d390abafcf1910f7245eed02cb10903",
+        "symbols/i-beam-elevation.svg": "sha256-9413dfee4700081e3cce68c0659238aa045991df1402241e2a9b7934329a785d",
+        "symbols/pfc.svg": "sha256-cdb224d6b54acdb6da2ea1098dd5b01aa0c4536f1f69ecfd98c3b40454922d71",
+        "symbols/rhs.svg": "sha256-43374a33360730486e0299352a5ce41e97c17e55974389732b4d9029144fa115",
+        "symbols/rsa-equal.svg": "sha256-70cbf6f80aa68fa22e7a8548449183d580cc08723e19e2ab5fca86b934adde3a",
+        "symbols/rsa-unequal.svg": "sha256-79ea0b18e3000bee62940261b7dc32717663a9caab36602744718ce22ac153d4",
+        "symbols/shs.svg": "sha256-c64bac90e4e4a83e6abf4582d7a21c0faf02ac9f18d4e8212629770a21caea54",
+        "symbols/tee-elevation.svg": "sha256-7ae547c68f3c4c1c2453453259698ff8f5ac00a8778df678942e53e5e56b5833",
+        "symbols/tee.svg": "sha256-2d9aae641e4d671594c70444bcdbcff24e7c199836a5f7471403420f844dd2fe",
+        "symbols/ub.svg": "sha256-79fc1f527df1f5cd074bf4a15d431270ab2ff9b3d78706d4f3a88ef814235763",
+        "symbols/uc.svg": "sha256-f821b63244ba71c2c049def5e3a683a23118e102be9cd1b380f8cadee63850a2"
+      }
     },
     "uk-wall-types": {
       "name": {
@@ -3655,7 +4493,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/uk-wall-types/",
+      "description": {
+        "en": "Plan-view wall segments per UK drawing practice: brickwork, blockwork, cavity wall, timber/metal stud, fire-rated partitions (30/60 min).",
+        "nl": "Wandsegmenten in plattegrond volgens Britse tekenpraktijk: brickwork, blockwork, spouwmuur, houten/metalen stijlwerk, brandwerende scheidingen (30/60 min)."
+      },
       "symbolCount": 8,
       "files": [
         "symbols/blockwork.svg",
@@ -3666,7 +4509,17 @@
         "symbols/fire-wall-60min.svg",
         "symbols/metal-stud-wall.svg",
         "symbols/timber-stud-wall.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/blockwork.svg": "sha256-9c701fd829c5a465af55adfec80e3ce789ac04ec2fcabcd931fa5103f92a3b5a",
+        "symbols/brickwork.svg": "sha256-dac589500b58db4ac1d0093972558533889dc3f02bc373b00ee69018555382a1",
+        "symbols/cavity-wall.svg": "sha256-59c58346419dda07f6d4bae4f772ca8fa62119588864486f3ac3936247f59438",
+        "symbols/concrete-wall.svg": "sha256-807e256b60d2c3235bf3503a535a5b5d9bda276305a0c4077ccf87ea9dca30a6",
+        "symbols/fire-wall-30min.svg": "sha256-e734b49bca153884a478e1cba5d2bcdd390fcc6322cdbdc0e8b5962c32ab7c79",
+        "symbols/fire-wall-60min.svg": "sha256-ec03ed17f6af97bca4a7a1eeb996479aa23530d263da1ffad18f61070b5133f7",
+        "symbols/metal-stud-wall.svg": "sha256-1c625fa8a97bfe53f5ef8abea43e9cbd0644ec85dd84bd0cf534e2b00737628e",
+        "symbols/timber-stud-wall.svg": "sha256-67f557571045984ee5fc6e53d6b42fbb039c16630b78cc15dbdd610d7c024ef6"
+      }
     },
     "us-drafting-parametric": {
       "name": {
@@ -3680,6 +4533,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/us-drafting-parametric/"
     },
     "us-electrical": {
@@ -3694,7 +4548,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/us-electrical/",
+      "description": {
+        "en": "US electrical floor-plan conventions: duplex receptacles, S/S3/S4 switches, panelboards.",
+        "nl": "Amerikaanse elektra-plattegrondconventies: duplex receptacles, S/S3/S4-schakelaars, panelboards."
+      },
       "standard": "IEEE 315",
       "symbolCount": 19,
       "files": [
@@ -3717,7 +4576,28 @@
         "symbols/thermostat.svg",
         "symbols/tv-outlet.svg",
         "symbols/wall-sconce.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/ceiling-light.svg": "sha256-95251fe5512105665733a33e18e9ac82a115e450953df3c73fa604e8bb281c20",
+        "symbols/data-outlet.svg": "sha256-63ce8ccd8758de430d5a8d0cfd005d0b2418e49b5ccecb0d2b545c06550d6978",
+        "symbols/duplex-receptacle.svg": "sha256-8fcb481df3f4213494dedbb53a273427d4cf9479d638523b19f0c7fe0534658f",
+        "symbols/floor-receptacle.svg": "sha256-3e7f9f73ee091829578a5f1b0aa885314159247a1d6cd193f97657f62de96bf0",
+        "symbols/fluorescent-fixture.svg": "sha256-4fd85bde664a5c743341eef8cf60f2eac567c06d17e837f3b28e9f93d3780709",
+        "symbols/gfci-receptacle.svg": "sha256-cf1fe92ffaefa1c173a73b171d27163a2579187ea785957f18090d74b81fba85",
+        "symbols/junction-box.svg": "sha256-f3888d8c2ef2f77ea577b65b438844a7431392ca7b3409dc8c69aa27f4d0896a",
+        "symbols/panelboard.svg": "sha256-d42a99c6d86704157388d7cf3f0f4c3ae8e10f487bc117b6922cee403231a458",
+        "symbols/phone-outlet.svg": "sha256-bd079af7bbb2d695d2cb0cfc13533c6f47baee3226debe9b42b710df7ad52628",
+        "symbols/quadplex-receptacle.svg": "sha256-f1c6811f1457d73064bc9e63472bf8d57265cd8f02fe42f8d14354310cddd25d",
+        "symbols/receptacle-240v.svg": "sha256-9a5ac63c6ef85a99fae10aa11ce6ec94386452ed872125409e372622637d4ae0",
+        "symbols/recessed-downlight.svg": "sha256-866732334595bee9e44e7a6f7a41f72b1e583473969a065154cc374635582cc4",
+        "symbols/switch-dimmer.svg": "sha256-059081cbd06bcbd765ada30b8f2dad302dd398ad4666e644718e62285587287b",
+        "symbols/switch-four-way.svg": "sha256-fa7cb22e888087d3cb381dfee35ad6f119d59a7e47db21316e9338dd321b10d8",
+        "symbols/switch-three-way.svg": "sha256-7253b91af2421f522fe78a679799b45581380530c747854777e4ae6bafa1d9ca",
+        "symbols/switch.svg": "sha256-ef88d35902384ffc59caff7f136b4f0fa0573a07ee211d368e3c9ba4dc1bf614",
+        "symbols/thermostat.svg": "sha256-033ce1b3756bd5150ebc9430c88c05868ef3a54e349492a0d8ebcacfb1fb196d",
+        "symbols/tv-outlet.svg": "sha256-8590aedb762da8fa9167a87da5fec44f043c72bc8294f825144f021b3730744c",
+        "symbols/wall-sconce.svg": "sha256-da0ae00510b7f40f50e97d669641152b92a79cbc8eed277c495260a4581d7dcb"
+      }
     },
     "us-stamps": {
       "name": {
@@ -3731,10 +4611,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/us-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-fcd78c8b20b3517fcdd2980c676da8ba9c188f4374b786a5011dc167e15fc71e"
+      }
     },
     "us-wall-types": {
       "name": {
@@ -3748,7 +4632,12 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/us-wall-types/",
+      "description": {
+        "en": "Plan-view wall segment symbols per US drawing practice: stud walls, CMU, brick veneer, concrete, fire-rated partitions.",
+        "nl": "Wandsegmenten in plattegrond volgens Amerikaanse tekenpraktijk: stud walls, CMU, brick veneer, beton, brandwerende scheidingen."
+      },
       "symbolCount": 8,
       "files": [
         "symbols/brick-veneer-wall.svg",
@@ -3759,7 +4648,17 @@
         "symbols/metal-stud-wall.svg",
         "symbols/shaft-wall.svg",
         "symbols/wood-stud-wall.svg"
-      ]
+      ],
+      "integrity": {
+        "symbols/brick-veneer-wall.svg": "sha256-7c8a3d47b9d5f074da7afbfba24bceba7b17ac3ec2377421ae8e4b222a152492",
+        "symbols/cmu-wall.svg": "sha256-2a52ca5dfb32a4506a250ffe2ed6e3da9cf3c969eae95db04e92c7d67f50fc83",
+        "symbols/concrete-wall.svg": "sha256-02aa22c2376e84708dcdec39422da04287aa938b8add7fb45317a1e386f372e9",
+        "symbols/fire-wall-1hr.svg": "sha256-3e18f85acece531e798cc06dc6d8c5242266ed64c88ddd604268ac9aa79c82e4",
+        "symbols/fire-wall-2hr.svg": "sha256-616e4ab59f3f183b6ffeaaf8a983f2fb334401454f4a6f9896c18c2c63f3a85a",
+        "symbols/metal-stud-wall.svg": "sha256-1c625fa8a97bfe53f5ef8abea43e9cbd0644ec85dd84bd0cf534e2b00737628e",
+        "symbols/shaft-wall.svg": "sha256-4da65c953ee85f0a3a8fc30109dc0a3133b10cbe4af58173e8bbaa40498bc03b",
+        "symbols/wood-stud-wall.svg": "sha256-ad39b77b8faed227b9b77d12e6d9dbeb17086d7063cbef8b74855d50e17a99fb"
+      }
     },
     "za-fire-symbols": {
       "name": {
@@ -3773,6 +4672,7 @@
       "scope": "national",
       "status": "planned",
       "version": "0.1.0",
+      "license": "repository",
       "path": "collections/za-fire-symbols/"
     },
     "za-stamps": {
@@ -3787,10 +4687,14 @@
       "scope": "national",
       "status": "available",
       "version": "1.0.0",
+      "license": "repository",
       "path": "collections/za-stamps/",
       "files": [
         "stamps.json"
-      ]
+      ],
+      "integrity": {
+        "stamps.json": "sha256-e2babf38ac5821d2f9e22361120c6eb77b989297ee7a640c13b6b5d56c22fbfc"
+      }
     }
   }
 }

@@ -2,11 +2,16 @@
 // die de app als enige bestand ophaalt. Deterministisch: zelfde input → zelfde output.
 // Gebruik: node scripts/build-index.mjs [--check]
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const REGION_ORDER = ['europe', 'north-america', 'south-america', 'middle-east', 'africa', 'asia', 'oceania'];
+
+export function sha256(value) {
+  return `sha256-${createHash('sha256').update(value).digest('hex')}`;
+}
 
 export function buildIndex(countries, collections) {
   const collMap = {};
@@ -18,7 +23,9 @@ export function buildIndex(countries, collections) {
       scope: c.scope,
       status: c.status,
       version: c.version,
+      license: c.license,
       path: `collections/${c.id}/`,
+      ...(c.description ? { description: c.description } : {}),
       ...(c.standard ? { standard: c.standard } : {}),
       ...(c.symbolCount ? { symbolCount: c.symbolCount } : {}),
       // Volledige bestandslijst (relatief aan `path`) zodat apps alles via
@@ -27,7 +34,12 @@ export function buildIndex(countries, collections) {
       // die is voor anonieme gebruikers hard rate-limited (HTTP 403 na een
       // handvol downloads). index.json is al het enige bestand dat de app
       // ophaalt — met `files` erbij is de hele download API-vrij.
-      ...(c.files && c.files.length ? { files: c.files } : {})
+      ...(c.files && c.files.length ? { files: c.files } : {}),
+      ...(c.files && c.files.length ? {
+        integrity: Object.fromEntries(
+          c.files.map(file => [file, sha256(c.fileContents[file])])
+        )
+      } : {})
     };
   }
 
@@ -61,17 +73,29 @@ export function loadData(root = ROOT) {
       if (!existsSync(p)) continue;
       const data = JSON.parse(readFileSync(p, 'utf8'));
       const files = [];
+      const fileContents = {};
       const symDir = join(collectionsDir, dir, 'symbols');
       if (existsSync(symDir)) {
         const svgs = readdirSync(symDir).filter(f => f.endsWith('.svg')).sort();
         if (svgs.length) data.symbolCount = svgs.length;
-        files.push(...svgs.map(f => `symbols/${f}`));
+        for (const f of svgs) {
+          const relative = `symbols/${f}`;
+          files.push(relative);
+          fileContents[relative] = readFileSync(join(symDir, f));
+        }
       }
       // Overige door apps consumeerbare databestanden naast collection.json.
       for (const extra of ['stamps.json', 'parametric.json', 'hatches.json', 'legends.json']) {
-        if (existsSync(join(collectionsDir, dir, extra))) files.push(extra);
+        const extraPath = join(collectionsDir, dir, extra);
+        if (existsSync(extraPath)) {
+          files.push(extra);
+          fileContents[extra] = readFileSync(extraPath);
+        }
       }
-      if (files.length) data.files = files;
+      if (files.length) {
+        data.files = files.sort();
+        data.fileContents = fileContents;
+      }
       collections.push(data);
     }
   }

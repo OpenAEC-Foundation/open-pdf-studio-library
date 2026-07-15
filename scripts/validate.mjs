@@ -23,6 +23,7 @@ const ajv = new Ajv({ allErrors: true });
 const collectionSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'collection.schema.json')));
 const countrySchema = ajv.compile(loadJson(join(ROOT, 'schema', 'country.schema.json')));
 const parametricSteelSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'parametric-steel.schema.json')));
+const indexSchema = ajv.compile(loadJson(join(ROOT, 'schema', 'index.schema.json')));
 
 function schemaErrors(validate, data, label) {
   if (validate(data)) return [];
@@ -48,6 +49,20 @@ export function validateCountryJson(data, fileBase, collectionIds) {
       if (!collectionIds.has(ref)) {
         errors.push(`${fileBase}: sector "${sector}" verwijst naar onbekende collectie "${ref}"`);
       }
+    }
+  }
+  return errors;
+}
+
+export function validateIndexJson(data, label = 'index.json') {
+  const errors = schemaErrors(indexSchema, data, label);
+  if (errors.length) return errors;
+
+  for (const [id, collection] of Object.entries(data.collections)) {
+    const files = collection.files || [];
+    const integrityKeys = Object.keys(collection.integrity || {});
+    if (JSON.stringify(files) !== JSON.stringify(integrityKeys)) {
+      errors.push(`${label}: collectie "${id}" heeft geen 1:1 files/integrity-koppeling`);
     }
   }
   return errors;
@@ -284,6 +299,15 @@ export function runAll(root = ROOT) {
         continue;
       }
       errors.push(...validateCountryJson(data, fileBase, collectionIds));
+    }
+  }
+
+  const indexPath = join(root, 'index.json');
+  if (existsSync(indexPath)) {
+    try {
+      errors.push(...validateIndexJson(loadJson(indexPath), 'index.json'));
+    } catch (e) {
+      errors.push(`index.json: ongeldige JSON — ${e.message}`);
     }
   }
 

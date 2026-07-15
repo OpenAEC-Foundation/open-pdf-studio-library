@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { buildIndex } from '../scripts/build-index.mjs';
 
 const collections = [
@@ -60,6 +61,37 @@ test('collections map is sorted and carries path + metadata', () => {
   assert.equal(idx.collections['aa-set'].standard, 'ISO 7010');
   assert.equal(idx.collections['aa-set'].symbolCount, 4);
   assert.equal(idx.collections['zz-set'].standard, undefined);
+});
+
+test('collection entries expose license, description and deterministic integrity', () => {
+  const input = [{
+    ...collections[1],
+    description: { en: 'Available set' },
+    files: ['symbols/a.svg'],
+    fileContents: { 'symbols/a.svg': '<svg />' }
+  }];
+  const idx = buildIndex([], input);
+  const entry = idx.collections['aa-set'];
+  const expected = createHash('sha256').update('<svg />').digest('hex');
+
+  assert.equal(entry.license, 'repository');
+  assert.deepEqual(entry.description, { en: 'Available set' });
+  assert.deepEqual(entry.files, ['symbols/a.svg']);
+  assert.deepEqual(entry.integrity, {
+    'symbols/a.svg': `sha256-${expected}`
+  });
+});
+
+test('integrity keys match files exactly', () => {
+  const idx = buildIndex([], [{
+    ...collections[1],
+    files: ['stamps.json'],
+    fileContents: { 'stamps.json': '{"stamps":[]}' }
+  }]);
+  assert.deepEqual(
+    Object.keys(idx.collections['aa-set'].integrity),
+    idx.collections['aa-set'].files
+  );
 });
 
 test('output is deterministic for same input', () => {
