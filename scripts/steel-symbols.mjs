@@ -246,7 +246,7 @@ function inferShape(stem) {
   const base = stem.replace('-elevation', '');
   if (/hss-round|\bchs\b|pipe/.test(base)) return 'pipe';
   if (/hss|\bshs\b|\brhs\b|hollow/.test(base)) return 'box';
-  if (/angle|\brsa\b|\bisa\b|ugolok/.test(base)) return 'angle';
+  if (/angle|(?:^|-)l-(?:equal|unequal)$|\brsa\b|\bisa\b|ugolok/.test(base)) return 'angle';
   if (/tee|t-profile|bt-tee|ct-tee|isnt-tee/.test(base)) return 'tee';
   if (/channel|\bpfc\b|\bupn\b|\bismc\b|shveller/.test(base)) return 'u';
   if (/plate|flat/.test(base)) return 'plate';
@@ -346,4 +346,3 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(scriptPath)) {
     console.log(`Staal-SVG's gebouwd (${changed} gewijzigd, ${expected.size} totaal).`);
   }
 }
-

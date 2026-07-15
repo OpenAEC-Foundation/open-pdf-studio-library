@@ -40,6 +40,14 @@ Every preview below is generated straight from the repository content by
 
 🇺🇸 AISC · 🇪🇺 EN 10365 (shared across Europe) · 🇬🇧 UK · 🇯🇵 JIS · 🇰🇷 KS · 🇨🇳 GB · 🇮🇳 IS 808 · 🇦🇺 AS/NZS · 🇷🇺 GOST · 🇧🇷 W series
 
+The fallback drawings are generated from each market's `parametric.json`:
+catalogue dimensions determine the proportions, documented root radii become
+true SVG arcs and centre lines use one shared technical line profile. Elevation
+fallbacks use a fixed example member length of **4 × section depth**, including
+the real flange, web and wall proportions; an app renderer can substitute the
+project's actual member length. Profile names stay in metadata instead of the
+drawing geometry.
+
 ![AISC steel shape cross-sections](docs/media/preview-aisc-steel-shapes.svg)
 ![European steel profile cross-sections](docs/media/preview-en-steel-profiles.svg)
 ![UK steel section cross-sections](docs/media/preview-uk-steel-sections.svg)
@@ -52,6 +60,10 @@ Every preview below is generated straight from the repository content by
 ![Brazilian W series steel shapes](docs/media/preview-br-steel-shapes.svg)
 
 ### Wall types in plan view — 🇳🇱 🇺🇸 🇩🇪 🇬🇧
+
+Wall materials and ratings use text-free geometric patterns with consistent
+outline and hatch weights, so the same symbol remains legible at drawing scale
+and independent of interface language.
 
 ![Dutch wall types in plan view](docs/media/preview-nl-wall-types.svg)
 ![US wall types in plan view](docs/media/preview-us-wall-types.svg)

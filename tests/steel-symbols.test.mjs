@@ -72,3 +72,17 @@ test('all steel source files have a deterministic generated counterpart', () => 
     assert.deepEqual(validateSvgPolicy(svg, file), [], file);
   }
 });
+
+test('generic equal and unequal L files remain angle profiles', () => {
+  const generated = generateSteelSymbols(ROOT);
+  for (const file of [
+    'collections/en-steel-profiles/symbols/l-unequal.svg',
+    'collections/br-steel-shapes/symbols/l-equal.svg',
+    'collections/br-steel-shapes/symbols/l-unequal.svg'
+  ]) {
+    const svg = generated.get(file);
+    assert.ok(svg, `${file}: gegenereerde SVG ontbreekt`);
+    assert.match(svg, /<desc>Catalogusgedreven doorsnede; vorm angle\.<\/desc>/, file);
+    assert.match(svg, /<path d="[^"]* A[\d.]+ [\d.]+ /, file);
+  }
+});
