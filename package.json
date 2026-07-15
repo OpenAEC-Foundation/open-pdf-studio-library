@@ -14,7 +14,8 @@
     "build-index": "node scripts/build-index.mjs",
     "check-index": "node scripts/build-index.mjs --check",
     "build-media": "node scripts/build-readme-media.mjs",
-    "check-media": "node scripts/build-readme-media.mjs --check"
+    "check-media": "node scripts/build-readme-media.mjs --check",
+    "check-versions": "node scripts/check-collection-versions.mjs"
   },
   "devDependencies": {
     "ajv": "^8.20.0",
