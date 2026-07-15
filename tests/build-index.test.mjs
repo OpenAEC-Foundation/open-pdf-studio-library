@@ -94,6 +94,21 @@ test('integrity keys match files exactly', () => {
   );
 });
 
+test('text integrity is independent of checkout line endings', () => {
+  const lf = '<svg>\n<path/>\n</svg>\n';
+  const crlf = lf.replaceAll('\n', '\r\n');
+  const expected = `sha256-${createHash('sha256').update(lf).digest('hex')}`;
+  const make = fileContents => buildIndex([], [{
+    ...collections[1],
+    files: ['symbols/a.svg'],
+    fileContents: { 'symbols/a.svg': fileContents }
+  }]).collections['aa-set'].integrity['symbols/a.svg'];
+
+  assert.equal(make(lf), expected);
+  assert.equal(make(crlf), expected);
+  assert.equal(make(Buffer.from(crlf)), expected);
+});
+
 test('collection provenance metadata is preserved in the index', () => {
   const metadata = {
     standardEdition: '2025',

@@ -13,6 +13,14 @@ export function sha256(value) {
   return `sha256-${createHash('sha256').update(value).digest('hex')}`;
 }
 
+export function integritySha256(file, value) {
+  if (/\.(?:json|svg)$/i.test(file)) {
+    const text = Buffer.isBuffer(value) ? value.toString('utf8') : String(value);
+    return sha256(text.replace(/\r\n?/g, '\n'));
+  }
+  return sha256(value);
+}
+
 export function buildIndex(countries, collections) {
   const collMap = {};
   for (const c of [...collections].sort((a, b) => a.id.localeCompare(b.id))) {
@@ -41,7 +49,7 @@ export function buildIndex(countries, collections) {
       ...(c.files && c.files.length ? { files: c.files } : {}),
       ...(c.files && c.files.length ? {
         integrity: Object.fromEntries(
-          c.files.map(file => [file, sha256(c.fileContents[file])])
+          c.files.map(file => [file, integritySha256(file, c.fileContents[file])])
         )
       } : {})
     };

@@ -2145,10 +2145,10 @@
         "symbols/north-arrow-simple.svg"
       ],
       "integrity": {
-        "symbols/north-arrow-circled.svg": "sha256-006feea5e0018b4aa30514d28c5a5ed5382cfbe0e0d3c911376fd7e6e8082213",
-        "symbols/north-arrow-classic.svg": "sha256-bb747cc704ddfe942cee62a79d8b527e37f735ae880b2bc79e8c5c51204d902d",
-        "symbols/north-arrow-quartered.svg": "sha256-8bb652da619cc0312ee07d64805d10dfa8697a0ec8bac4fea3509b7176dd6f7a",
-        "symbols/north-arrow-simple.svg": "sha256-0faf6f625fd15c8ff33d87d4d5b017dccd29a88a21ab95e7fe587a34cf9d8d40"
+        "symbols/north-arrow-circled.svg": "sha256-c8d86fdfea10eb835ff42f98579789d596a69cd8b0b543bab38e9666824dba0c",
+        "symbols/north-arrow-classic.svg": "sha256-5c6133cf946171a29bf9360be5f71f3f1b8cfe2536a8242ed85ae0160518dead",
+        "symbols/north-arrow-quartered.svg": "sha256-fbf667232e10bdfce86dc546706dc724a34f32ac492986bd5ce00a350cf72955",
+        "symbols/north-arrow-simple.svg": "sha256-5524bb82a1120ebb89f321f0bb6a982234a9918119feb31cfc12b8fc3d5cf4a4"
       }
     },
     "cz-fire-symbols": {
