@@ -17,7 +17,10 @@
     "check-media": "node scripts/build-readme-media.mjs --check",
     "check-versions": "node scripts/check-collection-versions.mjs",
     "build-steel": "node scripts/steel-symbols.mjs",
-    "check-steel": "node scripts/steel-symbols.mjs --check"
+    "check-steel": "node scripts/steel-symbols.mjs --check",
+    "build-walls": "node scripts/wall-symbols.mjs",
+    "check-walls": "node scripts/wall-symbols.mjs --check",
+    "check-drawings": "node scripts/drawing-quality.mjs"
   },
   "devDependencies": {
     "ajv": "^8.20.0",

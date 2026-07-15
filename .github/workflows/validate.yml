@@ -19,6 +19,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run validate
+      - run: npm run check-drawings
       - run: npm run check-index
       - run: npm run check-media
       - name: Check collection versions
