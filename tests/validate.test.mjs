@@ -92,6 +92,19 @@ test('svg with script tag is rejected', () => {
   assert.ok(validateSvg(svg, 'a.svg').length > 0);
 });
 
+for (const [name, body] of [
+  ['event handler', '<svg viewBox="0 0 64 64" onload="alert(1)"/>'],
+  ['javascript href', '<svg viewBox="0 0 64 64"><a href="javascript:alert(1)">x</a></svg>'],
+  ['foreignObject', '<svg viewBox="0 0 64 64"><foreignObject/></svg>'],
+  ['doctype', '<!DOCTYPE svg [<!ENTITY x "boom">]><svg viewBox="0 0 64 64"/>'],
+  ['animation', '<svg viewBox="0 0 64 64"><animate attributeName="x"/></svg>'],
+  ['unknown attribute', '<svg viewBox="0 0 64 64" mystery="x"/>']
+]) {
+  test(`svg rejects ${name}`, () => {
+    assert.ok(validateSvg(body, 'attack.svg').length > 0);
+  });
+}
+
 const goodStamps = {
   stamps: [
     { id: 'approved', text: 'APPROVED', color: '#22c55e' },

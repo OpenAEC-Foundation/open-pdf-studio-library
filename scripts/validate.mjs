@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
+import { validateSvgPolicy } from './svg-policy.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -95,12 +96,7 @@ export function validateSvg(svg, label) {
   const errors = [];
   if (!svg.includes('<svg')) errors.push(`${label}: geen <svg>-element`);
   if (!/viewBox="0 0 64 64"/.test(svg)) errors.push(`${label}: viewBox moet "0 0 64 64" zijn`);
-  // Externe verwijzingen: href/src-attributen of css url() naar http(s).
-  // Het xmlns-attribuut bevat legitiem "http://www.w3.org/..." en blijft toegestaan.
-  if (/(href|src)\s*=\s*["']https?:/i.test(svg) || /url\(\s*["']?https?:/i.test(svg)) {
-    errors.push(`${label}: externe verwijzing niet toegestaan`);
-  }
-  if (/<script/i.test(svg)) errors.push(`${label}: <script> niet toegestaan`);
+  errors.push(...validateSvgPolicy(svg, label));
   return errors;
 }
 
