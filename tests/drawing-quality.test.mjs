@@ -4,9 +4,11 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   validateDrawingQuality,
+  validateElectricalDrawing,
   validateSteelDrawing,
   validateWallDrawing
 } from '../scripts/drawing-quality.mjs';
+import { generateElectricalSymbols } from '../scripts/electrical-symbols.mjs';
 import { generateSteelSymbols } from '../scripts/steel-symbols.mjs';
 import { generateWallSymbols } from '../scripts/wall-symbols.mjs';
 
@@ -35,8 +37,18 @@ test('wall quality rejects embedded labels and missing line profiles', () => {
   assert.ok(errors.some(error => error.includes('hatchlijn')));
 });
 
-test('the complete generated steel and wall corpus meets the drawing contract', () => {
+test('electrical quality rejects labels, wrong weights and unsafe margins', () => {
+  const bad = '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="32" x2="60" y2="32"/><text x="32" y="32">S</text></svg>';
+  const errors = validateElectricalDrawing(bad, 'electrical.svg');
+  assert.ok(errors.some(error => error.includes('<text>')));
+  assert.ok(errors.some(error => error.includes('hoofdcontour')));
+  assert.ok(errors.some(error => error.includes('detaillijn')));
+  assert.ok(errors.some(error => error.includes('veilige marge')));
+});
+
+test('the complete generated drawing corpus meets the drawing contract', () => {
   const errors = validateDrawingQuality(ROOT, {
+    electrical: generateElectricalSymbols(ROOT),
     steel: generateSteelSymbols(ROOT),
     walls: generateWallSymbols(ROOT)
   });

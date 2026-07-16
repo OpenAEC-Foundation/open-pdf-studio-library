@@ -1,6 +1,7 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateSvgPolicy } from './svg-policy.mjs';
+import { checkElectricalSymbols, generateElectricalSymbols } from './electrical-symbols.mjs';
 import { checkSteelSymbols, generateSteelSymbols } from './steel-symbols.mjs';
 import { checkWallSymbols, generateWallSymbols } from './wall-symbols.mjs';
 
@@ -49,7 +50,20 @@ export function validateWallDrawing(svg, label) {
   return [...new Set(errors)];
 }
 
+export function validateElectricalDrawing(svg, label) {
+  const errors = commonErrors(svg, label);
+  if (!/stroke-width="1\.6"/.test(svg)) errors.push(`${label}: hoofdcontour van 1.6 ontbreekt`);
+  if (!/stroke-width="0\.8"/.test(svg)) errors.push(`${label}: detaillijn van 0.8 ontbreekt`);
+  if (!/stroke-linecap="round"/.test(svg)) errors.push(`${label}: afgeronde lijnuiteinden ontbreken`);
+  for (const match of svg.matchAll(/\b(?:x|y|x1|y1|x2|y2|cx|cy)="(-?[\d.]+)"/g)) {
+    const value = Number(match[1]);
+    if (value < 4 || value > 60) errors.push(`${label}: coordinaat ${value} valt buiten de veilige marge 4–60`);
+  }
+  return [...new Set(errors)];
+}
+
 export function validateDrawingQuality(root, sources = {}) {
+  const electrical = sources.electrical ?? generateElectricalSymbols(root);
   const steel = sources.steel ?? generateSteelSymbols(root);
   const walls = sources.walls ?? generateWallSymbols(root);
   const errors = [];
@@ -60,23 +74,26 @@ export function validateDrawingQuality(root, sources = {}) {
     errors.push(...validateSteelDrawing(svg, file, { elevation, rounded }));
   }
   for (const [file, svg] of walls) errors.push(...validateWallDrawing(svg, file));
+  for (const [file, svg] of electrical) errors.push(...validateElectricalDrawing(svg, file));
   return errors;
 }
 
 const scriptPath = fileURLToPath(import.meta.url);
 if (process.argv[1] && resolve(process.argv[1]) === resolve(scriptPath)) {
   const root = resolve(dirname(scriptPath), '..');
+  const electrical = generateElectricalSymbols(root);
   const steel = generateSteelSymbols(root);
   const walls = generateWallSymbols(root);
   const errors = [
+    ...checkElectricalSymbols(root, electrical),
     ...checkSteelSymbols(root, steel),
     ...checkWallSymbols(root, walls),
-    ...validateDrawingQuality(root, { steel, walls })
+    ...validateDrawingQuality(root, { electrical, steel, walls })
   ];
   if (errors.length) {
     for (const error of errors) console.error(error);
     process.exitCode = 1;
   } else {
-    console.log(`Tekenkwaliteit OK (${steel.size} staal- en ${walls.size} wand-SVG's).`);
+    console.log(`Tekenkwaliteit OK (${steel.size} staal-, ${walls.size} wand- en ${electrical.size} elektra-SVG's).`);
   }
 }
