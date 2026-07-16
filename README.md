@@ -72,7 +72,13 @@ and independent of interface language.
 
 ### Electrical — shared IEC 60617 layer + national conventions
 
-🌍 IEC 60617 (every country) · 🇳🇱 Dutch legend practice · 🇺🇸 IEEE 315 · 🇯🇵 JIS C 0303 · 🇬🇧 BS conventions · 🇦🇺 AS 1102
+🌍 IEC 60617:2026 DB-aligned core (36, every country) · 🇳🇱 Dutch legend practice · 🇺🇸 US architectural plan conventions · 🇯🇵 JIS C 0303 · 🇬🇧 BS conventions · 🇦🇺 AS 1102
+
+All **114 electrical symbols** are generated from a semantic catalogue: 36
+international core symbols plus 78 national overlays. Letter-only distinctions
+have been replaced by geometric qualifiers for contacts, earthing, protection,
+switch ways and motor phases. The SVG geometry is language-independent and
+text-free; names remain available through file names and accessible metadata.
 
 ![Electrical installation symbols (IEC 60617)](docs/media/preview-iec60617-electrical.svg)
 ![Dutch electrical legend symbols](docs/media/preview-nl-electrical.svg)
@@ -142,7 +148,7 @@ reuse neighbouring sets where the language and standards genuinely overlap
 
 **Every country package also includes** the shared layer: ISO 7010 safety
 signs (59), material hatch patterns (12), north arrows, electrical
-installation symbols (IEC 60617, 20) — plus separate **sector packages**:
+installation symbols (IEC 60617-aligned core, 36) — plus separate **sector packages**:
 `electrical` (IEC 60617), `process` (ISO 10628 P&ID, 14) and `mep`
 (HVAC, 11). Parametric drafting components (grid/level/rebar callouts,
 profile sizing) are defined but waiting on the parametric format — see the plan.

@@ -49,14 +49,18 @@ Content files per type (required once `status` is `available`):
 
 ## SVG drawing guidelines
 
-- `viewBox="0 0 64 64"`, stroke-based (`fill="none" stroke="#000" stroke-width="2"`),
-  solid fills only where the symbol's meaning requires it.
+- `viewBox="0 0 64 64"`, stroke-based and solid fills only where the symbol's
+  meaning requires it. Generator-managed electrical symbols use `1.6` for
+  main contours, `0.8` for details and `0.7` for construction lines.
 - Self-contained: no external references (`href`/`url()` to http(s)), no scripts,
   no raster images. The `xmlns` attribute is of course fine.
 - Static SVG only: event attributes, active URLs, `DOCTYPE`, entities,
   animation, embedded HTML and unknown elements or attributes are rejected.
 - One symbol per file; the file name (kebab-case) is the symbol id.
-- Text inside symbols: `text-anchor="middle"`, `fill="#000" stroke="none"`.
+- Reusable steel, wall and electrical geometry is text-free. Put identity and
+  localized names in the file name, collection metadata, `<title>` and `<desc>`.
+  Where visible text is itself the standardized meaning, keep it minimal and
+  specify `font-family`, `text-anchor`, `dominant-baseline`, `fill` and `stroke`.
 
 ## Stamps
 

@@ -5,16 +5,23 @@
     "nl": "Amerikaanse elektrasymbolen"
   },
   "description": {
-    "en": "US electrical floor-plan conventions: duplex receptacles, S/S3/S4 switches, panelboards.",
-    "nl": "Amerikaanse elektra-plattegrondconventies: duplex receptacles, S/S3/S4-schakelaars, panelboards."
+    "en": "US electrical floor-plan conventions: duplex receptacles, geometrically qualified multi-way switches and panelboards. IEEE 315-1975 is retained as a legacy diagram-symbol reference, not presented as a current floor-plan standard.",
+    "nl": "Amerikaanse elektra-plattegrondconventies: duplex receptacles, geometrisch onderscheiden meerwegschakelaars en panelboards. IEEE 315-1975 blijft alleen als historische diagramsymboolreferentie vermeld en wordt niet als actuele plattegrondnorm gepresenteerd."
   },
   "sector": "electrical",
   "types": [
     "symbols"
   ],
   "standard": "IEEE 315",
+  "standardEdition": "1975 (inactive-reserved since 2019)",
+  "references": [
+    {
+      "title": "IEEE/ANSI 315-1975 — Graphic Symbols for Electrical and Electronics Diagrams",
+      "url": "https://standards.ieee.org/ieee/315/515/"
+    }
+  ],
   "scope": "national",
   "status": "available",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "repository"
 }

@@ -5,16 +5,23 @@
     "nl": "Elektra-installatiesymbolen (IEC 60617)"
   },
   "description": {
-    "en": "Plan-view electrical installation symbols following IEC 60617 conventions: outlets, switches, lighting, distribution.",
-    "nl": "Elektrasymbolen voor plattegronden volgens IEC 60617-conventies: wandcontactdozen, schakelaars, verlichting, verdeling."
+    "en": "Self-drawn curated electrical installation core aligned with IEC 60617 concepts: outlets, switches, lighting, distribution, protection, detection and machines. This is not a reproduction of the complete IEC database.",
+    "nl": "Zelf getekende kernset voor elektrische installaties, afgestemd op IEC 60617-concepten: wandcontactdozen, schakelaars, verlichting, verdeling, beveiliging, detectie en machines. Dit is geen reproductie van de volledige IEC-database."
   },
   "sector": "electrical",
   "types": [
     "symbols"
   ],
   "standard": "IEC 60617",
+  "standardEdition": "2026 DB",
+  "references": [
+    {
+      "title": "IEC 60617 Database — Graphical symbols for diagrams",
+      "url": "https://webstore.iec.ch/en/publication/2723"
+    }
+  ],
   "scope": "international",
   "status": "available",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "repository"
 }
