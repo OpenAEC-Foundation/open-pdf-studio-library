@@ -1,0 +1,706 @@
+import scripts/library_common.dl
+
+function add error {string:message} to {a pointer to a list:errors}:
+    execute:
+        append message to errors
+
+function validate allowed members of {a pointer to a JSON value:document} against {a pointer to a list:allowed} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        set index to 0
+        loop while index < document's length:
+            set member to the item at index in (document's members)
+            if (allowed contains member's name) = false:
+                add error ((label + the string form of ": onbekend veld ") + member's name) to errors
+            set index to index + 1
+
+function {string:value} is a hexadecimal color:
+    execute:
+        if value's length != 7 or the character at 0 in value != 35:
+            return false
+        set index to 1
+        loop while index < 7:
+            set character to the character at index in value as a 32 bit integer
+            set digit to character >= 48 and character <= 57
+            set lower to character >= 97 and character <= 102
+            set upper to character >= 65 and character <= 70
+            if digit = false:
+                if lower = false:
+                    if upper = false:
+                        return false
+            set index to index + 1
+        return true
+
+function {string:value} is a semantic version:
+    execute:
+        set dots to 0
+        set digits to 0
+        set index to 0
+        loop while index < value's length:
+            set character to the character at index in value as a 32 bit integer
+            if character = 46:
+                if digits = 0:
+                    return false
+                set dots to dots + 1
+                set digits to 0
+            else if character >= 48 and character <= 57:
+                set digits to digits + 1
+            else:
+                return false
+            set index to index + 1
+        return dots = 2 and digits > 0
+
+function {a pointer to a JSON value:document} has text named {C string:name}:
+    execute:
+        if document is not a JSON object:
+            return false
+        if document lacks JSON member named name:
+            return false
+        return (the JSON member named name in document)'s kind = the JSON text kind
+
+function {a pointer to a JSON value:document} has array named {C string:name}:
+    execute:
+        if document is not a JSON object:
+            return false
+        if document lacks JSON member named name:
+            return false
+        return (the JSON member named name in document)'s kind = the JSON array kind
+
+function {a pointer to a JSON value:document} has object named {C string:name}:
+    execute:
+        if document is not a JSON object:
+            return false
+        if document lacks JSON member named name:
+            return false
+        return (the JSON member named name in document)'s kind = the JSON object kind
+
+function {a pointer to a JSON value:array} contains JSON text {C string:expected}:
+    execute:
+        if array is not a JSON array:
+            return false
+        set index to 0
+        loop while index < array's length:
+            set item to the item at index in (array's items)
+            if item's kind = the JSON text kind:
+                if item's text = expected:
+                    return true
+            set index to index + 1
+        return false
+
+function {string:value} is a kebab identifier:
+    execute:
+        if value's length = 0:
+            return false
+        set index to 0
+        loop while index < value's length:
+            set character to the character at index in value as a 32 bit integer
+            set lowercase to character >= 97 and character <= 122
+            set digit to character >= 48 and character <= 57
+            set valid to lowercase or digit
+            if character = 45:
+                set valid to true
+            if valid = false:
+                return false
+            if character = 45 and (index = 0 or index + 1 = value's length):
+                return false
+            set index to index + 1
+        return true
+
+function {string:value} is a sector name:
+    execute:
+        if value = "aec" or value = "mep":
+            return true
+        if value = "electrical" or value = "process":
+            return true
+        return value = "infra"
+
+function {string:value} is a region name:
+    execute:
+        if value = "europe" or value = "north-america":
+            return true
+        if value = "south-america" or value = "middle-east":
+            return true
+        if value = "africa" or value = "asia":
+            return true
+        return value = "oceania"
+
+function {string:value} is a collection type name:
+    execute:
+        if value = "symbols" or value = "parametric":
+            return true
+        if value = "stamps" or value = "hatches":
+            return true
+        return value = "legends"
+
+function validate localized text {a pointer to a JSON value:value} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        if value is not a JSON object:
+            add error (label + the string form of ": moet een object zijn") to errors
+            @intrinsic("return")
+        if (value has text named "en") = false:
+            add error (label + the string form of ": Engelse tekst ontbreekt") to errors
+        set index to 0
+        loop while index < value's length:
+            set member to the item at index in (value's members)
+            if member's value's kind != the JSON text kind:
+                add error (label + the string form of ": vertalingen moeten tekst zijn") to errors
+            set index to index + 1
+
+function validate unique text array {a pointer to a JSON value:value} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        if value is not a JSON array:
+            add error (label + the string form of ": moet een niet-lege array zijn") to errors
+            @intrinsic("return")
+        if value's length = 0:
+            add error (label + the string form of ": moet een niet-lege array zijn") to errors
+            @intrinsic("return")
+        set index to 0
+        loop while index < value's length:
+            set item to the item at index in (value's items)
+            if item's kind != the JSON text kind:
+                add error (label + the string form of ": moet alleen tekst bevatten") to errors
+            else:
+                set earlier to 0
+                loop while earlier < index:
+                    set previous to the item at earlier in (value's items)
+                    if previous's kind = the JSON text kind:
+                        if previous's text = item's text:
+                            add error (label + the string form of ": bevat dubbele waarde " + item's text) to errors
+                    set earlier to earlier + 1
+            set index to index + 1
+
+function validate collection {a pointer to a JSON value:data} named {string:name} into {a pointer to a list:errors}:
+    execute:
+        if data is not a JSON object:
+            add error (name + the string form of ": collection.json moet een object zijn") to errors
+            @intrinsic("return")
+        set allowed to an empty list of a string
+        set allowed_names to ["id", "name", "description", "sector", "types", "standard", "scope", "status", "version", "license"]
+        set allowed_index to 0
+        loop while allowed_index < 10:
+            append the string form of the item at allowed_index in allowed_names to allowed
+            set allowed_index to allowed_index + 1
+        validate allowed members of data against allowed labeled name into errors
+        free allowed
+        set required to ["id", "name", "sector", "types", "scope", "status", "version", "license"]
+        set index to 0
+        loop while index < 8:
+            set field to the item at index in required
+            if data lacks JSON member named field:
+                add error ((name + the string form of ": veld ontbreekt: ") + the string form of field) to errors
+            set index to index + 1
+        if data has text named "id":
+            set identifier to the JSON text named "id" in data
+            if identifier != name:
+                add error (name + the string form of ": id komt niet overeen met de mapnaam") to errors
+            set invalid_identifier to (identifier is a kebab identifier) = false
+            if identifier's length < 2 or identifier's length > 64:
+                set invalid_identifier to true
+            if invalid_identifier:
+                add error (name + the string form of ": ongeldige id") to errors
+        else:
+            add error (name + the string form of ": id moet tekst zijn") to errors
+        if data has object named "name":
+            validate localized text (the JSON member named "name" in data) labeled (name + the string form of ".name") into errors
+        else:
+            add error (name + the string form of ": name moet een object zijn") to errors
+        if data has JSON member named "description":
+            set description to the JSON member named "description" in data
+            if description is not a JSON object:
+                add error (name + the string form of ": description moet een object zijn") to errors
+            else:
+                set description_index to 0
+                loop while description_index < description's length:
+                    set description_member to the item at description_index in (description's members)
+                    if description_member's value's kind != the JSON text kind:
+                        add error (name + the string form of ": description moet alleen tekst bevatten") to errors
+                    set description_index to description_index + 1
+        if data has text named "sector":
+            if (the JSON text named "sector" in data is a sector name) = false:
+                add error (name + the string form of ": onbekende sector") to errors
+        else:
+            add error (name + the string form of ": sector moet tekst zijn") to errors
+        if data has array named "types":
+            set types to the JSON member named "types" in data
+            validate unique text array types labeled (name + the string form of ".types") into errors
+            set index to 0
+            loop while index < types' length:
+                set item to the item at index in (types' items)
+                if item's kind = the JSON text kind:
+                    if (item's text is a collection type name) = false:
+                        add error (name + the string form of ": onbekend collectietype") to errors
+                set index to index + 1
+        else:
+            add error (name + the string form of ": types moet een array zijn") to errors
+        if data has text named "scope":
+            set scope to the JSON text named "scope" in data
+            set valid_scope to scope = "international" or scope = "regional"
+            if scope = "national":
+                set valid_scope to true
+            if valid_scope = false:
+                add error (name + the string form of ": ongeldige scope") to errors
+        else:
+            add error (name + the string form of ": scope moet tekst zijn") to errors
+        if data has text named "status":
+            set status to the JSON text named "status" in data
+            if status != "available" and status != "planned":
+                add error (name + the string form of ": ongeldige status") to errors
+        else:
+            add error (name + the string form of ": status moet tekst zijn") to errors
+        set valid_version to data has text named "version"
+        if valid_version:
+            set valid_version to the JSON text named "version" in data is a semantic version
+        if valid_version = false:
+            add error (name + the string form of ": version moet x.y.z zijn") to errors
+        if (data has text named "license") = false:
+            add error (name + the string form of ": license moet tekst zijn") to errors
+        if data has JSON member named "standard":
+            if (data has text named "standard") = false:
+                add error (name + the string form of ": standard moet tekst zijn") to errors
+
+function validate SVG {string:source} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        set lowered to the lowercase form of source
+        if (lowered contains "<svg") = false:
+            add error (label + the string form of ": geen <svg>-element") to errors
+        if (source contains "viewBox=\"0 0 64 64\"") = false:
+            add error (label + the string form of ": viewBox moet 0 0 64 64 zijn") to errors
+        if lowered contains "<script":
+            add error (label + the string form of ": script niet toegestaan") to errors
+        set external_reference to lowered contains "href=\"http:" or lowered contains "href=\"https:"
+        if lowered contains "href='http:" or lowered contains "href='https:":
+            set external_reference to true
+        if external_reference:
+            add error (label + the string form of ": externe verwijzing niet toegestaan") to errors
+        set external_source to lowered contains "src=\"http:" or lowered contains "src=\"https:"
+        if lowered contains "url(http:" or lowered contains "url(https:":
+            set external_source to true
+        if external_source:
+            add error (label + the string form of ": externe verwijzing niet toegestaan") to errors
+
+function validate stamps {a pointer to a JSON value:data} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        if (data has array named "stamps") = false:
+            add error (label + the string form of ": stamps moet een array zijn") to errors
+            @intrinsic("return")
+        set stamp_entries to the JSON member named "stamps" in data
+        if stamp_entries' length = 0:
+            add error (label + the string form of ": stamps moet niet leeg zijn") to errors
+        set seen to an empty list of a string
+        set index to 0
+        loop while index < stamp_entries' length:
+            set stamp to the item at index in (stamp_entries' items)
+            set valid_stamp to stamp is a JSON object
+            if valid_stamp and (stamp has text named "id") = false:
+                set valid_stamp to false
+            if valid_stamp and (stamp has text named "text") = false:
+                set valid_stamp to false
+            if valid_stamp and (stamp has text named "color") = false:
+                set valid_stamp to false
+            if valid_stamp = false:
+                add error (label + the string form of ": ongeldige stempel") to errors
+            else:
+                set identifier to the JSON text named "id" in stamp
+                if (identifier is a kebab identifier) = false or seen contains identifier:
+                    add error (label + the string form of ": ongeldige of dubbele stempel-id") to errors
+                append identifier to seen
+                set text to the JSON text named "text" in stamp
+                if text trimmed is empty:
+                    add error (label + the string form of ": stempeltekst ontbreekt") to errors
+                set color to the JSON text named "color" in stamp
+                if (color is a hexadecimal color) = false:
+                    add error (label + the string form of ": kleur moet #rrggbb zijn") to errors
+            set index to index + 1
+        free seen
+
+function expected column count for {string:shape}:
+    execute:
+        if shape = "box" or shape = "angle":
+            return 4
+        if shape = "pipe":
+            return 3
+        return 6
+
+function column {integer:index} of {a pointer to a JSON value:columns} equals {C string:expected}:
+    execute:
+        if index >= columns' length:
+            return false
+        set value to the item at index in (columns' items)
+        if value's kind != the JSON text kind:
+            return false
+        return value's text = expected
+
+function columns of {a pointer to a JSON value:columns} match {string:shape}:
+    execute:
+        set count to expected column count for shape
+        if columns' length != count:
+            return false
+        if (column 0 of columns equals "designation") = false:
+            return false
+        if shape = "box" or shape = "angle":
+            if (column 1 of columns equals "h") = false:
+                return false
+            if (column 2 of columns equals "b") = false:
+                return false
+            return column 3 of columns equals "t"
+        if shape = "pipe":
+            return (column 1 of columns equals "d") and (column 2 of columns equals "t")
+        if (column 1 of columns equals "h") = false:
+            return false
+        if (column 2 of columns equals "b") = false:
+            return false
+        if (column 3 of columns equals "tw") = false:
+            return false
+        if (column 4 of columns equals "tf") = false:
+            return false
+        return column 5 of columns equals "r"
+
+function validate hatches {a pointer to a JSON value:data} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        if (data has array named "hatches") = false:
+            add error (label + the string form of ": hatches moet een array zijn") to errors
+            @intrinsic("return")
+        set entries to the JSON member named "hatches" in data
+        if entries' length = 0:
+            add error (label + the string form of ": hatches moet niet leeg zijn") to errors
+        set seen to an empty list of a string
+        set index to 0
+        loop while index < entries' length:
+            set hatch to the item at index in (entries' items)
+            set valid to hatch is a JSON object
+            if valid and (hatch has text named "id") = false:
+                set valid to false
+            if valid and (hatch has object named "name") = false:
+                set valid to false
+            if valid and (hatch has array named "lineFamilies") = false:
+                set valid to false
+            if valid = false:
+                add error (label + the string form of ": ongeldige arcering") to errors
+            else:
+                set identifier to the JSON text named "id" in hatch
+                if (identifier is a kebab identifier) = false or seen contains identifier:
+                    add error (label + the string form of ": ongeldige of dubbele arcering-id") to errors
+                append identifier to seen
+                validate localized text (the JSON member named "name" in hatch) labeled label into errors
+                set families to the JSON member named "lineFamilies" in hatch
+                set family_index to 0
+                loop while family_index < families' length:
+                    set family to the item at family_index in (families' items)
+                    set numeric to family is a JSON object
+                    set fields to ["angle", "originX", "originY", "deltaX", "deltaY"]
+                    set field_index to 0
+                    loop while numeric and field_index < 5:
+                        set field to the item at field_index in fields
+                        if family lacks JSON member named field:
+                            set numeric to false
+                        else:
+                            if (the JSON member named field in family)'s kind != the JSON number kind:
+                                set numeric to false
+                        set field_index to field_index + 1
+                    if numeric = false:
+                        add error (label + the string form of ": lijnfamilie bevat geen geldige getallen") to errors
+                    if family is a JSON object:
+                        if family has JSON member named "dashPattern":
+                            set dash to the JSON member named "dashPattern" in family
+                            if dash's kind != the JSON array kind:
+                                add error (label + the string form of ": dashPattern moet een array zijn") to errors
+                            else:
+                                set dash_index to 0
+                                loop while dash_index < dash's length:
+                                    if (the item at dash_index in (dash's items))'s kind != the JSON number kind:
+                                        add error (label + the string form of ": dashPattern moet alleen getallen bevatten") to errors
+                                    set dash_index to dash_index + 1
+                    set family_index to family_index + 1
+            set index to index + 1
+        free seen
+
+function validate parametric catalog {a pointer to a JSON value:data} labeled {string:label} into {a pointer to a list:errors}:
+    execute:
+        set valid_catalog to data is a JSON object
+        if valid_catalog:
+            if (data has text named "format") = false:
+                set valid_catalog to false
+        if valid_catalog:
+            if the JSON text named "format" in data != "steel-sections":
+                set valid_catalog to false
+        if valid_catalog = false:
+            add error (label + the string form of ": format moet steel-sections zijn") to errors
+            @intrinsic("return")
+        set valid_format_version to (data lacks JSON member named "formatVersion") = false
+        if valid_format_version:
+            if (the JSON member named "formatVersion" in data)'s kind != the JSON number kind:
+                set valid_format_version to false
+        if valid_format_version = false:
+            add error (label + the string form of ": formatVersion ontbreekt") to errors
+        else:
+            if (the JSON member named "formatVersion" in data)'s number != 1.0:
+                add error (label + the string form of ": formatVersion moet 1 zijn") to errors
+        if (data has text named "units") = false:
+            add error (label + the string form of ": units ontbreekt") to errors
+        else:
+            if the JSON text named "units" in data != "mm":
+                add error (label + the string form of ": units moet mm zijn") to errors
+        if (data has object named "label") = false:
+            add error (label + the string form of ": label ontbreekt") to errors
+        else:
+            validate localized text (the JSON member named "label" in data) labeled label into errors
+        if (data has array named "families") = false:
+            add error (label + the string form of ": families moet een array zijn") to errors
+            @intrinsic("return")
+        set families to the JSON member named "families" in data
+        set family_ids to an empty list of a string
+        set index to 0
+        loop while index < families' length:
+            set family to the item at index in (families' items)
+            set valid_family to family is a JSON object
+            if valid_family and (family has text named "id") = false:
+                set valid_family to false
+            if valid_family and (family has text named "shape") = false:
+                set valid_family to false
+            if valid_family and (family has array named "columns") = false:
+                set valid_family to false
+            if valid_family and (family has array named "sizes") = false:
+                set valid_family to false
+            if valid_family and (family has text named "defaultSize") = false:
+                set valid_family to false
+            if valid_family = false:
+                add error (label + the string form of ": ongeldige familie") to errors
+            else:
+                set identifier to the JSON text named "id" in family
+                if family_ids contains identifier:
+                    add error (label + the string form of ": dubbele familie-id") to errors
+                append identifier to family_ids
+                set shape to the JSON text named "shape" in family
+                set columns to the JSON member named "columns" in family
+                set required_count to expected column count for shape
+                if (columns of columns match shape) = false:
+                    add error (label + the string form of ": kolommen passen niet bij vorm") to errors
+                set sizes to the JSON member named "sizes" in family
+                set default_size to the JSON text named "defaultSize" in family
+                set found_default to false
+                set designations to an empty list of a string
+                set row_index to 0
+                loop while row_index < sizes' length:
+                    set row to the item at row_index in (sizes' items)
+                    set valid_row to row is a JSON array
+                    if valid_row:
+                        if row's length != required_count:
+                            set valid_row to false
+                    if valid_row = false:
+                        add error (label + the string form of ": ongeldige maatrij") to errors
+                    else:
+                        set designation to the item at 0 in (row's items)
+                        if designation's kind = the JSON text kind:
+                            if designations contains designation's text:
+                                add error (label + the string form of ": dubbele designation") to errors
+                            append designation's text to designations
+                            if designation's text = default_size:
+                                set found_default to true
+                        set number_index to 1
+                        loop while number_index < row's length:
+                            set number to the item at number_index in (row's items)
+                            set valid_number to number's kind = the JSON number kind
+                            if valid_number:
+                                if number's number <= 0.0:
+                                    set valid_number to false
+                            if valid_number = false:
+                                add error (label + the string form of ": maten moeten positieve getallen zijn") to errors
+                            set number_index to number_index + 1
+                        if row's length >= 4:
+                            set first to (the item at 1 in (row's items))'s number
+                            set second to (the item at 2 in (row's items))'s number
+                            set thickness to (the item at 3 in (row's items))'s number
+                            if shape = "pipe" and thickness * 2.0 >= first:
+                                add error (label + the string form of ": ongeldige wanddikte") to errors
+                            if (shape = "box" or shape = "angle") and thickness * 2.0 >= the minimum of first and second:
+                                add error (label + the string form of ": ongeldige wanddikte") to errors
+                            set flanged_shape to shape = "i" or shape = "u"
+                            if shape = "tee":
+                                set flanged_shape to true
+                            if flanged_shape and thickness >= second:
+                                add error (label + the string form of ": tw moet kleiner zijn dan b") to errors
+                            if flanged_shape and row's length >= 5:
+                                set flange to (the item at 4 in (row's items))'s number
+                                if flange * 2.0 >= first:
+                                    add error (label + the string form of ": 2×tf moet kleiner zijn dan h") to errors
+                    set row_index to row_index + 1
+                if found_default = false:
+                    add error (label + the string form of ": defaultSize ontbreekt in sizes") to errors
+                free designations
+            set index to index + 1
+        free family_ids
+
+set root to the repository root
+set errors to an empty list of a string
+set collection_ids to an empty list of a string
+set collection_root to path root joined with "collections"
+set collection_names to sorted entry names in collection_root
+set index to 0
+loop while index < the length of collection_names:
+    set directory_name to the item at index in collection_names
+    set directory to path collection_root joined with directory_name
+    set manifest_path to path directory joined with "collection.json"
+    if manifest_path is a regular file:
+        set parsed to the JSON result read from manifest_path
+        if parsed failed:
+            add error (directory_name + the string form of ": ongeldige JSON") to errors
+        else:
+            set collection to the value of parsed
+            validate collection collection named directory_name into errors
+            if collection has text named "id":
+                append the JSON text named "id" in collection to collection_ids
+            set available_collection to collection has text named "status"
+            if available_collection:
+                if the JSON text named "status" in collection != "available":
+                    set available_collection to false
+            if available_collection:
+                if (collection has array named "types") = false:
+                    set available_collection to false
+            if available_collection:
+                set types to the JSON member named "types" in collection
+                set type_index to 0
+                loop while type_index < types' length:
+                    set type_node to the item at type_index in (types' items)
+                    if type_node's kind = the JSON text kind:
+                        set type_name to type_node's text
+                        set required_file to the string form of ""
+                        if type_name = "parametric":
+                            set required_file to the string form of "parametric.json"
+                        else if type_name = "stamps":
+                            set required_file to the string form of "stamps.json"
+                        else if type_name = "hatches":
+                            set required_file to the string form of "hatches.json"
+                        else if type_name = "legends":
+                            set required_file to the string form of "legends.json"
+                        if required_file is not empty and (((path directory joined with required_file) is a regular file) = false):
+                            add error ((directory_name + the string form of ": ") + required_file + the string form of " ontbreekt") to errors
+                        if type_name = "symbols":
+                            set symbols_path to path directory joined with "symbols"
+                            if symbols_path names a directory = false:
+                                add error (directory_name + the string form of ": symbols map ontbreekt") to errors
+                            else:
+                                set symbols to sorted entry names in symbols_path
+                                set svg_count to 0
+                                set svg_index to 0
+                                loop while svg_index < the length of symbols:
+                                    set filename to the item at svg_index in symbols
+                                    if filename ends with ".svg":
+                                        set svg_count to svg_count + 1
+                                        read the file at (path symbols_path joined with filename)
+                                        if it failed:
+                                            add error (directory_name + the string form of ": SVG kon niet worden gelezen") to errors
+                                        else:
+                                            validate SVG (the contents of it) labeled (((directory_name + the string form of "/symbols/") + filename)) into errors
+                                    set svg_index to svg_index + 1
+                                if svg_count = 0:
+                                    add error (directory_name + the string form of ": geen SVG-symbolen") to errors
+                                free symbols
+                    set type_index to type_index + 1
+                if types contains JSON text "stamps":
+                    set stamp_path to path directory joined with "stamps.json"
+                    if stamp_path is a regular file:
+                        validate stamps (the JSON read from stamp_path) labeled (directory_name + the string form of "/stamps.json") into errors
+                if types contains JSON text "parametric":
+                    set parametric_path to path directory joined with "parametric.json"
+                    if parametric_path is a regular file:
+                        validate parametric catalog (the JSON read from parametric_path) labeled (directory_name + the string form of "/parametric.json") into errors
+                if types contains JSON text "hatches":
+                    set hatch_path to path directory joined with "hatches.json"
+                    if hatch_path is a regular file:
+                        validate hatches (the JSON read from hatch_path) labeled (directory_name + the string form of "/hatches.json") into errors
+    else:
+        add error (directory_name + the string form of ": collection.json ontbreekt") to errors
+    set index to index + 1
+
+set country_root to path root joined with "countries"
+set country_names to sorted entry names in country_root
+set index to 0
+loop while index < the length of country_names:
+    set filename to the item at index in country_names
+    if filename ends with ".json":
+        set country to the JSON read from (path country_root joined with filename)
+        set valid_country to country is a JSON object
+        if valid_country:
+            set country_allowed to an empty list of a string
+            set country_allowed_names to ["id", "name", "flag", "region", "wave", "sectors"]
+            set country_allowed_index to 0
+            loop while country_allowed_index < 6:
+                append the string form of the item at country_allowed_index in country_allowed_names to country_allowed
+                set country_allowed_index to country_allowed_index + 1
+            validate allowed members of country against country_allowed labeled filename into errors
+            free country_allowed
+        if valid_country and (country has text named "id") = false:
+            set valid_country to false
+        if valid_country and (country has object named "name") = false:
+            set valid_country to false
+        if valid_country and (country has text named "flag") = false:
+            set valid_country to false
+        if valid_country and (country has text named "region") = false:
+            set valid_country to false
+        if valid_country and (country has object named "sectors") = false:
+            set valid_country to false
+        if valid_country = false:
+            add error (filename + the string form of ": ongeldig landenbestand") to errors
+        else:
+            set identifier to the JSON text named "id" in country
+            if filename != identifier + the string form of ".json":
+                add error (filename + the string form of ": id komt niet overeen met bestandsnaam") to errors
+            if identifier's length != 2 or (the JSON text named "region" in country is a region name) = false:
+                add error (filename + the string form of ": ongeldige id of regio") to errors
+            set identifier_index to 0
+            loop while identifier_index < identifier's length:
+                set identifier_character to the character at identifier_index in identifier as a 32 bit integer
+                if identifier_character < 97 or identifier_character > 122:
+                    add error (filename + the string form of ": landen-id moet uit kleine letters bestaan") to errors
+                set identifier_index to identifier_index + 1
+            if (the JSON text named "flag" in country)'s length = 0:
+                add error (filename + the string form of ": vlag ontbreekt") to errors
+            set valid_wave to (country lacks JSON member named "wave") = false
+            if valid_wave:
+                if (the JSON member named "wave" in country)'s kind != the JSON number kind:
+                    set valid_wave to false
+            if valid_wave = false:
+                add error (filename + the string form of ": wave ontbreekt") to errors
+            else:
+                set wave to (the JSON member named "wave" in country)'s number
+                set invalid_wave to wave != the floor of wave
+                if wave < 1.0 or wave > 9.0:
+                    set invalid_wave to true
+                if invalid_wave:
+                    add error (filename + the string form of ": wave moet een geheel getal van 1 tot 9 zijn") to errors
+            validate localized text (the JSON member named "name" in country) labeled filename into errors
+            set sectors to the JSON member named "sectors" in country
+            if sectors' length = 0:
+                add error (filename + the string form of ": sectors moet niet leeg zijn") to errors
+            set sector_index to 0
+            loop while sector_index < sectors' length:
+                set sector to the item at sector_index in (sectors' members)
+                set valid_sector to sector's name is a sector name
+                if valid_sector:
+                    if (sector's value has array named "collections") = false:
+                        set valid_sector to false
+                if valid_sector = false:
+                    add error (filename + the string form of ": ongeldige sector") to errors
+                else:
+                    if sector's value's length != 1:
+                        add error (filename + the string form of ": sector bevat onbekende velden") to errors
+                    set references to the JSON member named "collections" in sector's value
+                    validate unique text array references labeled filename into errors
+                    set reference_index to 0
+                    loop while reference_index < references' length:
+                        set reference to the item at reference_index in (references' items)
+                        if reference's kind = the JSON text kind:
+                            if (collection_ids contains reference's text) = false:
+                                add error ((filename + the string form of ": onbekende collectie ") + reference's text) to errors
+                        set reference_index to reference_index + 1
+                set sector_index to sector_index + 1
+    set index to index + 1
+
+if errors is empty:
+    print "Validatie OK" as a line
+else:
+    set index to 0
+    loop while index < the length of errors:
+        write ((the string form of "FOUT: " + the item at index in errors) + the string form of "\n") to standard error
+        set index to index + 1
+    write ((the string form of "\n" + the string form of the length of errors) + the string form of " fout(en) gevonden.\n") to standard error
+    exit the program with status 1

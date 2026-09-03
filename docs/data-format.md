@@ -102,7 +102,7 @@ renders the bordered stamp shape itself.
 `parametric.json` in a collection with type `parametric`. The first (and so far
 only) catalog format is `steel-sections`, validated by
 `schema/parametric-steel.schema.json` plus row-level checks in
-`scripts/validate.mjs`:
+`scripts/validate.dl`:
 
 ```json
 {

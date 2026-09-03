@@ -1,69 +1,40 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildIndex } from '../scripts/build-index.mjs';
+import { cpSync, mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
 
-const collections = [
-  {
-    id: 'zz-set',
-    name: { en: 'ZZ set' },
-    sector: 'aec',
-    types: ['symbols'],
-    scope: 'national',
-    status: 'planned',
-    version: '0.1.0',
-    license: 'repository'
-  },
-  {
-    id: 'aa-set',
-    name: { en: 'AA set' },
-    sector: 'aec',
-    types: ['symbols'],
-    standard: 'ISO 7010',
-    scope: 'international',
-    status: 'available',
-    version: '1.0.0',
-    license: 'repository',
-    symbolCount: 4
-  }
-];
+function fixture() {
+  const root = mkdtempSync(join(tmpdir(), 'opsl-index-'));
+  mkdirSync(join(root, 'build'));
+  mkdirSync(join(root, 'collections', 'zz-set'), { recursive: true });
+  mkdirSync(join(root, 'collections', 'aa-set', 'symbols'), { recursive: true });
+  mkdirSync(join(root, 'countries'));
+  cpSync(new URL('../build/build-index', import.meta.url), join(root, 'build', 'build-index'));
+  const base = {
+    name: { en: 'Set' }, sector: 'aec', types: ['symbols'], scope: 'international',
+    status: 'available', version: '1.0.0', license: 'repository'
+  };
+  writeFileSync(join(root, 'collections', 'aa-set', 'collection.json'), JSON.stringify({ id: 'aa-set', ...base, standard: 'ISO 7010' }));
+  writeFileSync(join(root, 'collections', 'aa-set', 'symbols', 'b.svg'), '<svg/>');
+  writeFileSync(join(root, 'collections', 'aa-set', 'symbols', 'a.svg'), '<svg/>');
+  writeFileSync(join(root, 'collections', 'zz-set', 'collection.json'), JSON.stringify({ id: 'zz-set', ...base, status: 'planned' }));
+  writeFileSync(join(root, 'countries', 'us.json'), JSON.stringify({ id: 'us', name: { en: 'US' }, flag: 'US', region: 'north-america', wave: 1, sectors: {} }));
+  writeFileSync(join(root, 'countries', 'nl.json'), JSON.stringify({ id: 'nl', name: { en: 'NL' }, flag: 'NL', region: 'europe', wave: 1, sectors: {} }));
+  return root;
+}
 
-const countries = [
-  {
-    id: 'us',
-    name: { en: 'United States' },
-    flag: '🇺🇸',
-    region: 'north-america',
-    wave: 1,
-    sectors: { aec: { collections: ['aa-set'] } }
-  },
-  {
-    id: 'nl',
-    name: { en: 'Netherlands', nl: 'Nederland' },
-    flag: '🇳🇱',
-    region: 'europe',
-    wave: 1,
-    sectors: { aec: { collections: ['aa-set', 'zz-set'] } }
-  }
-];
-
-test('index groups countries by region, europe first', () => {
-  const idx = buildIndex(countries, collections);
-  assert.equal(idx.formatVersion, 1);
-  assert.deepEqual(idx.regions.map(r => r.id), ['europe', 'north-america']);
-  assert.equal(idx.regions[0].countries[0].id, 'nl');
-});
-
-test('collections map is sorted and carries path + metadata', () => {
-  const idx = buildIndex(countries, collections);
-  assert.deepEqual(Object.keys(idx.collections), ['aa-set', 'zz-set']);
-  assert.equal(idx.collections['aa-set'].path, 'collections/aa-set/');
-  assert.equal(idx.collections['aa-set'].standard, 'ISO 7010');
-  assert.equal(idx.collections['aa-set'].symbolCount, 4);
-  assert.equal(idx.collections['zz-set'].standard, undefined);
-});
-
-test('output is deterministic for same input', () => {
-  const a = JSON.stringify(buildIndex(countries, collections));
-  const b = JSON.stringify(buildIndex([...countries].reverse(), [...collections].reverse()));
-  assert.equal(a, b);
+test('Dynlex index builder is sorted, deterministic, and checkable', () => {
+  const root = fixture();
+  execFileSync(join(root, 'build', 'build-index'));
+  const first = readFileSync(join(root, 'index.json'), 'utf8');
+  const index = JSON.parse(first);
+  assert.deepEqual(index.regions.map(region => region.id), ['europe', 'north-america']);
+  assert.deepEqual(Object.keys(index.collections), ['aa-set', 'zz-set']);
+  assert.deepEqual(index.collections['aa-set'].files, ['symbols/a.svg', 'symbols/b.svg']);
+  assert.equal(index.collections['aa-set'].symbolCount, 2);
+  execFileSync(join(root, 'build', 'build-index'), ['--check']);
+  execFileSync(join(root, 'build', 'build-index'));
+  assert.equal(readFileSync(join(root, 'index.json'), 'utf8'), first);
 });

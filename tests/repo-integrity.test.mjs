@@ -1,20 +1,14 @@
 import test from 'node:test';
-import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { runAll } from '../scripts/validate.mjs';
-import { buildIndex, loadData } from '../scripts/build-index.mjs';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const validate = fileURLToPath(new URL('../build/validate', import.meta.url));
+const buildIndex = fileURLToPath(new URL('../build/build-index', import.meta.url));
 
-test('repo content validates clean', () => {
-  assert.deepEqual(runAll(ROOT), []);
+test('repository content passes the Dynlex validator', () => {
+  execFileSync(validate);
 });
 
-test('index.json exists and matches generated output', () => {
-  assert.ok(existsSync(join(ROOT, 'index.json')), 'index.json ontbreekt — draai build-index');
-  const { countries, collections } = loadData(ROOT);
-  const expected = JSON.stringify(buildIndex(countries, collections), null, 2) + '\n';
-  assert.equal(readFileSync(join(ROOT, 'index.json'), 'utf8'), expected);
+test('index.json matches the Dynlex generator', () => {
+  execFileSync(buildIndex, ['--check']);
 });
