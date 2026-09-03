@@ -121,7 +121,7 @@ on-demand pipeline in de app is gebouwd.
 
 ## Testen & kwaliteit
 
-- `scripts/validate.mjs`: JSON Schema-validatie van alle collecties,
+- `scripts/validate.dl`: schema-validatie van alle collecties,
   land-manifesten en de index; controle dat manifesten alleen naar bestaande
   collecties verwijzen; SVG-sanity-checks (parsebaar, viewBox, geen externe
   verwijzingen).

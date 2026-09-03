@@ -9,12 +9,11 @@
     "url": "git+https://github.com/OpenAEC-Foundation/open-pdf-studio-library.git"
   },
   "scripts": {
-    "test": "node --test",
-    "validate": "node scripts/validate.mjs",
-    "build-index": "node scripts/build-index.mjs",
-    "check-index": "node scripts/build-index.mjs --check"
-  },
-  "devDependencies": {
-    "ajv": "^8.20.0"
+    "build-tools": "mkdir -p build && ${DYNLEX:-dynlex} scripts/validate.dl -o build/validate && ${DYNLEX:-dynlex} scripts/build_index.dl -o build/build-index && ${DYNLEX:-dynlex} scripts/build_readme_media.dl -o build/build-readme-media",
+    "test": "npm run build-tools && node --test",
+    "validate": "build/validate",
+    "build-index": "build/build-index",
+    "check-index": "build/build-index --check",
+    "build-readme-media": "build/build-readme-media"
   }
 }

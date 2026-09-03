@@ -1,0 +1,211 @@
+import scripts/library_common.dl
+import lib/unicode.dl
+
+function the display character count of {string:text}:
+    execute:
+        set character_count to 0
+        set offset to 0
+        loop while offset < text's length:
+            decode the UTF-8 code point in text at byte offset
+            if it failed:
+                fail with "Invalid UTF-8 in stamp text"
+            set offset to the next byte offset of it
+            set character_count to character_count + 1
+        return character_count
+
+function SVG source at {string:path} positioned at x {floating-point number:x}, y {floating-point number:y}, width {integer:width}, height {integer:height}:
+    execute:
+        read the file at path
+        if it failed:
+            fail with the error message of it
+        set svg_text to the contents of it trimmed
+        set prefix to ((((the string form of "<svg x=\"" + the string form of x) + the string form of "\" y=\"") + the string form of y) + the string form of "\" width=\"")
+        set prefix to prefix + the string form of width
+        set prefix to prefix + the string form of "\" height=\""
+        set prefix to prefix + the string form of height
+        set prefix to prefix + the string form of "\" "
+        return svg_text with "<svg " replaced by prefix
+
+function symbol sheet for {string:collection} written to {string:destination}:
+    execute:
+        set symbol_directory to path collection joined with "symbols"
+        set files to sorted entry names in symbol_directory
+        set symbols to an empty list of a string
+        set index to 0
+        loop while index < the length of files:
+            set filename to the item at index in files
+            if filename ends with ".svg":
+                append filename to symbols
+            set index to index + 1
+        set columns to 8
+        set cell to 84
+        set symbol_size to 52
+        set padding to 12
+        set rows to ((the length of symbols + columns) - 1) / columns
+        set width to columns * cell + padding * 2
+        set height to rows * (cell + 14) + padding * 2
+        set body to ((((((the string form of "<rect x=\"0\" y=\"0\" width=\"" + the string form of width) + the string form of "\" height=\"") + the string form of height) + the string form of "\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d6d3cd\"/>")))
+        set index to 0
+        loop while index < the length of symbols:
+            set column to the remainder of index divided by columns
+            set row to index / columns
+            set x to (padding + column * cell) + ((cell - symbol_size) / 2)
+            set y to (padding + row * (cell + 14)) + 6
+            set filename to the item at index in symbols
+            set body to body + SVG source at (path symbol_directory joined with filename) positioned at x (x as a floating-point number), y (y as a floating-point number), width symbol_size, height symbol_size
+            set identifier to the substring of filename from 0 spanning (filename's length - 4) bytes
+            set text_x to (padding + column * cell) + cell / 2
+            set body to ((((((body + the string form of "<text x=\"") + the string form of text_x) + the string form of "\" y=\"") + the string form of (y + symbol_size + 13)) + the string form of "\" font-size=\"7.5\" font-family=\"system-ui, -apple-system, Segoe UI, sans-serif\" text-anchor=\"middle\" fill=\"#78716c\">") + identifier) + the string form of "</text>"
+            set index to index + 1
+        set output to (((((the string form of "<svg viewBox=\"0 0 " + the string form of width) + the string form of " ") + the string form of height) + the string form of "\" width=\"") + the string form of width) + the string form of "\" xmlns=\"http://www.w3.org/2000/svg\">"
+        set output to ((output + body) + the string form of "</svg>\n")
+        write output to the file at destination
+        if it failed:
+            fail with the error message of it
+        print (((the string form of destination + the string form of ": ") + the string form of the length of symbols) + the string form of " symbolen") as a line
+        free files
+        free symbols
+
+function banner written under {string:root} to {string:destination}:
+    execute:
+        set collections to ["iso7010-safety", "nen1414-fire", "nl-wall-types", "nfpa170-fire", "din14034-fire", "uk-fire-symbols", "en-steel-profiles", "aisc-steel-shapes", "jis-steel-shapes", "iec60617-electrical", "iso10628-pid", "common-hvac-symbols", "common-north-arrows"]
+        set symbols to ["escape-exit-right", "brandslanghaspel", "metselwerk", "smoke-detector", "ueberflurhydrant", "hose-reel", "heb", "w-shape", "h-shape-wide", "switch-two-way", "control-valve", "supply-diffuser", "north-arrow-classic"]
+        set cell to 62
+        set symbol_size to 50
+        set padding to 10
+        set width to 13 * cell + padding * 2
+        set height to symbol_size + padding * 2
+        set body to (((((the string form of "<rect x=\"0\" y=\"0\" width=\"" + the string form of width) + the string form of "\" height=\"") + the string form of height) + the string form of "\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d6d3cd\"/>"))
+        set index to 0
+        loop while index < 13:
+            set x to (padding + index * cell) + ((cell - symbol_size) / 2)
+            set collection_path to path (path root joined with "collections") joined with the item at index in collections
+            set symbol_path to path (path collection_path joined with "symbols") joined with ((the string form of the item at index in symbols) + the string form of ".svg")
+            set body to body + SVG source at symbol_path positioned at x (x as a floating-point number), y (padding as a floating-point number), width symbol_size, height symbol_size
+            set index to index + 1
+        set output to (((((the string form of "<svg viewBox=\"0 0 " + the string form of width) + the string form of " ") + the string form of height) + the string form of "\" width=\"") + the string form of width) + the string form of "\" xmlns=\"http://www.w3.org/2000/svg\">"
+        write ((output + body) + the string form of "</svg>\n") to the file at destination
+        if it failed:
+            fail with the error message of it
+        print "banner.svg: 13 symbolen" as a line
+
+function stamp sheet under {string:root} from {a pointer to a list:collection_names} written to {string:destination}:
+    execute:
+        set width to 860
+        set padding to 16
+        set row_height to 46
+        set height to padding
+        set collection_index to 0
+        loop while collection_index < the length of collection_names:
+            set collection_name to the item at collection_index in collection_names
+            set stamps_path to path (path (path root joined with "collections") joined with collection_name) joined with "stamps.json"
+            set stamps to the JSON member named "stamps" in (the JSON read from stamps_path)
+            set line_count to 1
+            set x to 0.0
+            set stamp_index to 0
+            loop while stamp_index < stamps' length:
+                set stamp_node to the item at stamp_index in (stamps' items)
+                set item_width to (the display character count of the JSON text named "text" in stamp_node) as a floating-point number * 8.4 + 34.0
+                if x + item_width > (width - padding * 2) as a floating-point number and x > 0.0:
+                    set line_count to line_count + 1
+                    set x to 0.0
+                set x to (x + item_width) + 10.0
+                set stamp_index to stamp_index + 1
+            set height to ((height + 24) + line_count * row_height) + 8
+            set collection_index to collection_index + 1
+        set height to (height + padding) - 8
+        set body to (((((the string form of "<rect x=\"0\" y=\"0\" width=\"" + the string form of width) + the string form of "\" height=\"") + the string form of height) + the string form of "\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d6d3cd\"/>"))
+        set y to padding
+        set total to 0
+        set collection_index to 0
+        loop while collection_index < the length of collection_names:
+            set collection_name to the item at collection_index in collection_names
+            set collection_path to path (path root joined with "collections") joined with collection_name
+            set manifest to the JSON read from (path collection_path joined with "collection.json")
+            set english_name to the JSON text named "en" in (the JSON member named "name" in manifest)
+            set label to (collection_name + the string form of " — ") + english_name
+            set body to body + the string form of "<text x=\""
+            set body to body + the string form of padding
+            set body to body + the string form of "\" y=\""
+            set body to body + the string form of (y + 14)
+            set body to body + the string form of "\" font-size=\"12\" font-weight=\"700\" font-family=\"system-ui, -apple-system, Segoe UI, sans-serif\" fill=\"#44403c\">"
+            set body to body + label
+            set body to body + the string form of "</text>"
+            set y to y + 24
+            set x to 0.0
+            set stamps to the JSON member named "stamps" in (the JSON read from (path collection_path joined with "stamps.json"))
+            set stamp_index to 0
+            loop while stamp_index < stamps' length:
+                set stamp_node to the item at stamp_index in (stamps' items)
+                set text to the JSON text named "text" in stamp_node
+                set color to the JSON text named "color" in stamp_node
+                set item_width to (the display character count of text) as a floating-point number * 8.4 + 34.0
+                if x + item_width > (width - padding * 2) as a floating-point number and x > 0.0:
+                    set x to 0.0
+                    set y to y + row_height
+                set draw_x to x + (padding as a floating-point number)
+                set center to draw_x + item_width / 2.0
+                set body to body + the string form of "<g transform=\"rotate(-2 "
+                set body to body + the string form of center
+                set body to body + the string form of " "
+                set body to body + the string form of (y + 16)
+                set body to body + the string form of ")\"><rect x=\""
+                set body to body + the string form of draw_x
+                set body to body + the string form of "\" y=\""
+                set body to body + the string form of y
+                set body to body + the string form of "\" width=\""
+                set body to body + the string form of item_width
+                set body to body + the string form of "\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\""
+                set body to body + color
+                set body to body + the string form of "\" stroke-width=\"3\"/><text x=\""
+                set body to body + the string form of center
+                set body to body + the string form of "\" y=\""
+                set body to body + the string form of (y + 21)
+                set body to body + the string form of "\" font-size=\"13\" font-weight=\"700\" letter-spacing=\"0.5\" font-family=\"system-ui, -apple-system, Segoe UI, sans-serif\" text-anchor=\"middle\" fill=\""
+                set body to body + color
+                set body to body + the string form of "\">"
+                set body to body + text
+                set body to body + the string form of "</text></g>"
+                set x to (x + item_width) + 10.0
+                set total to total + 1
+                set stamp_index to stamp_index + 1
+            set y to (y + row_height) + 8
+            set collection_index to collection_index + 1
+        set output to the string form of "<svg viewBox=\"0 0 "
+        set output to output + the string form of width
+        set output to output + the string form of " "
+        set output to output + the string form of height
+        set output to output + the string form of "\" width=\""
+        set output to output + the string form of width
+        set output to output + the string form of "\" xmlns=\"http://www.w3.org/2000/svg\">"
+        set output to output + body
+        set output to output + the string form of "</svg>\n"
+        write output to the file at destination
+        if it failed:
+            fail with the error message of it
+        print ((the string form of "preview-stamps.svg: " + the string form of total) + the string form of " stempels") as a line
+
+set root to the repository root
+set media to path (path root joined with "docs") joined with "media"
+create a directory tree at media
+if it failed:
+    fail with the error message of it
+set collection_root to path root joined with "collections"
+set collection_names to sorted entry names in collection_root
+set stamp_collections to an empty list of a string
+set index to 0
+loop while index < the length of collection_names:
+    set name to the item at index in collection_names
+    set collection_path to path collection_root joined with name
+    set manifest_path to path collection_path joined with "collection.json"
+    if manifest_path is a regular file:
+        set manifest to the JSON read from manifest_path
+        if the JSON text named "status" in manifest = "available":
+            set symbol_path to path collection_path joined with "symbols"
+            if symbol_path names a directory:
+                symbol sheet for collection_path written to (path media joined with ((the string form of "preview-" + name) + the string form of ".svg"))
+            if (path collection_path joined with "stamps.json") is a regular file:
+                append name to stamp_collections
+    set index to index + 1
+banner written under root to (path media joined with "banner.svg")
+stamp sheet under root from stamp_collections written to (path media joined with "preview-stamps.svg")

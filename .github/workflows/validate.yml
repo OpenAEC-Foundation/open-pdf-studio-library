@@ -1,16 +1,47 @@
 name: validate
 on:
   push:
+    branches: [main]
   pull_request:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      CCACHE_DIR: ${{ github.workspace }}/dynlex/.ccache
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: library
+      - uses: actions/checkout@v4
+        with:
+          repository: OpenAEC-Foundation/dynlex
+          path: dynlex
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Restore Dynlex compiler cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.CCACHE_DIR }}
+          key: dynlex-ccache-${{ runner.os }}-${{ hashFiles('dynlex/CMakeLists.txt', 'dynlex/scripts/build.sh') }}
+          restore-keys: |
+            dynlex-ccache-${{ runner.os }}-
+      - name: Restore pinned LLVM toolchain
+        uses: actions/cache@v4
+        with:
+          path: dynlex/.cache/llvm-toolchain
+          key: dynlex-llvm-native-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('dynlex/metadata/LLVM_TOOLCHAIN', 'dynlex/scripts/llvm_toolchain.sh') }}
+      - run: ./scripts/install.sh
+        working-directory: dynlex
+      - run: ./scripts/build.sh --release
+        working-directory: dynlex
       - run: npm ci
-      - run: node --test
-      - run: node scripts/validate.mjs
-      - run: node scripts/build-index.mjs --check
+        working-directory: library
+      - run: npm test
+        working-directory: library
+        env:
+          DYNLEX: ../dynlex/build/dynlex
+      - run: npm run validate
+        working-directory: library
+      - run: npm run check-index
+        working-directory: library

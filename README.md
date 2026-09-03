@@ -18,7 +18,7 @@ and pulls collections as needed.
 ## What it looks like
 
 Every preview below is generated straight from the repository content by
-`node scripts/build-readme-media.mjs` — what you see is exactly what ships.
+`npm run build-readme-media` — what you see is exactly what ships.
 
 ### 🇳🇱 `nen1414-fire` — fire safety symbols (NEN 1414 core set), 32 symbols
 
@@ -163,11 +163,15 @@ from standards documents, so contributions stay clean.
 
 ## Tooling
 
+Install [Dynlex](https://github.com/OpenAEC-Foundation/dynlex) and Node.js 22, then run:
+
 ```bash
 npm install
+npm run build-tools  # compile the Dynlex tools into build/
 npm test              # unit + repo-integrity tests
 npm run validate      # schema + cross-reference + SVG checks
 npm run build-index   # regenerate index.json
+npm run build-readme-media # regenerate README preview SVGs
 ```
 
 CI runs all three on every push and PR.

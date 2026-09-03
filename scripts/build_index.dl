@@ -1,0 +1,124 @@
+import scripts/library_common.dl
+
+function copy JSON member {C string:name} from {a pointer to a JSON value:source} to {a pointer to a JSON value:target}:
+    execute:
+        add a JSON member named the string form of name with value the JSON member named name in source to target
+
+function files for collection {string:directory} with symbol count stored in {a pointer to an integer:count}:
+    execute:
+        set collected_files to a new JSON array
+        set symbols to path directory joined with "symbols"
+        if symbols names a directory:
+            set names to sorted entry names in symbols
+            set index to 0
+            loop while index < the length of names:
+                set name to the item at index in names
+                if name ends with ".svg":
+                    add (a JSON text containing (the string form of "symbols/" + name)) to the JSON array collected_files
+                    set current_count to the item at 0 in count
+                    store current_count + 1 into count at 0
+                set index to index + 1
+            free names
+        set extras to ["stamps.json", "parametric.json", "hatches.json", "legends.json"]
+        set index to 0
+        loop while index < 4:
+            set name to the item at index in extras
+            if ((path directory joined with name) is a regular file):
+                add (a JSON text containing the string form of name) to the JSON array collected_files
+            set index to index + 1
+        return collected_files
+
+function an indexed collection from {a pointer to a JSON value:source} in {string:directory}:
+    execute:
+        set result to a new JSON object
+        copy JSON member "name" from source to result
+        copy JSON member "sector" from source to result
+        copy JSON member "types" from source to result
+        copy JSON member "scope" from source to result
+        copy JSON member "status" from source to result
+        copy JSON member "version" from source to result
+        set identifier to the JSON text named "id" in source
+        add a JSON member named the string form of "path" with value (a JSON text containing ((the string form of "collections/" + identifier) + the string form of "/")) to result
+        if source has JSON member named "standard":
+            copy JSON member "standard" from source to result
+        set symbol_count to 0
+        set manifest_files to files for collection directory with symbol count stored in the address of symbol_count
+        if symbol_count > 0:
+            add a JSON member named the string form of "symbolCount" with value (a JSON integer containing symbol_count) to result
+        if manifest_files' length > 0:
+            add a JSON member named the string form of "files" with value manifest_files to result
+        return result
+
+function a country index entry from {a pointer to a JSON value:source}:
+    execute:
+        set result to a new JSON object
+        copy JSON member "id" from source to result
+        copy JSON member "name" from source to result
+        copy JSON member "flag" from source to result
+        copy JSON member "wave" from source to result
+        copy JSON member "sectors" from source to result
+        return result
+
+set root to the repository root
+set collection_root to path root joined with "collections"
+set country_root to path root joined with "countries"
+set collections to a new JSON object
+set collection_names to sorted entry names in collection_root
+set index to 0
+loop while index < the length of collection_names:
+    set name to the item at index in collection_names
+    set directory to path collection_root joined with name
+    set manifest to path directory joined with "collection.json"
+    if (manifest is a regular file):
+        set source to the JSON read from manifest
+        add a JSON member named name with value (an indexed collection from source in directory) to collections
+    set index to index + 1
+
+set country_names to sorted entry names in country_root
+set country_values to an empty list of a pointer to a JSON value
+set index to 0
+loop while index < the length of country_names:
+    set name to the item at index in country_names
+    if name ends with ".json":
+        append the JSON read from (path country_root joined with name) to country_values
+    set index to index + 1
+
+set regions to a new JSON array
+set region_order to ["europe", "north-america", "south-america", "middle-east", "africa", "asia", "oceania"]
+set region_index to 0
+loop while region_index < 7:
+    set region_name to the item at region_index in region_order
+    set region_countries to a new JSON array
+    set country_index to 0
+    loop while country_index < the length of country_values:
+        set country to the item at country_index in country_values
+        if the JSON text named "region" in country = region_name:
+            add (a country index entry from country) to the JSON array region_countries
+        set country_index to country_index + 1
+    if region_countries' length > 0:
+        set region to a new JSON object
+        add a JSON member named the string form of "id" with value (a JSON text containing the string form of region_name) to region
+        add a JSON member named the string form of "countries" with value region_countries to region
+        add region to the JSON array regions
+    set region_index to region_index + 1
+
+set result to a new JSON object
+add a JSON member named the string form of "formatVersion" with value (a JSON integer containing 1) to result
+add a JSON member named the string form of "regions" with value regions to result
+add a JSON member named the string form of "collections" with value collections to result
+set generated to the pretty JSON form of result
+set destination to path root joined with "index.json"
+if command line contains "--check":
+    if (destination is a regular file) = false:
+        fail with "index.json ontbreekt"
+    read the file at destination
+    if it failed:
+        fail with the error message of it
+    if the contents of it != generated:
+        fail with "index.json is niet actueel — draai: scripts/build-index"
+    print "index.json actueel" as a line
+else:
+    write generated to the file at destination
+    if it failed:
+        fail with the error message of it
+    print "index.json geschreven" as a line

@@ -1,0 +1,151 @@
+import lib/filesystem.dl
+import lib/host.dl
+import lib/json.dl
+import lib/list.dl
+import lib/path.dl
+import lib/sort.dl
+import lib/text.dl
+
+function fail with {string:message}:
+    execute:
+        write ((the string form of "Error: " + message) + the string form of "\n") to standard error
+        exit the program with status 1
+
+function the repository root:
+    execute:
+        set location to the running executable directory
+        if location failed or location is unsupported:
+            fail with location's error message
+        set style to the native path style
+        if style failed or style is unsupported:
+            fail with style's error message
+        set result to the parent path of location's value using style's value
+        if result failed:
+            fail with result's error message
+        return result's value
+
+function path {string:left} joined with {string:right}:
+    execute:
+        set style to the native path style
+        if style failed or style is unsupported:
+            fail with style's error message
+        set result to left joined with right using style's value
+        if result failed:
+            fail with result's error message
+        return result's value
+
+function {string:path} names a directory:
+    execute:
+        set entry to the file system entry at path
+        return (entry lookup succeeded and entry was found) and entry is a directory
+
+function the JSON result read from {string:path}:
+    execute:
+        read the file at path
+        if it failed:
+            fail with the error message of it
+        set source to the contents of it
+        parse source as JSON
+        return it
+
+function the JSON read from {string:path}:
+    execute:
+        set result to the JSON result read from path
+        if result failed:
+            set message to (the string form of "Invalid JSON in " + path) + the string form of " at byte "
+            set message to message + the string form of the JSON error position in result
+            fail with message
+        return the value of result
+
+function sorted entry names in {string:path}:
+    execute:
+        set entries to an empty list of a string
+        open the directory at path
+        if it failed:
+            fail with the error message of it
+        set directory to it
+        set reading to true
+        loop while reading:
+            read the next directory entry from directory
+            if it lookup failed:
+                fail with the error message of it
+            if it was absent:
+                set reading to false
+            else:
+                append the name of it to entries
+        sort entries stably in bytewise order
+        return entries
+
+function a JSON text containing {string:value}:
+    execute:
+        set result to a new JSON value of kind the JSON text kind
+        set result's text to value
+        return result
+
+function a JSON integer containing {integer:value}:
+    execute:
+        set result to a new JSON value of kind the JSON number kind
+        set result's number to value as a floating-point number
+        set result's text to the string form of value
+        return result
+
+function a new JSON array:
+    replacement:
+        a new JSON value of kind the JSON array kind
+
+function a new JSON object:
+    replacement:
+        a new JSON value of kind the JSON object kind
+
+function append indentation of {integer:depth} to {string:output}:
+    execute:
+        set count to 0
+        loop while count < depth * 2:
+            set output to output + the string form of " "
+            set count to count + 1
+        return output
+
+function the pretty JSON form of {a pointer to a JSON value:value} at depth {integer:depth}:
+    execute:
+        if value's kind != the JSON array kind and value's kind != the JSON object kind:
+            return the compact JSON form of value
+        if value's length = 0:
+            if value's kind = the JSON array kind:
+                return the string form of "[]"
+            return the string form of "{}"
+        set output to the string form of "[\n"
+        if value's kind = the JSON object kind:
+            set output to the string form of "{\n"
+        set index to 0
+        loop while index < value's length:
+            set output to append indentation of depth + 1 to output
+            if value's kind = the JSON object kind:
+                set member to the item at index in (value's members)
+                set output to output + the escaped JSON form of member's name
+                set output to output + the string form of ": "
+                set output to output + the pretty JSON form of member's value at depth (depth + 1)
+            else:
+                set child to the item at index in (value's items)
+                set output to output + the pretty JSON form of child at depth (depth + 1)
+            if index + 1 < value's length:
+                set output to output + the string form of ","
+            set output to output + the string form of "\n"
+            set index to index + 1
+        set output to append indentation of depth to output
+        if value's kind = the JSON array kind:
+            return output + the string form of "]"
+        return output + the string form of "}"
+
+function the pretty JSON form of {a pointer to a JSON value:value}:
+    execute:
+        return (the pretty JSON form of value at depth 0) + the string form of "\n"
+
+function command line contains {C string:expected}:
+    execute:
+        set arguments to the command line arguments
+        set index to 0
+        loop while index < arguments' length:
+            if the argument at index in arguments = expected:
+                return true
+            set index to index + 1
+        return false
